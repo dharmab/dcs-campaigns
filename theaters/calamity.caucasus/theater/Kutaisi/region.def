@@ -1,0 +1,18 @@
+name = "Kutaisi"
+priority = 40
+links = {
+	["air"] = {
+		"Gudauta",
+		"Sukhumi",
+		"Senaki",
+		"Kobuleti",
+		"Batumi",
+		"Tbilisi",
+	},
+	["land"] = {
+		"Senaki",
+		"KashuriGori",
+		"Alania",
+	},
+	["sea"] = {},
+}

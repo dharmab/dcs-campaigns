@@ -1,0 +1,15 @@
+name = "Mozdok"
+priority = 90
+links = {
+	["air"] = {
+		"Beslan",
+		"MineralnyeVody",
+		"Nalchik",
+		"Tbilisi",
+	},
+	["land"] = {
+		"Beslan",
+		"Nalchik",
+	},
+	["sea"] = {},
+}

@@ -1,0 +1,10 @@
+name = "GaliZugdidi"
+priority = 30
+links = {
+	["air"] = {},
+	["land"] = {
+		"Senaki",
+		"Sukhumi",
+	},
+	["sea"] = {},
+}

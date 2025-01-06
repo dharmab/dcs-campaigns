@@ -1,0 +1,19 @@
+name = "Senaki"
+priority = 40
+links = {
+	["air"] = {
+		"Batumi",
+		"Gudauta",
+		"Kobuleti",
+		"Kutaisi",
+		"Sukhumi",
+		"Tbilisi",
+	},
+	["land"] = {
+		"GaliZugdidi",
+		"Kobuleti,
+		"Kutaisi",
+		"Poti",
+	},
+	["sea"] = {},
+}

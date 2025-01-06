@@ -1,0 +1,17 @@
+name = "Batumi"
+priority = 50
+links = {
+	["air"] = {
+		"Gudauta",
+		"Kobuleti",
+		"Kutaisi",
+		"Senaki",
+		"Sukhumi",
+	},
+	["land"] = {
+		"Kobuleti",
+	},
+	["sea"] = {
+		"BlackSea",
+	},
+}

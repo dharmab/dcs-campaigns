@@ -1,0 +1,12 @@
+name = "Poti"
+priority = 40
+links = {
+	["air"] = {},
+	["land"] = {
+		"Senaki",
+		"Kobuleti",
+	},
+	["sea"] = {
+		"BlackSea",
+	},
+}

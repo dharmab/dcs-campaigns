@@ -1,0 +1,14 @@
+name = "MineralnyeVody"
+priority = 10
+links = {
+	["air"] = {
+		"Beslan",
+		"Mozdok",
+		"Nalchik",
+	},
+	["land"] = {
+		"Apsilia",
+		"Nalchik",
+	},
+	["sea"] = {},
+}

@@ -1,0 +1,12 @@
+name = "Apsilia"
+priority = 1
+links = {
+	["air"] = {},
+	["land"] = {
+		"MineralnyeVody",
+		"Gudauta"
+	},
+	["sea"] = {
+		"BlackSea",
+	}
+}

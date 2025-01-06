@@ -1,0 +1,13 @@
+name = "BlackSea"
+priority = 10
+links = {
+	["air"] = {},
+	["land"] = {},
+	["sea"] = {
+		"Apsilia",
+		"Gudauta",
+		"Sukhumi",
+		"Poti",
+		"Batumi",
+	},
+}

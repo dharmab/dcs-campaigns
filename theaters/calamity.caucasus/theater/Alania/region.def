@@ -1,0 +1,11 @@
+name = "Alania"
+priority = 50
+links = {
+	["air"] = {},
+	["land"] = {
+		"Kutaisi",
+		"KashuriGori",
+		"Nalchik",
+	},
+	["sea"] = {},
+}
