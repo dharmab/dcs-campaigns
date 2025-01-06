@@ -1,0 +1,15 @@
+time = 0
+blue = {
+	flag = 10
+	tickets = 240
+	difficulty = "normal"
+}
+neutral = {
+	flag = 20
+	tickets = 0
+}
+red = {
+	flag = 30
+	tickets = 2400
+	difficulty = "normal"
+}
