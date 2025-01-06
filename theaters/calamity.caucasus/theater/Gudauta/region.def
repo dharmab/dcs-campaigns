@@ -9,7 +9,7 @@ links = {
 		"Sukhumi",
 	},
 	["land"] = {
-		"Apsilia"
+		"Apsilia",
 		"Sukhumi",
 	},
 	["sea"] = {
