@@ -11,7 +11,7 @@ links = {
 	},
 	["land"] = {
 		"Senaki",
-		"Poti"
+		"Poti",
 		"Batumi",
 	},
 	["sea"] = {},

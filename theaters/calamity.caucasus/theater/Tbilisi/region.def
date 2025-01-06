@@ -2,7 +2,7 @@ name = "Tbilisi"
 priority = 100
 links = {
 	["air"] = {
-		"Beslan"
+		"Beslan",
 		"Kobuleti",
 		"Kutaisi",
 		"Mozdok",
