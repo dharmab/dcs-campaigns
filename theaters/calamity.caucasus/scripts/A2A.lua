@@ -72,7 +72,7 @@ end
 -- reliable choice other than air start since it avoids problems with the AI
 -- getting stuck while taxiiing.
 A2ADispatcher:SetDefaultTakeoffFromRunway()
-A2ADispatcher.SetDefaultLandingAtRunway()
+A2ADispatcher:SetDefaultLandingAtRunway()
 
 -- AI aircraft will RTB after 10% damanged (90% health remaining).
-A2ADispatcher.SetDefaultDamageThreshold(0.10)
+A2ADispatcher:SetDefaultDamageThreshold(0.10)
