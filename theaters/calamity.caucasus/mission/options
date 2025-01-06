@@ -1,0 +1,280 @@
+options = 
+{
+    ["playerName"] = "New callsign",
+    ["miscellaneous"] = 
+    {
+        ["chat_window_at_start"] = true,
+        ["TrackIR_external_views"] = false,
+        ["f11_free_camera"] = true,
+        ["f10_awacs"] = true,
+        ["Coordinate_Display"] = "Lat Long",
+        ["accidental_failures"] = false,
+        ["Datum"] = 1,
+        ["show_pilot_body"] = false,
+        ["collect_stat"] = false,
+        ["synchronize_controls"] = false,
+        ["backup"] = false,
+        ["headmove"] = false,
+        ["f5_nearest_ac"] = true,
+        ["F2_view_effects"] = 1,
+        ["backupTime"] = 5,
+        ["allow_server_screenshots"] = false,
+        ["autologin"] = true,
+        ["force_feedback_enabled"] = false,
+    }, -- end of ["miscellaneous"]
+    ["difficulty"] = 
+    {
+        ["fuel"] = false,
+        ["easyRadar"] = false,
+        ["miniHUD"] = false,
+        ["optionsView"] = "optview_all",
+        ["setGlobal"] = true,
+        ["avionicsLanguage"] = "native",
+        ["cockpitVisualRM"] = false,
+        ["map"] = true,
+        ["spectatorExternalViews"] = true,
+        ["userSnapView"] = true,
+        ["iconsTheme"] = "nato",
+        ["weapons"] = false,
+        ["padlock"] = true,
+        ["birds"] = 0,
+        ["permitCrash"] = true,
+        ["immortal"] = false,
+        ["easyCommunication"] = true,
+        ["wakeTurbulence"] = false,
+        ["easyFlight"] = false,
+        ["hideStick"] = false,
+        ["radio"] = false,
+        ["geffect"] = "realistic",
+        ["unrestrictedSATNAV"] = false,
+        ["cockpitStatusBarAllowed"] = false,
+        ["reports"] = true,
+        ["tips"] = true,
+        ["autoTrimmer"] = false,
+        ["heading_units"] = 1,
+        ["externalViews"] = true,
+        ["controlsIndicator"] = true,
+        ["RBDAI"] = true,
+        ["units"] = "metric",
+        ["userMarks"] = true,
+        ["labels"] = 1,
+    }, -- end of ["difficulty"]
+    ["VR"] = 
+    {
+        ["custom_IPD_enable"] = false,
+        ["box_mouse_cursor"] = true,
+        ["hand_controllers_joint_throttle"] = false,
+        ["pointer_use_type"] = 0,
+        ["mirror_use_DCS_resolution"] = false,
+        ["hand_controllers_use_throttle"] = false,
+        ["mirror_crop"] = false,
+        ["use_mouse"] = true,
+        ["hand_controllers_debug_draw"] = false,
+        ["enableHMDMask"] = true,
+        ["prefer_built_in_audio"] = true,
+        ["pixel_density"] = 1,
+        ["hand_controllers_use_stick"] = false,
+        ["msaaMaskSize"] = 0.56,
+        ["enable"] = true,
+        ["interaction_with_grip_only"] = false,
+        ["bloom"] = false,
+        ["mirror_source"] = 0,
+        ["custom_IPD"] = 63.5,
+        ["hand_controllers"] = false,
+    }, -- end of ["VR"]
+    ["graphics"] = 
+    {
+        ["messagesFontScale"] = 1,
+        ["forestDetailsFactor"] = 0.44,
+        ["rainDroplets"] = false,
+        ["preloadRadius"] = 100800,
+        ["heatBlr"] = 0,
+        ["anisotropy"] = 0,
+        ["water"] = 0,
+        ["scaleGui"] = 1,
+        ["outputGamma"] = 2.2,
+        ["aspect"] = 1.7777777777778,
+        ["lights"] = 2,
+        ["shadows"] = 3,
+        ["MSAA"] = 0,
+        ["SSAA"] = 0,
+        ["civTraffic"] = "",
+        ["forestDistanceFactor"] = 0.78,
+        ["cockpitGI"] = 0,
+        ["terrainTextures"] = "max",
+        ["multiMonitorSetup"] = "1camera",
+        ["defaultFOV"] = 78,
+        ["shadowTree"] = false,
+        ["chimneySmokeDensity"] = 1,
+        ["fullScreen"] = false,
+        ["flatTerrainShadows"] = 2,
+        ["DOF"] = 0,
+        ["clouds"] = 0,
+        ["sceneryDetailsFactor"] = 0.17,
+        ["textures"] = 1,
+        ["useDeferredShading"] = 1,
+        ["visibRange"] = "Medium",
+        ["box_mouse_cursor"] = false,
+        ["secondaryShadows"] = 0,
+        ["SSLR"] = 0,
+        ["width"] = 1920,
+        ["SSAO"] = 0,
+        ["LensEffects"] = 0,
+        ["sync"] = false,
+        ["effects"] = 3,
+        ["clutterMaxDistance"] = 460,
+        ["motionBlur"] = 0,
+        ["ScreenshotExt"] = "jpg",
+        ["height"] = 1080,
+    }, -- end of ["graphics"]
+    ["plugins"] = 
+    {
+        ["Webeditor"] = 
+        {
+            ["webeditorModuleEnabled"] = false,
+            ["webeditorRemoteControlAddress"] = "127.0.0.1",
+            ["webeditorRemoteControlPassword"] = "",
+            ["webeditorRemoteControlEnabled"] = false,
+            ["webeditorRemoteControlPort"] = "38195",
+            ["webeditorRemoteControlCors"] = "*",
+        }, -- end of ["Webeditor"]
+        ["CaptoGlove"] = 
+        {
+            ["shoulderJointZ_Right"] = 23,
+            ["armBending"] = 60,
+            ["shoulderJointX_Right"] = -15,
+            ["mouseClickSrc"] = 0,
+            ["shoulderJointZ_Left"] = 23,
+            ["shoulderJointX_Left"] = -15,
+            ["set_debug"] = false,
+            ["pitchOffsetGlove_Left"] = 0,
+            ["yawOffsetGlove_Left"] = 0,
+            ["yawOffsetShoulder_Right"] = 0,
+            ["useBending"] = false,
+            ["shoulderLength_Right"] = 40,
+            ["pitchOffsetGlove_Right"] = 0,
+            ["shoulderJointY_Left"] = -23,
+            ["forearmLength_Left"] = 30,
+            ["shoulderLength_Left"] = 40,
+            ["set_attach"] = false,
+            ["pitchOffsetShoulder_Right"] = 0,
+            ["forearmLength_Right"] = 30,
+            ["pitchOffsetShoulder_Left"] = 0,
+            ["set_symmetrically"] = false,
+            ["yawOffsetShoulder_Left"] = 0,
+            ["enable"] = false,
+            ["shoulderJointY_Right"] = -23,
+            ["yawOffsetGlove_Right"] = 0,
+        }, -- end of ["CaptoGlove"]
+        ["Su-25T"] = 
+        {
+            ["CPLocalList"] = "default",
+        }, -- end of ["Su-25T"]
+        ["VoiceChat"] = 
+        {
+            ["use_turn_servers_enabled"] = false,
+        }, -- end of ["VoiceChat"]
+        ["A-4E-C"] = 
+        {
+            ["cssActivate"] = 15,
+            ["trimSpeed"] = 0,
+            ["cockpitShake"] = 100,
+            ["oldRadar"] = false,
+            ["wheelBrakeAssist"] = false,
+        }, -- end of ["A-4E-C"]
+        ["LeapMotion"] = 
+        {
+            ["handUseThrottle"] = false,
+            ["handsHorizontalShift"] = 0,
+            ["enable"] = false,
+            ["set_debug"] = false,
+            ["mouseClickSrc"] = 0,
+            ["handUseStick"] = false,
+        }, -- end of ["LeapMotion"]
+        ["TF-51D"] = 
+        {
+            ["assistance"] = 0,
+            ["CPLocalList"] = "default",
+            ["autoRudder"] = false,
+        }, -- end of ["TF-51D"]
+        ["Su-33"] = 
+        {
+            ["CPLocalList"] = "default",
+        }, -- end of ["Su-33"]
+        ["UH-60L"] = 
+        {
+            ["VR_AVS7"] = false,
+        }, -- end of ["UH-60L"]
+        ["VRFree"] = 
+        {
+            ["handUseThrottle"] = false,
+            ["handUseStick"] = false,
+            ["set_debug"] = false,
+            ["enable"] = false,
+            ["mouseClickSrc"] = 0,
+        }, -- end of ["VRFree"]
+        ["F-14"] = 
+        {
+            ["JESTER_HeadMenu"] = true,
+            ["FFB_TRIM"] = false,
+            ["JESTER_LandingCallouts"] = true,
+            ["AB_GATE"] = false,
+            ["JESTER_Camera"] = true,
+            ["TID_A2G"] = false,
+            ["WEAP_OFF_GUN"] = false,
+            ["WEAP_UP_SPPH"] = false,
+            ["SWEEP_HANDLE_RAISED_COND"] = false,
+            ["JESTER_SwitchPDSTTToPSTT"] = false,
+            ["EXT_LIGHT_CATAPULT"] = true,
+            ["RadioMenuPttOptions"] = 0,
+        }, -- end of ["F-14"]
+        ["F-16C"] = 
+        {
+            ["abDetent"] = 0,
+            ["canopyReflections"] = 0,
+            ["hmdEye"] = 1,
+            ["CPLocalList"] = "default",
+            ["canopyTint"] = 1,
+            ["mfdReflections"] = 0,
+        }, -- end of ["F-16C"]
+        ["Supercarrier"] = 
+        {
+            ["enable_FLOLS_overlay"] = true,
+            ["Use_native_ATC_text"] = false,
+        }, -- end of ["Supercarrier"]
+    }, -- end of ["plugins"]
+    ["format"] = 1,
+    ["sound"] = 
+    {
+        ["main_output"] = "",
+        ["FakeAfterburner"] = false,
+        ["volume"] = 61,
+        ["headphones_on_external_views"] = true,
+        ["subtitles"] = true,
+        ["world"] = 100,
+        ["hear_in_helmet"] = true,
+        ["cockpit"] = 100,
+        ["main_layout"] = "",
+        ["hp_output"] = "",
+        ["radioSpeech"] = true,
+        ["voice_chat_output"] = "",
+        ["voice_chat"] = false,
+        ["microphone_use"] = 2,
+        ["GBreathEffect"] = true,
+        ["switches"] = 100,
+        ["play_audio_while_minimized"] = false,
+        ["headphones"] = 100,
+        ["music"] = 11,
+        ["voice_chat_input"] = "",
+        ["gui"] = 100,
+    }, -- end of ["sound"]
+    ["views"] = 
+    {
+        ["cockpit"] = 
+        {
+            ["mirrors"] = false,
+            ["reflections"] = false,
+            ["avionics"] = 0,
+        }, -- end of ["cockpit"]
+    }, -- end of ["views"]
+} -- end of options
