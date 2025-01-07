@@ -22,7 +22,7 @@ See [the top-level README](../../README.md#changing-a-miz-file) for instructions
 
 ## File Structure
 
-A template consists of two files: a DCT file, which contains metadata about the template, and an STM file, which is a DCS Mission Editor Static Template which places of units and statics. The DCT file and STM file have to be placed next to each other within a region folder. They can be at the top level of the region folder or nested inside subfolders, as long as they have the name filename (besides the extension) and are next to each other.
+A template consists of two files: a DCT file, which contains metadata about the template, and an STM file, which is a DCS Mission Editor Static Template which places units and statics into the game world. The DCT file and STM file have to be placed next to each other within a region folder. They can be at the top level of the region folder or nested inside subfolders, as long as they have the name filename (besides the extension) and are next to each other.
 
 ### DCT File
 
@@ -32,7 +32,7 @@ DCT files are documented [here](https://jtoppins.github.io/dct/designer.html#dct
 exclusion = "STRIKE-Senaki-1"
 name = "STRIKE-Senaki-1-1"
 coaltion = "red"
-objtype = "c2"
+objtype = "ground"
 intel = 5
 priority = 50
 cost = 60
@@ -139,8 +139,8 @@ CAS templates should have at least two variants, each with hostile units placed 
 
 The description of the template should include a 9-line briefing using the template:
 
-```
-<general briefing text>
+```lua
+desc = [[<general briefing text>
 
 1. <Ingress Point or "N/A">
 2. <Heading or "N/A">
@@ -151,13 +151,13 @@ The description of the template should include a 9-line briefing using the templ
 7. <Description of marks or "No marks">
 8. <Friendly location or "No factor">
 9. <Egress direction or "N/A">
-Remarks: <additional notes>
+Remarks: <additional notes>]]
 ```
 
 Example:
 
-```
-An FSA infantry platoon is engaging an ROI mechanized convoy. They are requesting CAS to destroy enemy IFVs.
+```lua
+desc = [[An FSA infantry platoon is engaging an ROI mechanized convoy. They are requesting CAS to destroy enemy IFVs.
 
 1. N/A
 2. N/A
@@ -168,7 +168,7 @@ An FSA infantry platoon is engaging an ROI mechanized convoy. They are requestin
 7. No marks
 8. Friendly infantry 400m to the east in a treeline.
 9. Egress east.
-Remarks: Troops in contact. Engage along the road from the south, striking the vehicles' rear armor. Request AGM or GBU if available. Threats: Small arms fire.
+Remarks: Troops in contact. Engage along the road from the south, striking the vehicles' rear armor. Request AGM or GBU if available. Threats: Small arms fire.]]
 ```
 
 ## Strike

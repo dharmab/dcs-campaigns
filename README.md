@@ -9,9 +9,9 @@ Project for my [DCS](https://www.digitalcombatsimulator.com) campaigns using [DC
 - DCT theater: Data for a DCT campaign:
   1. A `theater.goals` file that sets ticket values for each coalition.
   1. A settings directory:
-    1. `payloadlimits.cfg` and `restrictedweapons.cfg` to configure loadout restrictions.
-    1. `ui.cfg` to configure which aircraft can request each mission type.
-    1. `codenamedb.cfg` to configure mission names.
+      - `payloadlimits.cfg` and `restrictedweapons.cfg` to configure loadout restrictions.
+      - `ui.cfg` to configure which aircraft can request each mission type.
+      - `codenamedb.cfg` to configure mission names.
   1. Regions that define the loose arrangement of the map. Each region has a folder containing a `region.def` file, and together these files define the [graph](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics\)) modeling how the regions are connected and the loose order in which players advance through them.
   1. Each region has many [Templates](https://jtoppins.github.io/dct/designer.html#templates) which each define one of the "mini-missions" players can request.
 
