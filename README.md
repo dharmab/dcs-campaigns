@@ -28,25 +28,12 @@ There is currently one theater, `calamity`. We might add more in the future.
 
 ## Development
 
-### Changing the MIZ File
+### Changing a MIZ File
 
 1. Run `./dev/pack-miz.ps1 <theater>` to create a `mission.miz` file.
 1. Edit the `mission.miz` file in the DCS mission editor, and save changes overwriting the file.
 1. Run `./dev/unpack-miz.ps1 mission.miz <theater>` to update the `theaters/<theater>/mission` directory.
 
-### Adding New Templates
+### Calamity Development
 
-#### SEAD Templates
-
-Requirements for acceptable SEAD templates:
-
-1. SAM sites must have at least three variants, each in a different location, configured with the [`exclusion`](https://jtoppins.github.io/dct/designer.html#exclusion) value set to `RegionName-TemplateID`. This inhibits players from memorizing the exact location of each site.
-1. Groups must be named and units names prefixed according to one of the following patterns. This makes the radars work with the Air Interception script, and makes it easy to identify units in TacView when troubleshooting.
-    1. `SAM-RegionName-TemplateID-VariantID` for SAM sites, e.g. `SAM-Gudauta-2-3` is the third variant of the second SEAD template in Gudauta.
-    1. `EWR-RegionName-TemplateID-VariantID` for EWR sites, e.g. `EWR-Senaki-1-1` is the first variant of the first SEAD template in Senaki. (If there is only one variant use `-1`)
-1. Place SAM sites in open areas away from structures and facilities. This improves authenticity- SAM launchers in real life might "cook off" and damage things nearby.
-1. Place SAM sites in a six-pointed flower arrangement as they may have been placed in earlier parts of the Vietnam War. This makes them easier to spot by eye.
-  1. [DCS Web Editor](https://dcs-web-editor.vercel.app/editor) has some good cloud templates for these arrangements.
-1. SAM sites must be defended by SHORAD. Include a minimum of 2-3x AAA batteries along the most likely low-level approaches. These AAA sites might be as far as a mile away from the site. This provides a challenge for players who attempt low-level strikes.
-
-![](docs/images/sa2.png)
+[See the CONTRIBUTING file for the Calamity theater](theaters/calamity/CONTRIBUTING.md).
