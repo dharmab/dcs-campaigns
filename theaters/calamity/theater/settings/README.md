@@ -1,5 +1,14 @@
 # DCT Settings
 
+## Codenames
+
+Sets template codenames.
+
+- `ground` - Themed around animals and monsters
+- `ewr` - Themed around vision and prophecy
+- `sam` - Themed around the sky, flight and projectiles
+- `ship` - Themed around the ocean and sea monsters
+
 ## Payload Limits
 
 Configures A/A and A/G payload limits. We set both to 12 because it's a nice integer with many factors.
