@@ -20,6 +20,45 @@ See [the top-level README](../../README.md#changing-a-miz-file) for instructions
 
 # Adding New Templates
 
+## File Structure
+
+A template consists of two files: a DCT file, which contains metadata about the template, and an STM file, which is a DCS Mission Editor Static Template which places of units and statics. The DCT file and STM file have to be placed next to each other within a region folder. They can be at the top level of the region folder or nested inside subfolders, as long as they have the name filename (besides the extension) and are next to each other.
+
+### DCT File
+
+DCT files are documented [here](https://jtoppins.github.io/dct/designer.html#dct-example) but we only use a subset of the functionality. Here is what you need:
+
+```lua
+exclusion = "STRIKE-Senaki-1"
+name = "STRIKE-Senaki-1-1"
+coaltion = "red"
+objtype = "c2"
+intel = 5
+priority = 50
+cost = 60
+desc = [[Template description shown in-game.
+Can be split along multiple lines.
+
+You can have blank lines, too.]]
+```
+
+- `exclusion` should be set to `TEMPLATETYPE-RegionName-TemplateID`. If multiple templates with the same `exclusion` are defined in code, DCT will select one of them randomly to use. This slightly randomizes the campaign, adding a lot of replay value and unpredictability.
+- `name` should be set to `TEMPLATETYPE-RegionName-TemplateID-VariantID`.
+- `coalition` should always be set to `red`.
+- `objtype` should be one of the following.
+    - `ground`
+    - `ewr` (SEAD only)
+    - `sam` (SEAD only)
+    - `ship` (Antiship only)
+- `intel` is a value in the range 0-5. Higher values will provide more accurate coordinates to the player. Set this to `1` for search and destroy missions, `3` for general ground attack missions, and `5` for strike missions where the target location is well-known.
+- `priority` is a relative value that determines the order missions are assigned within a region. Lower values are assigned first. Use the range 1-100, with lower values being generally closer to the player's base on the region graph.
+- `cost` is the number of enemy tickets depleted when the template is completed. See [Ticket Costs](#ticket-costs) for guidance.
+- `desc` is the template description shown in-game.
+
+### STM File
+
+STM files are Static Templates, which are created and edited in the DCS Mission Editor. 
+
 ## General Notes
 
 ### Naming Conventions
@@ -53,12 +92,22 @@ SEAD templates should not set a `cost` value; the reward is the elimination of t
 
 ### Death Goals
 
-Understand how [death goal specifications](https://jtoppins.github.io/dct/designer.html#death-goal-specification-goalspec) work and bias towards using death goals over the default 90% threshold. For most templates, consider the template completed if the player heavily damaged key targets.
+Understand how [death goal specifications](https://jtoppins.github.io/dct/designer.html#death-goal-specification-goalspec) work and bias towards using death goals less than the default 90% threshold. For most templates, consider the template completed if the player heavily damaged key targets.
 
-Examples: 
-  - BAI template to destroy an artillery battery. Use the DAMAGED keyword to set the template as complete if all artillery guns are damaged, even if they are not destroyed.
-  - CAS template to engage mechanized infantry. Use the PRIMARY keyboard on the mechanized vehicles to set the template as complete if all vehicles are destroyed, even if the infantry units are still alive.
-  - Strike template to destroy a checkpoint. Use the DAMAGED keyword on the largest static objects to set the template as complete if the checkpoint is heavily damaged, even if it is not destroyed.
+For completeness the death goal keywords are reproduced here:
+
+- `PRIMARY`: Statics and groups that contain the word "primary" in their name are counted towards mission completion, and other units are not counted. (If no groups contain the word "primary", all groups are counted.)
+
+- `UNDAMAGED`: Entity is considered completed when it has taken 10% damage (90% health remaining) or is destroyed.
+- `DAMAGED`: Entity is considered completed when it has taken 45% damage (55% health remaining) or is destroyed.
+- `INCAPACITATED`: Entity is considered completed when it has taken 75% damage (25% health remaining) or is destroyed.
+- `DESTROYED`: Entity is considered completed when it has taken 90% damage (10% health remaining) or is destroyed.
+
+Examples:
+
+  - BAI template to destroy an artillery battery defended by AAA guns. Put the artillery guns in a group named "BAI-RegionName-N-N primary destroyed". Put the AAA in a group named "BAI-RegionName-N-N AAA". The template is considered complete if the overall health of the artillery guns is less than 10%, even if the AAA is still alive.
+  - CAS template to engage mechanized infantry. Put the IFVs in a group named "CAS-RegionName-N-N primary incapacitated". Put the infantry in a group named "CAS-RegionName-N-N infantry". The template is considered complete if the IFVs are heavily damaged, even if the infantry are still alive.
+  - Strike template to destroy a checkpoint. Name the largest static objects in the checkpoint "Strike-RegionName-N-N primary damaged N". The template is considered complete if the checkpoint takes partial damage.
 
 ### Template Descriptions
 
