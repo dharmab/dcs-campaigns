@@ -57,18 +57,37 @@ You can have blank lines, too.]]
 
 ### STM File
 
-STM files are Static Templates, which are created and edited in the DCS Mission Editor. 
+STM files are Static Templates, which are created and edited in the DCS Mission Editor. Note the groups and units in the STM need to follow [name conventions](#naming-conventions) and [death goal specifications](#death-goals).
 
 ## General Notes
 
 ### Naming Conventions
 
 Templates should be named and group and unit names prefixed according to the pattern `TEMPLATETYPE-RegionName-TemplateID-VariantID` unless otherwise stated. This makes it easy to identify units in TacView when troubleshooting.
-  - Example: `CAS-KashuriGori-3-2` is a CAS template and the second variant of the third template in the Kashuri-Gori region. Groups and united within the template should be prefixed with `CAS-KashuriGori-3-2`, e.g. a group might be named `CAS-KashuriGori-3-2-1-PRIMARY`, and a unit might be named `CAS-KashuriGori-3-2-1-PRIMARY`.
+  - Example: `CAS-KashuriGori-3-2` is a CAS template and the second variant of the third template in the Kashuri-Gori region. Groups and united within the template should be prefixed with `CAS-KashuriGori-3-2`, e.g. a group might be named `CAS-KashuriGori-3-2 primary damaged`, and a unit might be named `CAS-KashuriGori-3-2-1`.
+
+### Death Goals
+
+Understand how [death goal specifications](https://jtoppins.github.io/dct/designer.html#death-goal-specification-goalspec) work and bias towards using death goals less than the default 90% threshold. For most templates, consider the template completed if the player heavily damaged key targets.
+
+For completeness the death goal keywords are reproduced here:
+
+- `PRIMARY`: Statics and groups that contain the word "primary" in their name are counted towards mission completion, and other units are not counted. (If no groups contain the word "primary", all groups are counted.)
+
+- `UNDAMAGED`: Entity is considered completed when it has taken 10% damage (90% health remaining) or is destroyed.
+- `DAMAGED`: Entity is considered completed when it has taken 45% damage (55% health remaining) or is destroyed.
+- `INCAPACITATED`: Entity is considered completed when it has taken 75% damage (25% health remaining) or is destroyed.
+- `DESTROYED`: Entity is considered completed when it has taken 90% damage (10% health remaining) or is destroyed.
+
+Examples:
+
+  - BAI template to destroy an artillery battery defended by AAA guns. Put the artillery guns in a group named "BAI-RegionName-N-N primary destroyed". Put the AAA in a group named "BAI-RegionName-N-N AAA". The template is considered complete if the overall health of the artillery guns is less than 10%, even if the AAA is still alive.
+  - CAS template to engage mechanized infantry. Put the IFVs in a group named "CAS-RegionName-N-N primary incapacitated". Put the infantry in a group named "CAS-RegionName-N-N infantry". The template is considered complete if the IFVs are heavily damaged, even if the infantry are still alive.
+  - Strike template to destroy a checkpoint. Name the largest static objects in the checkpoint "Strike-RegionName-N-N primary damaged N". The template is considered complete if the checkpoint takes partial damage.
 
 ### Unit Lists
 
-Reference the provided faction unit lists and conform to them whe designing templates.
+Reference the provided [faction unit lists](unit-lists.md) and conform to them whe designing templates. This helps players consistently identify units, and also reduces the number of units that need to be loaded into the game which improves performance.
 
 Do not use MANPADS for short range air defense. Instead use the SA-9 Strela vehicle. It's easier to see, dodge and destroy than an Igladude, so it's more fun to fight.
 
@@ -89,25 +108,6 @@ Remember to configure the `cost` value for each template other than SEAD. Sugges
   - Likely requires multiple sorties or 3+ aircraft
 
 SEAD templates should not set a `cost` value; the reward is the elimination of the SAM site and degradation of the air defense network.
-
-### Death Goals
-
-Understand how [death goal specifications](https://jtoppins.github.io/dct/designer.html#death-goal-specification-goalspec) work and bias towards using death goals less than the default 90% threshold. For most templates, consider the template completed if the player heavily damaged key targets.
-
-For completeness the death goal keywords are reproduced here:
-
-- `PRIMARY`: Statics and groups that contain the word "primary" in their name are counted towards mission completion, and other units are not counted. (If no groups contain the word "primary", all groups are counted.)
-
-- `UNDAMAGED`: Entity is considered completed when it has taken 10% damage (90% health remaining) or is destroyed.
-- `DAMAGED`: Entity is considered completed when it has taken 45% damage (55% health remaining) or is destroyed.
-- `INCAPACITATED`: Entity is considered completed when it has taken 75% damage (25% health remaining) or is destroyed.
-- `DESTROYED`: Entity is considered completed when it has taken 90% damage (10% health remaining) or is destroyed.
-
-Examples:
-
-  - BAI template to destroy an artillery battery defended by AAA guns. Put the artillery guns in a group named "BAI-RegionName-N-N primary destroyed". Put the AAA in a group named "BAI-RegionName-N-N AAA". The template is considered complete if the overall health of the artillery guns is less than 10%, even if the AAA is still alive.
-  - CAS template to engage mechanized infantry. Put the IFVs in a group named "CAS-RegionName-N-N primary incapacitated". Put the infantry in a group named "CAS-RegionName-N-N infantry". The template is considered complete if the IFVs are heavily damaged, even if the infantry are still alive.
-  - Strike template to destroy a checkpoint. Name the largest static objects in the checkpoint "Strike-RegionName-N-N primary damaged N". The template is considered complete if the checkpoint takes partial damage.
 
 ### Template Descriptions
 
