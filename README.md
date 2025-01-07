@@ -34,6 +34,12 @@ There is currently one theater, `calamity`. We might add more in the future.
 1. Edit the `mission.miz` file in the DCS mission editor, and save changes overwriting the file.
 1. Run `./dev/unpack-miz.ps1 mission.miz <theater>` to update the `theaters/<theater>/mission` directory.
 
+### Changing an STM File
+
+1. Run `./dev/edit-stm.ps1 <stm file>` to copy the STM file to the DCS Saved Games folder. (Note: This only works if your Saved Games folder is at `%userprofile%\Saved Games\DCS`, it won't work with the old `DCS.openbeta` folder)
+1. Edit the Static Template in the DCS mission editor, and save changes overwriting the template.
+1. Run `./dev/save-stm.ps1 <stm file>` to update the STM file in the repository.
+
 ### Calamity Development
 
 [See the CONTRIBUTING file for the Calamity theater](theaters/calamity/CONTRIBUTING.md).
