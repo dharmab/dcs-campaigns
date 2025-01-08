@@ -154,6 +154,19 @@ desc = [[<general briefing text>
 Remarks: <additional notes>]]
 ```
 
+\#|Description|Note
+-|-|-
+1|Ingress Point|In DCS this is usually "N/A"
+2|Heading|If Ingress Point is "N/A", this is also "N/A"
+3|Distance|If 1. is "N/A", this is also "N/A"
+4|Target Elevation|We use "Check mission data", since DCT provides this information using the best format for the player's aircraft.
+5|Target Description|An accurate, concise and specific description of the target. Should include visual cues to help the aircrew locate the target, such as relative location to landmarks and features.
+6|Target Location|We use "Check mission data", since DCT provides this information using the best format for the player's aircraft.
+7|Marks|If the target is marked with a laser, "Code XXXX". If the target is marked visually (smoke, WP, IR strobe, etc.) describe the mark. If the target is not marked, "No marks".
+8|Friendly location|The direction and distance from the target of any friendlies, in meters. If there are no friendlies, "N/A".
+9|Egress|Recommended egress direction. Choose a direction that will keep the aircraft away from known threats and obstacles.
+ |Remarks|Any additional remarks - "Troops in Contact", "Danger close", recommended ordnance, talk-on, recommended attack direction, known or possible threats, other notes.
+
 Example:
 
 ```lua
@@ -168,7 +181,7 @@ desc = [[An FSA infantry platoon is engaging an ROI mechanized convoy. They are 
 7. No marks
 8. Friendly infantry 400m to the east in a treeline.
 9. Egress east.
-Remarks: Troops in contact. Engage along the road from the south, striking the vehicles' rear armor. Request AGM or GBU if available. Threats: Small arms fire.]]
+Remarks: Troops in contact, danger close! Engage along the road from the south, striking the vehicles' rear armor. Request AGM or GBU-12 if available. Threats: Small arms fire.]]
 ```
 
 ## Strike
