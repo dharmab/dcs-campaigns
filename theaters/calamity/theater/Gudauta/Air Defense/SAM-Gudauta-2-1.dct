@@ -1,0 +1,11 @@
+objtype = "sam"
+coalition = "red"
+intel = 3
+cost = 3
+regenerate = true
+exclusion = "SAM-Gudauta-2"
+desc = [[placeholder mission description
+
+primary objective: destroy the SAM emplacement
+
+Threats: Many]]

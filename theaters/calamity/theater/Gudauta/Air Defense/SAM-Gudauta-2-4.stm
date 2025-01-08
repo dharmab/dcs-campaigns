@@ -1,0 +1,237 @@
+staticTemplate = 
+{
+	["coalition"] = 
+	{
+		["blue"] = 
+		{
+			["name"] = "blue",
+			["country"] = {},
+		}, -- end of ["blue"]
+		["neutrals"] = 
+		{
+			["name"] = "neutrals",
+			["country"] = {},
+		}, -- end of ["neutrals"]
+		["red"] = 
+		{
+			["name"] = "red",
+			["country"] = 
+			{
+				[1] = 
+				{
+					["id"] = 81,
+					["vehicle"] = 
+					{
+						["group"] = 
+						{
+							[1] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["route"] = 
+								{
+									["spans"] = {},
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 170,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 505395.74187763,
+											["x"] = -189004.22080979,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 57,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "p-19 s-125 sr",
+										["unitId"] = 590,
+										["y"] = 505395.74187763,
+										["x"] = -189004.22080979,
+										["name"] = "Primary Destroyed SAM-Gudauta-2-4-1",
+										["heading"] = 1.3788101090755,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 591,
+										["y"] = 505479.75401873,
+										["x"] = -189125.72156946,
+										["name"] = "SAM-Gudauta-2-4-2",
+										["heading"] = 0.60196243005664,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 592,
+										["y"] = 505368.19814676,
+										["x"] = -189102.70982982,
+										["name"] = "SAM-Gudauta-2-4-3",
+										["heading"] = 0.60196243005664,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+									[4] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 593,
+										["y"] = 505320.56479461,
+										["x"] = -188990.05818259,
+										["name"] = "SAM-Gudauta-2-4-4",
+										["heading"] = 0.60196243005664,
+										["playerCanDrive"] = false,
+									}, -- end of [4]
+									[5] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "KS-19",
+										["unitId"] = 594,
+										["y"] = 505431.09686091,
+										["x"] = -189052.9865523,
+										["name"] = "SAM-Gudauta-2-4-5",
+										["heading"] = 0.60196243005664,
+										["playerCanDrive"] = false,
+									}, -- end of [5]
+									[6] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "KS-19",
+										["unitId"] = 595,
+										["y"] = 505444.81089549,
+										["x"] = -188975.21039733,
+										["name"] = "SAM-Gudauta-2-4-6",
+										["heading"] = 0.60196243005664,
+										["playerCanDrive"] = false,
+									}, -- end of [6]
+									[7] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "Ural-375 ZU-23",
+										["unitId"] = 596,
+										["y"] = 505419.17049463,
+										["x"] = -189116.17648309,
+										["name"] = "SAM-Gudauta-2-4-7",
+										["heading"] = 1.7453292519943,
+										["playerCanDrive"] = true,
+									}, -- end of [7]
+									[8] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "Ural-375 ZU-23",
+										["unitId"] = 597,
+										["y"] = 505461.30674847,
+										["x"] = -188903.74017689,
+										["name"] = "SAM-Gudauta-2-4-8",
+										["heading"] = 4.904375198104,
+										["playerCanDrive"] = true,
+									}, -- end of [8]
+									[9] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 598,
+										["y"] = 505407.2095934,
+										["x"] = -188900.41511037,
+										["name"] = "SAM-Gudauta-2-4-9",
+										["heading"] = 0.60196243005664,
+										["playerCanDrive"] = false,
+									}, -- end of [9]
+									[10] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 599,
+										["y"] = 505519.29931637,
+										["x"] = -188924.18926827,
+										["name"] = "SAM-Gudauta-2-4-10",
+										["heading"] = 0.60196243005664,
+										["playerCanDrive"] = false,
+									}, -- end of [10]
+									[11] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 600,
+										["y"] = 505564.14912989,
+										["x"] = -189033.67695888,
+										["name"] = "SAM-Gudauta-2-4-11",
+										["heading"] = 0.60196243005664,
+										["playerCanDrive"] = false,
+									}, -- end of [11]
+									[12] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "snr s-125 tr",
+										["unitId"] = 601,
+										["y"] = 505488.54594603,
+										["x"] = -189019.00950593,
+										["name"] = "Primary Destroyed SAM-Gudauta-2-4-12",
+										["heading"] = 0.60196243005664,
+										["playerCanDrive"] = false,
+									}, -- end of [12]
+								}, -- end of ["units"]
+								["y"] = 505395.74187763,
+								["x"] = -189004.22080979,
+								["name"] = "SAM-Gudauta-2-4",
+								["start_time"] = 0,
+							}, -- end of [1]
+						}, -- end of ["group"]
+					}, -- end of ["vehicle"]
+					["name"] = "CJTF Red",
+				}, -- end of [1]
+			}, -- end of ["country"]
+		}, -- end of ["red"]
+	}, -- end of ["coalition"]
+	["name"] = "SAM-Gudauta-2-4",
+	["requiredModules"] = {},
+	["localization"] = 
+	{
+		["DEFAULT"] = 
+		{
+			["DictKey_descriptionNeutralsTask_4"] = "",
+			["DictKey_sortie_5"] = "",
+			["DictKey_descriptionText_1"] = "",
+			["DictKey_descriptionBlueTask_3"] = "",
+			["DictKey_descriptionRedTask_2"] = "",
+		}, -- end of ["DEFAULT"]
+	}, -- end of ["localization"]
+	["theatre"] = "Caucasus",
+	["desc"] = "",
+} -- end of staticTemplate
