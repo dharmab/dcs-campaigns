@@ -1,0 +1,261 @@
+staticTemplate = 
+{
+	["coalition"] = 
+	{
+		["neutrals"] = 
+		{
+			["name"] = "neutrals",
+			["country"] = {},
+		}, -- end of ["neutrals"]
+		["blue"] = 
+		{
+			["name"] = "blue",
+			["country"] = {},
+		}, -- end of ["blue"]
+		["red"] = 
+		{
+			["name"] = "red",
+			["country"] = 
+			{
+				[1] = 
+				{
+					["id"] = 81,
+					["vehicle"] = 
+					{
+						["group"] = 
+						{
+							[1] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["route"] = 
+								{
+									["spans"] = {},
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 13,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 564972.31642116,
+											["x"] = -220109.32351362,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 22,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Ural-375",
+										["unitId"] = 174,
+										["y"] = 564972.31642116,
+										["x"] = -220109.32351362,
+										["name"] = "SAM-Sukhumi-2-1-1",
+										["heading"] = 1.9199391940546,
+										["playerCanDrive"] = true,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Ural-375",
+										["unitId"] = 175,
+										["y"] = 565026.62171756,
+										["x"] = -220131.87788583,
+										["name"] = "SAM-Sukhumi-2-1-2",
+										["heading"] = 1.9199391940546,
+										["playerCanDrive"] = true,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "SNR_75V",
+										["unitId"] = 182,
+										["y"] = 564994.58016118,
+										["x"] = -220082.09090673,
+										["name"] = "Primary Destroyed SAM-Sukhumi-2-1-3",
+										["heading"] = 1.9199391940546,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+									[4] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "p-19 s-125 sr",
+										["unitId"] = 176,
+										["y"] = 564966.91822723,
+										["x"] = -220150.34758502,
+										["name"] = "Primary Destroyed SAM-Sukhumi-2-1-4",
+										["heading"] = 1.9199391940546,
+										["playerCanDrive"] = false,
+									}, -- end of [4]
+									[5] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 179,
+										["y"] = 564997.60292362,
+										["x"] = -220121.44625284,
+										["name"] = "SAM-Sukhumi-2-1-5",
+										["heading"] = 1.9199391940546,
+										["playerCanDrive"] = false,
+									}, -- end of [5]
+									[6] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 183,
+										["y"] = 564948.28380657,
+										["x"] = -220062.85875124,
+										["name"] = "SAM-Sukhumi-2-1-6",
+										["heading"] = 1.9199391940546,
+										["playerCanDrive"] = false,
+									}, -- end of [6]
+									[7] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 173,
+										["y"] = 564910.9976812,
+										["x"] = -220085.79252365,
+										["name"] = "SAM-Sukhumi-2-1-7",
+										["heading"] = 1.9199391940546,
+										["playerCanDrive"] = false,
+									}, -- end of [7]
+									[8] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 177,
+										["y"] = 564925.81372336,
+										["x"] = -220135.66453181,
+										["name"] = "SAM-Sukhumi-2-1-8",
+										["heading"] = 1.9199391940546,
+										["playerCanDrive"] = false,
+									}, -- end of [8]
+									[9] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Ural-375 ZU-23",
+										["unitId"] = 178,
+										["y"] = 564895.91180267,
+										["x"] = -220120.14733076,
+										["name"] = "SAM-Sukhumi-2-1-9",
+										["heading"] = 1.9199391940546,
+										["playerCanDrive"] = true,
+									}, -- end of [9]
+									[10] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Ural-375 ZU-23",
+										["unitId"] = 180,
+										["y"] = 565037.0906597,
+										["x"] = -220098.05308645,
+										["name"] = "SAM-Sukhumi-2-1-10",
+										["heading"] = 1.9199391940546,
+										["playerCanDrive"] = true,
+									}, -- end of [10]
+									[11] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Ural-375 ZU-23",
+										["unitId"] = 185,
+										["y"] = 564920.38978802,
+										["x"] = -220052.18134388,
+										["name"] = "SAM-Sukhumi-2-1-11",
+										["heading"] = 1.9199391940546,
+										["playerCanDrive"] = true,
+									}, -- end of [11]
+									[12] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Ural-375 ZU-23",
+										["unitId"] = 184,
+										["y"] = 565006.60109122,
+										["x"] = -220169.08381813,
+										["name"] = "SAM-Sukhumi-2-1-12",
+										["heading"] = 1.9199391940546,
+										["playerCanDrive"] = true,
+									}, -- end of [12]
+									[13] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 172,
+										["y"] = 564957.05740397,
+										["x"] = -220192.20768204,
+										["name"] = "SAM-Sukhumi-2-1-13",
+										["heading"] = 1.9199391940546,
+										["playerCanDrive"] = false,
+									}, -- end of [13]
+									[14] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 181,
+										["y"] = 565007.55282455,
+										["x"] = -220045.44212071,
+										["name"] = "SAM-Sukhumi-2-1-14",
+										["heading"] = 1.9199391940546,
+										["playerCanDrive"] = false,
+									}, -- end of [14]
+								}, -- end of ["units"]
+								["y"] = 564972.31642116,
+								["x"] = -220109.32351362,
+								["name"] = "SAM-Sukhumi-2-1",
+								["start_time"] = 0,
+							}, -- end of [1]
+						}, -- end of ["group"]
+					}, -- end of ["vehicle"]
+					["name"] = "CJTF Red",
+				}, -- end of [1]
+			}, -- end of ["country"]
+		}, -- end of ["red"]
+	}, -- end of ["coalition"]
+	["name"] = "SAM-Sukhumi-2-1",
+	["requiredModules"] = {},
+	["localization"] = 
+	{
+		["DEFAULT"] = 
+		{
+			["DictKey_descriptionNeutralsTask_4"] = "",
+			["DictKey_sortie_5"] = "",
+			["DictKey_descriptionText_1"] = "",
+			["DictKey_descriptionBlueTask_3"] = "",
+			["DictKey_descriptionRedTask_2"] = "",
+		}, -- end of ["DEFAULT"]
+	}, -- end of ["localization"]
+	["theatre"] = "Caucasus",
+	["desc"] = "",
+} -- end of staticTemplate
