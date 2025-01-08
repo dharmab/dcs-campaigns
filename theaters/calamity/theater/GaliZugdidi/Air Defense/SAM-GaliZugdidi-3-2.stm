@@ -1,0 +1,261 @@
+staticTemplate = 
+{
+	["coalition"] = 
+	{
+		["neutrals"] = 
+		{
+			["name"] = "neutrals",
+			["country"] = {},
+		}, -- end of ["neutrals"]
+		["blue"] = 
+		{
+			["name"] = "blue",
+			["country"] = {},
+		}, -- end of ["blue"]
+		["red"] = 
+		{
+			["name"] = "red",
+			["country"] = 
+			{
+				[1] = 
+				{
+					["id"] = 81,
+					["vehicle"] = 
+					{
+						["group"] = 
+						{
+							[1] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["route"] = 
+								{
+									["spans"] = {},
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 54,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 624367.55734712,
+											["x"] = -257475.2565229,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 39,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Ural-375",
+										["unitId"] = 200,
+										["y"] = 624367.55734712,
+										["x"] = -257475.2565229,
+										["name"] = "SAM-GaliZugdidi-3-2-1",
+										["heading"] = 2.0770188267341,
+										["playerCanDrive"] = true,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Ural-375",
+										["unitId"] = 201,
+										["y"] = 624417.66577406,
+										["x"] = -257506.02843335,
+										["name"] = "SAM-GaliZugdidi-3-2-2",
+										["heading"] = 2.0770188267341,
+										["playerCanDrive"] = true,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "SNR_75V",
+										["unitId"] = 202,
+										["y"] = 624393.80710184,
+										["x"] = -257451.84201085,
+										["name"] = "Primary Destroyed SAM-GaliZugdidi-3-2-3",
+										["heading"] = 2.0770188267341,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+									[4] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "p-19 s-125 sr",
+										["unitId"] = 203,
+										["y"] = 624355.80803525,
+										["x"] = -257514.93105633,
+										["name"] = "Primary Destroyed SAM-GaliZugdidi-3-2-4",
+										["heading"] = 2.0770188267341,
+										["playerCanDrive"] = false,
+									}, -- end of [4]
+									[5] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 204,
+										["y"] = 624390.63611655,
+										["x"] = -257491.18569157,
+										["name"] = "SAM-GaliZugdidi-3-2-5",
+										["heading"] = 2.0770188267341,
+										["playerCanDrive"] = false,
+									}, -- end of [5]
+									[6] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 205,
+										["y"] = 624351.08930414,
+										["x"] = -257425.60428964,
+										["name"] = "SAM-GaliZugdidi-3-2-6",
+										["heading"] = 2.0770188267341,
+										["playerCanDrive"] = false,
+									}, -- end of [6]
+									[7] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 206,
+										["y"] = 624310.67460043,
+										["x"] = -257442.42287418,
+										["name"] = "SAM-GaliZugdidi-3-2-7",
+										["heading"] = 2.0770188267341,
+										["playerCanDrive"] = false,
+									}, -- end of [7]
+									[8] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 207,
+										["y"] = 624317.5065316,
+										["x"] = -257493.99861479,
+										["name"] = "SAM-GaliZugdidi-3-2-8",
+										["heading"] = 2.0770188267341,
+										["playerCanDrive"] = false,
+									}, -- end of [8]
+									[9] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Ural-375 ZU-23",
+										["unitId"] = 208,
+										["y"] = 624290.40017822,
+										["x"] = -257473.99476527,
+										["name"] = "SAM-GaliZugdidi-3-2-9",
+										["heading"] = 2.0770188267341,
+										["playerCanDrive"] = true,
+									}, -- end of [9]
+									[10] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Ural-375 ZU-23",
+										["unitId"] = 209,
+										["y"] = 624433.29719054,
+										["x"] = -257474.25777675,
+										["name"] = "SAM-GaliZugdidi-3-2-10",
+										["heading"] = 2.0770188267341,
+										["playerCanDrive"] = true,
+									}, -- end of [10]
+									[11] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Ural-375 ZU-23",
+										["unitId"] = 210,
+										["y"] = 624325.20902176,
+										["x"] = -257410.69475302,
+										["name"] = "SAM-GaliZugdidi-3-2-11",
+										["heading"] = 2.0770188267341,
+										["playerCanDrive"] = true,
+									}, -- end of [11]
+									[12] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Ural-375 ZU-23",
+										["unitId"] = 211,
+										["y"] = 624392.07134473,
+										["x"] = -257539.64438291,
+										["name"] = "SAM-GaliZugdidi-3-2-12",
+										["heading"] = 2.0770188267341,
+										["playerCanDrive"] = true,
+									}, -- end of [12]
+									[13] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 212,
+										["y"] = 624339.5202532,
+										["x"] = -257554.73321348,
+										["name"] = "SAM-GaliZugdidi-3-2-13",
+										["heading"] = 2.0770188267341,
+										["playerCanDrive"] = false,
+									}, -- end of [13]
+									[14] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 213,
+										["y"] = 624412.35318344,
+										["x"] = -257417.67380386,
+										["name"] = "SAM-GaliZugdidi-3-2-14",
+										["heading"] = 2.0770188267341,
+										["playerCanDrive"] = false,
+									}, -- end of [14]
+								}, -- end of ["units"]
+								["y"] = 624367.55734712,
+								["x"] = -257475.2565229,
+								["name"] = "SAM-GaliZugdidi-3-2",
+								["start_time"] = 0,
+							}, -- end of [1]
+						}, -- end of ["group"]
+					}, -- end of ["vehicle"]
+					["name"] = "CJTF Red",
+				}, -- end of [1]
+			}, -- end of ["country"]
+		}, -- end of ["red"]
+	}, -- end of ["coalition"]
+	["name"] = "SAM-GaliZugdidi-3-2",
+	["requiredModules"] = {},
+	["localization"] = 
+	{
+		["DEFAULT"] = 
+		{
+			["DictKey_descriptionNeutralsTask_4"] = "",
+			["DictKey_sortie_5"] = "",
+			["DictKey_descriptionText_1"] = "",
+			["DictKey_descriptionBlueTask_3"] = "",
+			["DictKey_descriptionRedTask_2"] = "",
+		}, -- end of ["DEFAULT"]
+	}, -- end of ["localization"]
+	["theatre"] = "Caucasus",
+	["desc"] = "",
+} -- end of staticTemplate
