@@ -1,0 +1,237 @@
+staticTemplate = 
+{
+	["coalition"] = 
+	{
+		["blue"] = 
+		{
+			["name"] = "blue",
+			["country"] = {},
+		}, -- end of ["blue"]
+		["neutrals"] = 
+		{
+			["name"] = "neutrals",
+			["country"] = {},
+		}, -- end of ["neutrals"]
+		["red"] = 
+		{
+			["name"] = "red",
+			["country"] = 
+			{
+				[1] = 
+				{
+					["id"] = 81,
+					["vehicle"] = 
+					{
+						["group"] = 
+						{
+							[1] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["route"] = 
+								{
+									["spans"] = {},
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 10,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 631559.53939498,
+											["x"] = -328140.73352659,
+											["ETA_locked"] = true,
+											["speed"] = 5.5555555555556,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 33,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "Kub 1S91 str",
+										["unitId"] = 176,
+										["y"] = 631559.53939498,
+										["x"] = -328140.73352659,
+										["name"] = "Primary Destroyed SAM-Kobuleti-3-1-1",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "ZSU-23-4 Shilka",
+										["unitId"] = 177,
+										["y"] = 631628.05331734,
+										["x"] = -328201.54925541,
+										["name"] = "SAM-Kobuleti-3-1-2",
+										["heading"] = 2.1293016874331,
+										["playerCanDrive"] = true,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "ZSU-23-4 Shilka",
+										["unitId"] = 178,
+										["y"] = 631554.92047887,
+										["x"] = -328052.20430108,
+										["name"] = "SAM-Kobuleti-3-1-3",
+										["heading"] = 0.069813170079773,
+										["playerCanDrive"] = true,
+									}, -- end of [3]
+									[4] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "ZSU-23-4 Shilka",
+										["unitId"] = 179,
+										["y"] = 631477.1687243,
+										["x"] = -328213.0965457,
+										["name"] = "SAM-Kobuleti-3-1-4",
+										["heading"] = 3.8222710618676,
+										["playerCanDrive"] = true,
+									}, -- end of [4]
+									[5] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "Kub 2P25 ln",
+										["unitId"] = 180,
+										["y"] = 631562.6186724,
+										["x"] = -328292.38793898,
+										["name"] = "SAM-Kobuleti-3-1-5",
+										["heading"] = 3.1066860685499,
+										["playerCanDrive"] = false,
+									}, -- end of [5]
+									[6] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "Kub 2P25 ln",
+										["unitId"] = 181,
+										["y"] = 631715.81272349,
+										["x"] = -328067.60068812,
+										["name"] = "SAM-Kobuleti-3-1-6",
+										["heading"] = 0.94247779607694,
+										["playerCanDrive"] = false,
+									}, -- end of [6]
+									[7] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "Kub 2P25 ln",
+										["unitId"] = 182,
+										["y"] = 631716.58254285,
+										["x"] = -328208.47762958,
+										["name"] = "SAM-Kobuleti-3-1-7",
+										["heading"] = 2.1816615649929,
+										["playerCanDrive"] = false,
+									}, -- end of [7]
+									[8] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "Kub 2P25 ln",
+										["unitId"] = 183,
+										["y"] = 631555.69029823,
+										["x"] = -327979.84128197,
+										["name"] = "SAM-Kobuleti-3-1-8",
+										["heading"] = 0.069813170079773,
+										["playerCanDrive"] = false,
+									}, -- end of [8]
+									[9] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "Kub 2P25 ln",
+										["unitId"] = 184,
+										["y"] = 631397.10751166,
+										["x"] = -328213.86636505,
+										["name"] = "SAM-Kobuleti-3-1-9",
+										["heading"] = 4.1015237421867,
+										["playerCanDrive"] = false,
+									}, -- end of [9]
+									[10] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "Ural-375",
+										["unitId"] = 185,
+										["y"] = 631634.21187216,
+										["x"] = -328093.7745461,
+										["name"] = "SAM-Kobuleti-3-1-10",
+										["heading"] = 5.3232542185827,
+										["playerCanDrive"] = true,
+									}, -- end of [10]
+									[11] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "Ural-375",
+										["unitId"] = 186,
+										["y"] = 631470.24035013,
+										["x"] = -328094.54436545,
+										["name"] = "SAM-Kobuleti-3-1-11",
+										["heading"] = 5.3232542185827,
+										["playerCanDrive"] = true,
+									}, -- end of [11]
+									[12] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "Kub 2P25 ln",
+										["unitId"] = 187,
+										["y"] = 631393.2584149,
+										["x"] = -328083.76689452,
+										["name"] = "SAM-Kobuleti-3-1-12",
+										["heading"] = 5.3232542185827,
+										["playerCanDrive"] = false,
+									}, -- end of [12]
+								}, -- end of ["units"]
+								["y"] = 631559.53939498,
+								["x"] = -328140.73352659,
+								["name"] = "SAM-Kobuleti-3-1",
+								["start_time"] = 0,
+							}, -- end of [1]
+						}, -- end of ["group"]
+					}, -- end of ["vehicle"]
+					["name"] = "CJTF Red",
+				}, -- end of [1]
+			}, -- end of ["country"]
+		}, -- end of ["red"]
+	}, -- end of ["coalition"]
+	["name"] = "SAM-Kobuleti-3-1",
+	["requiredModules"] = {},
+	["localization"] = 
+	{
+		["DEFAULT"] = 
+		{
+			["DictKey_descriptionNeutralsTask_4"] = "",
+			["DictKey_sortie_5"] = "",
+			["DictKey_descriptionText_1"] = "",
+			["DictKey_descriptionBlueTask_3"] = "",
+			["DictKey_descriptionRedTask_2"] = "",
+		}, -- end of ["DEFAULT"]
+	}, -- end of ["localization"]
+	["theatre"] = "Caucasus",
+	["desc"] = "",
+} -- end of staticTemplate
