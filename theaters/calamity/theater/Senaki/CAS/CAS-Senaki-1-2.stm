@@ -1,0 +1,386 @@
+staticTemplate = 
+{
+	["coalition"] = 
+	{
+		["neutrals"] = 
+		{
+			["name"] = "neutrals",
+			["country"] = {},
+		}, -- end of ["neutrals"]
+		["blue"] = 
+		{
+			["name"] = "blue",
+			["country"] = 
+			{
+				[1] = 
+				{
+					["id"] = 80,
+					["static"] = 
+					{
+						["group"] = 
+						{
+							[1] = 
+							{
+								["hiddenOnMFD"] = false,
+								["heading"] = 0,
+								["hiddenOnPlanner"] = false,
+								["groupId"] = 54,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["category"] = "Fortifications",
+										["shape_name"] = "tele_bash",
+										["type"] = "TV tower",
+										["unitId"] = 326,
+										["rate"] = 100,
+										["y"] = 614081.8116092,
+										["x"] = -290014.60617976,
+										["name"] = "CAS-Senaki-1-2-1",
+										["heading"] = 0,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 614081.8116092,
+								["x"] = -290014.60617976,
+								["name"] = "CAS-Senaki-1-1",
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 614081.8116092,
+											["speed"] = 0,
+											["x"] = -290014.60617976,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["dead"] = false,
+							}, -- end of [1]
+						}, -- end of ["group"]
+					}, -- end of ["static"]
+					["name"] = "CJTF Blue",
+				}, -- end of [1]
+				[2] = 
+				{
+					["id"] = 2,
+					["vehicle"] = 
+					{
+						["group"] = 
+						{
+							[1] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = {},
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 5,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 614178.47768854,
+											["x"] = -289939.48824865,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = 
+													{
+														[1] = 
+														{
+															["enabled"] = true,
+															["auto"] = true,
+															["id"] = "WrappedAction",
+															["number"] = 1,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "EPLRS",
+																	["params"] = 
+																	{
+																		["value"] = true,
+																		["groupId"] = 1,
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [1]
+													}, -- end of ["tasks"]
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 55,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "HEMTT_C-RAM_Phalanx",
+										["unitId"] = 329,
+										["y"] = 614178.47768854,
+										["x"] = -289939.48824865,
+										["name"] = "CAS-Senaki-1-2-2-1",
+										["heading"] = 0.05235987755983,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "outpost",
+										["unitId"] = 327,
+										["y"] = 614109.17555533,
+										["x"] = -290014.93107721,
+										["name"] = "CAS-Senaki-1-2-2-2",
+										["heading"] = 0.05235987755983,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "AAV7",
+										["unitId"] = 328,
+										["y"] = 614227.60325132,
+										["x"] = -290007.91313967,
+										["name"] = "CAS-Senaki-1-2-2-3",
+										["heading"] = 0.05235987755983,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+									[4] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "AAV7",
+										["unitId"] = 330,
+										["y"] = 614152.16042276,
+										["x"] = -290128.09532004,
+										["name"] = "CAS-Senaki-1-2-2-4",
+										["heading"] = 0.05235987755983,
+										["playerCanDrive"] = false,
+									}, -- end of [4]
+									[5] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "HEMTT_C-RAM_Phalanx",
+										["unitId"] = 331,
+										["y"] = 614065.3134457,
+										["x"] = -290188.62503132,
+										["name"] = "CAS-Senaki-1-2-2-5",
+										["heading"] = 0.05235987755983,
+										["playerCanDrive"] = false,
+									}, -- end of [5]
+								}, -- end of ["units"]
+								["y"] = 614178.47768854,
+								["x"] = -289939.48824865,
+								["name"] = "CAS-Senaki-1-1-2",
+								["start_time"] = 0,
+							}, -- end of [1]
+						}, -- end of ["group"]
+					}, -- end of ["vehicle"]
+					["name"] = "USA",
+				}, -- end of [2]
+			}, -- end of ["country"]
+		}, -- end of ["blue"]
+		["red"] = 
+		{
+			["name"] = "red",
+			["country"] = 
+			{
+				[1] = 
+				{
+					["id"] = 81,
+					["vehicle"] = 
+					{
+						["group"] = 
+						{
+							[1] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = {},
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 5,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 620421.57661814,
+											["x"] = -289565.72714185,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 56,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "BTR-80",
+										["unitId"] = 336,
+										["y"] = 620421.57661814,
+										["x"] = -289565.72714185,
+										["name"] = "CAS-Senaki-1-2-1-1",
+										["heading"] = 4.5902159327451,
+										["playerCanDrive"] = true,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "Ural-375 ZU-23",
+										["unitId"] = 333,
+										["y"] = 620433.20297124,
+										["x"] = -289636.10929463,
+										["name"] = "CAS-Senaki-1-2-1-2",
+										["heading"] = 4.5902159327451,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "Ural-375 ZU-23",
+										["unitId"] = 335,
+										["y"] = 620403.77016367,
+										["x"] = -289485.05164797,
+										["name"] = "CAS-Senaki-1-2-1-3",
+										["heading"] = 4.5902159327451,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+									[4] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "BTR-80",
+										["unitId"] = 337,
+										["y"] = 620417.39494691,
+										["x"] = -289544.65396512,
+										["name"] = "CAS-Senaki-1-2-1-4",
+										["heading"] = 4.5902159327451,
+										["playerCanDrive"] = true,
+									}, -- end of [4]
+									[5] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "2B11 mortar",
+										["unitId"] = 338,
+										["y"] = 620448.21685138,
+										["x"] = -289539.95324153,
+										["name"] = "Primary Destroyed CAS-Senaki-1-2-1-5",
+										["heading"] = 4.5902159327451,
+										["playerCanDrive"] = false,
+									}, -- end of [5]
+									[6] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "KAMAZ Truck",
+										["unitId"] = 332,
+										["y"] = 620424.21867672,
+										["x"] = -289590.19688869,
+										["name"] = "Primary Destroyed CAS-Senaki-1-2-1-6",
+										["heading"] = 4.5902159327451,
+										["playerCanDrive"] = false,
+									}, -- end of [6]
+									[7] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "KAMAZ Truck",
+										["unitId"] = 339,
+										["y"] = 620423.13397736,
+										["x"] = -289583.53779262,
+										["name"] = "Primary Destroyed CAS-Senaki-1-2-1-7",
+										["heading"] = 4.5902159327451,
+										["playerCanDrive"] = false,
+									}, -- end of [7]
+									[8] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "2B11 mortar",
+										["unitId"] = 334,
+										["y"] = 620453.52469754,
+										["x"] = -289567.78923302,
+										["name"] = "Primary Destroyed CAS-Senaki-1-2-1-8",
+										["heading"] = 4.5902159327451,
+										["playerCanDrive"] = false,
+									}, -- end of [8]
+								}, -- end of ["units"]
+								["y"] = 620421.57661814,
+								["x"] = -289565.72714185,
+								["name"] = "CAS-Senaki-1-2-1",
+								["start_time"] = 0,
+							}, -- end of [1]
+						}, -- end of ["group"]
+					}, -- end of ["vehicle"]
+					["name"] = "CJTF Red",
+				}, -- end of [1]
+			}, -- end of ["country"]
+		}, -- end of ["red"]
+	}, -- end of ["coalition"]
+	["name"] = "CAS-Senaki-1-2",
+	["requiredModules"] = {},
+	["localization"] = 
+	{
+		["DEFAULT"] = 
+		{
+			["DictKey_descriptionNeutralsTask_4"] = "",
+			["DictKey_sortie_5"] = "",
+			["DictKey_descriptionText_1"] = "",
+			["DictKey_descriptionBlueTask_3"] = "",
+			["DictKey_descriptionRedTask_2"] = "",
+		}, -- end of ["DEFAULT"]
+	}, -- end of ["localization"]
+	["theatre"] = "Caucasus",
+	["desc"] = "",
+} -- end of staticTemplate

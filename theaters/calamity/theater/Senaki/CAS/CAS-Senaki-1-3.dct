@@ -1,0 +1,19 @@
+objtype = "frontline"
+coalition = "red"
+intel = 1
+cost = 30
+regenerate = false
+exclusion = "CAS-Senaki-1"
+desc = [[
+    Allied resistance fighters operating a pirate radio station on a small island just off the coast of Poti have come under attack by a hostile mortar team located somewhere nearby to the southeast.
+
+    1. N/A
+    2. N/A 
+    3. N/A 
+    4. Check Mission Data
+    5. 4 Urals, 2 BTRs and unknown number of mortars in the city southeast of friendly radio tower
+    6. Check Mission Data
+    7. No Marks
+    8. N/A
+    9. N/A
+]]
