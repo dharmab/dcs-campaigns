@@ -1,11 +1,11 @@
 objtype = "sam"
 coalition = "red"
 intel = 3
-cost = 3
+cost = 0
+priority = 1
 regenerate = true
 exclusion = "SAM-Gudauta-1"
-desc = [[placeholder mission description
+desc = [[%LOCATIONMETHOD% an SA-3 north of Gudauta.
 
-primary objective: destroy the SAM emplacement
-
-Threats: Many]]
+Primary Objective: Destroy the SA-3
+Secondary Objective: Destroy the nearby AAA emplacements ]]
