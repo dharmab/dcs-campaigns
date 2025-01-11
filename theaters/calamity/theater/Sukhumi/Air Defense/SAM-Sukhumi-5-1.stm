@@ -2,16 +2,16 @@ staticTemplate =
 {
 	["coalition"] = 
 	{
-		["blue"] = 
-		{
-			["name"] = "blue",
-			["country"] = {},
-		}, -- end of ["blue"]
 		["neutrals"] = 
 		{
 			["name"] = "neutrals",
 			["country"] = {},
 		}, -- end of ["neutrals"]
+		["blue"] = 
+		{
+			["name"] = "blue",
+			["country"] = {},
+		}, -- end of ["blue"]
 		["red"] = 
 		{
 			["name"] = "red",
@@ -36,13 +36,13 @@ staticTemplate =
 									{
 										[1] = 
 										{
-											["alt"] = 6,
+											["alt"] = 35.912211608312,
 											["type"] = "Turning Point",
 											["ETA"] = 0,
 											["alt_type"] = "BARO",
 											["formation_template"] = "",
-											["y"] = 596141.89667622,
-											["x"] = -234741.01077819,
+											["y"] = 596144.22419016,
+											["x"] = -234743.24591262,
 											["ETA_locked"] = true,
 											["speed"] = 0,
 											["action"] = "Off Road",
@@ -58,7 +58,7 @@ staticTemplate =
 										}, -- end of [1]
 									}, -- end of ["points"]
 								}, -- end of ["route"]
-								["groupId"] = 18,
+								["groupId"] = 120,
 								["hidden"] = false,
 								["units"] = 
 								{
@@ -67,10 +67,10 @@ staticTemplate =
 										["skill"] = "High",
 										["coldAtStart"] = false,
 										["type"] = "p-19 s-125 sr",
-										["unitId"] = 115,
-										["y"] = 596141.89667622,
-										["x"] = -234741.01077819,
-										["name"] = "Primary Destroyed SAM-Sukhumi-5-1-1",
+										["unitId"] = 847,
+										["y"] = 596144.22419016,
+										["x"] = -234743.24591262,
+										["name"] = "Primary Destroyed SAM-Sukhumi-5-1-SA3-1",
 										["heading"] = 5.7595865315813,
 										["playerCanDrive"] = false,
 									}, -- end of [1]
@@ -79,10 +79,10 @@ staticTemplate =
 										["skill"] = "High",
 										["coldAtStart"] = false,
 										["type"] = "5p73 s-125 ln",
-										["unitId"] = 116,
-										["y"] = 596229.42622371,
-										["x"] = -234622.01896012,
-										["name"] = "SAM-Sukhumi-5-1-2",
+										["unitId"] = 848,
+										["y"] = 596231.75373765,
+										["x"] = -234624.25409455,
+										["name"] = "SAM-Sukhumi-5-1-SA3-2",
 										["heading"] = 4.9827388525624,
 										["playerCanDrive"] = false,
 									}, -- end of [2]
@@ -91,10 +91,10 @@ staticTemplate =
 										["skill"] = "High",
 										["coldAtStart"] = false,
 										["type"] = "5p73 s-125 ln",
-										["unitId"] = 117,
-										["y"] = 596243.98723578,
-										["x"] = -234734.98899889,
-										["name"] = "SAM-Sukhumi-5-1-3",
+										["unitId"] = 849,
+										["y"] = 596246.31474972,
+										["x"] = -234737.22413332,
+										["name"] = "SAM-Sukhumi-5-1-SA3-3",
 										["heading"] = 4.9827388525624,
 										["playerCanDrive"] = false,
 									}, -- end of [3]
@@ -103,10 +103,10 @@ staticTemplate =
 										["skill"] = "High",
 										["coldAtStart"] = false,
 										["type"] = "5p73 s-125 ln",
-										["unitId"] = 118,
-										["y"] = 596152.9809133,
-										["x"] = -234816.70300705,
-										["name"] = "SAM-Sukhumi-5-1-4",
+										["unitId"] = 850,
+										["y"] = 596155.30842724,
+										["x"] = -234818.93814148,
+										["name"] = "SAM-Sukhumi-5-1-SA3-4",
 										["heading"] = 4.9827388525624,
 										["playerCanDrive"] = false,
 									}, -- end of [4]
@@ -114,11 +114,11 @@ staticTemplate =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
-										["type"] = "KS-19",
-										["unitId"] = 119,
-										["y"] = 596176.49513496,
-										["x"] = -234691.70541197,
-										["name"] = "SAM-Sukhumi-5-1-5",
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 851,
+										["y"] = 596178.8226489,
+										["x"] = -234693.9405464,
+										["name"] = "SAM-Sukhumi-5-1-SA3-5",
 										["heading"] = 4.9827388525624,
 										["playerCanDrive"] = false,
 									}, -- end of [5]
@@ -126,11 +126,11 @@ staticTemplate =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
-										["type"] = "KS-19",
-										["unitId"] = 120,
-										["y"] = 596098.49148277,
-										["x"] = -234704.05997676,
-										["name"] = "SAM-Sukhumi-5-1-6",
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 852,
+										["y"] = 596100.81899671,
+										["x"] = -234706.29511119,
+										["name"] = "SAM-Sukhumi-5-1-SA3-6",
 										["heading"] = 4.9827388525624,
 										["playerCanDrive"] = false,
 									}, -- end of [6]
@@ -139,10 +139,10 @@ staticTemplate =
 										["skill"] = "High",
 										["coldAtStart"] = false,
 										["type"] = "Ural-375 ZU-23",
-										["unitId"] = 121,
-										["y"] = 596240.12523337,
-										["x"] = -234682.40938368,
-										["name"] = "SAM-Sukhumi-5-1-7",
+										["unitId"] = 853,
+										["y"] = 596242.45274731,
+										["x"] = -234684.64451811,
+										["name"] = "SAM-Sukhumi-5-1-SA3-7",
 										["heading"] = 6.1261056745001,
 										["playerCanDrive"] = true,
 									}, -- end of [7]
@@ -151,10 +151,10 @@ staticTemplate =
 										["skill"] = "High",
 										["coldAtStart"] = false,
 										["type"] = "Ural-375 ZU-23",
-										["unitId"] = 122,
-										["y"] = 596025.54453733,
-										["x"] = -234711.73126912,
-										["name"] = "SAM-Sukhumi-5-1-8",
+										["unitId"] = 854,
+										["y"] = 596027.87205127,
+										["x"] = -234713.96640355,
+										["name"] = "SAM-Sukhumi-5-1-SA3-8",
 										["heading"] = 3.0019663134302,
 										["playerCanDrive"] = true,
 									}, -- end of [8]
@@ -163,10 +163,10 @@ staticTemplate =
 										["skill"] = "High",
 										["coldAtStart"] = false,
 										["type"] = "5p73 s-125 ln",
-										["unitId"] = 123,
-										["y"] = 596040.01293611,
-										["x"] = -234763.96366989,
-										["name"] = "SAM-Sukhumi-5-1-9",
+										["unitId"] = 855,
+										["y"] = 596042.34045005,
+										["x"] = -234766.19880432,
+										["name"] = "SAM-Sukhumi-5-1-SA3-9",
 										["heading"] = 4.9827388525624,
 										["playerCanDrive"] = false,
 									}, -- end of [9]
@@ -175,10 +175,10 @@ staticTemplate =
 										["skill"] = "High",
 										["coldAtStart"] = false,
 										["type"] = "5p73 s-125 ln",
-										["unitId"] = 124,
-										["y"] = 596025.99899978,
-										["x"] = -234650.24064598,
-										["name"] = "SAM-Sukhumi-5-1-10",
+										["unitId"] = 856,
+										["y"] = 596028.32651372,
+										["x"] = -234652.47578041,
+										["name"] = "SAM-Sukhumi-5-1-SA3-10",
 										["heading"] = 4.9827388525624,
 										["playerCanDrive"] = false,
 									}, -- end of [10]
@@ -187,10 +187,10 @@ staticTemplate =
 										["skill"] = "High",
 										["coldAtStart"] = false,
 										["type"] = "5p73 s-125 ln",
-										["unitId"] = 125,
-										["y"] = 596114.91997404,
-										["x"] = -234572.18860882,
-										["name"] = "SAM-Sukhumi-5-1-11",
+										["unitId"] = 857,
+										["y"] = 596117.24748798,
+										["x"] = -234574.42374325,
+										["name"] = "SAM-Sukhumi-5-1-SA3-11",
 										["heading"] = 4.9827388525624,
 										["playerCanDrive"] = false,
 									}, -- end of [11]
@@ -199,19 +199,251 @@ staticTemplate =
 										["skill"] = "High",
 										["coldAtStart"] = false,
 										["type"] = "snr s-125 tr",
-										["unitId"] = 126,
-										["y"] = 596125.66561386,
-										["x"] = -234648.44807911,
-										["name"] = "Primary Destroyed SAM-Sukhumi-5-1-12",
+										["unitId"] = 858,
+										["y"] = 596127.9931278,
+										["x"] = -234650.68321354,
+										["name"] = "Primary Destroyed SAM-Sukhumi-5-1-SA3-12",
 										["heading"] = 4.9827388525624,
 										["playerCanDrive"] = false,
 									}, -- end of [12]
 								}, -- end of ["units"]
-								["y"] = 596141.89667622,
-								["x"] = -234741.01077819,
-								["name"] = "SAM-Sukhumi-5-1",
+								["y"] = 596144.22419016,
+								["x"] = -234743.24591262,
+								["name"] = "SAM-Sukhumi-5-1-SA3",
 								["start_time"] = 0,
 							}, -- end of [1]
+							[2] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["route"] = 
+								{
+									["spans"] = {},
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 13,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 596594.14251073,
+											["x"] = -234511.4430903,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 124,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 877,
+										["y"] = 596594.14251073,
+										["x"] = -234511.4430903,
+										["name"] = "SAM-Sukhumi-5-1-AAA-1-1",
+										["heading"] = 3.0981417581983,
+										["playerCanDrive"] = true,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 878,
+										["y"] = 596620.45136661,
+										["x"] = -234457.57576957,
+										["name"] = "SAM-Sukhumi-5-1-AAA-1-2",
+										["heading"] = 3.0981417581983,
+										["playerCanDrive"] = true,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 879,
+										["y"] = 596563.94928549,
+										["x"] = -234490.84702988,
+										["name"] = "SAM-Sukhumi-5-1-AAA-1-3",
+										["heading"] = 3.0981417581983,
+										["playerCanDrive"] = true,
+									}, -- end of [3]
+									[4] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 880,
+										["y"] = 596620.05762389,
+										["x"] = -234490.05954443,
+										["name"] = "SAM-Sukhumi-5-1-AAA-1-4",
+										["heading"] = 3.0981417581983,
+										["playerCanDrive"] = true,
+									}, -- end of [4]
+									[5] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 881,
+										["y"] = 596591.11753355,
+										["x"] = -234433.16372058,
+										["name"] = "SAM-Sukhumi-5-1-AAA-1-5",
+										["heading"] = 3.0981417581983,
+										["playerCanDrive"] = true,
+									}, -- end of [5]
+									[6] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 882,
+										["y"] = 596562.96492868,
+										["x"] = -234458.36325502,
+										["name"] = "SAM-Sukhumi-5-1-AAA-1-6",
+										["heading"] = 3.0981417581983,
+										["playerCanDrive"] = true,
+									}, -- end of [6]
+								}, -- end of ["units"]
+								["y"] = 596594.14251073,
+								["x"] = -234511.4430903,
+								["name"] = "SAM-Sukhumi-5-1-AAA-1",
+								["start_time"] = 0,
+							}, -- end of [2]
+							[3] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["route"] = 
+								{
+									["spans"] = {},
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 11,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 595661.36533619,
+											["x"] = -234785.40561709,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 125,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 883,
+										["y"] = 595661.36533619,
+										["x"] = -234785.40561709,
+										["name"] = "SAM-Sukhumi-5-1-AAA-2-1",
+										["heading"] = 3.0981417581983,
+										["playerCanDrive"] = true,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 884,
+										["y"] = 595687.67419207,
+										["x"] = -234731.53829636,
+										["name"] = "SAM-Sukhumi-5-1-AAA-2-2",
+										["heading"] = 3.0981417581983,
+										["playerCanDrive"] = true,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 885,
+										["y"] = 595631.17211095,
+										["x"] = -234764.80955667,
+										["name"] = "SAM-Sukhumi-5-1-AAA-2-3",
+										["heading"] = 3.0981417581983,
+										["playerCanDrive"] = true,
+									}, -- end of [3]
+									[4] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 886,
+										["y"] = 595687.28044934,
+										["x"] = -234764.02207122,
+										["name"] = "SAM-Sukhumi-5-1-AAA-2-4",
+										["heading"] = 3.0981417581983,
+										["playerCanDrive"] = true,
+									}, -- end of [4]
+									[5] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 887,
+										["y"] = 595658.34035901,
+										["x"] = -234707.12624737,
+										["name"] = "SAM-Sukhumi-5-1-AAA-2-5",
+										["heading"] = 3.0981417581983,
+										["playerCanDrive"] = true,
+									}, -- end of [5]
+									[6] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 888,
+										["y"] = 595630.18775413,
+										["x"] = -234732.32578181,
+										["name"] = "SAM-Sukhumi-5-1-AAA-2-6",
+										["heading"] = 3.0981417581983,
+										["playerCanDrive"] = true,
+									}, -- end of [6]
+								}, -- end of ["units"]
+								["y"] = 595661.36533619,
+								["x"] = -234785.40561709,
+								["name"] = "SAM-Sukhumi-5-1-AAA-2",
+								["start_time"] = 0,
+							}, -- end of [3]
 						}, -- end of ["group"]
 					}, -- end of ["vehicle"]
 					["name"] = "CJTF Red",
