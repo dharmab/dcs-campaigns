@@ -1,0 +1,11 @@
+objtype = "sam"
+coalition = "red"
+intel = 3
+cost = 0
+priority = 5
+regenerate = true
+exclusion = "SAM-Sukhumi-5"
+desc = [[%LOCATIONMETHOD% an SA-3 on the eastern outskirts of Ochamchira.
+
+Primary Objective: Destroy the SA-3
+Secondary Objective: Destroy the nearby AAA batteries]]

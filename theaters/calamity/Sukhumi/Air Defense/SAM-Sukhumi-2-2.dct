@@ -1,0 +1,12 @@
+objtype = "sam"
+coalition = "red"
+intel = 3
+cost = 0
+priority = 5
+regenerate = true
+exclusion = "SAM-Sukhumi-2"
+desc = [[An SA-2 is in place defending Sukhumi-Babushara air base.
+
+Primary Objective: Destroy the SA-2 emplacement
+Secondary Objective: Destroy the nearby AAA batteries
+]]
