@@ -1,12 +1,13 @@
 objtype = "sam"
 coalition = "red"
 intel = 3
-cost = 3
+cost = 0
+priority = 10
 regenerate = true
-spawnalways = true
 exclusion = "SAM-GaliZugdidi-4"
-desc = [[placeholder mission description
+desc = [[%LOCATIONMETHOD% an SA-3 northeast of Zugdidi
 
-primary objective: destroy the SAM emplacement
+Primary Objective: Destroy the SA-3
+Secondary Objective: Destroy the nearby AAA batteries
 
-Threats: Many]]
+]]
