@@ -1,0 +1,10 @@
+objtype = "sam"
+coalition = "red"
+intel = 3
+exclusion = "SAM-Nalchik-3"
+desc = [[An SA-2 site is located about 20 miles northwest of Nalchik. The SAM site is regularly repositioned along the Malka river, so we only have an approximate location.
+
+Primary objective: Destroy the SAM site
+Secondary objective: Destroy AAA batteries
+
+Threats: SA2, AAA]]
