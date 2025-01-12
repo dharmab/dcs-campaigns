@@ -94,7 +94,7 @@ staticTemplate =
 										["unitId"] = 553,
 										["y"] = 517391.42097167,
 										["x"] = -197591.59951025,
-										["name"] = "Primary Destroyed SAM-Gudauta-4-2-SA2-3",
+										["name"] = "SAM-Gudauta-4-2-SA2-3 Primary Destroyed ",
 										["heading"] = 3.9794277114079,
 										["playerCanDrive"] = false,
 									}, -- end of [3]
@@ -106,7 +106,7 @@ staticTemplate =
 										["unitId"] = 547,
 										["y"] = 517344.14039324,
 										["x"] = -197535.13090283,
-										["name"] = "Primary Destroyed SAM-Gudauta-4-2-SA2-4",
+										["name"] = "SAM-Gudauta-4-2-SA2-4 Primary Destroyed ",
 										["heading"] = 3.9794277114079,
 										["playerCanDrive"] = false,
 									}, -- end of [4]

@@ -70,7 +70,7 @@ staticTemplate =
 										["unitId"] = 559,
 										["y"] = 563261.2662398,
 										["x"] = -210835.62456088,
-										["name"] = "Primary Destroyed SAM-Sukhumi-3-1-SA3-1",
+										["name"] = "SAM-Sukhumi-3-1-SA3-1 Primary Destroyed ",
 										["heading"] = 0.5235987755983,
 										["playerCanDrive"] = false,
 									}, -- end of [1]
@@ -202,7 +202,7 @@ staticTemplate =
 										["unitId"] = 570,
 										["y"] = 563333.31235746,
 										["x"] = -210775.286699,
-										["name"] = "Primary Destroyed SAM-Sukhumi-3-1-SA3-12",
+										["name"] = "SAM-Sukhumi-3-1-SA3-12 Primary Destroyed ",
 										["heading"] = 6.029936403759,
 										["playerCanDrive"] = false,
 									}, -- end of [12]
