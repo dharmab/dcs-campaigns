@@ -1,0 +1,10 @@
+objtype = "sam"
+coalition = "red"
+intel = 3
+exclusion = "SAM-Beslan-2"
+desc = [[An SA-2 site is located near the fork of the Terek and Ardon rivers. The SAM site is regularly repositioned, so we only have an approximate location.
+
+Primary objective: Destroy the SAM site
+Secondary objective: Destroy AAA batteries
+
+Threats: SA2, AAA]]

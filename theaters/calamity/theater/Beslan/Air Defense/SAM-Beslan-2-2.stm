@@ -1,0 +1,243 @@
+staticTemplate = 
+{
+	["coalition"] = 
+	{
+		["neutrals"] = 
+		{
+			["name"] = "neutrals",
+			["country"] = {},
+		}, -- end of ["neutrals"]
+		["blue"] = 
+		{
+			["name"] = "blue",
+			["country"] = {},
+		}, -- end of ["blue"]
+		["red"] = 
+		{
+			["name"] = "red",
+			["country"] = 
+			{
+				[1] = 
+				{
+					["id"] = 81,
+					["vehicle"] = 
+					{
+						["group"] = 
+						{
+							[1] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 822527.61207819,
+												["x"] = -150255.72172103,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 822527.61207819,
+												["x"] = -150255.72172103,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 399,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 822527.61207819,
+											["x"] = -150255.72172103,
+											["name"] = "",
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 52,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "SNR_75V",
+										["unitId"] = 164,
+										["y"] = 822527.61207819,
+										["x"] = -150255.72172103,
+										["name"] = "SAM-Beslan-2-2-1",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "p-19 s-125 sr",
+										["unitId"] = 165,
+										["y"] = 822555.05174435,
+										["x"] = -150256.43223649,
+										["name"] = "SAM-Beslan-2-2-2",
+										["heading"] = 0.62412436994823,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 166,
+										["y"] = 822592.04670466,
+										["x"] = -150228.42734199,
+										["name"] = "SAM-Beslan-2-2-3",
+										["heading"] = 1.0471975511966,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+									[4] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 167,
+										["y"] = 822540.69204381,
+										["x"] = -150196.06726639,
+										["name"] = "SAM-Beslan-2-2-4",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [4]
+									[5] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 168,
+										["y"] = 822591.28196438,
+										["x"] = -150281.19442158,
+										["name"] = "SAM-Beslan-2-2-5",
+										["heading"] = 2.0943951023932,
+										["playerCanDrive"] = false,
+									}, -- end of [5]
+									[6] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 169,
+										["y"] = 822539.31155341,
+										["x"] = -150314.52098232,
+										["name"] = "SAM-Beslan-2-2-6",
+										["heading"] = 3.1415926535898,
+										["playerCanDrive"] = false,
+									}, -- end of [6]
+									[7] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 170,
+										["y"] = 822483.35181576,
+										["x"] = -150282.03864147,
+										["name"] = "SAM-Beslan-2-2-7",
+										["heading"] = 4.1887902047864,
+										["playerCanDrive"] = false,
+									}, -- end of [7]
+									[8] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Ural-375 ZU-23",
+										["unitId"] = 173,
+										["y"] = 822532.57171211,
+										["x"] = -149761.18105469,
+										["name"] = "SAM-Beslan-2-2-8",
+										["heading"] = 1.6755160819146,
+										["playerCanDrive"] = false,
+									}, -- end of [8]
+									[9] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Ural-375 ZU-23",
+										["unitId"] = 174,
+										["y"] = 822907.35525033,
+										["x"] = -151126.01793812,
+										["name"] = "SAM-Beslan-2-2-9",
+										["heading"] = 2.7925268031909,
+										["playerCanDrive"] = false,
+									}, -- end of [9]
+									[10] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Ural-375 ZU-23",
+										["unitId"] = 172,
+										["y"] = 823764.05554674,
+										["x"] = -150627.63630096,
+										["name"] = "SAM-Beslan-2-2-10",
+										["heading"] = 5.5152404363021,
+										["playerCanDrive"] = false,
+									}, -- end of [10]
+									[11] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 171,
+										["y"] = 822487.59652839,
+										["x"] = -150227.91855536,
+										["name"] = "SAM-Beslan-2-2-11",
+										["heading"] = 5.235987755983,
+										["playerCanDrive"] = false,
+									}, -- end of [11]
+								}, -- end of ["units"]
+								["y"] = 822527.61207819,
+								["x"] = -150255.72172103,
+								["name"] = "SAM-Beslan-2-2",
+								["start_time"] = 0,
+							}, -- end of [1]
+						}, -- end of ["group"]
+					}, -- end of ["vehicle"]
+					["name"] = "CJTF Red",
+				}, -- end of [1]
+			}, -- end of ["country"]
+		}, -- end of ["red"]
+	}, -- end of ["coalition"]
+	["name"] = "SAM-Beslan-2-2",
+	["requiredModules"] = {},
+	["localization"] = 
+	{
+		["DEFAULT"] = 
+		{
+			["DictKey_descriptionNeutralsTask_4"] = "",
+			["DictKey_sortie_5"] = "",
+			["DictKey_descriptionText_1"] = "",
+			["DictKey_descriptionBlueTask_3"] = "",
+			["DictKey_descriptionRedTask_2"] = "",
+		}, -- end of ["DEFAULT"]
+	}, -- end of ["localization"]
+	["theatre"] = "Caucasus",
+	["desc"] = "",
+} -- end of staticTemplate
