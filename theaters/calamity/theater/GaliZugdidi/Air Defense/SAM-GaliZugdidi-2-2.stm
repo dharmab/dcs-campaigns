@@ -36,13 +36,13 @@ staticTemplate =
 									{
 										[1] = 
 										{
-											["alt"] = 29,
+											["alt"] = 58.625494018532,
 											["type"] = "Turning Point",
 											["ETA"] = 0,
 											["alt_type"] = "BARO",
 											["formation_template"] = "",
-											["y"] = 612528.78357897,
-											["x"] = -251067.0628922,
+											["y"] = 612529.10738494,
+											["x"] = -251066.03550358,
 											["ETA_locked"] = true,
 											["speed"] = 0,
 											["action"] = "Off Road",
@@ -58,7 +58,7 @@ staticTemplate =
 										}, -- end of [1]
 									}, -- end of ["points"]
 								}, -- end of ["route"]
-								["groupId"] = 20,
+								["groupId"] = 163,
 								["hidden"] = false,
 								["units"] = 
 								{
@@ -67,10 +67,10 @@ staticTemplate =
 										["skill"] = "High",
 										["coldAtStart"] = false,
 										["type"] = "p-19 s-125 sr",
-										["unitId"] = 121,
-										["y"] = 612528.78357897,
-										["x"] = -251067.0628922,
-										["name"] = "Primary Destroyed SAM-GaliZugdidi-2-2-1",
+										["unitId"] = 1189,
+										["y"] = 612529.10738494,
+										["x"] = -251066.03550358,
+										["name"] = "SAM-GaliZugdidi-2-2-SA3-1 ",
 										["heading"] = 5.7595865315813,
 										["playerCanDrive"] = false,
 									}, -- end of [1]
@@ -79,10 +79,10 @@ staticTemplate =
 										["skill"] = "High",
 										["coldAtStart"] = false,
 										["type"] = "5p73 s-125 ln",
-										["unitId"] = 122,
-										["y"] = 612616.31312646,
-										["x"] = -250948.07107412,
-										["name"] = "SAM-GaliZugdidi-2-2-2",
+										["unitId"] = 1190,
+										["y"] = 612616.63693243,
+										["x"] = -250947.0436855,
+										["name"] = "SAM-GaliZugdidi-2-2-SA3-2",
 										["heading"] = 4.9827388525624,
 										["playerCanDrive"] = false,
 									}, -- end of [2]
@@ -91,10 +91,10 @@ staticTemplate =
 										["skill"] = "High",
 										["coldAtStart"] = false,
 										["type"] = "5p73 s-125 ln",
-										["unitId"] = 123,
-										["y"] = 612630.87413852,
-										["x"] = -251061.0411129,
-										["name"] = "SAM-GaliZugdidi-2-2-3",
+										["unitId"] = 1191,
+										["y"] = 612631.19794449,
+										["x"] = -251060.01372428,
+										["name"] = "SAM-GaliZugdidi-2-2-SA3-3",
 										["heading"] = 4.9827388525624,
 										["playerCanDrive"] = false,
 									}, -- end of [3]
@@ -103,10 +103,10 @@ staticTemplate =
 										["skill"] = "High",
 										["coldAtStart"] = false,
 										["type"] = "5p73 s-125 ln",
-										["unitId"] = 124,
-										["y"] = 612539.86781605,
-										["x"] = -251142.75512106,
-										["name"] = "SAM-GaliZugdidi-2-2-4",
+										["unitId"] = 1192,
+										["y"] = 612540.19162202,
+										["x"] = -251141.72773244,
+										["name"] = "SAM-GaliZugdidi-2-2-SA3-4",
 										["heading"] = 4.9827388525624,
 										["playerCanDrive"] = false,
 									}, -- end of [4]
@@ -114,11 +114,11 @@ staticTemplate =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
-										["type"] = "KS-19",
-										["unitId"] = 125,
-										["y"] = 612563.38203771,
-										["x"] = -251017.75752598,
-										["name"] = "SAM-GaliZugdidi-2-2-5",
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 1193,
+										["y"] = 612563.70584368,
+										["x"] = -251016.73013736,
+										["name"] = "SAM-GaliZugdidi-2-2-SA3-5",
 										["heading"] = 4.9827388525624,
 										["playerCanDrive"] = false,
 									}, -- end of [5]
@@ -126,11 +126,11 @@ staticTemplate =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
-										["type"] = "KS-19",
-										["unitId"] = 126,
-										["y"] = 612485.37838551,
-										["x"] = -251030.11209077,
-										["name"] = "SAM-GaliZugdidi-2-2-6",
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 1194,
+										["y"] = 612485.70219148,
+										["x"] = -251029.08470215,
+										["name"] = "SAM-GaliZugdidi-2-2-SA3-6",
 										["heading"] = 4.9827388525624,
 										["playerCanDrive"] = false,
 									}, -- end of [6]
@@ -139,10 +139,10 @@ staticTemplate =
 										["skill"] = "High",
 										["coldAtStart"] = false,
 										["type"] = "Ural-375 ZU-23",
-										["unitId"] = 127,
-										["y"] = 612627.01213612,
-										["x"] = -251008.46149769,
-										["name"] = "SAM-GaliZugdidi-2-2-7",
+										["unitId"] = 1195,
+										["y"] = 612627.33594209,
+										["x"] = -251007.43410907,
+										["name"] = "SAM-GaliZugdidi-2-2-SA3-7",
 										["heading"] = 6.1261056745001,
 										["playerCanDrive"] = true,
 									}, -- end of [7]
@@ -151,10 +151,10 @@ staticTemplate =
 										["skill"] = "High",
 										["coldAtStart"] = false,
 										["type"] = "Ural-375 ZU-23",
-										["unitId"] = 128,
-										["y"] = 612412.43144008,
-										["x"] = -251037.78338313,
-										["name"] = "SAM-GaliZugdidi-2-2-8",
+										["unitId"] = 1196,
+										["y"] = 612412.75524605,
+										["x"] = -251036.75599451,
+										["name"] = "SAM-GaliZugdidi-2-2-SA3-8",
 										["heading"] = 3.0019663134302,
 										["playerCanDrive"] = true,
 									}, -- end of [8]
@@ -163,10 +163,10 @@ staticTemplate =
 										["skill"] = "High",
 										["coldAtStart"] = false,
 										["type"] = "5p73 s-125 ln",
-										["unitId"] = 129,
-										["y"] = 612426.89983885,
-										["x"] = -251090.0157839,
-										["name"] = "SAM-GaliZugdidi-2-2-9",
+										["unitId"] = 1197,
+										["y"] = 612427.22364482,
+										["x"] = -251088.98839528,
+										["name"] = "SAM-GaliZugdidi-2-2-SA3-9",
 										["heading"] = 4.9827388525624,
 										["playerCanDrive"] = false,
 									}, -- end of [9]
@@ -175,10 +175,10 @@ staticTemplate =
 										["skill"] = "High",
 										["coldAtStart"] = false,
 										["type"] = "5p73 s-125 ln",
-										["unitId"] = 130,
-										["y"] = 612412.88590252,
-										["x"] = -250976.29275998,
-										["name"] = "SAM-GaliZugdidi-2-2-10",
+										["unitId"] = 1198,
+										["y"] = 612413.20970849,
+										["x"] = -250975.26537136,
+										["name"] = "SAM-GaliZugdidi-2-2-SA3-10",
 										["heading"] = 4.9827388525624,
 										["playerCanDrive"] = false,
 									}, -- end of [10]
@@ -187,10 +187,10 @@ staticTemplate =
 										["skill"] = "High",
 										["coldAtStart"] = false,
 										["type"] = "5p73 s-125 ln",
-										["unitId"] = 131,
-										["y"] = 612501.80687678,
-										["x"] = -250898.24072282,
-										["name"] = "SAM-GaliZugdidi-2-2-11",
+										["unitId"] = 1199,
+										["y"] = 612502.13068275,
+										["x"] = -250897.2133342,
+										["name"] = "SAM-GaliZugdidi-2-2-SA3-11",
 										["heading"] = 4.9827388525624,
 										["playerCanDrive"] = false,
 									}, -- end of [11]
@@ -199,19 +199,251 @@ staticTemplate =
 										["skill"] = "High",
 										["coldAtStart"] = false,
 										["type"] = "snr s-125 tr",
-										["unitId"] = 132,
-										["y"] = 612512.5525166,
-										["x"] = -250974.50019312,
-										["name"] = "Primary Destroyed SAM-GaliZugdidi-2-2-12",
+										["unitId"] = 1200,
+										["y"] = 612512.87632257,
+										["x"] = -250973.4728045,
+										["name"] = "SAM-GaliZugdidi-2-2-SA3-12  ",
 										["heading"] = 4.9827388525624,
 										["playerCanDrive"] = false,
 									}, -- end of [12]
 								}, -- end of ["units"]
-								["y"] = 612528.78357897,
-								["x"] = -251067.0628922,
-								["name"] = "SAM-GaliZugdidi-2-2",
+								["y"] = 612529.10738494,
+								["x"] = -251066.03550358,
+								["name"] = "SAM-GaliZugdidi-2-2-SA3",
 								["start_time"] = 0,
 							}, -- end of [1]
+							[2] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["route"] = 
+								{
+									["spans"] = {},
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 33,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 613276.30386008,
+											["x"] = -250728.61120238,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 165,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 1207,
+										["y"] = 613276.30386008,
+										["x"] = -250728.61120238,
+										["name"] = "SAM-GaliZugdidi-2-2-AAA-1-1",
+										["heading"] = 3.0981417581983,
+										["playerCanDrive"] = true,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 1208,
+										["y"] = 613302.61271596,
+										["x"] = -250674.74388165,
+										["name"] = "SAM-GaliZugdidi-2-2-AAA-1-2",
+										["heading"] = 3.0981417581983,
+										["playerCanDrive"] = true,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 1209,
+										["y"] = 613246.11063484,
+										["x"] = -250708.01514196,
+										["name"] = "SAM-GaliZugdidi-2-2-AAA-1-3",
+										["heading"] = 3.0981417581983,
+										["playerCanDrive"] = true,
+									}, -- end of [3]
+									[4] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 1210,
+										["y"] = 613302.21897324,
+										["x"] = -250707.22765651,
+										["name"] = "SAM-GaliZugdidi-2-2-AAA-1-4",
+										["heading"] = 3.0981417581983,
+										["playerCanDrive"] = true,
+									}, -- end of [4]
+									[5] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 1211,
+										["y"] = 613273.2788829,
+										["x"] = -250650.33183266,
+										["name"] = "SAM-GaliZugdidi-2-2-AAA-1-5",
+										["heading"] = 3.0981417581983,
+										["playerCanDrive"] = true,
+									}, -- end of [5]
+									[6] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 1212,
+										["y"] = 613245.12627802,
+										["x"] = -250675.5313671,
+										["name"] = "SAM-GaliZugdidi-2-2-AAA-1-6",
+										["heading"] = 3.0981417581983,
+										["playerCanDrive"] = true,
+									}, -- end of [6]
+								}, -- end of ["units"]
+								["y"] = 613276.30386008,
+								["x"] = -250728.61120238,
+								["name"] = "SAM-GaliZugdidi-2-2-AAA-1",
+								["start_time"] = 0,
+							}, -- end of [2]
+							[3] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["route"] = 
+								{
+									["spans"] = {},
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 54.283608878311,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 611443.32531608,
+											["x"] = -250391.93431471,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 166,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 1213,
+										["y"] = 611443.32531608,
+										["x"] = -250391.93431471,
+										["name"] = "SAM-GaliZugdidi-2-2-AAA-2-1",
+										["heading"] = 3.0981417581983,
+										["playerCanDrive"] = true,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 1214,
+										["y"] = 611469.63417196,
+										["x"] = -250338.06699398,
+										["name"] = "SAM-GaliZugdidi-2-2-AAA-2-2",
+										["heading"] = 3.0981417581983,
+										["playerCanDrive"] = true,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 1215,
+										["y"] = 611413.13209084,
+										["x"] = -250371.33825429,
+										["name"] = "SAM-GaliZugdidi-2-2-AAA-2-3",
+										["heading"] = 3.0981417581983,
+										["playerCanDrive"] = true,
+									}, -- end of [3]
+									[4] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 1216,
+										["y"] = 611469.24042924,
+										["x"] = -250370.55076884,
+										["name"] = "SAM-GaliZugdidi-2-2-AAA-2-4",
+										["heading"] = 3.0981417581983,
+										["playerCanDrive"] = true,
+									}, -- end of [4]
+									[5] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 1217,
+										["y"] = 611440.30033891,
+										["x"] = -250313.65494499,
+										["name"] = "SAM-GaliZugdidi-2-2-AAA-2-5",
+										["heading"] = 3.0981417581983,
+										["playerCanDrive"] = true,
+									}, -- end of [5]
+									[6] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "S-60_Type59_Artillery",
+										["unitId"] = 1218,
+										["y"] = 611412.14773403,
+										["x"] = -250338.85447943,
+										["name"] = "SAM-GaliZugdidi-2-2-AAA-2-6",
+										["heading"] = 3.0981417581983,
+										["playerCanDrive"] = true,
+									}, -- end of [6]
+								}, -- end of ["units"]
+								["y"] = 611443.32531608,
+								["x"] = -250391.93431471,
+								["name"] = "SAM-GaliZugdidi-2-2-AAA-2",
+								["start_time"] = 0,
+							}, -- end of [3]
 						}, -- end of ["group"]
 					}, -- end of ["vehicle"]
 					["name"] = "CJTF Red",
