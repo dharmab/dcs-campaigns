@@ -1,40 +1,40 @@
-staticTemplate = 
+staticTemplate =
 {
-	["coalition"] = 
+	["coalition"] =
 	{
-		["blue"] = 
+		["blue"] =
 		{
 			["name"] = "blue",
 			["country"] = {},
 		}, -- end of ["blue"]
-		["neutrals"] = 
+		["neutrals"] =
 		{
 			["name"] = "neutrals",
 			["country"] = {},
 		}, -- end of ["neutrals"]
-		["red"] = 
+		["red"] =
 		{
 			["name"] = "red",
-			["country"] = 
+			["country"] =
 			{
-				[1] = 
+				[1] =
 				{
 					["id"] = 81,
-					["vehicle"] = 
+					["vehicle"] =
 					{
-						["group"] = 
+						["group"] =
 						{
-							[1] = 
+							[1] =
 							{
 								["visible"] = false,
 								["tasks"] = {},
 								["uncontrollable"] = false,
-								["route"] = 
+								["route"] =
 								{
 									["spans"] = {},
-									["points"] = 
+									["points"] =
 									{
-										[1] = 
+										[1] =
 										{
 											["alt"] = 89,
 											["type"] = "Turning Point",
@@ -46,10 +46,10 @@ staticTemplate =
 											["ETA_locked"] = true,
 											["speed"] = 0,
 											["action"] = "Off Road",
-											["task"] = 
+											["task"] =
 											{
 												["id"] = "ComboTask",
-												["params"] = 
+												["params"] =
 												{
 													["tasks"] = {},
 												}, -- end of ["params"]
@@ -60,9 +60,9 @@ staticTemplate =
 								}, -- end of ["route"]
 								["groupId"] = 47,
 								["hidden"] = false,
-								["units"] = 
+								["units"] =
 								{
-									[1] = 
+									[1] =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
@@ -74,7 +74,7 @@ staticTemplate =
 										["heading"] = 0.5235987755983,
 										["playerCanDrive"] = false,
 									}, -- end of [1]
-									[2] = 
+									[2] =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
@@ -82,11 +82,11 @@ staticTemplate =
 										["unitId"] = 259,
 										["y"] = 544908.34603384,
 										["x"] = -201168.90809143,
-										["name"] = "SAM-Sukhumi-1-1-2",
+										["name"] = "SAM-Sukhumi-1-1-2 primary destroyed",
 										["heading"] = 6.029936403759,
 										["playerCanDrive"] = false,
 									}, -- end of [2]
-									[3] = 
+									[3] =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
@@ -98,7 +98,7 @@ staticTemplate =
 										["heading"] = 6.029936403759,
 										["playerCanDrive"] = false,
 									}, -- end of [3]
-									[4] = 
+									[4] =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
@@ -110,7 +110,7 @@ staticTemplate =
 										["heading"] = 6.029936403759,
 										["playerCanDrive"] = false,
 									}, -- end of [4]
-									[5] = 
+									[5] =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
@@ -122,7 +122,7 @@ staticTemplate =
 										["heading"] = 6.029936403759,
 										["playerCanDrive"] = false,
 									}, -- end of [5]
-									[6] = 
+									[6] =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
@@ -134,7 +134,7 @@ staticTemplate =
 										["heading"] = 6.029936403759,
 										["playerCanDrive"] = false,
 									}, -- end of [6]
-									[7] = 
+									[7] =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
@@ -146,7 +146,7 @@ staticTemplate =
 										["heading"] = 0.89011791851712,
 										["playerCanDrive"] = true,
 									}, -- end of [7]
-									[8] = 
+									[8] =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
@@ -158,7 +158,7 @@ staticTemplate =
 										["heading"] = 4.0491638646268,
 										["playerCanDrive"] = true,
 									}, -- end of [8]
-									[9] = 
+									[9] =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
@@ -170,7 +170,7 @@ staticTemplate =
 										["heading"] = 6.029936403759,
 										["playerCanDrive"] = false,
 									}, -- end of [9]
-									[10] = 
+									[10] =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
@@ -182,7 +182,7 @@ staticTemplate =
 										["heading"] = 6.029936403759,
 										["playerCanDrive"] = false,
 									}, -- end of [10]
-									[11] = 
+									[11] =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
@@ -194,7 +194,7 @@ staticTemplate =
 										["heading"] = 6.029936403759,
 										["playerCanDrive"] = false,
 									}, -- end of [11]
-									[12] = 
+									[12] =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
@@ -212,17 +212,17 @@ staticTemplate =
 								["name"] = "SAM-Sukhumi-1-1",
 								["start_time"] = 0,
 							}, -- end of [1]
-							[2] = 
+							[2] =
 							{
 								["visible"] = false,
 								["tasks"] = {},
 								["uncontrollable"] = false,
-								["route"] = 
+								["route"] =
 								{
 									["spans"] = {},
-									["points"] = 
+									["points"] =
 									{
-										[1] = 
+										[1] =
 										{
 											["alt"] = 62.285863737247,
 											["type"] = "Turning Point",
@@ -234,10 +234,10 @@ staticTemplate =
 											["ETA_locked"] = true,
 											["speed"] = 0,
 											["action"] = "Off Road",
-											["task"] = 
+											["task"] =
 											{
 												["id"] = "ComboTask",
-												["params"] = 
+												["params"] =
 												{
 													["tasks"] = {},
 												}, -- end of ["params"]
@@ -248,9 +248,9 @@ staticTemplate =
 								}, -- end of ["route"]
 								["groupId"] = 52,
 								["hidden"] = false,
-								["units"] = 
+								["units"] =
 								{
-									[1] = 
+									[1] =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
@@ -262,7 +262,7 @@ staticTemplate =
 										["heading"] = 3.0981417581983,
 										["playerCanDrive"] = true,
 									}, -- end of [1]
-									[2] = 
+									[2] =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
@@ -274,7 +274,7 @@ staticTemplate =
 										["heading"] = 3.0981417581983,
 										["playerCanDrive"] = true,
 									}, -- end of [2]
-									[3] = 
+									[3] =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
@@ -286,7 +286,7 @@ staticTemplate =
 										["heading"] = 3.0981417581983,
 										["playerCanDrive"] = true,
 									}, -- end of [3]
-									[4] = 
+									[4] =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
@@ -298,7 +298,7 @@ staticTemplate =
 										["heading"] = 3.0981417581983,
 										["playerCanDrive"] = true,
 									}, -- end of [4]
-									[5] = 
+									[5] =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
@@ -310,7 +310,7 @@ staticTemplate =
 										["heading"] = 3.0981417581983,
 										["playerCanDrive"] = true,
 									}, -- end of [5]
-									[6] = 
+									[6] =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
@@ -328,17 +328,17 @@ staticTemplate =
 								["name"] = "SAM-Sukhumi-1-1-AAA-1",
 								["start_time"] = 0,
 							}, -- end of [2]
-							[3] = 
+							[3] =
 							{
 								["visible"] = false,
 								["tasks"] = {},
 								["uncontrollable"] = false,
-								["route"] = 
+								["route"] =
 								{
 									["spans"] = {},
-									["points"] = 
+									["points"] =
 									{
-										[1] = 
+										[1] =
 										{
 											["alt"] = 70.093629876305,
 											["type"] = "Turning Point",
@@ -350,10 +350,10 @@ staticTemplate =
 											["ETA_locked"] = true,
 											["speed"] = 0,
 											["action"] = "Off Road",
-											["task"] = 
+											["task"] =
 											{
 												["id"] = "ComboTask",
-												["params"] = 
+												["params"] =
 												{
 													["tasks"] = {},
 												}, -- end of ["params"]
@@ -364,9 +364,9 @@ staticTemplate =
 								}, -- end of ["route"]
 								["groupId"] = 53,
 								["hidden"] = false,
-								["units"] = 
+								["units"] =
 								{
-									[1] = 
+									[1] =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
@@ -378,7 +378,7 @@ staticTemplate =
 										["heading"] = 3.0981417581983,
 										["playerCanDrive"] = true,
 									}, -- end of [1]
-									[2] = 
+									[2] =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
@@ -390,7 +390,7 @@ staticTemplate =
 										["heading"] = 3.0981417581983,
 										["playerCanDrive"] = true,
 									}, -- end of [2]
-									[3] = 
+									[3] =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
@@ -402,7 +402,7 @@ staticTemplate =
 										["heading"] = 3.0981417581983,
 										["playerCanDrive"] = true,
 									}, -- end of [3]
-									[4] = 
+									[4] =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
@@ -414,7 +414,7 @@ staticTemplate =
 										["heading"] = 3.0981417581983,
 										["playerCanDrive"] = true,
 									}, -- end of [4]
-									[5] = 
+									[5] =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
@@ -426,7 +426,7 @@ staticTemplate =
 										["heading"] = 3.0981417581983,
 										["playerCanDrive"] = true,
 									}, -- end of [5]
-									[6] = 
+									[6] =
 									{
 										["skill"] = "High",
 										["coldAtStart"] = false,
@@ -450,12 +450,12 @@ staticTemplate =
 				}, -- end of [1]
 			}, -- end of ["country"]
 		}, -- end of ["red"]
-	}, -- end of ["coalition"]
+	},    -- end of ["coalition"]
 	["name"] = "SAM-Sukhumi-1-1",
 	["requiredModules"] = {},
-	["localization"] = 
+	["localization"] =
 	{
-		["DEFAULT"] = 
+		["DEFAULT"] =
 		{
 			["DictKey_descriptionNeutralsTask_4"] = "",
 			["DictKey_sortie_5"] = "",

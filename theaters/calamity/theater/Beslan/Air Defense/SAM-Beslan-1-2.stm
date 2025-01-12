@@ -1,57 +1,57 @@
-staticTemplate = 
+staticTemplate =
 {
-	["coalition"] = 
+	["coalition"] =
 	{
-		["neutrals"] = 
+		["neutrals"] =
 		{
 			["name"] = "neutrals",
 			["country"] = {},
 		}, -- end of ["neutrals"]
-		["blue"] = 
+		["blue"] =
 		{
 			["name"] = "blue",
 			["country"] = {},
 		}, -- end of ["blue"]
-		["red"] = 
+		["red"] =
 		{
 			["name"] = "red",
-			["country"] = 
+			["country"] =
 			{
-				[1] = 
+				[1] =
 				{
 					["id"] = 81,
-					["vehicle"] = 
+					["vehicle"] =
 					{
-						["group"] = 
+						["group"] =
 						{
-							[1] = 
+							[1] =
 							{
 								["visible"] = false,
 								["tasks"] = {},
 								["uncontrollable"] = false,
 								["task"] = "Ground Nothing",
 								["taskSelected"] = true,
-								["route"] = 
+								["route"] =
 								{
-									["spans"] = 
+									["spans"] =
 									{
-										[1] = 
+										[1] =
 										{
-											[1] = 
+											[1] =
 											{
 												["y"] = 840086.19681295,
 												["x"] = -146168.10711554,
 											}, -- end of [1]
-											[2] = 
+											[2] =
 											{
 												["y"] = 840086.19681295,
 												["x"] = -146168.10711554,
 											}, -- end of [2]
 										}, -- end of [1]
 									}, -- end of ["spans"]
-									["points"] = 
+									["points"] =
 									{
-										[1] = 
+										[1] =
 										{
 											["alt"] = 511,
 											["type"] = "Turning Point",
@@ -64,10 +64,10 @@ staticTemplate =
 											["ETA_locked"] = true,
 											["speed"] = 0,
 											["action"] = "Off Road",
-											["task"] = 
+											["task"] =
 											{
 												["id"] = "ComboTask",
-												["params"] = 
+												["params"] =
 												{
 													["tasks"] = {},
 												}, -- end of ["params"]
@@ -78,9 +78,9 @@ staticTemplate =
 								}, -- end of ["route"]
 								["groupId"] = 52,
 								["hidden"] = false,
-								["units"] = 
+								["units"] =
 								{
-									[1] = 
+									[1] =
 									{
 										["skill"] = "Excellent",
 										["coldAtStart"] = false,
@@ -88,11 +88,11 @@ staticTemplate =
 										["unitId"] = 164,
 										["y"] = 840086.19681295,
 										["x"] = -146168.10711554,
-										["name"] = "SAM-Beslan-1-2-1",
+										["name"] = "SAM-Beslan-1-2-1 primary destroyed",
 										["heading"] = 0,
 										["playerCanDrive"] = false,
 									}, -- end of [1]
-									[2] = 
+									[2] =
 									{
 										["skill"] = "Excellent",
 										["coldAtStart"] = false,
@@ -100,11 +100,11 @@ staticTemplate =
 										["unitId"] = 165,
 										["y"] = 840113.63647911,
 										["x"] = -146168.817631,
-										["name"] = "SAM-Beslan-1-2-2",
+										["name"] = "SAM-Beslan-1-2-2 primary destroyed",
 										["heading"] = 0.62412436994823,
 										["playerCanDrive"] = false,
 									}, -- end of [2]
-									[3] = 
+									[3] =
 									{
 										["skill"] = "Excellent",
 										["coldAtStart"] = false,
@@ -116,7 +116,7 @@ staticTemplate =
 										["heading"] = 1.0471975511966,
 										["playerCanDrive"] = false,
 									}, -- end of [3]
-									[4] = 
+									[4] =
 									{
 										["skill"] = "Excellent",
 										["coldAtStart"] = false,
@@ -128,7 +128,7 @@ staticTemplate =
 										["heading"] = 0,
 										["playerCanDrive"] = false,
 									}, -- end of [4]
-									[5] = 
+									[5] =
 									{
 										["skill"] = "Excellent",
 										["coldAtStart"] = false,
@@ -140,7 +140,7 @@ staticTemplate =
 										["heading"] = 2.0943951023932,
 										["playerCanDrive"] = false,
 									}, -- end of [5]
-									[6] = 
+									[6] =
 									{
 										["skill"] = "Excellent",
 										["coldAtStart"] = false,
@@ -152,7 +152,7 @@ staticTemplate =
 										["heading"] = 3.1415926535898,
 										["playerCanDrive"] = false,
 									}, -- end of [6]
-									[7] = 
+									[7] =
 									{
 										["skill"] = "Average",
 										["coldAtStart"] = false,
@@ -164,7 +164,7 @@ staticTemplate =
 										["heading"] = 4.1887902047864,
 										["playerCanDrive"] = false,
 									}, -- end of [7]
-									[8] = 
+									[8] =
 									{
 										["skill"] = "Average",
 										["coldAtStart"] = false,
@@ -176,7 +176,7 @@ staticTemplate =
 										["heading"] = 5.6374134839417,
 										["playerCanDrive"] = false,
 									}, -- end of [8]
-									[9] = 
+									[9] =
 									{
 										["skill"] = "Average",
 										["coldAtStart"] = false,
@@ -188,7 +188,7 @@ staticTemplate =
 										["heading"] = 3.0368728984701,
 										["playerCanDrive"] = false,
 									}, -- end of [9]
-									[10] = 
+									[10] =
 									{
 										["skill"] = "Average",
 										["coldAtStart"] = false,
@@ -200,7 +200,7 @@ staticTemplate =
 										["heading"] = 3.07177948351,
 										["playerCanDrive"] = false,
 									}, -- end of [10]
-									[11] = 
+									[11] =
 									{
 										["skill"] = "Average",
 										["coldAtStart"] = false,
@@ -224,12 +224,12 @@ staticTemplate =
 				}, -- end of [1]
 			}, -- end of ["country"]
 		}, -- end of ["red"]
-	}, -- end of ["coalition"]
+	},    -- end of ["coalition"]
 	["name"] = "SAM-Beslan-1-2",
 	["requiredModules"] = {},
-	["localization"] = 
+	["localization"] =
 	{
-		["DEFAULT"] = 
+		["DEFAULT"] =
 		{
 			["DictKey_descriptionNeutralsTask_4"] = "",
 			["DictKey_sortie_5"] = "",

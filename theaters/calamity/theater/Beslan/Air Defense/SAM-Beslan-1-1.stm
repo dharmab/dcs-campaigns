@@ -88,7 +88,7 @@ staticTemplate =
 										["unitId"] = 164,
 										["y"] = 845405.71554485,
 										["x"] = -146574.97663918,
-										["name"] = "SAM-Beslan-1-1-1",
+										["name"] = "SAM-Beslan-1-1-1 primary destroyed",
 										["heading"] = 0,
 										["playerCanDrive"] = false,
 									}, -- end of [1]
@@ -100,7 +100,7 @@ staticTemplate =
 										["unitId"] = 165,
 										["y"] = 845433.15521101,
 										["x"] = -146575.68715464,
-										["name"] = "SAM-Beslan-1-1-2",
+										["name"] = "SAM-Beslan-1-1-2 primary destroyed",
 										["heading"] = 0.62412436994823,
 										["playerCanDrive"] = false,
 									}, -- end of [2]

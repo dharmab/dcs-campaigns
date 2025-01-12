@@ -1,40 +1,40 @@
-staticTemplate = 
+staticTemplate =
 {
-	["coalition"] = 
+	["coalition"] =
 	{
-		["neutrals"] = 
+		["neutrals"] =
 		{
 			["name"] = "neutrals",
 			["country"] = {},
 		}, -- end of ["neutrals"]
-		["blue"] = 
+		["blue"] =
 		{
 			["name"] = "blue",
 			["country"] = {},
 		}, -- end of ["blue"]
-		["red"] = 
+		["red"] =
 		{
 			["name"] = "red",
-			["country"] = 
+			["country"] =
 			{
-				[1] = 
+				[1] =
 				{
 					["id"] = 81,
-					["vehicle"] = 
+					["vehicle"] =
 					{
-						["group"] = 
+						["group"] =
 						{
-							[1] = 
+							[1] =
 							{
 								["visible"] = false,
 								["tasks"] = {},
 								["uncontrollable"] = false,
-								["route"] = 
+								["route"] =
 								{
 									["spans"] = {},
-									["points"] = 
+									["points"] =
 									{
-										[1] = 
+										[1] =
 										{
 											["alt"] = 25,
 											["type"] = "Turning Point",
@@ -46,10 +46,10 @@ staticTemplate =
 											["ETA_locked"] = true,
 											["speed"] = 0,
 											["action"] = "Off Road",
-											["task"] = 
+											["task"] =
 											{
 												["id"] = "ComboTask",
-												["params"] = 
+												["params"] =
 												{
 													["tasks"] = {},
 												}, -- end of ["params"]
@@ -60,9 +60,9 @@ staticTemplate =
 								}, -- end of ["route"]
 								["groupId"] = 39,
 								["hidden"] = false,
-								["units"] = 
+								["units"] =
 								{
-									[1] = 
+									[1] =
 									{
 										["skill"] = "Average",
 										["coldAtStart"] = false,
@@ -70,11 +70,11 @@ staticTemplate =
 										["unitId"] = 200,
 										["y"] = 636623.1856062,
 										["x"] = -319237.00796428,
-										["name"] = "SAM-Kobuleti-1-1-1",
+										["name"] = "SAM-Kobuleti-1-1-1 primary destroyed",
 										["heading"] = 3.1242163779307,
 										["playerCanDrive"] = true,
 									}, -- end of [1]
-									[2] = 
+									[2] =
 									{
 										["skill"] = "Average",
 										["coldAtStart"] = false,
@@ -82,11 +82,11 @@ staticTemplate =
 										["unitId"] = 201,
 										["y"] = 636621.59056349,
 										["x"] = -319295.78909018,
-										["name"] = "SAM-Kobuleti-1-1-2",
+										["name"] = "SAM-Kobuleti-1-1-2 primary destroyed",
 										["heading"] = 3.1242163779307,
 										["playerCanDrive"] = true,
 									}, -- end of [2]
-									[3] = 
+									[3] =
 									{
 										["skill"] = "Average",
 										["coldAtStart"] = false,
@@ -98,7 +98,7 @@ staticTemplate =
 										["heading"] = 3.1242163779307,
 										["playerCanDrive"] = false,
 									}, -- end of [3]
-									[4] = 
+									[4] =
 									{
 										["skill"] = "Average",
 										["coldAtStart"] = false,
@@ -110,7 +110,7 @@ staticTemplate =
 										["heading"] = 3.1242163779307,
 										["playerCanDrive"] = false,
 									}, -- end of [4]
-									[5] = 
+									[5] =
 									{
 										["skill"] = "Average",
 										["coldAtStart"] = false,
@@ -122,7 +122,7 @@ staticTemplate =
 										["heading"] = 3.1242163779307,
 										["playerCanDrive"] = false,
 									}, -- end of [5]
-									[6] = 
+									[6] =
 									{
 										["skill"] = "Average",
 										["coldAtStart"] = false,
@@ -134,7 +134,7 @@ staticTemplate =
 										["heading"] = 3.1242163779307,
 										["playerCanDrive"] = false,
 									}, -- end of [6]
-									[7] = 
+									[7] =
 									{
 										["skill"] = "Average",
 										["coldAtStart"] = false,
@@ -146,7 +146,7 @@ staticTemplate =
 										["heading"] = 3.1242163779307,
 										["playerCanDrive"] = false,
 									}, -- end of [7]
-									[8] = 
+									[8] =
 									{
 										["skill"] = "Average",
 										["coldAtStart"] = false,
@@ -158,7 +158,7 @@ staticTemplate =
 										["heading"] = 3.1242163779307,
 										["playerCanDrive"] = false,
 									}, -- end of [8]
-									[9] = 
+									[9] =
 									{
 										["skill"] = "Average",
 										["coldAtStart"] = false,
@@ -170,7 +170,7 @@ staticTemplate =
 										["heading"] = 3.1242163779307,
 										["playerCanDrive"] = true,
 									}, -- end of [9]
-									[10] = 
+									[10] =
 									{
 										["skill"] = "Average",
 										["coldAtStart"] = false,
@@ -182,7 +182,7 @@ staticTemplate =
 										["heading"] = 3.1242163779307,
 										["playerCanDrive"] = true,
 									}, -- end of [10]
-									[11] = 
+									[11] =
 									{
 										["skill"] = "Average",
 										["coldAtStart"] = false,
@@ -194,7 +194,7 @@ staticTemplate =
 										["heading"] = 3.1242163779307,
 										["playerCanDrive"] = true,
 									}, -- end of [11]
-									[12] = 
+									[12] =
 									{
 										["skill"] = "Average",
 										["coldAtStart"] = false,
@@ -206,7 +206,7 @@ staticTemplate =
 										["heading"] = 3.1242163779307,
 										["playerCanDrive"] = true,
 									}, -- end of [12]
-									[13] = 
+									[13] =
 									{
 										["skill"] = "Average",
 										["coldAtStart"] = false,
@@ -218,7 +218,7 @@ staticTemplate =
 										["heading"] = 3.1242163779307,
 										["playerCanDrive"] = false,
 									}, -- end of [13]
-									[14] = 
+									[14] =
 									{
 										["skill"] = "Average",
 										["coldAtStart"] = false,
@@ -242,12 +242,12 @@ staticTemplate =
 				}, -- end of [1]
 			}, -- end of ["country"]
 		}, -- end of ["red"]
-	}, -- end of ["coalition"]
+	},    -- end of ["coalition"]
 	["name"] = "SAM-Kobuleti-1-1",
 	["requiredModules"] = {},
-	["localization"] = 
+	["localization"] =
 	{
-		["DEFAULT"] = 
+		["DEFAULT"] =
 		{
 			["DictKey_descriptionNeutralsTask_4"] = "",
 			["DictKey_sortie_5"] = "",
