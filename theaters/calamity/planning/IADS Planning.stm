@@ -1,0 +1,3937 @@
+staticTemplate = 
+{
+	["coalition"] = 
+	{
+		["blue"] = 
+		{
+			["name"] = "blue",
+			["country"] = {},
+		}, -- end of ["blue"]
+		["neutrals"] = 
+		{
+			["name"] = "neutrals",
+			["country"] = {},
+		}, -- end of ["neutrals"]
+		["red"] = 
+		{
+			["name"] = "red",
+			["country"] = 
+			{
+				[1] = 
+				{
+					["id"] = 81,
+					["vehicle"] = 
+					{
+						["group"] = 
+						{
+							[1] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 647387.42164201,
+												["x"] = -50211.20013149,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 647387.42164201,
+												["x"] = -50211.20013149,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 767,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 647387.42164201,
+											["x"] = -50211.20013149,
+											["name"] = "",
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 193,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1203,
+										["y"] = 647387.42164201,
+										["x"] = -50211.20013149,
+										["name"] = "SAM-MineralnyeVody-1-1",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1202,
+										["y"] = 645067.42748767,
+										["x"] = -56185.796818535,
+										["name"] = "SAM-MineralnyeVody-1-2",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1189,
+										["y"] = 643101.05599929,
+										["x"] = -63027.253513513,
+										["name"] = "SAM-MineralnyeVody-1-3",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 647387.42164201,
+								["x"] = -50211.20013149,
+								["name"] = "SAM-MineralnyeVody-1",
+								["start_time"] = 0,
+							}, -- end of [1]
+							[2] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 700575.34103655,
+												["x"] = -51528.673855728,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 700575.34103655,
+												["x"] = -51528.673855728,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 344,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 700575.34103655,
+											["x"] = -51528.673855728,
+											["name"] = "",
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 194,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1204,
+										["y"] = 700575.34103655,
+										["x"] = -51528.673855728,
+										["name"] = "SAM-MineralnyeVody-2-1",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1205,
+										["y"] = 705488.58057222,
+										["x"] = -53997.335877327,
+										["name"] = "SAM-MineralnyeVody-2-2",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1206,
+										["y"] = 703971.25659797,
+										["x"] = -48156.842801837,
+										["name"] = "SAM-MineralnyeVody-2-3",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 700575.34103655,
+								["x"] = -51528.673855728,
+								["name"] = "SAM-MineralnyeVody-2",
+								["start_time"] = 0,
+							}, -- end of [2]
+							[3] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 619073.97038879,
+												["x"] = -360694.55679072,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 619073.97038879,
+												["x"] = -360694.55679072,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 77,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 619073.97038879,
+											["x"] = -360694.55679072,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 195,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1207,
+										["y"] = 619073.97038879,
+										["x"] = -360694.55679072,
+										["name"] = "SAM-Batumi-1-1",
+										["heading"] = 0.68920473583857,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1208,
+										["y"] = 615039.10945764,
+										["x"] = -358422.90057879,
+										["name"] = "SAM-Batumi-1-2",
+										["heading"] = 0.68920473583857,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1209,
+										["y"] = 619420.41105412,
+										["x"] = -356754.10638431,
+										["name"] = "SAM-Batumi-1-3",
+										["heading"] = 0.68920473583857,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 619073.97038879,
+								["x"] = -360694.55679072,
+								["name"] = "SAM-Batumi-1",
+								["start_time"] = 0,
+							}, -- end of [3]
+							[4] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 615996.78438206,
+												["x"] = -356102.82414775,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 615996.78438206,
+												["x"] = -356102.82414775,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 9,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 615996.78438206,
+											["x"] = -356102.82414775,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 196,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1210,
+										["y"] = 615996.78438206,
+										["x"] = -356102.82414775,
+										["name"] = "SAM-Batumi-2-1",
+										["heading"] = 0.68920473583857,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1211,
+										["y"] = 617453.78587558,
+										["x"] = -356798.84396949,
+										["name"] = "SAM-Batumi-2-2",
+										["heading"] = 0.68920473583857,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1212,
+										["y"] = 616392.7423251,
+										["x"] = -354562.30027563,
+										["name"] = "SAM-Batumi-2-3",
+										["heading"] = 0.68920473583857,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 615996.78438206,
+								["x"] = -356102.82414775,
+								["name"] = "SAM-Batumi-2",
+								["start_time"] = 0,
+							}, -- end of [4]
+							[5] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 495668.48700719,
+												["x"] = -191429.39093153,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 495668.48700719,
+												["x"] = -191429.39093153,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 5,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 495668.48700719,
+											["x"] = -191429.39093153,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 197,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1213,
+										["y"] = 495668.48700719,
+										["x"] = -191429.39093153,
+										["name"] = "Gudauta AD Group 2 Spawn Locations-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1214,
+										["y"] = 505489.88885501,
+										["x"] = -185614.49229764,
+										["name"] = "Gudauta AD Group 2 Spawn Locations-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1216,
+										["y"] = 505613.47427826,
+										["x"] = -188961.45685929,
+										["name"] = "Gudauta AD Group 2 Spawn Locations-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+									[4] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1215,
+										["y"] = 494698.64976974,
+										["x"] = -183798.89236707,
+										["name"] = "Gudauta AD Group 2 Spawn Locations-4",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [4]
+								}, -- end of ["units"]
+								["y"] = 495668.48700719,
+								["x"] = -191429.39093153,
+								["name"] = "Gudauta AD Group 2 Spawn Locations",
+								["start_time"] = 0,
+							}, -- end of [5]
+							[6] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 527668.95096291,
+												["x"] = -196984.24925107,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 527668.95096291,
+												["x"] = -196984.24925107,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 12,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 527668.95096291,
+											["x"] = -196984.24925107,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 198,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1217,
+										["y"] = 527668.95096291,
+										["x"] = -196984.24925107,
+										["name"] = "Gudauta AD Group 3 Spawn Locations-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1218,
+										["y"] = 519741.61259967,
+										["x"] = -186855.46750088,
+										["name"] = "Gudauta AD Group 3 Spawn Locations-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1219,
+										["y"] = 508122.22218896,
+										["x"] = -193919.91568504,
+										["name"] = "Gudauta AD Group 3 Spawn Locations-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 527668.95096291,
+								["x"] = -196984.24925107,
+								["name"] = "Gudauta AD Group 3 Spawn Locations",
+								["start_time"] = 0,
+							}, -- end of [6]
+							[7] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 517261.85430517,
+												["x"] = -195882.46418023,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 517261.85430517,
+												["x"] = -195882.46418023,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 32,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 517261.85430517,
+											["x"] = -195882.46418023,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 199,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1220,
+										["y"] = 517261.85430517,
+										["x"] = -195882.46418023,
+										["name"] = "SAM-Gudauta-4 Spawn Locations-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1221,
+										["y"] = 515430.96204367,
+										["x"] = -196144.02021759,
+										["name"] = "SAM-Gudauta-4 Spawn Locations-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1222,
+										["y"] = 517408.01797311,
+										["x"] = -197482.57170289,
+										["name"] = "SAM-Gudauta-4 Spawn Locations-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 517261.85430517,
+								["x"] = -195882.46418023,
+								["name"] = "SAM-Gudauta-4 Spawn Locations",
+								["start_time"] = 0,
+							}, -- end of [7]
+							[8] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 544761.42159681,
+												["x"] = -201152.26935336,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 544761.42159681,
+												["x"] = -201152.26935336,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 89,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 544761.42159681,
+											["x"] = -201152.26935336,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 200,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1223,
+										["y"] = 544761.42159681,
+										["x"] = -201152.26935336,
+										["name"] = "Sukhumi AD Group 1 Spawn Locations-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1224,
+										["y"] = 553256.84675592,
+										["x"] = -199841.30467373,
+										["name"] = "Sukhumi AD Group 1 Spawn Locations-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1225,
+										["y"] = 553993.51053518,
+										["x"] = -202816.11967883,
+										["name"] = "Sukhumi AD Group 1 Spawn Locations-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 544761.42159681,
+								["x"] = -201152.26935336,
+								["name"] = "Sukhumi AD Group 1 Spawn Locations",
+								["start_time"] = 0,
+							}, -- end of [8]
+							[9] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 564972.48873783,
+												["x"] = -220109.51435499,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 564972.48873783,
+												["x"] = -220109.51435499,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 13,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 564972.48873783,
+											["x"] = -220109.51435499,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 201,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1226,
+										["y"] = 564972.48873783,
+										["x"] = -220109.51435499,
+										["name"] = "Sukhumi AD Group 2 Spawn Locations-1",
+										["heading"] = 1.698084850238,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1227,
+										["y"] = 562776.18715367,
+										["x"] = -220406.80379594,
+										["name"] = "Sukhumi AD Group 2 Spawn Locations-2",
+										["heading"] = 1.698084850238,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1229,
+										["y"] = 567508.54968308,
+										["x"] = -220103.44722354,
+										["name"] = "Sukhumi AD Group 2 Spawn Locations-3",
+										["heading"] = 1.698084850238,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+									[4] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1228,
+										["y"] = 565081.6971039,
+										["x"] = -221741.57271449,
+										["name"] = "Sukhumi AD Group 2 Spawn Locations-4",
+										["heading"] = 1.698084850238,
+										["playerCanDrive"] = false,
+									}, -- end of [4]
+								}, -- end of ["units"]
+								["y"] = 564972.48873783,
+								["x"] = -220109.51435499,
+								["name"] = "Sukhumi AD Group 2 Spawn Locations",
+								["start_time"] = 0,
+							}, -- end of [9]
+							[10] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 562329.43954958,
+												["x"] = -211451.46102603,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 562329.43954958,
+												["x"] = -211451.46102603,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 73,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 562329.43954958,
+											["x"] = -211451.46102603,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 202,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1230,
+										["y"] = 562329.43954958,
+										["x"] = -211451.46102603,
+										["name"] = "Sukhumi AD Group 3 Spawn Locations-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1231,
+										["y"] = 574129.60365826,
+										["x"] = -214401.5020532,
+										["name"] = "Sukhumi AD Group 3 Spawn Locations-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1232,
+										["y"] = 575741.83538241,
+										["x"] = -224074.89239811,
+										["name"] = "Sukhumi AD Group 3 Spawn Locations-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 562329.43954958,
+								["x"] = -211451.46102603,
+								["name"] = "Sukhumi AD Group 3 Spawn Locations",
+								["start_time"] = 0,
+							}, -- end of [10]
+							[11] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 585191.32975928,
+												["x"] = -224895.57314897,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 585191.32975928,
+												["x"] = -224895.57314897,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 32,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 585191.32975928,
+											["x"] = -224895.57314897,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 203,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1233,
+										["y"] = 585191.32975928,
+										["x"] = -224895.57314897,
+										["name"] = "Sukhumi AD Group 4 Spawn Locations-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1234,
+										["y"] = 589766.71242474,
+										["x"] = -216408.42734458,
+										["name"] = "Sukhumi AD Group 4 Spawn Locations-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1235,
+										["y"] = 584319.44488953,
+										["x"] = -219166.80948456,
+										["name"] = "Sukhumi AD Group 4 Spawn Locations-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 585191.32975928,
+								["x"] = -224895.57314897,
+								["name"] = "Sukhumi AD Group 4 Spawn Locations",
+								["start_time"] = 0,
+							}, -- end of [11]
+							[12] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 596025.22194306,
+												["x"] = -234709.55574663,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 596025.22194306,
+												["x"] = -234709.55574663,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 6,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 596025.22194306,
+											["x"] = -234709.55574663,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 204,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1236,
+										["y"] = 596025.22194306,
+										["x"] = -234709.55574663,
+										["name"] = "Sukhumi AD Group 5 Spawn Locations-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1237,
+										["y"] = 603714.81439632,
+										["x"] = -216016.73152534,
+										["name"] = "Sukhumi AD Group 5 Spawn Locations-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1238,
+										["y"] = 598821.766483,
+										["x"] = -225834.46399088,
+										["name"] = "Sukhumi AD Group 5 Spawn Locations-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 596025.22194306,
+								["x"] = -234709.55574663,
+								["name"] = "Sukhumi AD Group 5 Spawn Locations",
+								["start_time"] = 0,
+							}, -- end of [12]
+							[13] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 615810.60575596,
+												["x"] = -238414.86901615,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 615810.60575596,
+												["x"] = -238414.86901615,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 57,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 615810.60575596,
+											["x"] = -238414.86901615,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 205,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1239,
+										["y"] = 615810.60575596,
+										["x"] = -238414.86901615,
+										["name"] = "Zugidi AD Group 1 Spawn Locations-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1240,
+										["y"] = 619154.55465102,
+										["x"] = -235842.75385944,
+										["name"] = "Zugidi AD Group 1 Spawn Locations-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1241,
+										["y"] = 615085.33990292,
+										["x"] = -231818.44546461,
+										["name"] = "Zugidi AD Group 1 Spawn Locations-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 615810.60575596,
+								["x"] = -238414.86901615,
+								["name"] = "Zugidi AD Group 1 Spawn Locations",
+								["start_time"] = 0,
+							}, -- end of [13]
+							[14] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 607942.58619477,
+												["x"] = -252432.67864982,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 607942.58619477,
+												["x"] = -252432.67864982,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 12,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 607942.58619477,
+											["x"] = -252432.67864982,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 206,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1242,
+										["y"] = 607942.58619477,
+										["x"] = -252432.67864982,
+										["name"] = "Zugidi AD Group 2 Spawn Locations-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1243,
+										["y"] = 612631.84568078,
+										["x"] = -250948.96764057,
+										["name"] = "Zugidi AD Group 2 Spawn Locations-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1244,
+										["y"] = 607197.29393888,
+										["x"] = -245530.14650374,
+										["name"] = "Zugidi AD Group 2 Spawn Locations-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 607942.58619477,
+								["x"] = -252432.67864982,
+								["name"] = "Zugidi AD Group 2 Spawn Locations",
+								["start_time"] = 0,
+							}, -- end of [14]
+							[15] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 611821.57472176,
+												["x"] = -267841.72167005,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 611821.57472176,
+												["x"] = -267841.72167005,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 8,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 611821.57472176,
+											["x"] = -267841.72167005,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 207,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1245,
+										["y"] = 611821.57472176,
+										["x"] = -267841.72167005,
+										["name"] = "Zugidi AD Group 5 Spawn Locations-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1246,
+										["y"] = 623126.90187103,
+										["x"] = -265938.02474103,
+										["name"] = "Zugidi AD Group 5 Spawn Locations-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1247,
+										["y"] = 617520.61944941,
+										["x"] = -260882.95366376,
+										["name"] = "Zugidi AD Group 5 Spawn Locations-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 611821.57472176,
+								["x"] = -267841.72167005,
+								["name"] = "Zugidi AD Group 5 Spawn Locations",
+								["start_time"] = 0,
+							}, -- end of [15]
+							[16] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 640491.25892358,
+												["x"] = -252111.31390128,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 640491.25892358,
+												["x"] = -252111.31390128,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 268,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 640491.25892358,
+											["x"] = -252111.31390128,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 208,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1248,
+										["y"] = 640491.25892358,
+										["x"] = -252111.31390128,
+										["name"] = "Zugidi AD Group 4 Spawn Locations-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1249,
+										["y"] = 639272.40054369,
+										["x"] = -244210.44255385,
+										["name"] = "Zugidi AD Group 4 Spawn Locations-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1250,
+										["y"] = 642291.08172857,
+										["x"] = -238905.247765,
+										["name"] = "Zugidi AD Group 4 Spawn Locations-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 640491.25892358,
+								["x"] = -252111.31390128,
+								["name"] = "Zugidi AD Group 4 Spawn Locations",
+								["start_time"] = 0,
+							}, -- end of [16]
+							[17] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 627916.01171451,
+												["x"] = -259719.803291,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 627916.01171451,
+												["x"] = -259719.803291,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 60,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 627916.01171451,
+											["x"] = -259719.803291,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 209,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1251,
+										["y"] = 627916.01171451,
+										["x"] = -259719.803291,
+										["name"] = "Zugidi AD Group 3 Spawn Locations-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1252,
+										["y"] = 633278.64155002,
+										["x"] = -252456.11688907,
+										["name"] = "Zugidi AD Group 3 Spawn Locations-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1253,
+										["y"] = 624368.28351353,
+										["x"] = -257476.80995451,
+										["name"] = "Zugidi AD Group 3 Spawn Locations-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 627916.01171451,
+								["x"] = -259719.803291,
+								["name"] = "Zugidi AD Group 3 Spawn Locations",
+								["start_time"] = 0,
+							}, -- end of [17]
+							[18] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 645782.49180436,
+												["x"] = -282035.37573101,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 645782.49180436,
+												["x"] = -282035.37573101,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 13,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 645782.49180436,
+											["x"] = -282035.37573101,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 210,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1254,
+										["y"] = 645782.49180436,
+										["x"] = -282035.37573101,
+										["name"] = "SAM-Senaki-1-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1255,
+										["y"] = 646143.35466833,
+										["x"] = -280883.53062985,
+										["name"] = "SAM-Senaki-1-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1257,
+										["y"] = 647794.91060373,
+										["x"] = -283325.46985391,
+										["name"] = "SAM-Senaki-1-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+									[4] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1256,
+										["y"] = 648512.99125224,
+										["x"] = -281247.7745765,
+										["name"] = "SAM-Senaki-1-4",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [4]
+								}, -- end of ["units"]
+								["y"] = 645782.49180436,
+								["x"] = -282035.37573101,
+								["name"] = "SAM-Senaki-1",
+								["start_time"] = 0,
+							}, -- end of [18]
+							[19] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 622169.16120364,
+												["x"] = -289696.83684062,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 622169.16120364,
+												["x"] = -289696.83684062,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 5,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 622169.16120364,
+											["x"] = -289696.83684062,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 211,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Kub 2P25 ln",
+										["unitId"] = 1258,
+										["y"] = 622169.16120364,
+										["x"] = -289696.83684062,
+										["name"] = "SAM-Senaki-5-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Kub 2P25 ln",
+										["unitId"] = 1259,
+										["y"] = 620747.15542528,
+										["x"] = -294928.25133796,
+										["name"] = "SAM-Senaki-5-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Kub 2P25 ln",
+										["unitId"] = 1261,
+										["y"] = 625435.35551843,
+										["x"] = -284601.56900473,
+										["name"] = "SAM-Senaki-5-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+									[4] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Kub 2P25 ln",
+										["unitId"] = 1260,
+										["y"] = 614513.27905663,
+										["x"] = -282622.14872019,
+										["name"] = "SAM-Senaki-5-4",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [4]
+								}, -- end of ["units"]
+								["y"] = 622169.16120364,
+								["x"] = -289696.83684062,
+								["name"] = "SAM-Senaki-5",
+								["start_time"] = 0,
+							}, -- end of [19]
+							[20] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 646570.22930728,
+												["x"] = -272683.78422187,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 646570.22930728,
+												["x"] = -272683.78422187,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 67,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 646570.22930728,
+											["x"] = -272683.78422187,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 212,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1262,
+										["y"] = 646570.22930728,
+										["x"] = -272683.78422187,
+										["name"] = "SAM-Senaki-4-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1263,
+										["y"] = 647999.20163076,
+										["x"] = -269781.4610063,
+										["name"] = "SAM-Senaki-4-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1264,
+										["y"] = 644694.15396947,
+										["x"] = -275133.0448856,
+										["name"] = "SAM-Senaki-4-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 646570.22930728,
+								["x"] = -272683.78422187,
+								["name"] = "SAM-Senaki-4",
+								["start_time"] = 0,
+							}, -- end of [20]
+							[21] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 637481.8851354,
+												["x"] = -263658.98348458,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 637481.8851354,
+												["x"] = -263658.98348458,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 56,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 637481.8851354,
+											["x"] = -263658.98348458,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 213,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1265,
+										["y"] = 637481.8851354,
+										["x"] = -263658.98348458,
+										["name"] = "SAM-Senaki-2-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1266,
+										["y"] = 642377.70642814,
+										["x"] = -259848.13168655,
+										["name"] = "SAM-Senaki-2-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1267,
+										["y"] = 637487.56220472,
+										["x"] = -267813.56334667,
+										["name"] = "SAM-Senaki-2-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 637481.8851354,
+								["x"] = -263658.98348458,
+								["name"] = "SAM-Senaki-2",
+								["start_time"] = 0,
+							}, -- end of [21]
+							[22] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 661849.59968698,
+												["x"] = -257655.58028733,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 661849.59968698,
+												["x"] = -257655.58028733,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 246,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 661849.59968698,
+											["x"] = -257655.58028733,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 214,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1268,
+										["y"] = 661849.59968698,
+										["x"] = -257655.58028733,
+										["name"] = "SAM-Senaki-3-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1269,
+										["y"] = 659230.43269445,
+										["x"] = -254400.71360705,
+										["name"] = "SAM-Senaki-3-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1270,
+										["y"] = 656144.46843228,
+										["x"] = -253535.11453433,
+										["name"] = "SAM-Senaki-3-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 661849.59968698,
+								["x"] = -257655.58028733,
+								["name"] = "SAM-Senaki-3",
+								["start_time"] = 0,
+							}, -- end of [22]
+							[23] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 641013.0696464,
+												["x"] = -299222.45579763,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 641013.0696464,
+												["x"] = -299222.45579763,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 8,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 641013.0696464,
+											["x"] = -299222.45579763,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 215,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1271,
+										["y"] = 641013.0696464,
+										["x"] = -299222.45579763,
+										["name"] = "SAM-Senaki-6-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1272,
+										["y"] = 645201.87294275,
+										["x"] = -298729.82886826,
+										["name"] = "SAM-Senaki-6-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1273,
+										["y"] = 650208.06792408,
+										["x"] = -297672.2091515,
+										["name"] = "SAM-Senaki-6-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 641013.0696464,
+								["x"] = -299222.45579763,
+								["name"] = "SAM-Senaki-6",
+								["start_time"] = 0,
+							}, -- end of [23]
+							[24] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 636520.1363549,
+												["x"] = -319249.6413313,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 636520.1363549,
+												["x"] = -319249.6413313,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 24,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 636520.1363549,
+											["x"] = -319249.6413313,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 216,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1274,
+										["y"] = 636520.1363549,
+										["x"] = -319249.6413313,
+										["name"] = "SAM-Kobuleti-1-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1275,
+										["y"] = 634422.62973349,
+										["x"] = -317879.59365373,
+										["name"] = "SAM-Kobuleti-1-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1276,
+										["y"] = 637391.56433534,
+										["x"] = -316922.39854588,
+										["name"] = "SAM-Kobuleti-1-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 636520.1363549,
+								["x"] = -319249.6413313,
+								["name"] = "SAM-Kobuleti-1",
+								["start_time"] = 0,
+							}, -- end of [24]
+							[25] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 631568.61580927,
+												["x"] = -328180.7390747,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 631568.61580927,
+												["x"] = -328180.7390747,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 10,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 631568.61580927,
+											["x"] = -328180.7390747,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 217,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Kub 2P25 ln",
+										["unitId"] = 1277,
+										["y"] = 631568.61580927,
+										["x"] = -328180.7390747,
+										["name"] = "SAM-Kobuleti-3-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Kub 2P25 ln",
+										["unitId"] = 1278,
+										["y"] = 633764.84090667,
+										["x"] = -327970.98188506,
+										["name"] = "SAM-Kobuleti-3-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Kub 2P25 ln",
+										["unitId"] = 1279,
+										["y"] = 631909.78917218,
+										["x"] = -330610.684232,
+										["name"] = "SAM-Kobuleti-3-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 631568.61580927,
+								["x"] = -328180.7390747,
+								["name"] = "SAM-Kobuleti-3",
+								["start_time"] = 0,
+							}, -- end of [25]
+							[26] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 644900.83907959,
+												["x"] = -309998.88630589,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 644900.83907959,
+												["x"] = -309998.88630589,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 36,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 644900.83907959,
+											["x"] = -309998.88630589,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 218,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Kub 2P25 ln",
+										["unitId"] = 1280,
+										["y"] = 644900.83907959,
+										["x"] = -309998.88630589,
+										["name"] = "SAM-Kobuleti-2-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Kub 2P25 ln",
+										["unitId"] = 1281,
+										["y"] = 646723.67302833,
+										["x"] = -306438.1510802,
+										["name"] = "SAM-Kobuleti-2-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Kub 2P25 ln",
+										["unitId"] = 1282,
+										["y"] = 637853.00461387,
+										["x"] = -312242.93717109,
+										["name"] = "SAM-Kobuleti-2-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 644900.83907959,
+								["x"] = -309998.88630589,
+								["name"] = "SAM-Kobuleti-2",
+								["start_time"] = 0,
+							}, -- end of [26]
+							[27] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 682352.24817224,
+												["x"] = -286189.40347722,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 682352.24817224,
+												["x"] = -286189.40347722,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 41,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 682352.24817224,
+											["x"] = -286189.40347722,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 219,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1283,
+										["y"] = 682352.24817224,
+										["x"] = -286189.40347722,
+										["name"] = "Kutaisi AD Group 1 Spawn Locations-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1284,
+										["y"] = 685665.2796559,
+										["x"] = -285530.31976905,
+										["name"] = "Kutaisi AD Group 1 Spawn Locations-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1286,
+										["y"] = 680534.36921617,
+										["x"] = -284272.07139536,
+										["name"] = "Kutaisi AD Group 1 Spawn Locations-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+									[4] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1285,
+										["y"] = 684568.25533781,
+										["x"] = -282750.44833965,
+										["name"] = "Kutaisi AD Group 1 Spawn Locations-4",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [4]
+								}, -- end of ["units"]
+								["y"] = 682352.24817224,
+								["x"] = -286189.40347722,
+								["name"] = "Kutaisi AD Group 1 Spawn Locations",
+								["start_time"] = 0,
+							}, -- end of [27]
+							[28] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 675582.62487775,
+												["x"] = -273638.1281301,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 675582.62487775,
+												["x"] = -273638.1281301,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 87,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 675582.62487775,
+											["x"] = -273638.1281301,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 220,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Kub 2P25 ln",
+										["unitId"] = 1287,
+										["y"] = 675582.62487775,
+										["x"] = -273638.1281301,
+										["name"] = "Kutaisi AD Group 1 Spawn Locations-1-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Kub 2P25 ln",
+										["unitId"] = 1288,
+										["y"] = 679835.15802724,
+										["x"] = -271534.26600657,
+										["name"] = "Kutaisi AD Group 1 Spawn Locations-1-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Kub 2P25 ln",
+										["unitId"] = 1290,
+										["y"] = 673764.74592168,
+										["x"] = -271720.79604824,
+										["name"] = "Kutaisi AD Group 1 Spawn Locations-1-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+									[4] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Kub 2P25 ln",
+										["unitId"] = 1289,
+										["y"] = 677798.63204331,
+										["x"] = -270199.17299253,
+										["name"] = "Kutaisi AD Group 1 Spawn Locations-1-4",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [4]
+								}, -- end of ["units"]
+								["y"] = 675582.62487775,
+								["x"] = -273638.1281301,
+								["name"] = "Kutaisi AD Group 1 Spawn Locations-1",
+								["start_time"] = 0,
+							}, -- end of [28]
+							[29] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 666802.94450137,
+												["x"] = -295250.46638298,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 666802.94450137,
+												["x"] = -295250.46638298,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 42,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 666802.94450137,
+											["x"] = -295250.46638298,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 221,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Kub 2P25 ln",
+										["unitId"] = 1291,
+										["y"] = 666802.94450137,
+										["x"] = -295250.46638298,
+										["name"] = "Kutaisi AD Group 3 Spawn Locations-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Kub 2P25 ln",
+										["unitId"] = 1292,
+										["y"] = 673806.91363978,
+										["x"] = -293487.36842253,
+										["name"] = "Kutaisi AD Group 3 Spawn Locations-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Kub 2P25 ln",
+										["unitId"] = 1294,
+										["y"] = 658870.41270729,
+										["x"] = -297748.06013047,
+										["name"] = "Kutaisi AD Group 3 Spawn Locations-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+									[4] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "Kub 2P25 ln",
+										["unitId"] = 1293,
+										["y"] = 664480.11646076,
+										["x"] = -296689.91788656,
+										["name"] = "Kutaisi AD Group 3 Spawn Locations-4",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [4]
+								}, -- end of ["units"]
+								["y"] = 666802.94450137,
+								["x"] = -295250.46638298,
+								["name"] = "Kutaisi AD Group 3 Spawn Locations",
+								["start_time"] = 0,
+							}, -- end of [29]
+							[30] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 668409.44804844,
+												["x"] = -281310.89100104,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 668409.44804844,
+												["x"] = -281310.89100104,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 40,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 668409.44804844,
+											["x"] = -281310.89100104,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 222,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1295,
+										["y"] = 668409.44804844,
+										["x"] = -281310.89100104,
+										["name"] = "Kutaisi AD Group 4 Spawn Locations-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1296,
+										["y"] = 665021.09420348,
+										["x"] = -283961.70093789,
+										["name"] = "Kutaisi AD Group 4 Spawn Locations-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1297,
+										["y"] = 665178.33823092,
+										["x"] = -279220.18872567,
+										["name"] = "Kutaisi AD Group 4 Spawn Locations-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 668409.44804844,
+								["x"] = -281310.89100104,
+								["name"] = "Kutaisi AD Group 4 Spawn Locations",
+								["start_time"] = 0,
+							}, -- end of [30]
+							[31] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 693475.75701071,
+												["x"] = -279032.40653785,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 693475.75701071,
+												["x"] = -279032.40653785,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 95,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 693475.75701071,
+											["x"] = -279032.40653785,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 223,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1298,
+										["y"] = 693475.75701071,
+										["x"] = -279032.40653785,
+										["name"] = "Kutaisi AD Group 4 Spawn Locations-1-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1299,
+										["y"] = 690030.71920232,
+										["x"] = -276177.96880189,
+										["name"] = "Kutaisi AD Group 4 Spawn Locations-1-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1300,
+										["y"] = 698047.55761609,
+										["x"] = -277558.21300253,
+										["name"] = "Kutaisi AD Group 4 Spawn Locations-1-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 693475.75701071,
+								["x"] = -279032.40653785,
+								["name"] = "Kutaisi AD Group 4 Spawn Locations-1",
+								["start_time"] = 0,
+							}, -- end of [31]
+							[32] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 524013.92159703,
+												["x"] = -191865.37319242,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 524013.92159703,
+												["x"] = -191865.37319242,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 255,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 524013.92159703,
+											["x"] = -191865.37319242,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 224,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1301,
+										["y"] = 524013.92159703,
+										["x"] = -191865.37319242,
+										["name"] = "Gudauta AD Group 3 Spawn Locations-1-1",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1302,
+										["y"] = 520360.41636431,
+										["x"] = -190777.62661258,
+										["name"] = "Gudauta AD Group 3 Spawn Locations-1-2",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Average",
+										["coldAtStart"] = false,
+										["type"] = "5p73 s-125 ln",
+										["unitId"] = 1303,
+										["y"] = 514271.88002461,
+										["x"] = -190645.09646256,
+										["name"] = "Gudauta AD Group 3 Spawn Locations-1-3",
+										["heading"] = 3.5327466811027,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 524013.92159703,
+								["x"] = -191865.37319242,
+								["name"] = "Gudauta AD Group 3 Spawn Locations-1",
+								["start_time"] = 0,
+							}, -- end of [32]
+							[33] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 836219.79360426,
+												["x"] = -91292.800064292,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 836219.79360426,
+												["x"] = -91292.800064292,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 129,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 836219.79360426,
+											["x"] = -91292.800064292,
+											["name"] = "",
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 233,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1388,
+										["y"] = 836219.79360426,
+										["x"] = -91292.800064292,
+										["name"] = "SAM-Mozdok-1-1",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1389,
+										["y"] = 840372.80725867,
+										["x"] = -85972.349391827,
+										["name"] = "SAM-Mozdok-1-2",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1390,
+										["y"] = 834573.89879191,
+										["x"] = -85972.349391827,
+										["name"] = "SAM-Mozdok-1-3",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 836219.79360426,
+								["x"] = -91292.800064292,
+								["name"] = "SAM-Mozdok-1",
+								["start_time"] = 0,
+							}, -- end of [33]
+							[34] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 818015.04341993,
+												["x"] = -68333.863189224,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 818015.04341993,
+												["x"] = -68333.863189224,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 166,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 818015.04341993,
+											["x"] = -68333.863189224,
+											["name"] = "",
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 234,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1391,
+										["y"] = 818015.04341993,
+										["x"] = -68333.863189224,
+										["name"] = "SAM-Mozdok-2-1",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1392,
+										["y"] = 814565.24892805,
+										["x"] = -65892.970860069,
+										["name"] = "SAM-Mozdok-2-2",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1394,
+										["y"] = 798032.27155191,
+										["x"] = -56975.577550889,
+										["name"] = "SAM-Mozdok-2-4",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+									[4] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1393,
+										["y"] = 825109.90379,
+										["x"] = -46723.829768438,
+										["name"] = "SAM-Mozdok-2-3",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [4]
+								}, -- end of ["units"]
+								["y"] = 818015.04341993,
+								["x"] = -68333.863189224,
+								["name"] = "SAM-Mozdok-2",
+								["start_time"] = 0,
+							}, -- end of [34]
+							[35] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 845363.65200482,
+												["x"] = -146571.1672841,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 845363.65200482,
+												["x"] = -146571.1672841,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 538,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 845363.65200482,
+											["x"] = -146571.1672841,
+											["name"] = "",
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 248,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1530,
+										["y"] = 845363.65200482,
+										["x"] = -146571.1672841,
+										["name"] = "SAM-Beslan-1-1",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1531,
+										["y"] = 840037.95806646,
+										["x"] = -146166.98515484,
+										["name"] = "SAM-Beslan-1-2",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1532,
+										["y"] = 842486.82626133,
+										["x"] = -149495.54386632,
+										["name"] = "SAM-Beslan-1-3",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 845363.65200482,
+								["x"] = -146571.1672841,
+								["name"] = "SAM-Beslan-1",
+								["start_time"] = 0,
+							}, -- end of [35]
+							[36] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 821396.26058552,
+												["x"] = -148280.9053288,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 821396.26058552,
+												["x"] = -148280.9053288,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 381,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 821396.26058552,
+											["x"] = -148280.9053288,
+											["name"] = "",
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 249,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1533,
+										["y"] = 821396.26058552,
+										["x"] = -148280.9053288,
+										["name"] = "SAM-Beslan-2-1",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1534,
+										["y"] = 822560.01706416,
+										["x"] = -150273.09862275,
+										["name"] = "SAM-Beslan-2-2",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1535,
+										["y"] = 818319.20955724,
+										["x"] = -148221.73127057,
+										["name"] = "SAM-Beslan-2-3",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 821396.26058552,
+								["x"] = -148280.9053288,
+								["name"] = "SAM-Beslan-2",
+								["start_time"] = 0,
+							}, -- end of [36]
+							[37] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 784733.97562374,
+												["x"] = -138964.55699043,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 784733.97562374,
+												["x"] = -138964.55699043,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 461,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 784733.97562374,
+											["x"] = -138964.55699043,
+											["name"] = "",
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 253,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1561,
+										["y"] = 784733.97562374,
+										["x"] = -138964.55699043,
+										["name"] = "SAM-Nalchik-1-1",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1562,
+										["y"] = 772925.43121575,
+										["x"] = -130902.95455806,
+										["name"] = "SAM-Nalchik-1-2",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1563,
+										["y"] = 764807.05693526,
+										["x"] = -143619.84853589,
+										["name"] = "SAM-Nalchik-1-3",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 784733.97562374,
+								["x"] = -138964.55699043,
+								["name"] = "SAM-Nalchik-1",
+								["start_time"] = 0,
+							}, -- end of [37]
+							[38] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 762066.1170474,
+												["x"] = -130901.19644746,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 762066.1170474,
+												["x"] = -130901.19644746,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 509,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 762066.1170474,
+											["x"] = -130901.19644746,
+											["name"] = "",
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 254,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1564,
+										["y"] = 762066.1170474,
+										["x"] = -130901.19644746,
+										["name"] = "SAM-Nalchik-2-1",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1565,
+										["y"] = 758626.6358457,
+										["x"] = -122121.4681168,
+										["name"] = "SAM-Nalchik-2-2",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1566,
+										["y"] = 758747.31939664,
+										["x"] = -125741.97464491,
+										["name"] = "SAM-Nalchik-2-3",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 762066.1170474,
+								["x"] = -130901.19644746,
+								["name"] = "SAM-Nalchik-2",
+								["start_time"] = 0,
+							}, -- end of [38]
+							[39] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 736079.98615833,
+												["x"] = -91150.127746809,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 736079.98615833,
+												["x"] = -91150.127746809,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 508,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 736079.98615833,
+											["x"] = -91150.127746809,
+											["name"] = "",
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 256,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1578,
+										["y"] = 736079.98615833,
+										["x"] = -91150.127746809,
+										["name"] = "SAM-Nalchik-3-1",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1579,
+										["y"] = 737630.13438371,
+										["x"] = -89466.346053728,
+										["name"] = "SAM-Nalchik-3-2",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "S_75M_Volhov",
+										["unitId"] = 1580,
+										["y"] = 732979.68970758,
+										["x"] = -92673.549278644,
+										["name"] = "SAM-Nalchik-3-3",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+								}, -- end of ["units"]
+								["y"] = 736079.98615833,
+								["x"] = -91150.127746809,
+								["name"] = "SAM-Nalchik-3",
+								["start_time"] = 0,
+							}, -- end of [39]
+						}, -- end of ["group"]
+					}, -- end of ["vehicle"]
+					["name"] = "CJTF Red",
+				}, -- end of [1]
+			}, -- end of ["country"]
+		}, -- end of ["red"]
+	}, -- end of ["coalition"]
+	["name"] = "IADS Planning",
+	["requiredModules"] = {},
+	["localization"] = 
+	{
+		["DEFAULT"] = 
+		{
+			["DictKey_descriptionNeutralsTask_4"] = "",
+			["DictKey_sortie_5"] = "",
+			["DictKey_descriptionText_1"] = "",
+			["DictKey_descriptionBlueTask_3"] = "",
+			["DictKey_descriptionRedTask_2"] = "",
+		}, -- end of ["DEFAULT"]
+	}, -- end of ["localization"]
+	["theatre"] = "Caucasus",
+	["desc"] = "",
+} -- end of staticTemplate
