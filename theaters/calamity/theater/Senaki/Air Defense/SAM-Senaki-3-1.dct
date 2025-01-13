@@ -1,0 +1,13 @@
+objtype = "sam"
+coalition = "red"
+intel = 3
+cost = 0
+priority = 10
+regenerate = true
+exclusion = "SAM-Senaki-3"
+desc = [[%LOCATIONMETHOD% an SA-3 6 miles northwest of Martvili.
+
+Primary Objective: Destroy the SA-3
+Secondary Objective: Destroy the nearby AAA batteries
+
+]]
