@@ -4,7 +4,7 @@ intel = 3
 cost = 0
 priority = 10
 regenerate = true
-exclusion = "SAM-Senaki-5
+exclusion = "SAM-Senaki-5"
 desc = [[%LOCATIONMETHOD% an SA-3 on the outskirts of Lanchhuti
 
 Primary Objective: Destroy the SA-3
