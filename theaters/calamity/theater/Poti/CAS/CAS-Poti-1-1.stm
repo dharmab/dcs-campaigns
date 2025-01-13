@@ -1,0 +1,191 @@
+staticTemplate = 
+{
+	["coalition"] = 
+	{
+		["blue"] = 
+		{
+			["name"] = "blue",
+			["country"] = {},
+		}, -- end of ["blue"]
+		["neutrals"] = 
+		{
+			["name"] = "neutrals",
+			["country"] = {},
+		}, -- end of ["neutrals"]
+		["red"] = 
+		{
+			["name"] = "red",
+			["country"] = 
+			{
+				[1] = 
+				{
+					["id"] = 81,
+					["vehicle"] = 
+					{
+						["group"] = 
+						{
+							[1] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = {},
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 5,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 615872.6131325,
+											["x"] = -293060.71246917,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 332,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "BTR-80",
+										["unitId"] = 2056,
+										["y"] = 615872.6131325,
+										["x"] = -293060.71246917,
+										["name"] = "CAS-Senaki-1-1-1-1",
+										["heading"] = 0.05235987755983,
+										["playerCanDrive"] = true,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "Ural-375 ZU-23",
+										["unitId"] = 2053,
+										["y"] = 615801.28134774,
+										["x"] = -293059.94045928,
+										["name"] = "CAS-Senaki-1-1-1-2",
+										["heading"] = 0.05235987755983,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "Ural-375 ZU-23",
+										["unitId"] = 2055,
+										["y"] = 615955.15504272,
+										["x"] = -293057.18568725,
+										["name"] = "CAS-Senaki-1-1-1-3",
+										["heading"] = 0.05235987755983,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+									[4] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "BTR-80",
+										["unitId"] = 2057,
+										["y"] = 615894.09229991,
+										["x"] = -293060.25364566,
+										["name"] = "CAS-Senaki-1-1-1-4",
+										["heading"] = 0.05235987755983,
+										["playerCanDrive"] = true,
+									}, -- end of [4]
+									[5] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "2B11 mortar",
+										["unitId"] = 2058,
+										["y"] = 615893.36944141,
+										["x"] = -293091.42356823,
+										["name"] = "CAS-Senaki-1-1-1-5",
+										["heading"] = 0.05235987755983,
+										["playerCanDrive"] = false,
+									}, -- end of [5]
+									[6] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "KAMAZ Truck",
+										["unitId"] = 2052,
+										["y"] = 615848.05634744,
+										["x"] = -293059.065262,
+										["name"] = "CAS-Senaki-1-1-1-6",
+										["heading"] = 0.05235987755983,
+										["playerCanDrive"] = false,
+									}, -- end of [6]
+									[7] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "KAMAZ Truck",
+										["unitId"] = 2059,
+										["y"] = 615854.80263295,
+										["x"] = -293059.15338156,
+										["name"] = "CAS-Senaki-1-1-1-7",
+										["heading"] = 0.05235987755983,
+										["playerCanDrive"] = false,
+									}, -- end of [7]
+									[8] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "2B11 mortar",
+										["unitId"] = 2054,
+										["y"] = 615865.03464336,
+										["x"] = -293091.81710709,
+										["name"] = "CAS-Senaki-1-1-1-8",
+										["heading"] = 0.05235987755983,
+										["playerCanDrive"] = false,
+									}, -- end of [8]
+								}, -- end of ["units"]
+								["y"] = 615872.6131325,
+								["x"] = -293060.71246917,
+								["name"] = "CAS-Senaki-1-1-1",
+								["start_time"] = 0,
+							}, -- end of [1]
+						}, -- end of ["group"]
+					}, -- end of ["vehicle"]
+					["name"] = "CJTF Red",
+				}, -- end of [1]
+			}, -- end of ["country"]
+		}, -- end of ["red"]
+	}, -- end of ["coalition"]
+	["name"] = "CAS-Poti-1-1",
+	["requiredModules"] = {},
+	["localization"] = 
+	{
+		["DEFAULT"] = 
+		{
+			["DictKey_descriptionNeutralsTask_4"] = "",
+			["DictKey_sortie_5"] = "",
+			["DictKey_descriptionText_1"] = "",
+			["DictKey_descriptionBlueTask_3"] = "",
+			["DictKey_descriptionRedTask_2"] = "",
+		}, -- end of ["DEFAULT"]
+	}, -- end of ["localization"]
+	["theatre"] = "Caucasus",
+	["desc"] = "",
+} -- end of staticTemplate
