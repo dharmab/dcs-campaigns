@@ -94,7 +94,7 @@ staticTemplate =
 										["unitId"] = 1363,
 										["y"] = 624241.73122024,
 										["x"] = -257621.30693395,
-										["name"] = "SAM-GaliZugdidi-3-2-SA2-3 ",
+										["name"] = "SAM-GaliZugdidi-3-2-SA2-3 Primary Destroyed",
 										["heading"] = 2.0770188267341,
 										["playerCanDrive"] = false,
 									}, -- end of [3]
@@ -106,7 +106,7 @@ staticTemplate =
 										["unitId"] = 1364,
 										["y"] = 624203.73215365,
 										["x"] = -257684.39597943,
-										["name"] = "SAM-GaliZugdidi-3-2-SA2-4  ",
+										["name"] = "SAM-GaliZugdidi-3-2-SA2-4 Primary Destroyed",
 										["heading"] = 2.0770188267341,
 										["playerCanDrive"] = false,
 									}, -- end of [4]
