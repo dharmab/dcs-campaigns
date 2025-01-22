@@ -1,0 +1,9 @@
+objtype = "ewr"
+coalition = "red"
+intel = 5
+cost = 0
+priority = 10
+regenerate = false
+desc = [[%LOCATIONMETHOD% an EW Radar 3 miles to the east of Sukhumi-Babushara airbase.
+
+Primary Objective: Destroy the EW radar dome.]]

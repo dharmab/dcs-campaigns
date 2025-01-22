@@ -1,0 +1,337 @@
+staticTemplate = 
+{
+	["coalition"] = 
+	{
+		["neutrals"] = 
+		{
+			["name"] = "neutrals",
+			["country"] = {},
+		}, -- end of ["neutrals"]
+		["blue"] = 
+		{
+			["name"] = "blue",
+			["country"] = {},
+		}, -- end of ["blue"]
+		["red"] = 
+		{
+			["name"] = "red",
+			["country"] = 
+			{
+				[1] = 
+				{
+					["id"] = 81,
+					["vehicle"] = 
+					{
+						["group"] = 
+						{
+							[1] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 636114.87279119,
+												["x"] = -284053.98415859,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 636114.87279119,
+												["x"] = -284053.98415859,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 5,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 636114.87279119,
+											["x"] = -284053.98415859,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = 
+													{
+														[1] = 
+														{
+															["number"] = 1,
+															["auto"] = true,
+															["id"] = "EWR",
+															["enabled"] = true,
+															["params"] = {},
+														}, -- end of [1]
+													}, -- end of ["tasks"]
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 101,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "FPS-117 Dome",
+										["unitId"] = 356,
+										["y"] = 636114.87279119,
+										["x"] = -284053.98415859,
+										["name"] = "EWR-Senaki-1-EWR-2 Primary Destroyed",
+										["heading"] = 4.5352698789043,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "FPS-117 ECS",
+										["unitId"] = 355,
+										["y"] = 636120.24342223,
+										["x"] = -284053.74529371,
+										["name"] = "EWR-Senaki-1-EWR-1",
+										["heading"] = 3.1415926535898,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+								}, -- end of ["units"]
+								["y"] = 636114.87279119,
+								["x"] = -284053.98415859,
+								["name"] = "EWR-Senaki-1-EWR",
+								["start_time"] = 0,
+							}, -- end of [1]
+							[2] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 636192.38538138,
+												["x"] = -283977.1357006,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 636192.38538138,
+												["x"] = -283977.1357006,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 5,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 636191.56713178,
+											["x"] = -283977.04135366,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 104,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "Osa 9A33 ln",
+										["unitId"] = 385,
+										["y"] = 636191.56713178,
+										["x"] = -283977.04135366,
+										["name"] = "EWR-Senaki-1-Shorad-1",
+										["heading"] = 1.4327903031373,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "Osa 9A33 ln",
+										["unitId"] = 386,
+										["y"] = 636043.49649626,
+										["x"] = -283978.32150325,
+										["name"] = "EWR-Senaki-1-Shorad-2",
+										["heading"] = 1.4327903031373,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "Strela-1 9P31",
+										["unitId"] = 387,
+										["y"] = 636116.03830617,
+										["x"] = -284160.10274454,
+										["name"] = "EWR-Senaki-1-Shorad-3",
+										["heading"] = 1.4327903031373,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+									[4] = 
+									{
+										["skill"] = "High",
+										["AddPropVehicle"] = 
+										{
+											["Branches"] = false,
+										}, -- end of ["AddPropVehicle"]
+										["coldAtStart"] = false,
+										["type"] = "ZSU_57_2",
+										["unitId"] = 388,
+										["y"] = 636151.8824946,
+										["x"] = -284070.06555695,
+										["name"] = "EWR-Senaki-1-Shorad-4",
+										["heading"] = 1.4327903031373,
+										["playerCanDrive"] = false,
+									}, -- end of [4]
+									[5] = 
+									{
+										["skill"] = "High",
+										["AddPropVehicle"] = 
+										{
+											["Branches"] = false,
+										}, -- end of ["AddPropVehicle"]
+										["coldAtStart"] = false,
+										["type"] = "ZSU_57_2",
+										["unitId"] = 389,
+										["y"] = 636116.89173923,
+										["x"] = -284007.76494374,
+										["name"] = "EWR-Senaki-1-Shorad-5",
+										["heading"] = 1.4327903031373,
+										["playerCanDrive"] = false,
+									}, -- end of [5]
+									[6] = 
+									{
+										["skill"] = "High",
+										["AddPropVehicle"] = 
+										{
+											["Branches"] = false,
+										}, -- end of ["AddPropVehicle"]
+										["coldAtStart"] = false,
+										["type"] = "ZSU_57_2",
+										["unitId"] = 390,
+										["y"] = 636075.50023593,
+										["x"] = -284077.74645447,
+										["name"] = "EWR-Senaki-1-Shorad-6",
+										["heading"] = 1.4327903031373,
+										["playerCanDrive"] = false,
+									}, -- end of [6]
+									[7] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "ZSU-23-4 Shilka",
+										["unitId"] = 391,
+										["y"] = 636072.93993676,
+										["x"] = -284030.38091977,
+										["name"] = "EWR-Senaki-1-Shorad-7",
+										["heading"] = 1.4327903031373,
+										["playerCanDrive"] = false,
+									}, -- end of [7]
+									[8] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "ZSU-23-4 Shilka",
+										["unitId"] = 392,
+										["y"] = 636116.03830617,
+										["x"] = -284100.78914703,
+										["name"] = "EWR-Senaki-1-Shorad-8",
+										["heading"] = 1.4327903031373,
+										["playerCanDrive"] = false,
+									}, -- end of [8]
+									[9] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "ZSU-23-4 Shilka",
+										["unitId"] = 393,
+										["y"] = 636152.32294643,
+										["x"] = -284028.14055333,
+										["name"] = "EWR-Senaki-1-Shorad-9",
+										["heading"] = 1.4327903031373,
+										["playerCanDrive"] = false,
+									}, -- end of [9]
+									[10] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "Ural-375",
+										["unitId"] = 394,
+										["y"] = 636117.33504939,
+										["x"] = -284059.62912729,
+										["name"] = "EWR-Senaki-1-Shorad-10",
+										["heading"] = 5.1312680008633,
+										["playerCanDrive"] = false,
+									}, -- end of [10]
+								}, -- end of ["units"]
+								["y"] = 636191.56713178,
+								["x"] = -283977.04135366,
+								["name"] = "EWR-Senaki-1-Shorad",
+								["start_time"] = 0,
+							}, -- end of [2]
+						}, -- end of ["group"]
+					}, -- end of ["vehicle"]
+					["name"] = "CJTF Red",
+				}, -- end of [1]
+			}, -- end of ["country"]
+		}, -- end of ["red"]
+	}, -- end of ["coalition"]
+	["name"] = "EWR-Senaki-1",
+	["requiredModules"] = {},
+	["localization"] = 
+	{
+		["DEFAULT"] = 
+		{
+			["DictKey_descriptionNeutralsTask_4"] = "",
+			["DictKey_sortie_5"] = "",
+			["DictKey_descriptionText_1"] = "",
+			["DictKey_descriptionBlueTask_3"] = "",
+			["DictKey_descriptionRedTask_2"] = "",
+		}, -- end of ["DEFAULT"]
+	}, -- end of ["localization"]
+	["theatre"] = "Caucasus",
+	["desc"] = "",
+} -- end of staticTemplate

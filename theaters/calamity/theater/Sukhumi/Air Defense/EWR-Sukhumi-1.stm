@@ -1,0 +1,311 @@
+staticTemplate = 
+{
+	["coalition"] = 
+	{
+		["neutrals"] = 
+		{
+			["name"] = "neutrals",
+			["country"] = {},
+		}, -- end of ["neutrals"]
+		["blue"] = 
+		{
+			["name"] = "blue",
+			["country"] = {},
+		}, -- end of ["blue"]
+		["red"] = 
+		{
+			["name"] = "red",
+			["country"] = 
+			{
+				[1] = 
+				{
+					["id"] = 81,
+					["vehicle"] = 
+					{
+						["group"] = 
+						{
+							[1] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 570488.83931528,
+												["x"] = -220883.59679078,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 570488.83931528,
+												["x"] = -220883.59679078,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 73.607160306335,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 570444.44327154,
+											["x"] = -220901.96973771,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = 
+													{
+														[1] = 
+														{
+															["number"] = 1,
+															["auto"] = true,
+															["id"] = "EWR",
+															["enabled"] = true,
+															["params"] = {},
+														}, -- end of [1]
+													}, -- end of ["tasks"]
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 53,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "1L13 EWR",
+										["unitId"] = 198,
+										["y"] = 570444.44327154,
+										["x"] = -220901.96973771,
+										["name"] = "EWR-Sukhumi-1-1",
+										["heading"] = 4.5352698789043,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 570444.44327154,
+								["x"] = -220901.96973771,
+								["name"] = "EWR-Sukhumi-1-EWR Primary Destroyed",
+								["start_time"] = 0,
+							}, -- end of [1]
+							[2] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["route"] = 
+								{
+									["spans"] = 
+									{
+										[1] = 
+										{
+											[1] = 
+											{
+												["y"] = 570445.73219962,
+												["x"] = -220752.7407123,
+											}, -- end of [1]
+											[2] = 
+											{
+												["y"] = 570445.73219962,
+												["x"] = -220752.7407123,
+											}, -- end of [2]
+										}, -- end of [1]
+									}, -- end of ["spans"]
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 44,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 570445.73219962,
+											["x"] = -220752.7407123,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 57,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "Strela-1 9P31",
+										["unitId"] = 216,
+										["y"] = 570445.73219962,
+										["x"] = -220752.7407123,
+										["name"] = "EWR-Sukhumi-1-Shorad-1",
+										["heading"] = 1.4327903031373,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+									[2] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "Strela-1 9P31",
+										["unitId"] = 217,
+										["y"] = 570439.10685647,
+										["x"] = -221051.90043745,
+										["name"] = "EWR-Sukhumi-1-Shorad-2",
+										["heading"] = 1.4327903031373,
+										["playerCanDrive"] = false,
+									}, -- end of [2]
+									[3] = 
+									{
+										["skill"] = "High",
+										["AddPropVehicle"] = 
+										{
+											["Branches"] = false,
+										}, -- end of ["AddPropVehicle"]
+										["coldAtStart"] = false,
+										["type"] = "ZSU_57_2",
+										["unitId"] = 218,
+										["y"] = 570354.50632091,
+										["x"] = -220901.55611221,
+										["name"] = "EWR-Sukhumi-1-Shorad-3",
+										["heading"] = 1.4327903031373,
+										["playerCanDrive"] = false,
+									}, -- end of [3]
+									[4] = 
+									{
+										["skill"] = "High",
+										["AddPropVehicle"] = 
+										{
+											["Branches"] = false,
+										}, -- end of ["AddPropVehicle"]
+										["coldAtStart"] = false,
+										["type"] = "ZSU_57_2",
+										["unitId"] = 219,
+										["y"] = 570475.80106467,
+										["x"] = -220826.63877047,
+										["name"] = "EWR-Sukhumi-1-Shorad-4",
+										["heading"] = 1.4327903031373,
+										["playerCanDrive"] = false,
+									}, -- end of [4]
+									[5] = 
+									{
+										["skill"] = "High",
+										["AddPropVehicle"] = 
+										{
+											["Branches"] = false,
+										}, -- end of ["AddPropVehicle"]
+										["coldAtStart"] = false,
+										["type"] = "ZSU_57_2",
+										["unitId"] = 220,
+										["y"] = 570471.21428864,
+										["x"] = -220972.3963197,
+										["name"] = "EWR-Sukhumi-1-Shorad-5",
+										["heading"] = 1.4327903031373,
+										["playerCanDrive"] = false,
+									}, -- end of [5]
+									[6] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "ZSU-23-4 Shilka",
+										["unitId"] = 221,
+										["y"] = 570394.25837979,
+										["x"] = -220829.18697937,
+										["name"] = "EWR-Sukhumi-1-Shorad-6",
+										["heading"] = 1.4327903031373,
+										["playerCanDrive"] = false,
+									}, -- end of [6]
+									[7] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "ZSU-23-4 Shilka",
+										["unitId"] = 222,
+										["y"] = 570388.14267842,
+										["x"] = -220973.41560326,
+										["name"] = "EWR-Sukhumi-1-Shorad-7",
+										["heading"] = 1.4327903031373,
+										["playerCanDrive"] = false,
+									}, -- end of [7]
+									[8] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "ZSU-23-4 Shilka",
+										["unitId"] = 223,
+										["y"] = 570514.53383998,
+										["x"] = -220902.57539577,
+										["name"] = "EWR-Sukhumi-1-Shorad-8",
+										["heading"] = 1.4327903031373,
+										["playerCanDrive"] = false,
+									}, -- end of [8]
+									[9] = 
+									{
+										["skill"] = "High",
+										["coldAtStart"] = false,
+										["type"] = "Ural-375",
+										["unitId"] = 224,
+										["y"] = 570422.28867771,
+										["x"] = -220902.06575399,
+										["name"] = "EWR-Sukhumi-1-Shorad-9",
+										["heading"] = 1.4327903031373,
+										["playerCanDrive"] = false,
+									}, -- end of [9]
+								}, -- end of ["units"]
+								["y"] = 570445.73219962,
+								["x"] = -220752.7407123,
+								["name"] = "EWR-Sukhumi-1-Shorad",
+								["start_time"] = 0,
+							}, -- end of [2]
+						}, -- end of ["group"]
+					}, -- end of ["vehicle"]
+					["name"] = "CJTF Red",
+				}, -- end of [1]
+			}, -- end of ["country"]
+		}, -- end of ["red"]
+	}, -- end of ["coalition"]
+	["name"] = "EWR-Sukhumi-1",
+	["requiredModules"] = {},
+	["localization"] = 
+	{
+		["DEFAULT"] = 
+		{
+			["DictKey_descriptionNeutralsTask_4"] = "",
+			["DictKey_sortie_5"] = "",
+			["DictKey_descriptionText_1"] = "",
+			["DictKey_descriptionBlueTask_3"] = "",
+			["DictKey_descriptionRedTask_2"] = "",
+		}, -- end of ["DEFAULT"]
+	}, -- end of ["localization"]
+	["theatre"] = "Caucasus",
+	["desc"] = "",
+} -- end of staticTemplate

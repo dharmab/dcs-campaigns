@@ -1,0 +1,9 @@
+objtype = "ewr"
+coalition = "red"
+intel = 5
+cost = 0
+priority = 5
+regenerate = false
+desc = [[%LOCATIONMETHOD% an EW Radar 6 miles to the west of Senaki-Kolkhi airbase.
+
+Primary Objective: Destroy the EW radar dome.]]
