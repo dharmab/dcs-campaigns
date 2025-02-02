@@ -16,16 +16,16 @@ do
 		if playerCount > 1 then
 			-- This message will be shown to connected clients if they are reloading
 			-- the mission locally during a server restart.
-			msg = "Oops! DCS is trying to run server scripts locally,"..
-				" but they are not designed to do so, and show error messages."..
+			msg = "Oops! DCS is trying to run server scripts locally," ..
+				" but they are not designed to do so, and show error messages." ..
 				" Please leave and re-join the server to work around this bug."
 		else
 			-- This message will be shown in singleplayer and when first loading
 			-- the mission in multiplayer.
-			msg = "DCT requires the DCS mission scripting environment"..
-				" to be modified, the file needing to be changed can be found"..
-				" at $DCS_ROOT\\Scripts\\MissionScripting.lua. Comment out"..
-				" the removal of lfs and io and the setting of 'require' to"..
+			msg = "DCT requires the DCS mission scripting environment" ..
+				" to be modified, the file needing to be changed can be found" ..
+				" at $DCS_ROOT\\Scripts\\MissionScripting.lua. Comment out" ..
+				" the removal of lfs and io and the setting of 'require' to" ..
 				" nil."
 		end
 		error(msg)

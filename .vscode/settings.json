@@ -1,0 +1,16 @@
+{
+    "logViewer.watch": [
+        {
+            "title": "DCS.log",
+            "pattern": "${userHome}\\Saved Games\\DCS\\Logs\\DCS.log",
+        }
+    ],
+    "Lua.workspace.library": [
+        "theaters\\calamity\\mission\\l10n\\DEFAULT\\Moose.lua"
+    ],
+    "Lua.diagnostics.globals": [
+        "net",
+        "lfs",
+        "env"
+    ]
+}
