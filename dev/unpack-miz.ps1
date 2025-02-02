@@ -1,14 +1,15 @@
 #!/usr/bin/env pwsh
 
-if ($args.Count -lt 2) {
-    Write-Host "Usage: .\unpack-miz.ps1 MIZ THEATER"
-    Write-Host "Example: .\unpack-miz.ps1 mission.miz calamity"
+if ($args.Count -lt 1) {
+    Write-Host "Usage: .\unpack-miz.ps1 THEATER"
+    Write-Host "Example: .\unpack-miz.ps1 calamity"
     exit
 }
 
-$mizFile = $args[0]
-$theaterName = $args[1]
+$theaterName = $args[0]
 
+$mizFile = "$env:USERPROFILE\Saved Games\DCS\Missions\dct-$theaterName.miz"
+$zipFile = "$env:TEMP\mission.zip"
 $destinationFolder = "theaters/$theaterName/mission"
 
 if (-Not (Test-Path -Path $mizFile)) {
@@ -16,15 +17,15 @@ if (-Not (Test-Path -Path $mizFile)) {
     exit
 }
 
-if (-Not (Test-Path -Path $destinationFolder)) {
-    Write-Host "creating folder: $destinationFolder"
-    New-Item -ItemType Directory -Path $destinationFolder | Out-Null
-}
-
 try {
-    Expand-Archive -Path $mizFile -DestinationPath $destinationFolder -Force
-    Write-Host "unpacked $mizFile into $destinationFolder"
-} catch {
+    Write-Host "unpacking $mizFile into $destinationFolder"
+    Copy-Item -Path $mizFile -Destination $zipFile
+    Expand-Archive -Path $zipFile -DestinationPath $destinationFolder -Force
+}
+catch {
     Write-Host "an error occurred: $_"
+}
+finally {
+    Remove-Item -Path $zipFile -Force
 }
 

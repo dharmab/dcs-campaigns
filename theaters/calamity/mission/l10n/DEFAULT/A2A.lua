@@ -8,29 +8,52 @@
 -- EWR must be used for Early Warning Radars
 -- SAM must be used for Surface to Air Missile systems
 DetectionSetGroup = SET_GROUP:New()
-DetectionSetGroup:FilterPrefixes( { "AEW", "EWR", "SAM" } )
+local regions = {
+	["Alania"] = true,
+	["Apsilia"] = true,
+	["Batumi"] = true,
+	["Beslan"] = true,
+	["BlackSea"] = true,
+	["GaliZugdidi"] = true,
+	["Gudauta"] = true,
+	["KashuriGori"] = true,
+	["Kobuleti"] = true,
+	["Kutaisi"] = true,
+	["MineralnyeVody"] = true,
+	["Mozdok"] = true,
+	["Nalchik"] = true,
+	["Poti"] = true,
+	["Sukhumi"] = true,
+	["Tbilisi"] = true,
+}
+local group_prefixes = { "AEW" }
+for region, _ in pairs(regions) do
+	table.insert(group_prefixes, region .. "_SAM")
+	table.insert(group_prefixes, region .. "_EWR")
+end
+DetectionSetGroup:FilterPrefixes(group_prefixes)
 DetectionSetGroup:FilterStart()
 -- 30km detection grouping is recommended by MOOSE documentation for modern jet
 -- aircraft
-Detection = DETECTION_AREAS:New( DetectionSetGroup, 30000 )
-A2ADispatcher = AI_A2A_DISPATCHER:New( Detection )
+Detection = DETECTION_AREAS:New(DetectionSetGroup, 30000)
+A2ADispatcher = AI_A2A_DISPATCHER:New(Detection)
 -- The engage radius is the distance from BLUE aircraft within which RED
 -- aircraft will engage the BLUE aircraft.
 -- 100km is the default engage radius, but this might need tuning. Tune down if
 -- interceptors cannot reach targets in time. Tune upwards if too many
 -- interceptors are being dispatched to intercept targets.
-A2ADIspatcher:SetEngageRadius( 100000 )
+A2ADispatcher:SetEngageRadius(100000)
 -- The GCI radius is the distance from RED airbases within which BLUE aircraft
 -- will trigger interception by RED aircraft.
 -- 200km is the default GCI radius. Tune this to match the map design.
-A2ADispatcher:SetGciRadius( 200000 )
+A2ADispatcher:SetGciRadius(200000)
 
 local templateKey = "template" -- Prefix for the aircraft template
 local overheadKey = "overhead" -- Balancing factor, how many RED aircraft to spawn per BLUE aircraft
 
 local iberiaMiG21 = {
 	templateKey = "Iberian MiG-21",
-	overheadKey = 1 ,
+	overheadKey = 1,
 }
 local iberianF1 = {
 	templateKey = "Iberian F1",
@@ -50,19 +73,19 @@ local fedMiG29 = {
 }
 
 -- Assign aircraft to RED airbases
-local iberianAircraft = {iberiaMiG21, iberianMiG23, iberianF1}
-local federationAircraft = {fedSu27, fedMiG29}
+local iberianAircraft = { iberiaMiG21, iberianMiG23, iberianF1 }
+local federationAircraft = { fedSu27, fedMiG29 }
 local airbases = {
-	AIRBASE.Senaki_Kolkhi = iberianAircraft,
-	AIRBASE.Caucasus.Kobuleti = iberianAircraft,
-	AIRBASE.Caucasus.Kutaisi = iberianAircraft,
-	AIRBASE.Caucasus.Maykop_Khanskaya = federationAircraft,
-	AIRBASE.Caucasus.Vaziani = federationAircraft,
+	[AIRBASE.Senaki_Kolkhi] = iberianAircraft,
+	[AIRBASE.Caucasus.Kobuleti] = iberianAircraft,
+	[AIRBASE.Caucasus.Kutaisi] = iberianAircraft,
+	[AIRBASE.Caucasus.Mozdok] = federationAircraft,
+	[AIRBASE.Caucasus.Vaziani] = federationAircraft,
 }
 for airbase, aircraft in pairs(airbases) do
 	for _, data in ipairs(aircraft) do
-		squadron = airbase .. " " .. aircraftType
-		A2ADispatcher:SetSquadron( squadron, airbase, { data[template] } )
+		local squadron = airbase .. " " .. data[templateKey]
+		A2ADispatcher:SetSquadron(squadron, airbase, { data[templateKey] })
 		A2ADispatcher:SetSquadronGci(squadron, 600, 900)
 		A2ADispatcher:SetSquadronOverhead(squadron, data[overheadKey])
 	end

@@ -1,3 +1,5 @@
+# Setting Up DCT
+
 # Packing and Unpacking MIZ Files
 
 See [the top-level README](../../README.md#changing-a-miz-file) for instructions on packing and unpacking MIZ files.

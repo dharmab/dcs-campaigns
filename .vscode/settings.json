@@ -1,0 +1,8 @@
+{
+    "logViewer.watch": [
+        {
+            "title": "DCS.log",
+            "pattern": "${userHome}\\Saved Games\\DCS\\Logs\\DCS.log",
+        }
+    ]
+}
