@@ -50,7 +50,6 @@ Detections = DETECTION_AREAS:New(Detectors, groupRadius)
 
 -- Create an A2A dispatcher which will spawn aircraft in response to detected aircraft
 Dispatcher = AI_A2A_DISPATCHER:New(Detections)
-Dispatcher:SetTacticalDisplay(true)
 Dispatcher:SetIntercept(5 * second)
 
 -- Default all squadrons to spawn and despawn on the runway. This is the most
