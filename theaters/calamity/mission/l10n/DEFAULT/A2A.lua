@@ -5,6 +5,7 @@
 local meter = 1
 local kilometer = 1000 * meter
 local second = 1
+local minute = 60 * second
 
 -- Add all groups named with the prefixes "AEW", "EWR" and "SAM" to a set which
 -- will be used as an Early Warning network.
@@ -50,7 +51,10 @@ Detections = DETECTION_AREAS:New(Detectors, groupRadius)
 
 -- Create an A2A dispatcher which will spawn aircraft in response to detected aircraft
 Dispatcher = AI_A2A_DISPATCHER:New(Detections)
-Dispatcher:SetIntercept(5 * second)
+
+-- Intercept delay is how long it takes for an aircraft to be scrambled after a detection
+local interceptDelay = 3 * minute
+Dispatcher:SetIntercept(interceptDelay)
 
 -- Default all squadrons to spawn and despawn on the runway. This is the most
 -- reliable choice other than air start since it avoids problems with the AI
