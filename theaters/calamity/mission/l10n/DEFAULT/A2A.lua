@@ -56,6 +56,13 @@ Dispatcher = AI_A2A_DISPATCHER:New(Detections)
 local interceptDelay = 3 * minute
 Dispatcher:SetIntercept(interceptDelay)
 
+-- Note: MOOSE has been editing so overhead rounds down to a min of 1 instead of rounding up
+-- 1 target  = 1 interceptor
+-- 2 targets = 2 interceptors
+-- 3 targets = 3 interceptors
+-- 4 targets = 4 interceptors
+Dispatcher:SetDefaultOverhead(1.4)
+
 -- Default all squadrons to spawn and despawn on the runway. This is the most
 -- reliable choice other than air start since it avoids problems with the AI
 -- getting stuck while taxiiing.
