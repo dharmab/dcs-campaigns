@@ -92,12 +92,12 @@ local iberianAirbases = {
 	[AIRBASE.Caucasus.Kobuleti] = true,
 	[AIRBASE.Caucasus.Kutaisi] = true,
 }
-local iberianAircraft = { "Iberian MiG-21", "Iberian MiG-23", "Iberian F1" }
+local iberianAircraft = { "Iberian MiG-21 Medium Range", "Iberian MiG-21 Long Range", "Iberian MiG-23" }
 local federationAirbases = {
 	[AIRBASE.Caucasus.Mozdok] = true,
 	[AIRBASE.Caucasus.Vaziani] = true,
 }
-local federationAircraft = { "Federation MiG-29", "Federation Su-27" }
+local federationAircraft = { "Federation MiG-29", "Federation J-11" }
 local factions = {
 	["Iberian"] = { airbases = iberianAirbases, aircraft = iberianAircraft },
 	["Federation"] = { airbases = federationAirbases, aircraft = federationAircraft },
