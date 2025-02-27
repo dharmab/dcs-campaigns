@@ -247,9 +247,9 @@ mission =
 	}, -- end of ["triggers"]
 	["map"] = 
 	{
-		["centerY"] = 249364.95757244,
-		["zoom"] = 2159.9372788482,
-		["centerX"] = -306709.25689702,
+		["centerY"] = 209694.89582801,
+		["zoom"] = 2139739.5833185,
+		["centerX"] = -180916.7187529,
 	}, -- end of ["map"]
 	["coalitions"] = 
 	{
@@ -397,8 +397,8 @@ mission =
 											["ETA"] = 0,
 											["alt_type"] = "BARO",
 											["formation_template"] = "",
-											["y"] = 249046.19366567,
-											["x"] = -306656.02068255,
+											["y"] = 350561.82523976,
+											["x"] = -302150.97384464,
 											["ETA_locked"] = true,
 											["speed"] = 0,
 											["action"] = "Turning Point",
@@ -501,11 +501,11 @@ mission =
 										{
 											["alt"] = -0,
 											["type"] = "Turning Point",
-											["ETA"] = 7584.4072621944,
+											["ETA"] = 11712.092770413,
 											["alt_type"] = "BARO",
 											["formation_template"] = "",
-											["y"] = 354262.01652406,
-											["x"] = -301564.93247972,
+											["y"] = 187895.94009762,
+											["x"] = -301351.24141314,
 											["ETA_locked"] = false,
 											["speed"] = 13.88888,
 											["action"] = "Turning Point",
@@ -521,7 +521,7 @@ mission =
 										}, -- end of [2]
 										[3] = 
 										{
-											["alt"] = -0,
+											["alt"] = 0,
 											["type"] = "Turning Point",
 											["ETA"] = 12867.626080247,
 											["alt_type"] = "BARO",
@@ -545,11 +545,11 @@ mission =
 										{
 											["alt"] = -0,
 											["type"] = "Turning Point",
-											["ETA"] = 21066.668775637,
+											["ETA"] = 23986.739697471,
 											["alt_type"] = "BARO",
 											["formation_template"] = "",
-											["y"] = 191347.19403365,
-											["x"] = -313019.88093608,
+											["y"] = 359976.66569596,
+											["x"] = -301878.07991837,
 											["ETA_locked"] = false,
 											["speed"] = 13.88888,
 											["action"] = "Turning Point",
@@ -589,15 +589,15 @@ mission =
 										["skill"] = "Excellent",
 										["type"] = "Forrestal",
 										["unitId"] = 26,
-										["y"] = 249046.19366567,
-										["x"] = -306656.02068255,
+										["y"] = 350561.82523976,
+										["x"] = -302150.97384464,
 										["name"] = "Carrier",
-										["heading"] = 1.522446940143,
+										["heading"] = 4.7173053522928,
 										["frequency"] = 129000000,
 									}, -- end of [1]
 								}, -- end of ["units"]
-								["y"] = 249046.19366567,
-								["x"] = -306656.02068255,
+								["y"] = 350561.82523976,
+								["x"] = -302150.97384464,
 								["name"] = "Carrier",
 								["start_time"] = 0,
 							}, -- end of [1]
@@ -1823,25 +1823,25 @@ mission =
 											["HumanOrchestra"] = false,
 											["TacanBand"] = 0,
 											["KY28Key"] = 1,
-											["IffMode2Digit1"] = 0,
-											["IsNvgAllowed"] = true,
+											["LaserCodeDigit2"] = 6,
+											["SoloFlight"] = false,
+											["IffMode2Digit2"] = 0,
 											["INSAlignmentStored"] = true,
-											["MountNVG"] = false,
 											["ChaffDoubleDispense"] = false,
 											["Wear"] = 0,
 											["IffMode2Digit4"] = 0,
-											["InitAlertStatus"] = false,
 											["Sta8LaserCode"] = 688,
+											["UseReferenceAircraft"] = true,
 											["NetCrewControlPriority"] = 0,
 											["needsGCAlign"] = false,
-											["SoloFlight"] = false,
 											["Quality"] = 100,
+											["InitAlertStatus"] = false,
 											["VORILSFrequencyDecimalMHZ"] = 0,
-											["IffMode2Digit2"] = 0,
-											["LaserCodeDigit2"] = 6,
+											["MountNVG"] = false,
+											["IsNvgAllowed"] = true,
 											["VORILSFrequencyMHZ"] = 108,
 											["TacanChannel"] = 0,
-											["UseReferenceAircraft"] = true,
+											["IffMode2Digit1"] = 0,
 										}, -- end of ["AddPropAircraft"]
 										["type"] = "F-15ESE",
 										["Radio"] = 
@@ -2411,10 +2411,10 @@ mission =
 											["TacanBand"] = 0,
 											["LaserCodeDigit4"] = 8,
 											["STN_L16"] = "00212",
-											["VoiceCallsignNumber"] = "11",
+											["Quality"] = 100,
 											["VORILSFrequencyMHZ"] = 108,
 											["IffMode2Digit1"] = 0,
-											["INSAlignmentStored"] = true,
+											["VoiceCallsignNumber"] = "11",
 											["ChaffDoubleDispense"] = false,
 											["HelmetMountedDevice"] = 1,
 											["IffMode2Digit4"] = 0,
@@ -2428,7 +2428,7 @@ mission =
 											["VoiceCallsignLabel"] = "AN",
 											["IffMode2Digit3"] = 0,
 											["Wear"] = 0,
-											["Quality"] = 100,
+											["INSAlignmentStored"] = true,
 											["TacanChannel"] = 0,
 											["OuterBoard"] = 0,
 										}, -- end of ["AddPropAircraft"]
@@ -2850,10 +2850,10 @@ mission =
 										["speed"] = 138.88888888889,
 										["AddPropAircraft"] = 
 										{
-											["LaserCode1"] = 8,
-											["LaserCode100"] = 6,
-											["AARProbe"] = false,
 											["LaserCode10"] = 8,
+											["LaserCode100"] = 6,
+											["LaserCode1"] = 8,
+											["AARProbe"] = false,
 										}, -- end of ["AddPropAircraft"]
 										["type"] = "JF-17",
 										["Radio"] = 
@@ -3955,8 +3955,8 @@ mission =
 											["type"] = "TakeOffParking",
 											["ETA"] = 0,
 											["ETA_locked"] = true,
-											["y"] = 249129.18348933,
-											["x"] = -306665.92831672,
+											["y"] = 350479.48060747,
+											["x"] = -302136.66183647,
 											["speed_locked"] = true,
 											["formation_template"] = "",
 										}, -- end of [1]
@@ -4009,7 +4009,7 @@ mission =
 												["channels"] = 
 												{
 													[1] = 265,
-													[2] = 382.5,
+													[2] = 384.7,
 													[4] = 265,
 													[8] = 265,
 													[16] = 265,
@@ -4071,7 +4071,7 @@ mission =
 													[21] = 136,
 													[11] = 136,
 													[22] = 136,
-													[3] = 382.5,
+													[3] = 384.7,
 													[6] = 129,
 													[12] = 136,
 													[24] = 136,
@@ -4127,7 +4127,7 @@ mission =
 										["psi"] = 0,
 										["onboard_num"] = "014",
 										["parking_id"] = "1",
-										["x"] = -306665.92831672,
+										["x"] = -302136.66183647,
 										["name"] = "Carrier F-14A Template",
 										["payload"] = 
 										{
@@ -4176,8 +4176,8 @@ mission =
 											["chaff"] = 120,
 											["gun"] = 100,
 										}, -- end of ["payload"]
-										["y"] = 249129.18348933,
-										["heading"] = 0.049802139630406,
+										["y"] = 350479.48060747,
+										["heading"] = 3.2446605517802,
 										["callsign"] = 
 										{
 											[1] = 6,
@@ -4187,8 +4187,8 @@ mission =
 										}, -- end of ["callsign"]
 									}, -- end of [1]
 								}, -- end of ["units"]
-								["y"] = 249129.18348933,
-								["x"] = -306665.92831672,
+								["y"] = 350479.48060747,
+								["x"] = -302136.66183647,
 								["name"] = "Carrier F-14A Template",
 								["communication"] = true,
 								["start_time"] = 0,
@@ -4230,8 +4230,8 @@ mission =
 											["type"] = "TakeOffParking",
 											["ETA"] = 0,
 											["ETA_locked"] = true,
-											["y"] = 249129.18348933,
-											["x"] = -306665.92831672,
+											["y"] = 350479.48060747,
+											["x"] = -302136.66183646,
 											["speed_locked"] = true,
 											["formation_template"] = "",
 										}, -- end of [1]
@@ -4402,7 +4402,7 @@ mission =
 										["psi"] = 0,
 										["onboard_num"] = "015",
 										["parking_id"] = "1",
-										["x"] = -306665.92831672,
+										["x"] = -302136.66183646,
 										["name"] = "Carrier F-14B Template",
 										["payload"] = 
 										{
@@ -4451,8 +4451,8 @@ mission =
 											["chaff"] = 120,
 											["gun"] = 100,
 										}, -- end of ["payload"]
-										["y"] = 249129.18348933,
-										["heading"] = 0.049802139630406,
+										["y"] = 350479.48060747,
+										["heading"] = 3.2446605517802,
 										["callsign"] = 
 										{
 											[1] = 7,
@@ -4462,8 +4462,8 @@ mission =
 										}, -- end of ["callsign"]
 									}, -- end of [1]
 								}, -- end of ["units"]
-								["y"] = 249129.18348933,
-								["x"] = -306665.92831672,
+								["y"] = 350479.48060747,
+								["x"] = -302136.66183646,
 								["name"] = "Carrier F-14B Template",
 								["communication"] = true,
 								["start_time"] = 0,
@@ -4505,8 +4505,8 @@ mission =
 											["type"] = "TakeOffParking",
 											["ETA"] = 0,
 											["ETA_locked"] = true,
-											["y"] = 249129.18348933,
-											["x"] = -306665.92831672,
+											["y"] = 350479.48060747,
+											["x"] = -302136.66183646,
 											["speed_locked"] = true,
 											["formation_template"] = "",
 										}, -- end of [1]
@@ -4532,10 +4532,10 @@ mission =
 											["TacanBand"] = 0,
 											["LaserCodeDigit4"] = 8,
 											["STN_L16"] = "00235",
-											["INSAlignmentStored"] = true,
+											["VoiceCallsignNumber"] = "11",
 											["VORILSFrequencyMHZ"] = 108,
 											["IffMode2Digit1"] = 0,
-											["Quality"] = 100,
+											["INSAlignmentStored"] = true,
 											["ChaffDoubleDispense"] = false,
 											["HelmetMountedDevice"] = 1,
 											["IffMode2Digit4"] = 0,
@@ -4549,7 +4549,7 @@ mission =
 											["VoiceCallsignLabel"] = "GL",
 											["IffMode2Digit3"] = 0,
 											["Wear"] = 0,
-											["VoiceCallsignNumber"] = "11",
+											["Quality"] = 100,
 											["TacanChannel"] = 0,
 											["OuterBoard"] = 0,
 										}, -- end of ["AddPropAircraft"]
@@ -4572,7 +4572,7 @@ mission =
 													[10] = 265,
 													[20] = 265,
 													[11] = 265,
-													[3] = 382.5,
+													[3] = 384.7,
 													[6] = 129,
 													[12] = 265,
 													[13] = 265,
@@ -4622,7 +4622,7 @@ mission =
 													[10] = 136,
 													[20] = 136,
 													[11] = 136,
-													[3] = 382.5,
+													[3] = 384.7,
 													[6] = 129,
 													[12] = 136,
 													[13] = 136,
@@ -4676,7 +4676,7 @@ mission =
 											["Points"] = {},
 										}, -- end of ["dataCartridge"]
 										["parking_id"] = "1",
-										["x"] = -306665.92831672,
+										["x"] = -302136.66183646,
 										["name"] = "Carrier F/A-18C Template",
 										["payload"] = 
 										{
@@ -4725,8 +4725,8 @@ mission =
 											["chaff"] = 120,
 											["gun"] = 100,
 										}, -- end of ["payload"]
-										["y"] = 249129.18348933,
-										["heading"] = 0.049802139630406,
+										["y"] = 350479.48060747,
+										["heading"] = 3.2446605517802,
 										["callsign"] = 
 										{
 											[1] = 8,
@@ -4762,14 +4762,561 @@ mission =
 										}, -- end of ["datalinks"]
 									}, -- end of [1]
 								}, -- end of ["units"]
-								["y"] = 249129.18348933,
-								["x"] = -306665.92831672,
+								["y"] = 350479.48060747,
+								["x"] = -302136.66183646,
 								["name"] = "Carrier F/A-18C Template",
 								["communication"] = true,
 								["start_time"] = 0,
 								["uncontrollable"] = false,
 								["frequency"] = 265,
 							}, -- end of [14]
+							[15] = 
+							{
+								["dynSpawnTemplate"] = false,
+								["modulation"] = 0,
+								["tasks"] = {},
+								["radioSet"] = false,
+								["task"] = "AWACS",
+								["uncontrolled"] = false,
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["action"] = "From Parking Area",
+											["alt_type"] = "BARO",
+											["linkUnit"] = 26,
+											["properties"] = 
+											{
+												["addopt"] = {},
+											}, -- end of ["properties"]
+											["helipadId"] = 26,
+											["speed"] = 138.88888888889,
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = 
+													{
+														[1] = 
+														{
+															["number"] = 1,
+															["auto"] = true,
+															["id"] = "AWACS",
+															["enabled"] = true,
+															["params"] = {},
+														}, -- end of [1]
+														[2] = 
+														{
+															["number"] = 2,
+															["auto"] = true,
+															["id"] = "WrappedAction",
+															["enabled"] = true,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "EPLRS",
+																	["params"] = 
+																	{
+																		["value"] = true,
+																		["groupId"] = 6,
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [2]
+														[3] = 
+														{
+															["number"] = 3,
+															["auto"] = false,
+															["id"] = "WrappedAction",
+															["enabled"] = true,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "SetInvisible",
+																	["params"] = 
+																	{
+																		["value"] = true,
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [3]
+														[4] = 
+														{
+															["number"] = 4,
+															["auto"] = false,
+															["id"] = "WrappedAction",
+															["enabled"] = true,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "SetImmortal",
+																	["params"] = 
+																	{
+																		["value"] = true,
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [4]
+														[5] = 
+														{
+															["number"] = 5,
+															["auto"] = false,
+															["id"] = "WrappedAction",
+															["enabled"] = true,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "SetUnlimitedFuel",
+																	["params"] = 
+																	{
+																		["value"] = true,
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [5]
+														[6] = 
+														{
+															["number"] = 6,
+															["auto"] = false,
+															["id"] = "WrappedAction",
+															["enabled"] = true,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "Option",
+																	["params"] = 
+																	{
+																		["value"] = true,
+																		["name"] = 7,
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [6]
+													}, -- end of ["tasks"]
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["type"] = "TakeOffParking",
+											["ETA"] = 0,
+											["ETA_locked"] = true,
+											["y"] = 350479.48060747,
+											["x"] = -302136.66183647,
+											["speed_locked"] = true,
+											["formation_template"] = "",
+										}, -- end of [1]
+										[2] = 
+										{
+											["alt"] = 7620,
+											["action"] = "Turning Point",
+											["alt_type"] = "BARO",
+											["properties"] = 
+											{
+												["addopt"] = {},
+											}, -- end of ["properties"]
+											["speed"] = 154.16666666667,
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["type"] = "Turning Point",
+											["ETA"] = 205.09943662502,
+											["ETA_locked"] = false,
+											["y"] = 269356.11555289,
+											["x"] = -330969.50371057,
+											["speed_locked"] = true,
+											["formation_template"] = "",
+										}, -- end of [2]
+										[3] = 
+										{
+											["alt"] = 7620,
+											["action"] = "Turning Point",
+											["alt_type"] = "BARO",
+											["properties"] = 
+											{
+												["addopt"] = {},
+											}, -- end of ["properties"]
+											["speed"] = 154.16666666667,
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = 
+													{
+														[1] = 
+														{
+															["number"] = 1,
+															["auto"] = false,
+															["id"] = "WrappedAction",
+															["enabled"] = true,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "SwitchWaypoint",
+																	["params"] = 
+																	{
+																		["goToWaypointIndex"] = 2,
+																		["fromWaypointIndex"] = 3,
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [1]
+													}, -- end of ["tasks"]
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["type"] = "Turning Point",
+											["ETA"] = 1176.3316626331,
+											["ETA_locked"] = false,
+											["y"] = 285939.10458547,
+											["x"] = -182158.99686554,
+											["speed_locked"] = true,
+											["formation_template"] = "",
+										}, -- end of [3]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 39,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["alt"] = 0,
+										["alt_type"] = "BARO",
+										["livery_id"] = "E-2D Demo",
+										["skill"] = "Excellent",
+										["parking"] = "1",
+										["speed"] = 138.88888888889,
+										["AddPropAircraft"] = 
+										{
+											["VoiceCallsignLabel"] = "OD",
+											["VoiceCallsignNumber"] = "11",
+											["STN_L16"] = "00236",
+										}, -- end of ["AddPropAircraft"]
+										["type"] = "E-2C",
+										["unitId"] = 30,
+										["psi"] = 1.9122912018337,
+										["onboard_num"] = "017",
+										["parking_id"] = "1",
+										["x"] = -302136.66183647,
+										["name"] = "AEW FOCUS",
+										["payload"] = 
+										{
+											["pylons"] = {},
+											["fuel"] = "5624",
+											["flare"] = 60,
+											["chaff"] = 120,
+											["gun"] = 100,
+										}, -- end of ["payload"]
+										["y"] = 350479.48060747,
+										["heading"] = -1.8428073366643,
+										["callsign"] = 
+										{
+											[2] = 1,
+											["name"] = "Focus11",
+											[3] = 1,
+											[1] = 4,
+											[4] = "Focus11",
+										}, -- end of ["callsign"]
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 350479.48060747,
+								["x"] = -302136.66183647,
+								["name"] = "AEW FOCUS",
+								["communication"] = false,
+								["start_time"] = 0,
+								["frequency"] = 251,
+							}, -- end of [15]
+							[16] = 
+							{
+								["dynSpawnTemplate"] = false,
+								["modulation"] = 0,
+								["tasks"] = {},
+								["radioSet"] = true,
+								["task"] = "Refueling",
+								["uncontrolled"] = false,
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["action"] = "From Parking Area",
+											["alt_type"] = "BARO",
+											["linkUnit"] = 26,
+											["properties"] = 
+											{
+												["addopt"] = {},
+											}, -- end of ["properties"]
+											["helipadId"] = 26,
+											["speed"] = 138.88888888889,
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = 
+													{
+														[1] = 
+														{
+															["enabled"] = true,
+															["auto"] = true,
+															["id"] = "Tanker",
+															["number"] = 1,
+															["params"] = {},
+														}, -- end of [1]
+														[2] = 
+														{
+															["enabled"] = true,
+															["auto"] = true,
+															["id"] = "WrappedAction",
+															["number"] = 2,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "ActivateBeacon",
+																	["params"] = 
+																	{
+																		["type"] = 4,
+																		["AA"] = false,
+																		["unitId"] = 31,
+																		["modeChannel"] = "X",
+																		["channel"] = 37,
+																		["system"] = 4,
+																		["callsign"] = "RCV",
+																		["bearing"] = true,
+																		["frequency"] = 998000000,
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [2]
+														[3] = 
+														{
+															["enabled"] = true,
+															["auto"] = true,
+															["id"] = "WrappedAction",
+															["number"] = 3,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "EPLRS",
+																	["params"] = 
+																	{
+																		["value"] = true,
+																		["groupId"] = 7,
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [3]
+														[4] = 
+														{
+															["enabled"] = true,
+															["auto"] = false,
+															["id"] = "WrappedAction",
+															["number"] = 4,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "SetInvisible",
+																	["params"] = 
+																	{
+																		["value"] = true,
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [4]
+														[5] = 
+														{
+															["enabled"] = true,
+															["auto"] = false,
+															["id"] = "WrappedAction",
+															["number"] = 5,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "SetImmortal",
+																	["params"] = 
+																	{
+																		["value"] = true,
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [5]
+														[6] = 
+														{
+															["enabled"] = true,
+															["auto"] = false,
+															["id"] = "WrappedAction",
+															["number"] = 6,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "SetUnlimitedFuel",
+																	["params"] = 
+																	{
+																		["value"] = true,
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [6]
+													}, -- end of ["tasks"]
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["type"] = "TakeOffParking",
+											["ETA"] = 0,
+											["ETA_locked"] = true,
+											["y"] = 350479.48060747,
+											["x"] = -302136.66183647,
+											["speed_locked"] = true,
+											["formation_template"] = "",
+										}, -- end of [1]
+										[2] = 
+										{
+											["alt"] = 1828.8,
+											["action"] = "Turning Point",
+											["alt_type"] = "BARO",
+											["properties"] = 
+											{
+												["addopt"] = {},
+											}, -- end of ["properties"]
+											["speed"] = 143.88888888889,
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["type"] = "Turning Point",
+											["ETA"] = 244.21228352632,
+											["ETA_locked"] = false,
+											["y"] = 265737.25955448,
+											["x"] = -275698.9839992,
+											["speed_locked"] = true,
+											["formation_template"] = "",
+										}, -- end of [2]
+										[3] = 
+										{
+											["alt"] = 1828.8,
+											["action"] = "Turning Point",
+											["alt_type"] = "BARO",
+											["properties"] = 
+											{
+												["addopt"] = {},
+											}, -- end of ["properties"]
+											["speed"] = 143.88888888889,
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = 
+													{
+														[1] = 
+														{
+															["enabled"] = true,
+															["auto"] = false,
+															["id"] = "WrappedAction",
+															["number"] = 1,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "SwitchWaypoint",
+																	["params"] = 
+																	{
+																		["goToWaypointIndex"] = 2,
+																		["fromWaypointIndex"] = 3,
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [1]
+													}, -- end of ["tasks"]
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["type"] = "Turning Point",
+											["ETA"] = 757.18831590427,
+											["ETA_locked"] = false,
+											["y"] = 195059.67956632,
+											["x"] = -296978.66435615,
+											["speed_locked"] = true,
+											["formation_template"] = "",
+										}, -- end of [3]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 40,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["alt"] = 0,
+										["alt_type"] = "BARO",
+										["livery_id"] = "bd navy bloodhounds 700",
+										["skill"] = "Excellent",
+										["parking"] = "1",
+										["speed"] = 138.88888888889,
+										["AddPropAircraft"] = 
+										{
+											["STN_L16"] = "00237",
+											["VoiceCallsignNumber"] = "21",
+											["VoiceCallsignLabel"] = "ED",
+										}, -- end of ["AddPropAircraft"]
+										["type"] = "S-3B Tanker",
+										["unitId"] = 31,
+										["psi"] = 1.2683874190308,
+										["onboard_num"] = "018",
+										["parking_id"] = "1",
+										["x"] = -302136.66183647,
+										["name"] = "Tanker-3",
+										["payload"] = 
+										{
+											["pylons"] = {},
+											["fuel"] = 6887,
+											["flare"] = 30,
+											["chaff"] = 30,
+											["gun"] = 100,
+										}, -- end of ["payload"]
+										["y"] = 350479.48060747,
+										["heading"] = -1.1988988958745,
+										["callsign"] = 
+										{
+											[1] = 6,
+											[2] = 1,
+											[3] = 1,
+											[4] = "Bloodhound11",
+											["name"] = "Bloodhound11",
+										}, -- end of ["callsign"]
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 350479.48060747,
+								["x"] = -302136.66183647,
+								["name"] = "Tanker-3",
+								["communication"] = true,
+								["start_time"] = 0,
+								["frequency"] = 384.7,
+							}, -- end of [16]
 						}, -- end of ["group"]
 					}, -- end of ["plane"]
 				}, -- end of [1]
@@ -6582,7 +7129,7 @@ mission =
 			["eventlist"] = "",
 		}, -- end of [4]
 	}, -- end of ["trigrules"]
-	["currentKey"] = 9655,
+	["currentKey"] = 10392,
 	["failures"] = 
 	{
 		["OIL_RADIATOR_SENSOR"] = 
