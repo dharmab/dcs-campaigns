@@ -2,6 +2,7 @@
 -- of BLUE aircraft.
 -- ref: https://flightcontrol-master.github.io/MOOSE_DOCS/Documentation/AI.AI_A2A_Dispatcher.html
 
+-- Convenience values to make units more readable
 local meter = 1
 local kilometer = 1000 * meter
 local second = 1
@@ -13,28 +14,29 @@ local minute = 60 * second
 -- EWR must be used for Early Warning Radars
 -- SAM must be used for Surface to Air Missile systems
 local regions = {
-	["Alania"] = true,
-	["Apsilia"] = true,
-	["Batumi"] = true,
-	["Beslan"] = true,
-	["BlackSea"] = true,
-	["GaliZugdidi"] = true,
-	["Gudauta"] = true,
-	["KashuriGori"] = true,
-	["Kobuleti"] = true,
-	["Kutaisi"] = true,
-	["MineralnyeVody"] = true,
-	["Mozdok"] = true,
-	["Nalchik"] = true,
-	["Poti"] = true,
-	["Sukhumi"] = true,
-	["Tbilisi"] = true,
+	"Alania",
+	"Apsilia",
+	"Batumi",
+	"Beslan",
+	"BlackSea",
+	"GaliZugdidi",
+	"Gudauta",
+	"KashuriGori",
+	"Kobuleti",
+	"Kutaisi",
+	"MineralnyeVody",
+	"Mozdok",
+	"Nalchik",
+	"Poti",
+	"Sukhumi",
+	"Tbilisi",
 }
 
 local group_prefixes = { "AEW" }
-for region, _ in pairs(regions) do
-	table.insert(group_prefixes, region .. "_SAM")
-	table.insert(group_prefixes, region .. "_EWR")
+for _, region in ipairs(regions) do
+	for _, prefix in ipairs({ "EWR", "SAM" }) do
+		table.insert(group_prefixes, region .. "_" .. prefix)
+	end
 end
 
 -- Create a new set of groups
@@ -44,7 +46,7 @@ Detectors:FilterPrefixes(group_prefixes)
 -- FilterStart will dynamically update the set as air defense groups are (de)spawned
 Detectors:FilterStart()
 
--- units which are closer to the first detected unit than the radius will be collected
+-- Units which are closer to the first detected unit than the radius will be collected
 -- into a single target to intercept
 local groupRadius = 11 * kilometer
 Detections = DETECTION_AREAS:New(Detectors, groupRadius)
@@ -56,20 +58,17 @@ Dispatcher = AI_A2A_DISPATCHER:New(Detections)
 local interceptDelay = 3 * minute
 Dispatcher:SetIntercept(interceptDelay)
 
--- Note: MOOSE has been editing so overhead rounds down to a min of 1 instead of rounding up
--- 1 target  = 1 interceptor
--- 2 targets = 2 interceptors
--- 3 targets = 3 interceptors
--- 4 targets = 4 interceptors
-Dispatcher:SetDefaultOverhead(1.4)
+-- Overhead controls how many aircraft are spawned in response to a detection
+local scalingFactor = math.sqrt(2)
+Dispatcher:SetDefaultOverhead(scalingFactor)
 
 -- Default all squadrons to spawn and despawn on the runway. This is the most
 -- reliable choice other than air start since it avoids problems with the AI
--- getting stuck while taxiiing.
+-- getting stuck during taxi.
 Dispatcher:SetDefaultTakeoffFromRunway()
 Dispatcher:SetDefaultLandingAtRunway()
 
--- AI aircraft will RTB after 10% damanged (90% health remaining).
+-- AI aircraft will RTB after 10% damaged (90% health remaining).
 Dispatcher:SetDefaultDamageThreshold(0.10)
 
 -- The engage radius is the distance from BLUE aircraft within which RED
@@ -87,30 +86,36 @@ local minInterceptSpeed = 600 * (meter / second)
 local maxInterceptSpeed = 1800 * (meter / second)
 
 -- Assign aircraft to RED airbases
-local iberianAirbases = {
-	[AIRBASE.Caucasus.Senaki_Kolkhi] = true,
-	[AIRBASE.Caucasus.Kobuleti] = true,
-	[AIRBASE.Caucasus.Kutaisi] = true,
-}
-local iberianAircraft = { "Iberian MiG-21 Medium Range", "Iberian MiG-21 Long Range", "Iberian MiG-23" }
-local federationAirbases = {
-	[AIRBASE.Caucasus.Mozdok] = true,
-	[AIRBASE.Caucasus.Vaziani] = true,
-}
-local federationAircraft = { "Federation MiG-29", "Federation J-11" }
+-- Aircraft here correspond to group names of Late Activation groups in the MIZ file
 local factions = {
-	["Iberian"] = { airbases = iberianAirbases, aircraft = iberianAircraft },
-	["Federation"] = { airbases = federationAirbases, aircraft = federationAircraft },
+	["Iberian"] = {
+		["airbases"] = {
+			AIRBASE.Caucasus.Senaki_Kolkhi,
+			AIRBASE.Caucasus.Kobuleti,
+			AIRBASE.Caucasus.Kutaisi,
+		},
+		["aircraft"] = {
+			"Iberian MiG-21 Medium Range",
+			"Iberian MiG-21 Long Range",
+			"Iberian MiG-23"
+		}
+	},
+	["Federation"] = {
+		["airbases"] = {
+			AIRBASE.Caucasus.Mozdok,
+			AIRBASE.Caucasus.Vaziani,
+		},
+		["aircraft"] = {
+			"Federation MiG-29",
+			"Federation J-11"
+		}
+	},
 }
-for faction, data in pairs(factions) do
-	local airbases = data.airbases
-	local aircraft = data.aircraft
-	for airbase, _ in pairs(airbases) do
+for faction, assignments in pairs(factions) do
+	for _, airbase in ipairs(assignments.airbases) do
 		local squadron = faction .. " " .. airbase
-		for _, platform in ipairs(aircraft) do
-			Dispatcher:SetSquadron(squadron, airbase, { platform })
-			Dispatcher:SetSquadronGci(squadron, minInterceptSpeed, maxInterceptSpeed)
-		end
+		Dispatcher:SetSquadron(squadron, airbase, assignments.aircraft)
+		Dispatcher:SetSquadronGci(squadron, minInterceptSpeed, maxInterceptSpeed)
 	end
 end
 Dispatcher:Start()
