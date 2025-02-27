@@ -1,7 +1,7 @@
 dictionary = 
 {
 	["DictKey_descriptionNeutralsTask_4"] = "",
-	["DictKey_sortie_5"] = "",
+	["DictKey_sortie_5"] = "PROJECT CALAMITY",
 	["DictKey_descriptionText_1"] = "COMM PLAN\
 ---\
 STRIKE UHF (Primary) 265.0 AM\
@@ -10,6 +10,7 @@ GCI DISCO VHF (Primary) 136.0 AM\
 GCI DISCO UHF (Alternate) 266.0 AM\
 TEXACO 1-1 (Boom) 380.0 AM 38X\
 ARCO 1-1 (Basket) 382.5 AM 39X\
+CARRIER 129.0 AM 59X (ILS 11, ICLS 331.0 AM)\
 \
 LOADOUT LIMITS\
 ---\
