@@ -178,7 +178,7 @@ mission =
 						["layerName"] = "Common",
 						["fontSize"] = 22,
 						["primitiveType"] = "TextBox",
-						["colorString"] = "0x000080ff",
+						["font"] = "DejaVuLGCSansCondensed.ttf",
 						["name"] = "Arco Text Box-1",
 						["fillColorString"] = "0x28b4d0ff",
 						["text"] = "Arco 1-1| KC-135 MPRS\
@@ -186,8 +186,8 @@ mission =
 382.5 Mhz AM\
 ",
 						["angle"] = 0,
+						["colorString"] = "0x000080ff",
 						["mapX"] = -134368.01829078,
-						["font"] = "DejaVuLGCSansCondensed.ttf",
 					}, -- end of [1]
 					[2] = 
 					{
@@ -197,7 +197,7 @@ mission =
 						["layerName"] = "Common",
 						["fontSize"] = 22,
 						["primitiveType"] = "TextBox",
-						["colorString"] = "0x000080ff",
+						["font"] = "DejaVuLGCSansCondensed.ttf",
 						["name"] = "Texaco Text Box",
 						["fillColorString"] = "0x28b4d0ff",
 						["text"] = "Texaco 1-1 | KC-135\
@@ -205,8 +205,8 @@ mission =
 380.0 Mhz AM\
 ",
 						["angle"] = 0,
+						["colorString"] = "0x000080ff",
 						["mapX"] = -106947.07359609,
-						["font"] = "DejaVuLGCSansCondensed.ttf",
 					}, -- end of [2]
 				}, -- end of ["objects"]
 			}, -- end of [4]
@@ -660,8 +660,8 @@ mission =
 													[25] = 0,
 													[13] = 0,
 													[26] = 0,
-													[27] = 0,
 													[7] = 0,
+													[27] = 0,
 													[14] = 0,
 													[28] = 0,
 													[23] = 0,
@@ -693,8 +693,8 @@ mission =
 													[25] = 344,
 													[13] = 269,
 													[26] = 385,
-													[27] = 133,
 													[7] = 270,
+													[27] = 133,
 													[14] = 260,
 													[28] = 257.8,
 													[23] = 122.1,
@@ -826,11 +826,11 @@ mission =
 											["INSAlignmentStored"] = true,
 											["ChaffDoubleDispense"] = false,
 											["LaserCodeDigit1"] = 1,
-											["IffMode2Digit1"] = 0,
+											["IffMode2Digit4"] = 0,
 											["IffMode2Digit2"] = 0,
 											["TacanChannel"] = 0,
-											["KY28Key"] = 1,
 											["UseReferenceAircraft"] = true,
+											["KY28Key"] = 1,
 											["LaserCodeDigit3"] = 8,
 											["Wear"] = 0,
 											["VORILSFrequencyDecimalMHZ"] = 0,
@@ -839,7 +839,7 @@ mission =
 											["VORILSFrequencyMHZ"] = 108,
 											["LaserCodeDigit2"] = 6,
 											["LaserCodeDigit4"] = 8,
-											["IffMode2Digit4"] = 0,
+											["IffMode2Digit1"] = 0,
 										}, -- end of ["AddPropAircraft"]
 										["type"] = "F-4E-45MC",
 										["Radio"] = 
@@ -1089,7 +1089,7 @@ mission =
 											["INSAlignmentStored"] = true,
 											["ChaffDoubleDispense"] = false,
 											["LaserCodeDigit1"] = 1,
-											["IffMode2Digit4"] = 0,
+											["IffMode2Digit1"] = 0,
 											["M61BURST"] = 2,
 											["Wear"] = 0,
 											["IffMode2Digit2"] = 0,
@@ -1100,7 +1100,7 @@ mission =
 											["Quality"] = 100,
 											["IffMode2Digit3"] = 0,
 											["VORILSFrequencyMHZ"] = 108,
-											["IffMode2Digit1"] = 0,
+											["IffMode2Digit4"] = 0,
 											["LaserCodeDigit4"] = 8,
 											["ALE39Loadout"] = 0,
 										}, -- end of ["AddPropAircraft"]
@@ -1206,8 +1206,8 @@ mission =
 													[25] = 255,
 													[13] = 269,
 													[26] = 259,
-													[27] = 262,
 													[7] = 270,
+													[27] = 262,
 													[14] = 271,
 													[28] = 257,
 													[23] = 260,
@@ -1352,7 +1352,7 @@ mission =
 											["INSAlignmentStored"] = true,
 											["ChaffDoubleDispense"] = false,
 											["LaserCodeDigit1"] = 1,
-											["IffMode2Digit4"] = 0,
+											["IffMode2Digit1"] = 0,
 											["M61BURST"] = 0,
 											["Wear"] = 0,
 											["IffMode2Digit2"] = 0,
@@ -1363,7 +1363,7 @@ mission =
 											["Quality"] = 100,
 											["IffMode2Digit3"] = 0,
 											["VORILSFrequencyMHZ"] = 108,
-											["IffMode2Digit1"] = 0,
+											["IffMode2Digit4"] = 0,
 											["LaserCodeDigit4"] = 8,
 											["ALE39Loadout"] = 0,
 										}, -- end of ["AddPropAircraft"]
@@ -1469,8 +1469,8 @@ mission =
 													[25] = 255,
 													[13] = 269,
 													[26] = 259,
-													[27] = 262,
 													[7] = 270,
+													[27] = 262,
 													[14] = 271,
 													[28] = 257,
 													[23] = 260,
@@ -1623,26 +1623,26 @@ mission =
 											["InitAirborneTime"] = 0,
 											["HumanOrchestra"] = false,
 											["TacanBand"] = 0,
-											["INSAlignmentStored"] = true,
-											["UseReferenceAircraft"] = true,
+											["needsGCAlign"] = false,
+											["Sta8LaserCode"] = 688,
 											["LaserCodeDigit1"] = 1,
-											["InitAlertStatus"] = false,
-											["MountNVG"] = false,
+											["IffMode2Digit1"] = 0,
+											["INSAlignmentStored"] = true,
 											["ChaffDoubleDispense"] = false,
 											["VORILSFrequencyMHZ"] = 108,
 											["IffMode2Digit4"] = 0,
-											["Sta8LaserCode"] = 688,
 											["IffMode2Digit2"] = 0,
+											["LaserCodeDigit2"] = 6,
 											["NetCrewControlPriority"] = 0,
 											["KY28Key"] = 1,
-											["LaserCodeDigit2"] = 6,
 											["IsNvgAllowed"] = true,
+											["MountNVG"] = false,
 											["VORILSFrequencyDecimalMHZ"] = 0,
 											["Quality"] = 100,
-											["needsGCAlign"] = false,
+											["UseReferenceAircraft"] = true,
 											["Wear"] = 0,
 											["TacanChannel"] = 0,
-											["IffMode2Digit1"] = 0,
+											["InitAlertStatus"] = false,
 										}, -- end of ["AddPropAircraft"]
 										["type"] = "F-15ESE",
 										["Radio"] = 
@@ -1927,15 +1927,15 @@ mission =
 										{
 											["IsNvgAllowed"] = true,
 											["TacanBand"] = 0,
-											["VoiceCallsignNumber"] = "11",
+											["INSAlignmentStored"] = true,
 											["STN_L16"] = "00211",
 											["TacanChannel"] = 0,
-											["IffMode2Digit4"] = 0,
+											["HelmetMountedDevice"] = 1,
 											["Wear"] = 0,
-											["INSAlignmentStored"] = true,
+											["VoiceCallsignNumber"] = "11",
 											["ChaffDoubleDispense"] = false,
 											["IffMode2Digit2"] = 0,
-											["HelmetMountedDevice"] = 1,
+											["IffMode2Digit4"] = 0,
 											["VoiceCallsignLabel"] = "ED",
 											["IffMode2Digit1"] = 0,
 											["LAU3ROF"] = 0,
@@ -2208,28 +2208,28 @@ mission =
 										["AddPropAircraft"] = 
 										{
 											["IsNvgAllowed"] = true,
-											["OuterBoard"] = 0,
+											["Wear"] = 0,
 											["TacanBand"] = 0,
 											["TacanChannel"] = 0,
 											["STN_L16"] = "00212",
-											["Quality"] = 100,
-											["Wear"] = 0,
-											["HelmetMountedDevice"] = 1,
 											["VoiceCallsignNumber"] = "11",
+											["OuterBoard"] = 0,
+											["IffMode2Digit4"] = 0,
+											["INSAlignmentStored"] = true,
 											["ChaffDoubleDispense"] = false,
-											["VoiceCallsignLabel"] = "ED",
-											["IffMode2Digit1"] = 0,
 											["IffMode2Digit2"] = 0,
+											["IffMode2Digit1"] = 0,
+											["VoiceCallsignLabel"] = "ED",
 											["LaserCodeDigit1"] = 1,
 											["InnerBoard"] = 0,
 											["KY28Key"] = 1,
 											["LaserCodeDigit3"] = 8,
 											["UseReferenceAircraft"] = true,
 											["VORILSFrequencyDecimalMHZ"] = 0,
-											["IffMode2Digit4"] = 0,
+											["HelmetMountedDevice"] = 1,
 											["IffMode2Digit3"] = 0,
 											["VORILSFrequencyMHZ"] = 108,
-											["INSAlignmentStored"] = true,
+											["Quality"] = 100,
 											["LaserCodeDigit4"] = 8,
 											["LaserCodeDigit2"] = 6,
 										}, -- end of ["AddPropAircraft"]
@@ -2345,9 +2345,9 @@ mission =
 											{
 												["PB"] = {},
 												["Sequence 2 Red"] = {},
-												["Start Location"] = {},
-												["Sequence 1 Blue"] = {},
 												["Sequence 3 Yellow"] = {},
+												["Sequence 1 Blue"] = {},
+												["Start Location"] = {},
 												["A/A Waypoint"] = {},
 												["PP"] = {},
 												["Initial Point"] = {},
@@ -2651,10 +2651,10 @@ mission =
 										["speed"] = 138.88888888889,
 										["AddPropAircraft"] = 
 										{
-											["LaserCode10"] = 8,
-											["LaserCode100"] = 6,
 											["LaserCode1"] = 8,
+											["LaserCode100"] = 6,
 											["AARProbe"] = false,
+											["LaserCode10"] = 8,
 										}, -- end of ["AddPropAircraft"]
 										["type"] = "JF-17",
 										["Radio"] = 
@@ -4320,7 +4320,7 @@ mission =
 										}, -- end of ["AddPropAircraft"]
 										["type"] = "E-3A",
 										["unitId"] = 24,
-										["psi"] = -2.4077919797851,
+										["psi"] = -2.407791979785,
 										["onboard_num"] = "012",
 										["parking_id"] = "27",
 										["x"] = -4922.2558367118,
@@ -4334,14 +4334,14 @@ mission =
 											["gun"] = 100,
 										}, -- end of ["payload"]
 										["y"] = 243073.53440978,
-										["heading"] = 2.4077956685262,
+										["heading"] = 2.407791979785,
 										["callsign"] = 
 										{
-											[1] = 5,
 											[2] = 1,
-											[3] = 1,
-											[4] = "Darkstar11",
 											["name"] = "Darkstar11",
+											[3] = 1,
+											[1] = 5,
+											[4] = "Darkstar11",
 										}, -- end of ["callsign"]
 									}, -- end of [1]
 								}, -- end of ["units"]
@@ -5110,6 +5110,7 @@ mission =
 			["rules"] = {},
 			["comment"] = "DCT Init",
 			["eventlist"] = "",
+			["predicate"] = "triggerStart",
 			["actions"] = 
 			{
 				[1] = 
@@ -5118,13 +5119,11 @@ mission =
 					["file"] = "ResKey_Action_6",
 				}, -- end of [1]
 			}, -- end of ["actions"]
-			["predicate"] = "triggerStart",
 		}, -- end of [1]
 		[2] = 
 		{
 			["rules"] = {},
 			["eventlist"] = "",
-			["predicate"] = "triggerStart",
 			["actions"] = 
 			{
 				[1] = 
@@ -5133,6 +5132,7 @@ mission =
 					["file"] = "ResKey_Action_7",
 				}, -- end of [1]
 			}, -- end of ["actions"]
+			["predicate"] = "triggerStart",
 			["comment"] = "MOOSE Init",
 		}, -- end of [2]
 		[3] = 
@@ -5140,7 +5140,6 @@ mission =
 			["rules"] = {},
 			["eventlist"] = "",
 			["comment"] = "A2A",
-			["predicate"] = "triggerStart",
 			["actions"] = 
 			{
 				[1] = 
@@ -5149,9 +5148,10 @@ mission =
 					["file"] = "ResKey_Action_8",
 				}, -- end of [1]
 			}, -- end of ["actions"]
+			["predicate"] = "triggerStart",
 		}, -- end of [3]
 	}, -- end of ["trigrules"]
-	["currentKey"] = 6413,
+	["currentKey"] = 6673,
 	["failures"] = 
 	{
 		["OIL_RADIATOR_SENSOR"] = 
