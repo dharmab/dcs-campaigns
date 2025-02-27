@@ -41,8 +41,8 @@ mission =
 	["requiredModules"] = {},
 	["date"] = 
 	{
-		["Year"] = 2016,
 		["Day"] = 21,
+		["Year"] = 2016,
 		["Month"] = 6,
 	}, -- end of ["date"]
 	["trig"] = 
@@ -128,24 +128,24 @@ mission =
 					["Blue"] = false,
 					["Red"] = false,
 				}, -- end of ["ForwardObserver"]
-				["ArtilleryCommander"] = 
-				{
-					["Neutral"] = false,
-					["Blue"] = false,
-					["Red"] = false,
-				}, -- end of ["ArtilleryCommander"]
-				["Spectrator"] = 
-				{
-					["Neutral"] = false,
-					["Blue"] = false,
-					["Red"] = false,
-				}, -- end of ["Spectrator"]
 				["Pilot"] = 
 				{
 					["Neutral"] = false,
 					["Blue"] = false,
 					["Red"] = false,
 				}, -- end of ["Pilot"]
+				["Spectrator"] = 
+				{
+					["Neutral"] = false,
+					["Blue"] = false,
+					["Red"] = false,
+				}, -- end of ["Spectrator"]
+				["ArtilleryCommander"] = 
+				{
+					["Neutral"] = false,
+					["Blue"] = false,
+					["Red"] = false,
+				}, -- end of ["ArtilleryCommander"]
 			}, -- end of ["hiddenOnF10Map"]
 		}, -- end of ["options"]
 		["layers"] = 
@@ -180,17 +180,17 @@ mission =
 						["borderThickness"] = 3,
 						["mapY"] = 311378.96387817,
 						["layerName"] = "Common",
-						["fontSize"] = 22,
-						["primitiveType"] = "TextBox",
+						["font"] = "DejaVuLGCSansCondensed.ttf",
+						["mapX"] = -134368.01829078,
 						["colorString"] = "0x000080ff",
 						["name"] = "Arco Text Box-1",
-						["fillColorString"] = "0x28b4d0ff",
+						["angle"] = 0,
 						["text"] = "Arco 1-1 | Basket\
 39X / 382.5 AM\
 ",
-						["angle"] = 0,
-						["mapX"] = -134368.01829078,
-						["font"] = "DejaVuLGCSansCondensed.ttf",
+						["fillColorString"] = "0x28b4d0ff",
+						["primitiveType"] = "TextBox",
+						["fontSize"] = 22,
 					}, -- end of [1]
 					[2] = 
 					{
@@ -198,17 +198,17 @@ mission =
 						["borderThickness"] = 3,
 						["mapY"] = 315432.49483304,
 						["layerName"] = "Common",
-						["fontSize"] = 22,
-						["primitiveType"] = "TextBox",
+						["font"] = "DejaVuLGCSansCondensed.ttf",
+						["mapX"] = -106947.07359609,
 						["colorString"] = "0x000080ff",
 						["name"] = "Texaco Text Box",
-						["fillColorString"] = "0x28b4d0ff",
+						["angle"] = 0,
 						["text"] = "Texaco 1-1 | Boom\
 38X / 380.0 AM\
 ",
-						["angle"] = 0,
-						["mapX"] = -106947.07359609,
-						["font"] = "DejaVuLGCSansCondensed.ttf",
+						["fillColorString"] = "0x28b4d0ff",
+						["primitiveType"] = "TextBox",
+						["fontSize"] = 22,
 					}, -- end of [2]
 				}, -- end of ["objects"]
 			}, -- end of [4]
@@ -285,12 +285,43 @@ mission =
 	}, -- end of ["triggers"]
 	["map"] = 
 	{
-		["centerY"] = 631936.69391345,
-		["zoom"] = 1389021.1723529,
-		["centerX"] = -76156.858887155,
+		["centerY"] = 234534.46385934,
+		["zoom"] = 51894.089317639,
+		["centerX"] = -1333.1862296091,
 	}, -- end of ["map"]
 	["coalitions"] = 
 	{
+		["blue"] = 
+		{
+			[1] = 21,
+			[2] = 23,
+			[3] = 11,
+			[4] = 25,
+			[5] = 8,
+			[6] = 80,
+			[7] = 28,
+			[8] = 26,
+			[9] = 13,
+			[10] = 30,
+			[11] = 5,
+			[12] = 16,
+			[13] = 6,
+			[14] = 31,
+			[15] = 32,
+			[16] = 15,
+			[17] = 20,
+			[18] = 12,
+			[19] = 40,
+			[20] = 41,
+			[21] = 44,
+			[22] = 9,
+			[23] = 46,
+			[24] = 10,
+			[25] = 3,
+			[26] = 4,
+			[27] = 1,
+			[28] = 2,
+		}, -- end of ["blue"]
 		["neutrals"] = 
 		{
 			[1] = 70,
@@ -350,37 +381,6 @@ mission =
 			[55] = 91,
 			[56] = 92,
 		}, -- end of ["neutrals"]
-		["blue"] = 
-		{
-			[1] = 21,
-			[2] = 23,
-			[3] = 11,
-			[4] = 25,
-			[5] = 8,
-			[6] = 80,
-			[7] = 28,
-			[8] = 26,
-			[9] = 13,
-			[10] = 30,
-			[11] = 5,
-			[12] = 16,
-			[13] = 6,
-			[14] = 31,
-			[15] = 32,
-			[16] = 15,
-			[17] = 20,
-			[18] = 12,
-			[19] = 40,
-			[20] = 41,
-			[21] = 44,
-			[22] = 9,
-			[23] = 46,
-			[24] = 10,
-			[25] = 3,
-			[26] = 4,
-			[27] = 1,
-			[28] = 2,
-		}, -- end of ["blue"]
 		["red"] = 
 		{
 			[1] = 18,
@@ -401,17 +401,6 @@ mission =
 	["pictureFileNameB"] = {},
 	["coalition"] = 
 	{
-		["neutrals"] = 
-		{
-			["bullseye"] = 
-			{
-				["y"] = 87041.597746316,
-				["x"] = -2942.2838363687,
-			}, -- end of ["bullseye"]
-			["nav_points"] = {},
-			["name"] = "neutrals",
-			["country"] = {},
-		}, -- end of ["neutrals"]
 		["blue"] = 
 		{
 			["bullseye"] = 
@@ -499,11 +488,11 @@ mission =
 											["MountNVG"] = false,
 											["LaserCode100"] = 6,
 											["EWDispenserTBL"] = 2,
-											["GBULaserCode100"] = 6,
+											["GBULaserCode10"] = 8,
 											["LaserCode1"] = 8,
 											["EWDispenserTFL"] = 1,
 											["EWDispenserTFR"] = 1,
-											["GBULaserCode10"] = 8,
+											["GBULaserCode100"] = 6,
 											["LaserCode10"] = 8,
 											["EWDispenserTBR"] = 2,
 										}, -- end of ["AddPropAircraft"]
@@ -512,36 +501,6 @@ mission =
 										{
 											[1] = 
 											{
-												["channelsNames"] = {},
-												["modulations"] = 
-												{
-													[1] = 0,
-													[2] = 0,
-													[4] = 0,
-													[8] = 0,
-													[16] = 0,
-													[17] = 0,
-													[9] = 0,
-													[18] = 0,
-													[5] = 0,
-													[10] = 0,
-													[20] = 0,
-													[21] = 0,
-													[11] = 0,
-													[22] = 0,
-													[3] = 0,
-													[6] = 0,
-													[12] = 0,
-													[24] = 0,
-													[25] = 0,
-													[13] = 0,
-													[26] = 0,
-													[7] = 0,
-													[14] = 0,
-													[23] = 0,
-													[19] = 0,
-													[15] = 0,
-												}, -- end of ["modulations"]
 												["channels"] = 
 												{
 													[1] = 265,
@@ -567,14 +526,10 @@ mission =
 													[26] = 131,
 													[7] = 135,
 													[14] = 135,
-													[23] = 131,
-													[19] = 135,
 													[15] = 135,
+													[19] = 135,
+													[23] = 131,
 												}, -- end of ["channels"]
-											}, -- end of [1]
-											[2] = 
-											{
-												["channelsNames"] = {},
 												["modulations"] = 
 												{
 													[1] = 0,
@@ -600,10 +555,14 @@ mission =
 													[26] = 0,
 													[7] = 0,
 													[14] = 0,
-													[23] = 0,
-													[19] = 0,
 													[15] = 0,
+													[19] = 0,
+													[23] = 0,
 												}, -- end of ["modulations"]
+												["channelsNames"] = {},
+											}, -- end of [1]
+											[2] = 
+											{
 												["channels"] = 
 												{
 													[1] = 136,
@@ -629,14 +588,10 @@ mission =
 													[26] = 136,
 													[7] = 136,
 													[14] = 136,
-													[23] = 136,
-													[19] = 136,
 													[15] = 136,
+													[19] = 136,
+													[23] = 136,
 												}, -- end of ["channels"]
-											}, -- end of [2]
-											[3] = 
-											{
-												["channelsNames"] = {},
 												["modulations"] = 
 												{
 													[1] = 0,
@@ -650,7 +605,6 @@ mission =
 													[5] = 0,
 													[10] = 0,
 													[20] = 0,
-													[30] = 0,
 													[21] = 0,
 													[11] = 0,
 													[22] = 0,
@@ -658,18 +612,19 @@ mission =
 													[6] = 0,
 													[12] = 0,
 													[24] = 0,
-													[19] = 0,
 													[25] = 0,
 													[13] = 0,
 													[26] = 0,
 													[7] = 0,
-													[27] = 0,
 													[14] = 0,
-													[28] = 0,
-													[23] = 0,
-													[29] = 0,
 													[15] = 0,
+													[19] = 0,
+													[23] = 0,
 												}, -- end of ["modulations"]
+												["channelsNames"] = {},
+											}, -- end of [2]
+											[3] = 
+											{
 												["channels"] = 
 												{
 													[1] = 177,
@@ -683,7 +638,7 @@ mission =
 													[5] = 254,
 													[10] = 262,
 													[20] = 266,
-													[30] = 123.3,
+													[15] = 263,
 													[21] = 133,
 													[11] = 259,
 													[22] = 257.8,
@@ -695,14 +650,48 @@ mission =
 													[25] = 344,
 													[13] = 269,
 													[26] = 385,
+													[23] = 122.1,
 													[7] = 270,
-													[27] = 133,
 													[14] = 260,
 													[28] = 257.8,
-													[23] = 122.1,
+													[27] = 133,
 													[29] = 122.1,
-													[15] = 263,
+													[30] = 123.3,
 												}, -- end of ["channels"]
+												["modulations"] = 
+												{
+													[1] = 0,
+													[2] = 0,
+													[4] = 0,
+													[8] = 0,
+													[16] = 0,
+													[17] = 0,
+													[9] = 0,
+													[18] = 0,
+													[5] = 0,
+													[10] = 0,
+													[20] = 0,
+													[15] = 0,
+													[21] = 0,
+													[11] = 0,
+													[22] = 0,
+													[3] = 0,
+													[6] = 0,
+													[12] = 0,
+													[24] = 0,
+													[19] = 0,
+													[25] = 0,
+													[13] = 0,
+													[26] = 0,
+													[23] = 0,
+													[7] = 0,
+													[14] = 0,
+													[28] = 0,
+													[27] = 0,
+													[29] = 0,
+													[30] = 0,
+												}, -- end of ["modulations"]
+												["channelsNames"] = {},
 											}, -- end of [3]
 										}, -- end of ["Radio"]
 										["unitId"] = 2,
@@ -827,49 +816,27 @@ mission =
 											["TacanBand"] = 0,
 											["INSAlignmentStored"] = true,
 											["ChaffDoubleDispense"] = false,
-											["LaserCodeDigit1"] = 1,
+											["IffMode2Digit1"] = 0,
 											["IffMode2Digit4"] = 0,
 											["IffMode2Digit2"] = 0,
-											["TacanChannel"] = 0,
+											["LaserCodeDigit4"] = 8,
+											["LaserCodeDigit2"] = 6,
 											["UseReferenceAircraft"] = true,
-											["KY28Key"] = 1,
 											["LaserCodeDigit3"] = 8,
-											["Wear"] = 0,
+											["VORILSFrequencyMHZ"] = 117,
 											["VORILSFrequencyDecimalMHZ"] = 0,
 											["Quality"] = 100,
 											["IffMode2Digit3"] = 0,
-											["VORILSFrequencyMHZ"] = 108,
-											["LaserCodeDigit2"] = 6,
-											["LaserCodeDigit4"] = 8,
-											["IffMode2Digit1"] = 0,
+											["Wear"] = 0,
+											["KY28Key"] = 1,
+											["TacanChannel"] = 38,
+											["LaserCodeDigit1"] = 1,
 										}, -- end of ["AddPropAircraft"]
 										["type"] = "F-4E-45MC",
 										["Radio"] = 
 										{
 											[1] = 
 											{
-												["channelsNames"] = {},
-												["modulations"] = 
-												{
-													[1] = 0,
-													[2] = 0,
-													[4] = 0,
-													[8] = 0,
-													[16] = 0,
-													[17] = 0,
-													[9] = 0,
-													[18] = 0,
-													[5] = 0,
-													[10] = 0,
-													[11] = 0,
-													[3] = 0,
-													[6] = 0,
-													[12] = 0,
-													[13] = 0,
-													[7] = 0,
-													[14] = 0,
-													[15] = 0,
-												}, -- end of ["modulations"]
 												["channels"] = 
 												{
 													[1] = 265,
@@ -891,10 +858,6 @@ mission =
 													[14] = 265,
 													[15] = 265,
 												}, -- end of ["channels"]
-											}, -- end of [1]
-											[2] = 
-											{
-												["channelsNames"] = {},
 												["modulations"] = 
 												{
 													[1] = 0,
@@ -907,7 +870,6 @@ mission =
 													[18] = 0,
 													[5] = 0,
 													[10] = 0,
-													[20] = 0,
 													[11] = 0,
 													[3] = 0,
 													[6] = 0,
@@ -915,9 +877,12 @@ mission =
 													[13] = 0,
 													[7] = 0,
 													[14] = 0,
-													[19] = 0,
 													[15] = 0,
 												}, -- end of ["modulations"]
+												["channelsNames"] = {},
+											}, -- end of [1]
+											[2] = 
+											{
 												["channels"] = 
 												{
 													[1] = 266,
@@ -938,9 +903,33 @@ mission =
 													[13] = 266,
 													[7] = 266,
 													[14] = 266,
-													[19] = 266,
 													[15] = 266,
+													[19] = 266,
 												}, -- end of ["channels"]
+												["modulations"] = 
+												{
+													[1] = 0,
+													[2] = 0,
+													[4] = 0,
+													[8] = 0,
+													[16] = 0,
+													[17] = 0,
+													[9] = 0,
+													[18] = 0,
+													[5] = 0,
+													[10] = 0,
+													[20] = 0,
+													[11] = 0,
+													[3] = 0,
+													[6] = 0,
+													[12] = 0,
+													[13] = 0,
+													[7] = 0,
+													[14] = 0,
+													[15] = 0,
+													[19] = 0,
+												}, -- end of ["modulations"]
+												["channelsNames"] = {},
 											}, -- end of [2]
 										}, -- end of ["Radio"]
 										["unitId"] = 3,
@@ -1086,24 +1075,24 @@ mission =
 											["IlsChannel"] = 1,
 											["TacanBand"] = 0,
 											["LaserCodeDigit2"] = 6,
-											["TacanChannel"] = 0,
+											["LaserCodeDigit4"] = 8,
 											["UseLAU138"] = true,
 											["INSAlignmentStored"] = true,
 											["ChaffDoubleDispense"] = false,
-											["LaserCodeDigit1"] = 1,
+											["IffMode2Digit4"] = 0,
 											["IffMode2Digit1"] = 0,
 											["M61BURST"] = 2,
-											["Wear"] = 0,
+											["VORILSFrequencyMHZ"] = 108,
 											["IffMode2Digit2"] = 0,
 											["KY28Key"] = 1,
 											["LaserCodeDigit3"] = 8,
-											["UseReferenceAircraft"] = true,
-											["VORILSFrequencyDecimalMHZ"] = 0,
 											["Quality"] = 100,
+											["VORILSFrequencyDecimalMHZ"] = 0,
+											["UseReferenceAircraft"] = true,
 											["IffMode2Digit3"] = 0,
-											["VORILSFrequencyMHZ"] = 108,
-											["IffMode2Digit4"] = 0,
-											["LaserCodeDigit4"] = 8,
+											["Wear"] = 0,
+											["LaserCodeDigit1"] = 1,
+											["TacanChannel"] = 39,
 											["ALE39Loadout"] = 0,
 										}, -- end of ["AddPropAircraft"]
 										["type"] = "F-14A-135-GR",
@@ -1111,28 +1100,6 @@ mission =
 										{
 											[1] = 
 											{
-												["channelsNames"] = {},
-												["modulations"] = 
-												{
-													[1] = 0,
-													[2] = 0,
-													[4] = 0,
-													[8] = 0,
-													[16] = 0,
-													[17] = 0,
-													[9] = 0,
-													[18] = 0,
-													[5] = 0,
-													[10] = 0,
-													[11] = 0,
-													[3] = 0,
-													[6] = 0,
-													[12] = 0,
-													[13] = 0,
-													[7] = 0,
-													[14] = 0,
-													[15] = 0,
-												}, -- end of ["modulations"]
 												["channels"] = 
 												{
 													[1] = 265,
@@ -1153,13 +1120,9 @@ mission =
 													[13] = 265,
 													[7] = 265,
 													[14] = 265,
-													[19] = 265,
 													[15] = 265,
+													[19] = 265,
 												}, -- end of ["channels"]
-											}, -- end of [1]
-											[2] = 
-											{
-												["channelsNames"] = {},
 												["modulations"] = 
 												{
 													[1] = 0,
@@ -1172,27 +1135,19 @@ mission =
 													[18] = 0,
 													[5] = 0,
 													[10] = 0,
-													[20] = 0,
-													[19] = 0,
-													[21] = 0,
 													[11] = 0,
-													[22] = 0,
 													[3] = 0,
 													[6] = 0,
 													[12] = 0,
-													[24] = 0,
-													[15] = 0,
-													[25] = 0,
 													[13] = 0,
-													[26] = 0,
-													[23] = 0,
-													[27] = 0,
-													[14] = 0,
-													[28] = 0,
 													[7] = 0,
-													[29] = 0,
-													[30] = 0,
+													[14] = 0,
+													[15] = 0,
 												}, -- end of ["modulations"]
+												["channelsNames"] = {},
+											}, -- end of [1]
+											[2] = 
+											{
 												["channels"] = 
 												{
 													[1] = 136,
@@ -1206,7 +1161,7 @@ mission =
 													[5] = 265,
 													[10] = 136,
 													[20] = 136,
-													[30] = 136,
+													[15] = 136,
 													[21] = 136,
 													[11] = 136,
 													[22] = 136,
@@ -1218,14 +1173,48 @@ mission =
 													[25] = 136,
 													[13] = 136,
 													[26] = 136,
+													[23] = 136,
 													[7] = 136,
-													[27] = 136,
 													[14] = 136,
 													[28] = 136,
-													[23] = 136,
+													[27] = 136,
 													[29] = 136,
-													[15] = 136,
+													[30] = 136,
 												}, -- end of ["channels"]
+												["modulations"] = 
+												{
+													[1] = 0,
+													[2] = 0,
+													[4] = 0,
+													[8] = 0,
+													[16] = 0,
+													[17] = 0,
+													[9] = 0,
+													[18] = 0,
+													[5] = 0,
+													[10] = 0,
+													[20] = 0,
+													[30] = 0,
+													[21] = 0,
+													[11] = 0,
+													[22] = 0,
+													[3] = 0,
+													[6] = 0,
+													[12] = 0,
+													[24] = 0,
+													[15] = 0,
+													[25] = 0,
+													[13] = 0,
+													[26] = 0,
+													[7] = 0,
+													[27] = 0,
+													[14] = 0,
+													[28] = 0,
+													[23] = 0,
+													[29] = 0,
+													[19] = 0,
+												}, -- end of ["modulations"]
+												["channelsNames"] = {},
 											}, -- end of [2]
 										}, -- end of ["Radio"]
 										["unitId"] = 4,
@@ -1359,24 +1348,24 @@ mission =
 											["IlsChannel"] = 1,
 											["TacanBand"] = 0,
 											["LaserCodeDigit2"] = 6,
-											["TacanChannel"] = 0,
+											["LaserCodeDigit4"] = 8,
 											["UseLAU138"] = true,
 											["INSAlignmentStored"] = true,
 											["ChaffDoubleDispense"] = false,
-											["LaserCodeDigit1"] = 1,
+											["IffMode2Digit4"] = 0,
 											["IffMode2Digit1"] = 0,
 											["M61BURST"] = 0,
-											["Wear"] = 0,
+											["VORILSFrequencyMHZ"] = 108,
 											["IffMode2Digit2"] = 0,
 											["KY28Key"] = 1,
 											["LaserCodeDigit3"] = 8,
-											["UseReferenceAircraft"] = true,
-											["VORILSFrequencyDecimalMHZ"] = 0,
 											["Quality"] = 100,
+											["VORILSFrequencyDecimalMHZ"] = 0,
+											["UseReferenceAircraft"] = true,
 											["IffMode2Digit3"] = 0,
-											["VORILSFrequencyMHZ"] = 108,
-											["IffMode2Digit4"] = 0,
-											["LaserCodeDigit4"] = 8,
+											["Wear"] = 0,
+											["LaserCodeDigit1"] = 1,
+											["TacanChannel"] = 39,
 											["ALE39Loadout"] = 0,
 										}, -- end of ["AddPropAircraft"]
 										["type"] = "F-14B",
@@ -1384,28 +1373,6 @@ mission =
 										{
 											[1] = 
 											{
-												["channelsNames"] = {},
-												["modulations"] = 
-												{
-													[1] = 0,
-													[2] = 0,
-													[4] = 0,
-													[8] = 0,
-													[16] = 0,
-													[17] = 0,
-													[9] = 0,
-													[18] = 0,
-													[5] = 0,
-													[10] = 0,
-													[11] = 0,
-													[3] = 0,
-													[6] = 0,
-													[12] = 0,
-													[13] = 0,
-													[7] = 0,
-													[14] = 0,
-													[15] = 0,
-												}, -- end of ["modulations"]
 												["channels"] = 
 												{
 													[1] = 265,
@@ -1426,13 +1393,9 @@ mission =
 													[13] = 265,
 													[7] = 265,
 													[14] = 265,
-													[19] = 265,
 													[15] = 265,
+													[19] = 265,
 												}, -- end of ["channels"]
-											}, -- end of [1]
-											[2] = 
-											{
-												["channelsNames"] = {},
 												["modulations"] = 
 												{
 													[1] = 0,
@@ -1445,27 +1408,19 @@ mission =
 													[18] = 0,
 													[5] = 0,
 													[10] = 0,
-													[20] = 0,
-													[30] = 0,
-													[21] = 0,
 													[11] = 0,
-													[22] = 0,
 													[3] = 0,
 													[6] = 0,
 													[12] = 0,
-													[24] = 0,
-													[19] = 0,
-													[25] = 0,
 													[13] = 0,
-													[26] = 0,
 													[7] = 0,
-													[27] = 0,
 													[14] = 0,
-													[28] = 0,
-													[23] = 0,
-													[29] = 0,
 													[15] = 0,
 												}, -- end of ["modulations"]
+												["channelsNames"] = {},
+											}, -- end of [1]
+											[2] = 
+											{
 												["channels"] = 
 												{
 													[1] = 136,
@@ -1479,7 +1434,7 @@ mission =
 													[5] = 265,
 													[10] = 136,
 													[20] = 136,
-													[30] = 136,
+													[15] = 136,
 													[21] = 136,
 													[11] = 136,
 													[22] = 136,
@@ -1491,14 +1446,48 @@ mission =
 													[25] = 136,
 													[13] = 136,
 													[26] = 136,
+													[23] = 136,
 													[7] = 136,
-													[27] = 136,
 													[14] = 136,
 													[28] = 136,
-													[23] = 136,
+													[27] = 136,
 													[29] = 136,
-													[15] = 136,
+													[30] = 136,
 												}, -- end of ["channels"]
+												["modulations"] = 
+												{
+													[1] = 0,
+													[2] = 0,
+													[4] = 0,
+													[8] = 0,
+													[16] = 0,
+													[17] = 0,
+													[9] = 0,
+													[18] = 0,
+													[5] = 0,
+													[10] = 0,
+													[20] = 0,
+													[15] = 0,
+													[21] = 0,
+													[11] = 0,
+													[22] = 0,
+													[3] = 0,
+													[6] = 0,
+													[12] = 0,
+													[24] = 0,
+													[19] = 0,
+													[25] = 0,
+													[13] = 0,
+													[26] = 0,
+													[23] = 0,
+													[7] = 0,
+													[14] = 0,
+													[28] = 0,
+													[27] = 0,
+													[29] = 0,
+													[30] = 0,
+												}, -- end of ["modulations"]
+												["channelsNames"] = {},
 											}, -- end of [2]
 										}, -- end of ["Radio"]
 										["unitId"] = 5,
@@ -1633,7 +1622,7 @@ mission =
 										["speed"] = 200,
 										["AddPropAircraft"] = 
 										{
-											["LaserCodeDigit1"] = 1,
+											["SoloFlight"] = false,
 											["Sta5LaserCode"] = 688,
 											["Sta2LaserCode"] = 688,
 											["IFF_M2_CODE"] = "auto",
@@ -1645,56 +1634,32 @@ mission =
 											["InitAirborneTime"] = 0,
 											["HumanOrchestra"] = false,
 											["TacanBand"] = 0,
-											["UseReferenceAircraft"] = true,
-											["needsGCAlign"] = false,
-											["SoloFlight"] = false,
+											["KY28Key"] = 1,
+											["IffMode2Digit1"] = 0,
+											["LaserCodeDigit1"] = 1,
 											["INSAlignmentStored"] = true,
-											["Quality"] = 100,
+											["MountNVG"] = false,
 											["ChaffDoubleDispense"] = false,
-											["VORILSFrequencyMHZ"] = 108,
+											["Wear"] = 0,
 											["IffMode2Digit4"] = 0,
 											["Sta8LaserCode"] = 688,
-											["MountNVG"] = false,
-											["NetCrewControlPriority"] = 0,
-											["KY28Key"] = 1,
-											["IffMode2Digit2"] = 0,
-											["LaserCodeDigit2"] = 6,
-											["VORILSFrequencyDecimalMHZ"] = 0,
-											["IsNvgAllowed"] = true,
 											["InitAlertStatus"] = false,
-											["Wear"] = 0,
+											["NetCrewControlPriority"] = 0,
+											["needsGCAlign"] = false,
+											["IsNvgAllowed"] = true,
+											["Quality"] = 100,
+											["VORILSFrequencyDecimalMHZ"] = 0,
+											["LaserCodeDigit2"] = 6,
+											["IffMode2Digit2"] = 0,
+											["VORILSFrequencyMHZ"] = 108,
 											["TacanChannel"] = 0,
-											["IffMode2Digit1"] = 0,
+											["UseReferenceAircraft"] = true,
 										}, -- end of ["AddPropAircraft"]
 										["type"] = "F-15ESE",
 										["Radio"] = 
 										{
 											[1] = 
 											{
-												["channelsNames"] = {},
-												["modulations"] = 
-												{
-													[1] = 0,
-													[2] = 0,
-													[4] = 0,
-													[8] = 0,
-													[16] = 0,
-													[17] = 0,
-													[9] = 0,
-													[18] = 0,
-													[5] = 0,
-													[10] = 0,
-													[20] = 0,
-													[11] = 0,
-													[3] = 0,
-													[6] = 0,
-													[12] = 0,
-													[13] = 0,
-													[7] = 0,
-													[14] = 0,
-													[19] = 0,
-													[15] = 0,
-												}, -- end of ["modulations"]
 												["channels"] = 
 												{
 													[1] = 265,
@@ -1715,54 +1680,36 @@ mission =
 													[13] = 265,
 													[7] = 265,
 													[14] = 265,
-													[19] = 265,
 													[15] = 265,
+													[19] = 265,
 												}, -- end of ["channels"]
+												["modulations"] = 
+												{
+													[1] = 0,
+													[2] = 0,
+													[4] = 0,
+													[8] = 0,
+													[16] = 0,
+													[17] = 0,
+													[9] = 0,
+													[18] = 0,
+													[5] = 0,
+													[10] = 0,
+													[20] = 0,
+													[11] = 0,
+													[3] = 0,
+													[6] = 0,
+													[12] = 0,
+													[13] = 0,
+													[7] = 0,
+													[14] = 0,
+													[15] = 0,
+													[19] = 0,
+												}, -- end of ["modulations"]
+												["channelsNames"] = {},
 											}, -- end of [1]
 											[2] = 
 											{
-												["channelsNames"] = {},
-												["modulations"] = 
-												{
-													[27] = 0,
-													[2] = 0,
-													[38] = 0,
-													[3] = 0,
-													[4] = 0,
-													[5] = 0,
-													[6] = 0,
-													[7] = 0,
-													[8] = 0,
-													[10] = 0,
-													[12] = 0,
-													[14] = 0,
-													[16] = 0,
-													[20] = 0,
-													[28] = 0,
-													[32] = 0,
-													[40] = 0,
-													[33] = 0,
-													[17] = 0,
-													[21] = 0,
-													[25] = 0,
-													[29] = 0,
-													[9] = 0,
-													[11] = 0,
-													[13] = 0,
-													[15] = 0,
-													[18] = 0,
-													[22] = 0,
-													[26] = 0,
-													[30] = 0,
-													[36] = 0,
-													[37] = 0,
-													[31] = 0,
-													[35] = 0,
-													[1] = 0,
-													[19] = 0,
-													[23] = 0,
-													[39] = 0,
-												}, -- end of ["modulations"]
 												["channels"] = 
 												{
 													[27] = 136,
@@ -1799,13 +1746,55 @@ mission =
 													[30] = 136,
 													[36] = 136,
 													[37] = 136,
-													[31] = 136,
+													[39] = 136,
 													[35] = 136,
 													[1] = 136,
 													[19] = 136,
 													[23] = 136,
-													[39] = 136,
+													[31] = 136,
 												}, -- end of ["channels"]
+												["modulations"] = 
+												{
+													[27] = 0,
+													[2] = 0,
+													[38] = 0,
+													[3] = 0,
+													[4] = 0,
+													[5] = 0,
+													[6] = 0,
+													[7] = 0,
+													[8] = 0,
+													[10] = 0,
+													[12] = 0,
+													[14] = 0,
+													[16] = 0,
+													[20] = 0,
+													[28] = 0,
+													[32] = 0,
+													[40] = 0,
+													[33] = 0,
+													[17] = 0,
+													[21] = 0,
+													[25] = 0,
+													[29] = 0,
+													[9] = 0,
+													[11] = 0,
+													[13] = 0,
+													[15] = 0,
+													[18] = 0,
+													[22] = 0,
+													[26] = 0,
+													[30] = 0,
+													[36] = 0,
+													[37] = 0,
+													[39] = 0,
+													[35] = 0,
+													[1] = 0,
+													[19] = 0,
+													[23] = 0,
+													[31] = 0,
+												}, -- end of ["modulations"]
+												["channelsNames"] = {},
 											}, -- end of [2]
 										}, -- end of ["Radio"]
 										["unitId"] = 8,
@@ -1949,58 +1938,34 @@ mission =
 										{
 											["IsNvgAllowed"] = true,
 											["TacanBand"] = 0,
-											["INSAlignmentStored"] = true,
+											["LaserCodeDigit2"] = 6,
 											["STN_L16"] = "00211",
-											["TacanChannel"] = 0,
-											["HelmetMountedDevice"] = 1,
-											["Wear"] = 0,
-											["VoiceCallsignNumber"] = "11",
+											["LaserCodeDigit4"] = 8,
+											["LaserCodeDigit1"] = 1,
+											["VORILSFrequencyMHZ"] = 108,
+											["INSAlignmentStored"] = true,
 											["ChaffDoubleDispense"] = false,
+											["VoiceCallsignLabel"] = "HN",
+											["HelmetMountedDevice"] = 1,
 											["IffMode2Digit2"] = 0,
-											["IffMode2Digit4"] = 0,
-											["VoiceCallsignLabel"] = "ED",
-											["IffMode2Digit1"] = 0,
-											["LAU3ROF"] = 0,
+											["Quality"] = 100,
 											["KY28Key"] = 1,
+											["LAU3ROF"] = 0,
 											["LaserCodeDigit3"] = 8,
 											["UseReferenceAircraft"] = true,
 											["VORILSFrequencyDecimalMHZ"] = 0,
-											["Quality"] = 100,
+											["IffMode2Digit1"] = 0,
 											["IffMode2Digit3"] = 0,
-											["VORILSFrequencyMHZ"] = 108,
-											["LaserCodeDigit1"] = 1,
-											["LaserCodeDigit4"] = 8,
-											["LaserCodeDigit2"] = 6,
+											["Wear"] = 0,
+											["IffMode2Digit4"] = 0,
+											["TacanChannel"] = 0,
+											["VoiceCallsignNumber"] = "11",
 										}, -- end of ["AddPropAircraft"]
 										["type"] = "F-16C_50",
 										["Radio"] = 
 										{
 											[1] = 
 											{
-												["channelsNames"] = {},
-												["modulations"] = 
-												{
-													[1] = 0,
-													[2] = 0,
-													[4] = 0,
-													[8] = 0,
-													[16] = 0,
-													[17] = 0,
-													[9] = 0,
-													[18] = 0,
-													[5] = 0,
-													[10] = 0,
-													[20] = 0,
-													[11] = 0,
-													[3] = 0,
-													[6] = 0,
-													[12] = 0,
-													[13] = 0,
-													[7] = 0,
-													[14] = 0,
-													[19] = 0,
-													[15] = 0,
-												}, -- end of ["modulations"]
 												["channels"] = 
 												{
 													[1] = 265,
@@ -2021,13 +1986,9 @@ mission =
 													[13] = 265,
 													[7] = 265,
 													[14] = 265,
-													[19] = 265,
 													[15] = 265,
+													[19] = 265,
 												}, -- end of ["channels"]
-											}, -- end of [1]
-											[2] = 
-											{
-												["channelsNames"] = {},
 												["modulations"] = 
 												{
 													[1] = 0,
@@ -2048,9 +2009,13 @@ mission =
 													[13] = 0,
 													[7] = 0,
 													[14] = 0,
-													[19] = 0,
 													[15] = 0,
+													[19] = 0,
 												}, -- end of ["modulations"]
+												["channelsNames"] = {},
+											}, -- end of [1]
+											[2] = 
+											{
 												["channels"] = 
 												{
 													[1] = 136,
@@ -2071,9 +2036,33 @@ mission =
 													[13] = 136,
 													[7] = 136,
 													[14] = 136,
-													[19] = 136,
 													[15] = 136,
+													[19] = 136,
 												}, -- end of ["channels"]
+												["modulations"] = 
+												{
+													[1] = 0,
+													[2] = 0,
+													[4] = 0,
+													[8] = 0,
+													[16] = 0,
+													[17] = 0,
+													[9] = 0,
+													[18] = 0,
+													[5] = 0,
+													[10] = 0,
+													[20] = 0,
+													[11] = 0,
+													[3] = 0,
+													[6] = 0,
+													[12] = 0,
+													[13] = 0,
+													[7] = 0,
+													[14] = 0,
+													[15] = 0,
+													[19] = 0,
+												}, -- end of ["modulations"]
+												["channelsNames"] = {},
 											}, -- end of [2]
 										}, -- end of ["Radio"]
 										["unitId"] = 9,
@@ -2155,8 +2144,8 @@ mission =
 													{
 														[1] = 
 														{
-															["TDOA"] = true,
 															["missionUnitId"] = 9,
+															["TDOA"] = true,
 														}, -- end of [1]
 													}, -- end of ["teamMembers"]
 													["donors"] = {},
@@ -2230,60 +2219,36 @@ mission =
 										["AddPropAircraft"] = 
 										{
 											["IsNvgAllowed"] = true,
-											["Wear"] = 0,
+											["LaserCodeDigit2"] = 6,
 											["TacanBand"] = 0,
-											["TacanChannel"] = 0,
+											["LaserCodeDigit4"] = 8,
 											["STN_L16"] = "00212",
-											["VoiceCallsignNumber"] = "11",
-											["OuterBoard"] = 0,
-											["IffMode2Digit4"] = 0,
-											["INSAlignmentStored"] = true,
-											["ChaffDoubleDispense"] = false,
-											["IffMode2Digit2"] = 0,
+											["Quality"] = 100,
+											["VORILSFrequencyMHZ"] = 108,
 											["IffMode2Digit1"] = 0,
-											["VoiceCallsignLabel"] = "ED",
+											["VoiceCallsignNumber"] = "11",
+											["ChaffDoubleDispense"] = false,
+											["HelmetMountedDevice"] = 1,
+											["IffMode2Digit4"] = 0,
+											["IffMode2Digit2"] = 0,
 											["LaserCodeDigit1"] = 1,
 											["InnerBoard"] = 0,
 											["KY28Key"] = 1,
 											["LaserCodeDigit3"] = 8,
 											["UseReferenceAircraft"] = true,
 											["VORILSFrequencyDecimalMHZ"] = 0,
-											["HelmetMountedDevice"] = 1,
+											["VoiceCallsignLabel"] = "AN",
 											["IffMode2Digit3"] = 0,
-											["VORILSFrequencyMHZ"] = 108,
-											["Quality"] = 100,
-											["LaserCodeDigit4"] = 8,
-											["LaserCodeDigit2"] = 6,
+											["Wear"] = 0,
+											["INSAlignmentStored"] = true,
+											["TacanChannel"] = 0,
+											["OuterBoard"] = 0,
 										}, -- end of ["AddPropAircraft"]
 										["type"] = "FA-18C_hornet",
 										["Radio"] = 
 										{
 											[1] = 
 											{
-												["channelsNames"] = {},
-												["modulations"] = 
-												{
-													[1] = 0,
-													[2] = 0,
-													[4] = 1,
-													[8] = 0,
-													[16] = 0,
-													[17] = 0,
-													[9] = 0,
-													[18] = 0,
-													[5] = 0,
-													[10] = 0,
-													[20] = 0,
-													[11] = 0,
-													[3] = 0,
-													[6] = 0,
-													[12] = 0,
-													[13] = 0,
-													[7] = 0,
-													[14] = 0,
-													[19] = 0,
-													[15] = 0,
-												}, -- end of ["modulations"]
 												["channels"] = 
 												{
 													[1] = 265,
@@ -2304,18 +2269,14 @@ mission =
 													[13] = 265,
 													[7] = 265,
 													[14] = 265,
-													[19] = 265,
 													[15] = 265,
+													[19] = 265,
 												}, -- end of ["channels"]
-											}, -- end of [1]
-											[2] = 
-											{
-												["channelsNames"] = {},
 												["modulations"] = 
 												{
 													[1] = 0,
 													[2] = 0,
-													[4] = 0,
+													[4] = 1,
 													[8] = 0,
 													[16] = 0,
 													[17] = 0,
@@ -2331,9 +2292,13 @@ mission =
 													[13] = 0,
 													[7] = 0,
 													[14] = 0,
-													[19] = 0,
 													[15] = 0,
+													[19] = 0,
 												}, -- end of ["modulations"]
+												["channelsNames"] = {},
+											}, -- end of [1]
+											[2] = 
+											{
 												["channels"] = 
 												{
 													[1] = 136,
@@ -2354,9 +2319,33 @@ mission =
 													[13] = 136,
 													[7] = 136,
 													[14] = 136,
-													[19] = 136,
 													[15] = 136,
+													[19] = 136,
 												}, -- end of ["channels"]
+												["modulations"] = 
+												{
+													[1] = 0,
+													[2] = 0,
+													[4] = 0,
+													[8] = 0,
+													[16] = 0,
+													[17] = 0,
+													[9] = 0,
+													[18] = 0,
+													[5] = 0,
+													[10] = 0,
+													[20] = 0,
+													[11] = 0,
+													[3] = 0,
+													[6] = 0,
+													[12] = 0,
+													[13] = 0,
+													[7] = 0,
+													[14] = 0,
+													[15] = 0,
+													[19] = 0,
+												}, -- end of ["modulations"]
+												["channelsNames"] = {},
 											}, -- end of [2]
 										}, -- end of ["Radio"]
 										["unitId"] = 10,
@@ -2365,14 +2354,14 @@ mission =
 										{
 											["GroupsPoints"] = 
 											{
-												["PB"] = {},
+												["Initial Point"] = {},
 												["Sequence 2 Red"] = {},
-												["Sequence 3 Yellow"] = {},
+												["PB"] = {},
 												["Sequence 1 Blue"] = {},
 												["Start Location"] = {},
 												["A/A Waypoint"] = {},
 												["PP"] = {},
-												["Initial Point"] = {},
+												["Sequence 3 Yellow"] = {},
 											}, -- end of ["GroupsPoints"]
 											["Points"] = {},
 										}, -- end of ["dataCartridge"]
@@ -2444,9 +2433,9 @@ mission =
 													["FF1_Channel"] = 2,
 													["FF2_Channel"] = 3,
 													["transmitPower"] = 0,
-													["VOCB_Channel"] = 5,
-													["VOCA_Channel"] = 4,
 													["AIC_Channel"] = 1,
+													["VOCA_Channel"] = 4,
+													["VOCB_Channel"] = 5,
 												}, -- end of ["settings"]
 												["network"] = 
 												{
@@ -2502,10 +2491,10 @@ mission =
 													{
 														[1] = 
 														{
-															["number"] = 1,
+															["enabled"] = true,
 															["key"] = "CAP",
 															["id"] = "EngageTargets",
-															["enabled"] = true,
+															["number"] = 1,
 															["auto"] = true,
 															["params"] = 
 															{
@@ -2518,10 +2507,10 @@ mission =
 														}, -- end of [1]
 														[2] = 
 														{
-															["number"] = 2,
+															["enabled"] = true,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["enabled"] = true,
+															["number"] = 2,
 															["params"] = 
 															{
 																["action"] = 
@@ -2537,10 +2526,10 @@ mission =
 														}, -- end of [2]
 														[3] = 
 														{
-															["number"] = 3,
+															["enabled"] = true,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["enabled"] = true,
+															["number"] = 3,
 															["params"] = 
 															{
 																["action"] = 
@@ -2556,10 +2545,10 @@ mission =
 														}, -- end of [3]
 														[4] = 
 														{
-															["number"] = 4,
+															["enabled"] = true,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["enabled"] = true,
+															["number"] = 4,
 															["params"] = 
 															{
 																["action"] = 
@@ -2575,10 +2564,10 @@ mission =
 														}, -- end of [4]
 														[5] = 
 														{
-															["number"] = 5,
+															["enabled"] = true,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["enabled"] = true,
+															["number"] = 5,
 															["params"] = 
 															{
 																["action"] = 
@@ -2627,10 +2616,10 @@ mission =
 														}, -- end of [5]
 														[6] = 
 														{
-															["number"] = 6,
+															["enabled"] = true,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["enabled"] = true,
+															["number"] = 6,
 															["params"] = 
 															{
 																["action"] = 
@@ -2673,39 +2662,17 @@ mission =
 										["speed"] = 138.88888888889,
 										["AddPropAircraft"] = 
 										{
-											["LaserCode1"] = 8,
-											["LaserCode100"] = 6,
-											["AARProbe"] = false,
 											["LaserCode10"] = 8,
+											["LaserCode100"] = 6,
+											["LaserCode1"] = 8,
+											["AARProbe"] = false,
 										}, -- end of ["AddPropAircraft"]
 										["type"] = "JF-17",
 										["Radio"] = 
 										{
 											[1] = 
 											{
-												["channels"] = 
-												{
-													[1] = 136,
-													[2] = 265,
-													[4] = 266,
-													[8] = 136,
-													[16] = 136,
-													[17] = 136,
-													[9] = 136,
-													[18] = 136,
-													[5] = 382.5,
-													[10] = 136,
-													[20] = 136,
-													[11] = 136,
-													[3] = 136,
-													[6] = 136,
-													[12] = 136,
-													[13] = 136,
-													[7] = 136,
-													[14] = 136,
-													[19] = 136,
-													[15] = 136,
-												}, -- end of ["channels"]
+												["channelsNames"] = {},
 												["modulations"] = 
 												{
 													[1] = 0,
@@ -2726,10 +2693,32 @@ mission =
 													[13] = 0,
 													[7] = 0,
 													[14] = 0,
-													[19] = 0,
 													[15] = 0,
+													[19] = 0,
 												}, -- end of ["modulations"]
-												["channelsNames"] = {},
+												["channels"] = 
+												{
+													[1] = 136,
+													[2] = 265,
+													[4] = 266,
+													[8] = 136,
+													[16] = 136,
+													[17] = 136,
+													[9] = 136,
+													[18] = 136,
+													[5] = 382.5,
+													[10] = 136,
+													[20] = 136,
+													[11] = 136,
+													[3] = 136,
+													[6] = 136,
+													[12] = 136,
+													[13] = 136,
+													[7] = 136,
+													[14] = 136,
+													[15] = 136,
+													[19] = 136,
+												}, -- end of ["channels"]
 											}, -- end of [1]
 										}, -- end of ["Radio"]
 										["unitId"] = 19,
@@ -2818,10 +2807,10 @@ mission =
 													{
 														[1] = 
 														{
-															["enabled"] = true,
+															["number"] = 1,
 															["key"] = "CAP",
 															["id"] = "EngageTargets",
-															["number"] = 1,
+															["enabled"] = true,
 															["auto"] = true,
 															["params"] = 
 															{
@@ -2834,10 +2823,10 @@ mission =
 														}, -- end of [1]
 														[2] = 
 														{
-															["enabled"] = true,
+															["number"] = 2,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["number"] = 2,
+															["enabled"] = true,
 															["params"] = 
 															{
 																["action"] = 
@@ -2853,10 +2842,10 @@ mission =
 														}, -- end of [2]
 														[3] = 
 														{
-															["enabled"] = true,
+															["number"] = 3,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["number"] = 3,
+															["enabled"] = true,
 															["params"] = 
 															{
 																["action"] = 
@@ -2872,10 +2861,10 @@ mission =
 														}, -- end of [3]
 														[4] = 
 														{
-															["enabled"] = true,
+															["number"] = 4,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["number"] = 4,
+															["enabled"] = true,
 															["params"] = 
 															{
 																["action"] = 
@@ -2891,10 +2880,10 @@ mission =
 														}, -- end of [4]
 														[5] = 
 														{
-															["enabled"] = true,
+															["number"] = 5,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["number"] = 5,
+															["enabled"] = true,
 															["params"] = 
 															{
 																["action"] = 
@@ -2971,19 +2960,19 @@ mission =
 										["AddPropAircraft"] = 
 										{
 											["RocketSalvoF1"] = 1,
-											["RadarCoverSettings"] = 1,
+											["ChaffMultiNumber"] = 1,
 											["IFFMode2Code"] = "auto",
 											["ChaffMultiTime"] = 1,
 											["FlareMultiNumber"] = 1,
-											["ChaffMultiNumber"] = 1,
-											["RWR_type"] = "ALR_300",
+											["RadarCoverSettings"] = 1,
+											["GunBurstSettings"] = 1,
 											["ChaffProgramNumber"] = 1,
-											["IFFMode4Disabled"] = 1,
+											["MissSimplLock"] = 1,
 											["FlareMultiTime"] = 1,
 											["ChaffProgramTime"] = 1,
 											["RocketSalvoF4"] = 1,
-											["MissSimplLock"] = 1,
-											["GunBurstSettings"] = 1,
+											["IFFMode4Disabled"] = 1,
+											["RWR_type"] = "ALR_300",
 											["INSStartMode"] = 1,
 										}, -- end of ["AddPropAircraft"]
 										["type"] = "Mirage-F1EE",
@@ -2991,8 +2980,6 @@ mission =
 										{
 											[1] = 
 											{
-												["channelsNames"] = {},
-												["modulations"] = {},
 												["channels"] = 
 												{
 													[1] = 136,
@@ -3013,14 +3000,14 @@ mission =
 													[13] = 136,
 													[7] = 136,
 													[14] = 136,
-													[15] = 136,
 													[19] = 136,
+													[15] = 136,
 												}, -- end of ["channels"]
+												["modulations"] = {},
+												["channelsNames"] = {},
 											}, -- end of [1]
 											[2] = 
 											{
-												["channelsNames"] = {},
-												["modulations"] = {},
 												["channels"] = 
 												{
 													[1] = 265,
@@ -3041,9 +3028,11 @@ mission =
 													[13] = 265,
 													[7] = 265,
 													[14] = 265,
-													[15] = 265,
 													[19] = 265,
+													[15] = 265,
 												}, -- end of ["channels"]
+												["modulations"] = {},
+												["channelsNames"] = {},
 											}, -- end of [2]
 										}, -- end of ["Radio"]
 										["unitId"] = 22,
@@ -3132,10 +3121,10 @@ mission =
 													{
 														[1] = 
 														{
-															["enabled"] = true,
+															["number"] = 1,
 															["key"] = "CAP",
 															["id"] = "EngageTargets",
-															["number"] = 1,
+															["enabled"] = true,
 															["auto"] = true,
 															["params"] = 
 															{
@@ -3148,10 +3137,10 @@ mission =
 														}, -- end of [1]
 														[2] = 
 														{
-															["enabled"] = true,
+															["number"] = 2,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["number"] = 2,
+															["enabled"] = true,
 															["params"] = 
 															{
 																["action"] = 
@@ -3167,10 +3156,10 @@ mission =
 														}, -- end of [2]
 														[3] = 
 														{
-															["enabled"] = true,
+															["number"] = 3,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["number"] = 3,
+															["enabled"] = true,
 															["params"] = 
 															{
 																["action"] = 
@@ -3186,10 +3175,10 @@ mission =
 														}, -- end of [3]
 														[4] = 
 														{
-															["enabled"] = true,
+															["number"] = 4,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["number"] = 4,
+															["enabled"] = true,
 															["params"] = 
 															{
 																["action"] = 
@@ -3205,10 +3194,10 @@ mission =
 														}, -- end of [4]
 														[5] = 
 														{
-															["enabled"] = true,
+															["number"] = 5,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["number"] = 5,
+															["enabled"] = true,
 															["params"] = 
 															{
 																["action"] = 
@@ -3257,10 +3246,10 @@ mission =
 														}, -- end of [5]
 														[6] = 
 														{
-															["enabled"] = true,
+															["number"] = 6,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["number"] = 6,
+															["enabled"] = true,
 															["params"] = 
 															{
 																["action"] = 
@@ -3303,9 +3292,9 @@ mission =
 										["speed"] = 138.88888888889,
 										["AddPropAircraft"] = 
 										{
-											["STN_L16"] = "00227",
-											["VoiceCallsignNumber"] = "11",
 											["VoiceCallsignLabel"] = "CT",
+											["VoiceCallsignNumber"] = "11",
+											["STN_L16"] = "00227",
 										}, -- end of ["AddPropAircraft"]
 										["type"] = "F-15C",
 										["unitId"] = 23,
@@ -3418,10 +3407,10 @@ mission =
 													{
 														[1] = 
 														{
-															["number"] = 1,
+															["enabled"] = true,
 															["key"] = "CAP",
 															["id"] = "EngageTargets",
-															["enabled"] = true,
+															["number"] = 1,
 															["auto"] = true,
 															["params"] = 
 															{
@@ -3434,10 +3423,10 @@ mission =
 														}, -- end of [1]
 														[2] = 
 														{
-															["number"] = 2,
+															["enabled"] = true,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["enabled"] = true,
+															["number"] = 2,
 															["params"] = 
 															{
 																["action"] = 
@@ -3453,10 +3442,10 @@ mission =
 														}, -- end of [2]
 														[3] = 
 														{
-															["number"] = 3,
+															["enabled"] = true,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["enabled"] = true,
+															["number"] = 3,
 															["params"] = 
 															{
 																["action"] = 
@@ -3472,10 +3461,10 @@ mission =
 														}, -- end of [3]
 														[4] = 
 														{
-															["number"] = 4,
+															["enabled"] = true,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["enabled"] = true,
+															["number"] = 4,
 															["params"] = 
 															{
 																["action"] = 
@@ -3491,10 +3480,10 @@ mission =
 														}, -- end of [4]
 														[5] = 
 														{
-															["number"] = 5,
+															["enabled"] = true,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["enabled"] = true,
+															["number"] = 5,
 															["params"] = 
 															{
 																["action"] = 
@@ -3572,11 +3561,11 @@ mission =
 										{
 											["ReadyALCM"] = true,
 											["ForceINSRules"] = false,
-											["LoadNVGCase"] = false,
-											["IFF_M2_CODE"] = "auto",
-											["WpBullseye"] = 0,
-											["ReadyQRA"] = false,
 											["InitHotDrift"] = 0,
+											["WpBullseye"] = 0,
+											["IFF_M2_CODE"] = "auto",
+											["ReadyQRA"] = false,
+											["LoadNVGCase"] = false,
 											["EnableTAF"] = true,
 										}, -- end of ["AddPropAircraft"]
 										["type"] = "M-2000C",
@@ -3584,6 +3573,30 @@ mission =
 										{
 											[1] = 
 											{
+												["channelsNames"] = {},
+												["modulations"] = 
+												{
+													[1] = 0,
+													[2] = 0,
+													[4] = 0,
+													[8] = 0,
+													[16] = 0,
+													[17] = 0,
+													[9] = 0,
+													[18] = 0,
+													[5] = 0,
+													[10] = 0,
+													[20] = 0,
+													[11] = 0,
+													[3] = 0,
+													[6] = 0,
+													[12] = 0,
+													[13] = 0,
+													[7] = 0,
+													[14] = 0,
+													[15] = 0,
+													[19] = 0,
+												}, -- end of ["modulations"]
 												["channels"] = 
 												{
 													[1] = 265,
@@ -3604,9 +3617,13 @@ mission =
 													[13] = 265,
 													[7] = 265,
 													[14] = 265,
-													[19] = 265,
 													[15] = 265,
+													[19] = 265,
 												}, -- end of ["channels"]
+											}, -- end of [1]
+											[2] = 
+											{
+												["channelsNames"] = {},
 												["modulations"] = 
 												{
 													[1] = 0,
@@ -3627,13 +3644,9 @@ mission =
 													[13] = 0,
 													[7] = 0,
 													[14] = 0,
-													[19] = 0,
 													[15] = 0,
+													[19] = 0,
 												}, -- end of ["modulations"]
-												["channelsNames"] = {},
-											}, -- end of [1]
-											[2] = 
-											{
 												["channels"] = 
 												{
 													[1] = 136,
@@ -3654,33 +3667,9 @@ mission =
 													[13] = 136,
 													[7] = 136,
 													[14] = 136,
-													[19] = 136,
 													[15] = 136,
+													[19] = 136,
 												}, -- end of ["channels"]
-												["modulations"] = 
-												{
-													[1] = 0,
-													[2] = 0,
-													[4] = 0,
-													[8] = 0,
-													[16] = 0,
-													[17] = 0,
-													[9] = 0,
-													[18] = 0,
-													[5] = 0,
-													[10] = 0,
-													[20] = 0,
-													[11] = 0,
-													[3] = 0,
-													[6] = 0,
-													[12] = 0,
-													[13] = 0,
-													[7] = 0,
-													[14] = 0,
-													[19] = 0,
-													[15] = 0,
-												}, -- end of ["modulations"]
-												["channelsNames"] = {},
 											}, -- end of [2]
 										}, -- end of ["Radio"]
 										["unitId"] = 25,
@@ -3785,18 +3774,18 @@ mission =
 													{
 														[1] = 
 														{
-															["enabled"] = true,
+															["number"] = 1,
 															["auto"] = true,
 															["id"] = "Tanker",
-															["number"] = 1,
+															["enabled"] = true,
 															["params"] = {},
 														}, -- end of [1]
 														[2] = 
 														{
-															["enabled"] = true,
+															["number"] = 2,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["number"] = 2,
+															["enabled"] = true,
 															["params"] = 
 															{
 																["action"] = 
@@ -3806,11 +3795,11 @@ mission =
 																	{
 																		["type"] = 4,
 																		["AA"] = false,
-																		["unitId"] = 17,
+																		["callsign"] = "TEX",
 																		["modeChannel"] = "X",
 																		["channel"] = 38,
 																		["system"] = 4,
-																		["callsign"] = "TEX",
+																		["unitId"] = 17,
 																		["bearing"] = true,
 																		["frequency"] = 999000000,
 																	}, -- end of ["params"]
@@ -3819,10 +3808,10 @@ mission =
 														}, -- end of [2]
 														[3] = 
 														{
-															["enabled"] = true,
+															["number"] = 3,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["number"] = 3,
+															["enabled"] = true,
 															["params"] = 
 															{
 																["action"] = 
@@ -3838,10 +3827,10 @@ mission =
 														}, -- end of [3]
 														[4] = 
 														{
-															["enabled"] = true,
+															["number"] = 4,
 															["auto"] = false,
 															["id"] = "WrappedAction",
-															["number"] = 4,
+															["enabled"] = true,
 															["params"] = 
 															{
 																["action"] = 
@@ -3856,10 +3845,10 @@ mission =
 														}, -- end of [4]
 														[5] = 
 														{
-															["enabled"] = true,
+															["number"] = 5,
 															["auto"] = false,
 															["id"] = "WrappedAction",
-															["number"] = 5,
+															["enabled"] = true,
 															["params"] = 
 															{
 																["action"] = 
@@ -3874,10 +3863,10 @@ mission =
 														}, -- end of [5]
 														[6] = 
 														{
-															["enabled"] = true,
+															["number"] = 6,
 															["auto"] = false,
 															["id"] = "WrappedAction",
-															["number"] = 6,
+															["enabled"] = true,
 															["params"] = 
 															{
 																["action"] = 
@@ -3973,17 +3962,17 @@ mission =
 													{
 														[1] = 
 														{
-															["enabled"] = true,
+															["number"] = 1,
 															["auto"] = false,
 															["id"] = "Orbit",
-															["number"] = 1,
+															["enabled"] = true,
 															["params"] = 
 															{
-																["speedEdited"] = true,
+																["altitudeEdited"] = true,
 																["pattern"] = "Race-Track",
 																["speed"] = 220.97222222222,
 																["altitude"] = 6096,
-																["altitudeEdited"] = true,
+																["speedEdited"] = true,
 															}, -- end of ["params"]
 														}, -- end of [1]
 													}, -- end of ["tasks"]
@@ -4039,9 +4028,9 @@ mission =
 										["speed"] = 138.88888888889,
 										["AddPropAircraft"] = 
 										{
-											["STN_L16"] = "00221",
-											["VoiceCallsignNumber"] = "11",
 											["VoiceCallsignLabel"] = "TO",
+											["VoiceCallsignNumber"] = "11",
+											["STN_L16"] = "00221",
 										}, -- end of ["AddPropAircraft"]
 										["type"] = "KC-135",
 										["unitId"] = 17,
@@ -4107,18 +4096,18 @@ mission =
 													{
 														[1] = 
 														{
-															["number"] = 1,
+															["enabled"] = true,
 															["auto"] = true,
 															["id"] = "Tanker",
-															["enabled"] = true,
+															["number"] = 1,
 															["params"] = {},
 														}, -- end of [1]
 														[2] = 
 														{
-															["number"] = 2,
+															["enabled"] = true,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["enabled"] = true,
+															["number"] = 2,
 															["params"] = 
 															{
 																["action"] = 
@@ -4128,11 +4117,11 @@ mission =
 																	{
 																		["type"] = 4,
 																		["AA"] = false,
-																		["callsign"] = "ARC",
+																		["unitId"] = 18,
 																		["modeChannel"] = "X",
 																		["channel"] = 39,
 																		["system"] = 4,
-																		["unitId"] = 18,
+																		["callsign"] = "ARC",
 																		["bearing"] = true,
 																		["frequency"] = 1000000000,
 																	}, -- end of ["params"]
@@ -4141,10 +4130,10 @@ mission =
 														}, -- end of [2]
 														[3] = 
 														{
-															["number"] = 3,
+															["enabled"] = true,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["enabled"] = true,
+															["number"] = 3,
 															["params"] = 
 															{
 																["action"] = 
@@ -4160,10 +4149,10 @@ mission =
 														}, -- end of [3]
 														[4] = 
 														{
-															["enabled"] = true,
+															["number"] = 4,
 															["auto"] = false,
 															["id"] = "WrappedAction",
-															["number"] = 4,
+															["enabled"] = true,
 															["params"] = 
 															{
 																["action"] = 
@@ -4178,10 +4167,10 @@ mission =
 														}, -- end of [4]
 														[5] = 
 														{
-															["enabled"] = true,
+															["number"] = 5,
 															["auto"] = false,
 															["id"] = "WrappedAction",
-															["number"] = 5,
+															["enabled"] = true,
 															["params"] = 
 															{
 																["action"] = 
@@ -4196,10 +4185,10 @@ mission =
 														}, -- end of [5]
 														[6] = 
 														{
-															["enabled"] = true,
+															["number"] = 6,
 															["auto"] = false,
 															["id"] = "WrappedAction",
-															["number"] = 6,
+															["enabled"] = true,
 															["params"] = 
 															{
 																["action"] = 
@@ -4295,17 +4284,17 @@ mission =
 													{
 														[1] = 
 														{
-															["enabled"] = true,
+															["number"] = 1,
 															["auto"] = false,
 															["id"] = "Orbit",
-															["number"] = 1,
+															["enabled"] = true,
 															["params"] = 
 															{
-																["speedEdited"] = true,
+																["altitudeEdited"] = true,
 																["pattern"] = "Race-Track",
 																["speed"] = 220.97222222222,
 																["altitude"] = 6400.8,
-																["altitudeEdited"] = true,
+																["speedEdited"] = true,
 															}, -- end of ["params"]
 														}, -- end of [1]
 													}, -- end of ["tasks"]
@@ -4424,18 +4413,18 @@ mission =
 													{
 														[1] = 
 														{
-															["enabled"] = true,
+															["number"] = 1,
 															["auto"] = true,
 															["id"] = "AWACS",
-															["number"] = 1,
+															["enabled"] = true,
 															["params"] = {},
 														}, -- end of [1]
 														[2] = 
 														{
-															["enabled"] = true,
+															["number"] = 2,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["number"] = 2,
+															["enabled"] = true,
 															["params"] = 
 															{
 																["action"] = 
@@ -4451,10 +4440,10 @@ mission =
 														}, -- end of [2]
 														[3] = 
 														{
-															["enabled"] = true,
+															["number"] = 3,
 															["auto"] = false,
 															["id"] = "WrappedAction",
-															["number"] = 3,
+															["enabled"] = true,
 															["params"] = 
 															{
 																["action"] = 
@@ -4469,10 +4458,10 @@ mission =
 														}, -- end of [3]
 														[4] = 
 														{
-															["enabled"] = true,
+															["number"] = 4,
 															["auto"] = false,
 															["id"] = "WrappedAction",
-															["number"] = 4,
+															["enabled"] = true,
 															["params"] = 
 															{
 																["action"] = 
@@ -4487,10 +4476,10 @@ mission =
 														}, -- end of [4]
 														[5] = 
 														{
-															["enabled"] = true,
+															["number"] = 5,
 															["auto"] = false,
 															["id"] = "WrappedAction",
-															["number"] = 5,
+															["enabled"] = true,
 															["params"] = 
 															{
 																["action"] = 
@@ -4505,10 +4494,10 @@ mission =
 														}, -- end of [5]
 														[6] = 
 														{
-															["enabled"] = true,
+															["number"] = 6,
 															["auto"] = false,
 															["id"] = "WrappedAction",
-															["number"] = 6,
+															["enabled"] = true,
 															["params"] = 
 															{
 																["action"] = 
@@ -4605,17 +4594,17 @@ mission =
 													{
 														[1] = 
 														{
-															["enabled"] = true,
+															["number"] = 1,
 															["auto"] = false,
 															["id"] = "Orbit",
-															["number"] = 1,
+															["enabled"] = true,
 															["params"] = 
 															{
-																["altitudeEdited"] = true,
+																["altitude"] = 6400.8,
 																["pattern"] = "Race-Track",
 																["speed"] = 220.97222222222,
 																["speedEdited"] = true,
-																["altitude"] = 6400.8,
+																["altitudeEdited"] = true,
 															}, -- end of ["params"]
 														}, -- end of [1]
 													}, -- end of ["tasks"]
@@ -4648,10 +4637,10 @@ mission =
 													{
 														[1] = 
 														{
-															["enabled"] = true,
+															["number"] = 1,
 															["auto"] = false,
 															["id"] = "WrappedAction",
-															["number"] = 1,
+															["enabled"] = true,
 															["params"] = 
 															{
 																["action"] = 
@@ -4692,9 +4681,9 @@ mission =
 										["speed"] = 138.88888888889,
 										["AddPropAircraft"] = 
 										{
-											["STN_L16"] = "00230",
-											["VoiceCallsignNumber"] = "11",
 											["VoiceCallsignLabel"] = "OD",
+											["VoiceCallsignNumber"] = "11",
+											["STN_L16"] = "00230",
 										}, -- end of ["AddPropAircraft"]
 										["type"] = "E-3A",
 										["unitId"] = 24,
@@ -4735,6 +4724,17 @@ mission =
 				}, -- end of [2]
 			}, -- end of ["country"]
 		}, -- end of ["blue"]
+		["neutrals"] = 
+		{
+			["bullseye"] = 
+			{
+				["y"] = 87041.597746316,
+				["x"] = -2942.2838363687,
+			}, -- end of ["bullseye"]
+			["nav_points"] = {},
+			["name"] = "neutrals",
+			["country"] = {},
+		}, -- end of ["neutrals"]
 		["red"] = 
 		{
 			["bullseye"] = 
@@ -5014,10 +5014,10 @@ mission =
 													{
 														[1] = 
 														{
-															["number"] = 1,
+															["enabled"] = true,
 															["key"] = "CAP",
 															["id"] = "EngageTargets",
-															["enabled"] = true,
+															["number"] = 1,
 															["auto"] = true,
 															["params"] = 
 															{
@@ -5030,10 +5030,10 @@ mission =
 														}, -- end of [1]
 														[2] = 
 														{
-															["number"] = 2,
+															["enabled"] = true,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["enabled"] = true,
+															["number"] = 2,
 															["params"] = 
 															{
 																["action"] = 
@@ -5049,10 +5049,10 @@ mission =
 														}, -- end of [2]
 														[3] = 
 														{
-															["number"] = 3,
+															["enabled"] = true,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["enabled"] = true,
+															["number"] = 3,
 															["params"] = 
 															{
 																["action"] = 
@@ -5068,10 +5068,10 @@ mission =
 														}, -- end of [3]
 														[4] = 
 														{
-															["number"] = 4,
+															["enabled"] = true,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["enabled"] = true,
+															["number"] = 4,
 															["params"] = 
 															{
 																["action"] = 
@@ -5087,10 +5087,10 @@ mission =
 														}, -- end of [4]
 														[5] = 
 														{
-															["number"] = 5,
+															["enabled"] = true,
 															["auto"] = true,
 															["id"] = "WrappedAction",
-															["enabled"] = true,
+															["number"] = 5,
 															["params"] = 
 															{
 																["action"] = 
@@ -5486,7 +5486,6 @@ mission =
 		[1] = 
 		{
 			["rules"] = {},
-			["comment"] = "DCT Init",
 			["eventlist"] = "",
 			["predicate"] = "triggerStart",
 			["actions"] = 
@@ -5497,11 +5496,14 @@ mission =
 					["file"] = "ResKey_Action_6",
 				}, -- end of [1]
 			}, -- end of ["actions"]
+			["comment"] = "DCT Init",
 		}, -- end of [1]
 		[2] = 
 		{
 			["rules"] = {},
+			["comment"] = "MOOSE Init",
 			["eventlist"] = "",
+			["predicate"] = "triggerStart",
 			["actions"] = 
 			{
 				[1] = 
@@ -5510,13 +5512,10 @@ mission =
 					["file"] = "ResKey_Action_7",
 				}, -- end of [1]
 			}, -- end of ["actions"]
-			["predicate"] = "triggerStart",
-			["comment"] = "MOOSE Init",
 		}, -- end of [2]
 		[3] = 
 		{
 			["rules"] = {},
-			["comment"] = "MOOSE Settings",
 			["eventlist"] = "",
 			["actions"] = 
 			{
@@ -5527,11 +5526,11 @@ mission =
 				}, -- end of [1]
 			}, -- end of ["actions"]
 			["predicate"] = "triggerStart",
+			["comment"] = "MOOSE Settings",
 		}, -- end of [3]
 		[4] = 
 		{
 			["rules"] = {},
-			["eventlist"] = "",
 			["comment"] = "A2A",
 			["actions"] = 
 			{
@@ -5542,9 +5541,10 @@ mission =
 				}, -- end of [1]
 			}, -- end of ["actions"]
 			["predicate"] = "triggerStart",
+			["eventlist"] = "",
 		}, -- end of [4]
 	}, -- end of ["trigrules"]
-	["currentKey"] = 8258,
+	["currentKey"] = 8393,
 	["failures"] = 
 	{
 		["OIL_RADIATOR_SENSOR"] = 
@@ -5844,15 +5844,15 @@ mission =
 			["id"] = "R_GEAR_DLK_FAULT",
 			["mm"] = 0,
 		}, -- end of ["R_GEAR_DLK_FAULT"]
-		["BOOSTER_COIL"] = 
+		["GMC_GYRO_FAILURE"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "BOOSTER_COIL",
+			["id"] = "GMC_GYRO_FAILURE",
 			["mm"] = 0,
-		}, -- end of ["BOOSTER_COIL"]
+		}, -- end of ["GMC_GYRO_FAILURE"]
 		["L_GEAR_DLK_FAULT"] = 
 		{
 			["hh"] = 0,
@@ -5907,15 +5907,15 @@ mission =
 			["id"] = "Failure_Elec_LeftGenerator",
 			["mm"] = 0,
 		}, -- end of ["Failure_Elec_LeftGenerator"]
-		["es_damage_MainGenerator"] = 
+		["COOLANT_POOR_CONNTECT"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "es_damage_MainGenerator",
+			["id"] = "COOLANT_POOR_CONNTECT",
 			["mm"] = 0,
-		}, -- end of ["es_damage_MainGenerator"]
+		}, -- end of ["COOLANT_POOR_CONNTECT"]
 		["FAULTY_ROCKET_LEFT"] = 
 		{
 			["hh"] = 0,
@@ -5943,15 +5943,15 @@ mission =
 			["id"] = "BOMBS_DAMAGE_LINKAGE_LEFT",
 			["mm"] = 0,
 		}, -- end of ["BOMBS_DAMAGE_LINKAGE_LEFT"]
-		["Failure_PP_LeftAMAD_OilLeak"] = 
+		["FUSELAGE_TANK_PUMP_FAULT"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "Failure_PP_LeftAMAD_OilLeak",
+			["id"] = "FUSELAGE_TANK_PUMP_FAULT",
 			["mm"] = 0,
-		}, -- end of ["Failure_PP_LeftAMAD_OilLeak"]
+		}, -- end of ["FUSELAGE_TANK_PUMP_FAULT"]
 		["Failure_Elec_LeftTransformerRectifier"] = 
 		{
 			["hh"] = 0,
@@ -6060,15 +6060,15 @@ mission =
 			["id"] = "RWR_FAILURE_SENSOR_TAIL_F",
 			["mm"] = 0,
 		}, -- end of ["RWR_FAILURE_SENSOR_TAIL_F"]
-		["BOMBS_ARMING_NO_VOLATAGE_LEFT"] = 
+		["DEFECTIVE_MECHANISM"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "BOMBS_ARMING_NO_VOLATAGE_LEFT",
+			["id"] = "DEFECTIVE_MECHANISM",
 			["mm"] = 0,
-		}, -- end of ["BOMBS_ARMING_NO_VOLATAGE_LEFT"]
+		}, -- end of ["DEFECTIVE_MECHANISM"]
 		["PITOT_HEAT_ELEMENT"] = 
 		{
 			["hh"] = 0,
@@ -6132,24 +6132,23 @@ mission =
 			["id"] = "Surge_RightEngine",
 			["mm"] = 0,
 		}, -- end of ["Surge_RightEngine"]
-		["Failure_Ctrl_LEF"] = 
+		["RightEngine_Fire"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "Failure_Ctrl_LEF",
 			["mm"] = 0,
-		}, -- end of ["Failure_Ctrl_LEF"]
-		["GUN_FAIL_LEFT_IN_GUN"] = 
+		}, -- end of ["RightEngine_Fire"]
+		["Failure_Fuel_LeftBoostPump"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "GUN_FAIL_LEFT_IN_GUN",
+			["id"] = "Failure_Fuel_LeftBoostPump",
 			["mm"] = 0,
-		}, -- end of ["GUN_FAIL_LEFT_IN_GUN"]
+		}, -- end of ["Failure_Fuel_LeftBoostPump"]
 		["CADC_FAILURE_TAS"] = 
 		{
 			["hh"] = 0,
@@ -6177,24 +6176,24 @@ mission =
 			["id"] = "asc_p",
 			["mm"] = 0,
 		}, -- end of ["asc_p"]
-		["sas_pitch_left"] = 
+		["BOMBS_ARMING_BROKEN_SOLENOID_LEFT"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "sas_pitch_left",
+			["id"] = "BOMBS_ARMING_BROKEN_SOLENOID_LEFT",
 			["mm"] = 0,
-		}, -- end of ["sas_pitch_left"]
-		["GUN_LEFT_IN_AMMUN_FAULT"] = 
+		}, -- end of ["BOMBS_ARMING_BROKEN_SOLENOID_LEFT"]
+		["Failure_Ctrl_FCS_Ch3"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "GUN_LEFT_IN_AMMUN_FAULT",
+			["id"] = "Failure_Ctrl_FCS_Ch3",
 			["mm"] = 0,
-		}, -- end of ["GUN_LEFT_IN_AMMUN_FAULT"]
+		}, -- end of ["Failure_Ctrl_FCS_Ch3"]
 		["Failure_PP_EngR_Main_FFCS"] = 
 		{
 			["hh"] = 0,
@@ -6222,15 +6221,15 @@ mission =
 			["id"] = "abris_hardware",
 			["mm"] = 0,
 		}, -- end of ["abris_hardware"]
-		["Failure_Hyd_IsolatedHYD2BSystem_Leak"] = 
+		["EEC_Failure_LeftEngine"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "Failure_Hyd_IsolatedHYD2BSystem_Leak",
+			["id"] = "EEC_Failure_LeftEngine",
 			["mm"] = 0,
-		}, -- end of ["Failure_Hyd_IsolatedHYD2BSystem_Leak"]
+		}, -- end of ["EEC_Failure_LeftEngine"]
 		["COMPASS_POINTER_PULLS"] = 
 		{
 			["hh"] = 0,
@@ -6249,15 +6248,15 @@ mission =
 			["id"] = "GUN_RIGHT_OUT_OPEN_CIRCUIT",
 			["mm"] = 0,
 		}, -- end of ["GUN_RIGHT_OUT_OPEN_CIRCUIT"]
-		["ROOF_AIRSPEED_INDICATOR_FAILURE"] = 
+		["VHF_SHORTED_CTL_BOX"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "ROOF_AIRSPEED_INDICATOR_FAILURE",
+			["id"] = "VHF_SHORTED_CTL_BOX",
 			["mm"] = 0,
-		}, -- end of ["ROOF_AIRSPEED_INDICATOR_FAILURE"]
+		}, -- end of ["VHF_SHORTED_CTL_BOX"]
 		["CLOCK_FAILURE"] = 
 		{
 			["hh"] = 0,
@@ -6312,15 +6311,15 @@ mission =
 			["id"] = "PILOT_KILLED_FAILURE",
 			["mm"] = 0,
 		}, -- end of ["PILOT_KILLED_FAILURE"]
-		["BOMBS_ARMING_BROKEN_WIRING_RIGHT"] = 
+		["GUN_LEFT_CENTER_MOUNT_LOOSE"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "BOMBS_ARMING_BROKEN_WIRING_RIGHT",
+			["id"] = "GUN_LEFT_CENTER_MOUNT_LOOSE",
 			["mm"] = 0,
-		}, -- end of ["BOMBS_ARMING_BROKEN_WIRING_RIGHT"]
+		}, -- end of ["GUN_LEFT_CENTER_MOUNT_LOOSE"]
 		["ELEC_BOOSTER_FUEL_PUMP_1_FAILURE"] = 
 		{
 			["hh"] = 0,
@@ -6330,15 +6329,15 @@ mission =
 			["id"] = "ELEC_BOOSTER_FUEL_PUMP_1_FAILURE",
 			["mm"] = 0,
 		}, -- end of ["ELEC_BOOSTER_FUEL_PUMP_1_FAILURE"]
-		["COMPASS_ERRATIC_OPERATION"] = 
+		["COPILOT_KILLED_FAILURE"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "COMPASS_ERRATIC_OPERATION",
+			["id"] = "COPILOT_KILLED_FAILURE",
 			["mm"] = 0,
-		}, -- end of ["COMPASS_ERRATIC_OPERATION"]
+		}, -- end of ["COPILOT_KILLED_FAILURE"]
 		["asc_a"] = 
 		{
 			["hh"] = 0,
@@ -6384,15 +6383,15 @@ mission =
 			["id"] = "GUN_FAIL_LEFT_OUT_GUN",
 			["mm"] = 0,
 		}, -- end of ["GUN_FAIL_LEFT_OUT_GUN"]
-		["PUMP_FAILS"] = 
+		["SAR_1_101"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "PUMP_FAILS",
+			["id"] = "SAR_1_101",
 			["mm"] = 0,
-		}, -- end of ["PUMP_FAILS"]
+		}, -- end of ["SAR_1_101"]
 		["ROCKETS_INTERVALOMETER_WIRING"] = 
 		{
 			["hh"] = 0,
@@ -6447,24 +6446,24 @@ mission =
 			["id"] = "BOMBS_RUST_LEFT",
 			["mm"] = 0,
 		}, -- end of ["BOMBS_RUST_LEFT"]
-		["GUN_RIGHT_CENTER_BARREL_WORN"] = 
+		["ARN_83_ADF_DAMAGE"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "GUN_RIGHT_CENTER_BARREL_WORN",
+			["id"] = "ARN_83_ADF_DAMAGE",
 			["mm"] = 0,
-		}, -- end of ["GUN_RIGHT_CENTER_BARREL_WORN"]
-		["RIGHT_WING_TANK_LEAK"] = 
+		}, -- end of ["ARN_83_ADF_DAMAGE"]
+		["asc"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "RIGHT_WING_TANK_LEAK",
+			["id"] = "asc",
 			["mm"] = 0,
-		}, -- end of ["RIGHT_WING_TANK_LEAK"]
+		}, -- end of ["asc"]
 		["COMPASS_NO_TORQUE"] = 
 		{
 			["hh"] = 0,
@@ -6510,15 +6509,15 @@ mission =
 			["id"] = "Failure_Fuel_Tank1Transfer",
 			["mm"] = 0,
 		}, -- end of ["Failure_Fuel_Tank1Transfer"]
-		["RADAR_ALTIMETR_RIGHT_ANT_FAILURE"] = 
+		["Failure_Ctrl_Aileron"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "RADAR_ALTIMETR_RIGHT_ANT_FAILURE",
+			["id"] = "Failure_Ctrl_Aileron",
 			["mm"] = 0,
-		}, -- end of ["RADAR_ALTIMETR_RIGHT_ANT_FAILURE"]
+		}, -- end of ["Failure_Ctrl_Aileron"]
 		["es_damage_SpareInverter"] = 
 		{
 			["hh"] = 0,
@@ -6591,15 +6590,15 @@ mission =
 			["id"] = "K14_MOV_LAMP_DEFECTIVE",
 			["mm"] = 0,
 		}, -- end of ["K14_MOV_LAMP_DEFECTIVE"]
-		["INS_PART_FAIL"] = 
+		["ILS_FAILURE_TOTAL"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "INS_PART_FAIL",
+			["id"] = "ILS_FAILURE_TOTAL",
 			["mm"] = 0,
-		}, -- end of ["INS_PART_FAIL"]
+		}, -- end of ["ILS_FAILURE_TOTAL"]
 		["GUN_RIGHT_OUT_BARREL_WORN"] = 
 		{
 			["hh"] = 0,
@@ -6663,15 +6662,15 @@ mission =
 			["id"] = "RIGHT_MFCD_FAILURE",
 			["mm"] = 0,
 		}, -- end of ["RIGHT_MFCD_FAILURE"]
-		["F2_BOTTOM_CYLINDER"] = 
+		["es_damage_GeneratorRight"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "F2_BOTTOM_CYLINDER",
+			["id"] = "es_damage_GeneratorRight",
 			["mm"] = 0,
-		}, -- end of ["F2_BOTTOM_CYLINDER"]
+		}, -- end of ["es_damage_GeneratorRight"]
 		["FLEX_S_NO_GUN_SIGN"] = 
 		{
 			["hh"] = 0,
@@ -6708,15 +6707,15 @@ mission =
 			["id"] = "HYD_PUMP_1_FAIL_100",
 			["mm"] = 0,
 		}, -- end of ["HYD_PUMP_1_FAIL_100"]
-		["EGI_FAILURE_TOTAL"] = 
+		["engine_surge_failure"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "EGI_FAILURE_TOTAL",
+			["id"] = "engine_surge_failure",
 			["mm"] = 0,
-		}, -- end of ["EGI_FAILURE_TOTAL"]
+		}, -- end of ["engine_surge_failure"]
 		["UHF_RADIO_FAILURE_TOTAL"] = 
 		{
 			["hh"] = 0,
@@ -6726,15 +6725,15 @@ mission =
 			["id"] = "UHF_RADIO_FAILURE_TOTAL",
 			["mm"] = 0,
 		}, -- end of ["UHF_RADIO_FAILURE_TOTAL"]
-		["GUN_RIGHT_CENTER_AMMUN_FAULT"] = 
+		["COPILOT_GYRO_TOTAL_FAILURE"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "GUN_RIGHT_CENTER_AMMUN_FAULT",
+			["id"] = "COPILOT_GYRO_TOTAL_FAILURE",
 			["mm"] = 0,
-		}, -- end of ["GUN_RIGHT_CENTER_AMMUN_FAULT"]
+		}, -- end of ["COPILOT_GYRO_TOTAL_FAILURE"]
 		["LEFT_GUNNER_KILLED_FAILURE"] = 
 		{
 			["hh"] = 0,
@@ -6789,24 +6788,24 @@ mission =
 			["id"] = "RIGHT_TANK_PUMP_FAULT",
 			["mm"] = 0,
 		}, -- end of ["RIGHT_TANK_PUMP_FAULT"]
-		["COPILOT_GYRO_TOTAL_FAILURE"] = 
+		["GUN_RIGHT_CENTER_AMMUN_FAULT"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "COPILOT_GYRO_TOTAL_FAILURE",
+			["id"] = "GUN_RIGHT_CENTER_AMMUN_FAULT",
 			["mm"] = 0,
-		}, -- end of ["COPILOT_GYRO_TOTAL_FAILURE"]
-		["engine_surge_failure"] = 
+		}, -- end of ["GUN_RIGHT_CENTER_AMMUN_FAULT"]
+		["EGI_FAILURE_TOTAL"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "engine_surge_failure",
+			["id"] = "EGI_FAILURE_TOTAL",
 			["mm"] = 0,
-		}, -- end of ["engine_surge_failure"]
+		}, -- end of ["EGI_FAILURE_TOTAL"]
 		["COOLANT_UNPRES"] = 
 		{
 			["hh"] = 0,
@@ -6834,15 +6833,15 @@ mission =
 			["id"] = "TRN_FAIL_AUX",
 			["mm"] = 0,
 		}, -- end of ["TRN_FAIL_AUX"]
-		["es_damage_GeneratorRight"] = 
+		["F2_BOTTOM_CYLINDER"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "es_damage_GeneratorRight",
+			["id"] = "F2_BOTTOM_CYLINDER",
 			["mm"] = 0,
-		}, -- end of ["es_damage_GeneratorRight"]
+		}, -- end of ["F2_BOTTOM_CYLINDER"]
 		["FLEX_S_NO_POWER_SUPPLY"] = 
 		{
 			["hh"] = 0,
@@ -6914,15 +6913,6 @@ mission =
 			["id"] = "TransitionalReductor_ShaveInOil",
 			["mm"] = 0,
 		}, -- end of ["TransitionalReductor_ShaveInOil"]
-		["Failure_Ctrl_Aileron"] = 
-		{
-			["hh"] = 0,
-			["prob"] = 100,
-			["enable"] = false,
-			["mmint"] = 1,
-			["id"] = "Failure_Ctrl_Aileron",
-			["mm"] = 0,
-		}, -- end of ["Failure_Ctrl_Aileron"]
 		["MainReducer_Fire"] = 
 		{
 			["hh"] = 0,
@@ -6931,24 +6921,6 @@ mission =
 			["mmint"] = 1,
 			["mm"] = 0,
 		}, -- end of ["MainReducer_Fire"]
-		["ILS_FAILURE_TOTAL"] = 
-		{
-			["hh"] = 0,
-			["prob"] = 100,
-			["enable"] = false,
-			["mmint"] = 1,
-			["id"] = "ILS_FAILURE_TOTAL",
-			["mm"] = 0,
-		}, -- end of ["ILS_FAILURE_TOTAL"]
-		["GENERATOR_FAULT"] = 
-		{
-			["hh"] = 0,
-			["prob"] = 100,
-			["enable"] = false,
-			["mmint"] = 1,
-			["id"] = "GENERATOR_FAULT",
-			["mm"] = 0,
-		}, -- end of ["GENERATOR_FAULT"]
 		["RIGHT_GUNNER_KILLED_FAILURE"] = 
 		{
 			["hh"] = 0,
@@ -6958,6 +6930,33 @@ mission =
 			["id"] = "RIGHT_GUNNER_KILLED_FAILURE",
 			["mm"] = 0,
 		}, -- end of ["RIGHT_GUNNER_KILLED_FAILURE"]
+		["INS_PART_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "INS_PART_FAIL",
+			["mm"] = 0,
+		}, -- end of ["INS_PART_FAIL"]
+		["GENERATOR_FAULT"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "GENERATOR_FAULT",
+			["mm"] = 0,
+		}, -- end of ["GENERATOR_FAULT"]
+		["RIGHT_WING_TANK_LEAK"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "RIGHT_WING_TANK_LEAK",
+			["mm"] = 0,
+		}, -- end of ["RIGHT_WING_TANK_LEAK"]
 		["FUEL_PUMP_FAILURE"] = 
 		{
 			["hh"] = 0,
@@ -7003,6 +7002,15 @@ mission =
 			["id"] = "Failure_PP_LeftPTS",
 			["mm"] = 0,
 		}, -- end of ["Failure_PP_LeftPTS"]
+		["hydro_main_irreversible_valve"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "hydro_main_irreversible_valve",
+			["mm"] = 0,
+		}, -- end of ["hydro_main_irreversible_valve"]
 		["INSUF_FUEL_PRES"] = 
 		{
 			["hh"] = 0,
@@ -7012,15 +7020,6 @@ mission =
 			["id"] = "INSUF_FUEL_PRES",
 			["mm"] = 0,
 		}, -- end of ["INSUF_FUEL_PRES"]
-		["AAR_47_FAILURE_SENSOR_BOTTOM"] = 
-		{
-			["hh"] = 0,
-			["prob"] = 100,
-			["enable"] = false,
-			["mmint"] = 1,
-			["id"] = "AAR_47_FAILURE_SENSOR_BOTTOM",
-			["mm"] = 0,
-		}, -- end of ["AAR_47_FAILURE_SENSOR_BOTTOM"]
 		["LeftEngine_Fire"] = 
 		{
 			["hh"] = 0,
@@ -7029,15 +7028,15 @@ mission =
 			["mmint"] = 1,
 			["mm"] = 0,
 		}, -- end of ["LeftEngine_Fire"]
-		["COPILOT_KILLED_FAILURE"] = 
+		["GUN_RIGHT_CENTER_BARREL_WORN"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "COPILOT_KILLED_FAILURE",
+			["id"] = "GUN_RIGHT_CENTER_BARREL_WORN",
 			["mm"] = 0,
-		}, -- end of ["COPILOT_KILLED_FAILURE"]
+		}, -- end of ["GUN_RIGHT_CENTER_BARREL_WORN"]
 		["SUPERCHARGER_LIGHT"] = 
 		{
 			["hh"] = 0,
@@ -7056,24 +7055,6 @@ mission =
 			["id"] = "L_GEAR_UPL_FAULT",
 			["mm"] = 0,
 		}, -- end of ["L_GEAR_UPL_FAULT"]
-		["MainReductor_LowOilPressure"] = 
-		{
-			["hh"] = 0,
-			["prob"] = 100,
-			["enable"] = false,
-			["mmint"] = 1,
-			["id"] = "MainReductor_LowOilPressure",
-			["mm"] = 0,
-		}, -- end of ["MainReductor_LowOilPressure"]
-		["fs_damage_right_cell_boost_pump"] = 
-		{
-			["hh"] = 0,
-			["prob"] = 100,
-			["enable"] = false,
-			["mmint"] = 1,
-			["id"] = "fs_damage_right_cell_boost_pump",
-			["mm"] = 0,
-		}, -- end of ["fs_damage_right_cell_boost_pump"]
 		["fs_forward_LH_leakage"] = 
 		{
 			["hh"] = 0,
@@ -7083,6 +7064,24 @@ mission =
 			["id"] = "fs_forward_LH_leakage",
 			["mm"] = 0,
 		}, -- end of ["fs_forward_LH_leakage"]
+		["fs_damage_right_cell_boost_pump"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "fs_damage_right_cell_boost_pump",
+			["mm"] = 0,
+		}, -- end of ["fs_damage_right_cell_boost_pump"]
+		["MainReductor_LowOilPressure"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "MainReductor_LowOilPressure",
+			["mm"] = 0,
+		}, -- end of ["MainReductor_LowOilPressure"]
 		["TACH_RESISTANCE_ADJ"] = 
 		{
 			["hh"] = 0,
@@ -7110,15 +7109,15 @@ mission =
 			["id"] = "BOMBS_NO_VOLATAGE_AT_RACK_RIGHT",
 			["mm"] = 0,
 		}, -- end of ["BOMBS_NO_VOLATAGE_AT_RACK_RIGHT"]
-		["SAR_1_101"] = 
+		["PUMP_FAILS"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "SAR_1_101",
+			["id"] = "PUMP_FAILS",
 			["mm"] = 0,
-		}, -- end of ["SAR_1_101"]
+		}, -- end of ["PUMP_FAILS"]
 		["GUN_RIGHT_OUT_MOUNT_LOOSE"] = 
 		{
 			["hh"] = 0,
@@ -7146,33 +7145,33 @@ mission =
 			["id"] = "A11_CLOCK_FAILURE",
 			["mm"] = 0,
 		}, -- end of ["A11_CLOCK_FAILURE"]
-		["asc"] = 
+		["AAR_47_FAILURE_SENSOR_BOTTOM"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "asc",
+			["id"] = "AAR_47_FAILURE_SENSOR_BOTTOM",
 			["mm"] = 0,
-		}, -- end of ["asc"]
-		["COOLANT_RADIATOR_WIRING"] = 
+		}, -- end of ["AAR_47_FAILURE_SENSOR_BOTTOM"]
+		["COMPASS_ERRATIC_OPERATION"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "COOLANT_RADIATOR_WIRING",
+			["id"] = "COMPASS_ERRATIC_OPERATION",
 			["mm"] = 0,
-		}, -- end of ["COOLANT_RADIATOR_WIRING"]
-		["ecm"] = 
+		}, -- end of ["COMPASS_ERRATIC_OPERATION"]
+		["ROOF_AIRSPEED_INDICATOR_FAILURE"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "ecm",
+			["id"] = "ROOF_AIRSPEED_INDICATOR_FAILURE",
 			["mm"] = 0,
-		}, -- end of ["ecm"]
+		}, -- end of ["ROOF_AIRSPEED_INDICATOR_FAILURE"]
 		["R_GEAR_UPL_FAULT"] = 
 		{
 			["hh"] = 0,
@@ -7191,24 +7190,24 @@ mission =
 			["id"] = "BOMBS_TRAIN_DEFECTIVE_WIRING",
 			["mm"] = 0,
 		}, -- end of ["BOMBS_TRAIN_DEFECTIVE_WIRING"]
-		["Failure_Fuel_ExtTankTransferL"] = 
+		["autopilot"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "Failure_Fuel_ExtTankTransferL",
+			["id"] = "autopilot",
 			["mm"] = 0,
-		}, -- end of ["Failure_Fuel_ExtTankTransferL"]
-		["GUN_LEFT_CENTER_MOUNT_LOOSE"] = 
+		}, -- end of ["autopilot"]
+		["BOMBS_ARMING_BROKEN_WIRING_RIGHT"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "GUN_LEFT_CENTER_MOUNT_LOOSE",
+			["id"] = "BOMBS_ARMING_BROKEN_WIRING_RIGHT",
 			["mm"] = 0,
-		}, -- end of ["GUN_LEFT_CENTER_MOUNT_LOOSE"]
+		}, -- end of ["BOMBS_ARMING_BROKEN_WIRING_RIGHT"]
 		["BOMBS_TRAIN_DEFECTIVE_SWITCH"] = 
 		{
 			["hh"] = 0,
@@ -7254,33 +7253,33 @@ mission =
 			["id"] = "fs_aft_RH_leakage",
 			["mm"] = 0,
 		}, -- end of ["fs_aft_RH_leakage"]
-		["hydro_main_irreversible_valve"] = 
+		["COOLANT_RADIATOR_WIRING"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "hydro_main_irreversible_valve",
+			["id"] = "COOLANT_RADIATOR_WIRING",
 			["mm"] = 0,
-		}, -- end of ["hydro_main_irreversible_valve"]
-		["TACAN_FAILURE_RECEIVER"] = 
+		}, -- end of ["COOLANT_RADIATOR_WIRING"]
+		["GUN_LEFT_CENTER_OPEN_CIRCUIT"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "TACAN_FAILURE_RECEIVER",
+			["id"] = "GUN_LEFT_CENTER_OPEN_CIRCUIT",
 			["mm"] = 0,
-		}, -- end of ["TACAN_FAILURE_RECEIVER"]
-		["Failure_Gear_WOW"] = 
+		}, -- end of ["GUN_LEFT_CENTER_OPEN_CIRCUIT"]
+		["TGP_FAILURE_RIGHT"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "Failure_Gear_WOW",
+			["id"] = "TGP_FAILURE_RIGHT",
 			["mm"] = 0,
-		}, -- end of ["Failure_Gear_WOW"]
+		}, -- end of ["TGP_FAILURE_RIGHT"]
 		["Failure_Sens_RightPitotHeater"] = 
 		{
 			["hh"] = 0,
@@ -7299,42 +7298,42 @@ mission =
 			["id"] = "GUN_RIGHT_IN_MOUNT_LOOSE",
 			["mm"] = 0,
 		}, -- end of ["GUN_RIGHT_IN_MOUNT_LOOSE"]
-		["TGP_FAILURE_RIGHT"] = 
+		["Failure_Gear_WOW"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "TGP_FAILURE_RIGHT",
+			["id"] = "Failure_Gear_WOW",
 			["mm"] = 0,
-		}, -- end of ["TGP_FAILURE_RIGHT"]
-		["VHF_SHORTED_CTL_BOX"] = 
+		}, -- end of ["Failure_Gear_WOW"]
+		["ecm"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "VHF_SHORTED_CTL_BOX",
+			["id"] = "ecm",
 			["mm"] = 0,
-		}, -- end of ["VHF_SHORTED_CTL_BOX"]
-		["EEC_Failure_LeftEngine"] = 
+		}, -- end of ["ecm"]
+		["Failure_Hyd_IsolatedHYD2BSystem_Leak"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "EEC_Failure_LeftEngine",
+			["id"] = "Failure_Hyd_IsolatedHYD2BSystem_Leak",
 			["mm"] = 0,
-		}, -- end of ["EEC_Failure_LeftEngine"]
-		["Failure_Ctrl_FCS_Ch3"] = 
+		}, -- end of ["Failure_Hyd_IsolatedHYD2BSystem_Leak"]
+		["GUN_LEFT_IN_AMMUN_FAULT"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "Failure_Ctrl_FCS_Ch3",
+			["id"] = "GUN_LEFT_IN_AMMUN_FAULT",
 			["mm"] = 0,
-		}, -- end of ["Failure_Ctrl_FCS_Ch3"]
+		}, -- end of ["GUN_LEFT_IN_AMMUN_FAULT"]
 		["LEFT_MFCD_FAILURE"] = 
 		{
 			["hh"] = 0,
@@ -7344,32 +7343,33 @@ mission =
 			["id"] = "LEFT_MFCD_FAILURE",
 			["mm"] = 0,
 		}, -- end of ["LEFT_MFCD_FAILURE"]
-		["BOMBS_ARMING_BROKEN_SOLENOID_LEFT"] = 
+		["sas_pitch_left"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "BOMBS_ARMING_BROKEN_SOLENOID_LEFT",
+			["id"] = "sas_pitch_left",
 			["mm"] = 0,
-		}, -- end of ["BOMBS_ARMING_BROKEN_SOLENOID_LEFT"]
-		["Failure_Fuel_LeftBoostPump"] = 
+		}, -- end of ["sas_pitch_left"]
+		["GUN_FAIL_LEFT_IN_GUN"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "Failure_Fuel_LeftBoostPump",
+			["id"] = "GUN_FAIL_LEFT_IN_GUN",
 			["mm"] = 0,
-		}, -- end of ["Failure_Fuel_LeftBoostPump"]
-		["RightEngine_Fire"] = 
+		}, -- end of ["GUN_FAIL_LEFT_IN_GUN"]
+		["Failure_Ctrl_LEF"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
+			["id"] = "Failure_Ctrl_LEF",
 			["mm"] = 0,
-		}, -- end of ["RightEngine_Fire"]
+		}, -- end of ["Failure_Ctrl_LEF"]
 		["sas_yaw_right"] = 
 		{
 			["hh"] = 0,
@@ -7388,15 +7388,15 @@ mission =
 			["id"] = "DOORS_TVC_BROKEN",
 			["mm"] = 0,
 		}, -- end of ["DOORS_TVC_BROKEN"]
-		["ARN_83_ADF_DAMAGE"] = 
+		["RADAR_ALTIMETR_RIGHT_ANT_FAILURE"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "ARN_83_ADF_DAMAGE",
+			["id"] = "RADAR_ALTIMETR_RIGHT_ANT_FAILURE",
 			["mm"] = 0,
-		}, -- end of ["ARN_83_ADF_DAMAGE"]
+		}, -- end of ["RADAR_ALTIMETR_RIGHT_ANT_FAILURE"]
 		["SADL_FAILURE_TOTAL"] = 
 		{
 			["hh"] = 0,
@@ -7415,15 +7415,15 @@ mission =
 			["id"] = "fs_damage_left_cell_boost_pump",
 			["mm"] = 0,
 		}, -- end of ["fs_damage_left_cell_boost_pump"]
-		["Failure_Elec_UtilityBattery"] = 
+		["CARBAIR_GND_LEAD"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "Failure_Elec_UtilityBattery",
+			["id"] = "CARBAIR_GND_LEAD",
 			["mm"] = 0,
-		}, -- end of ["Failure_Elec_UtilityBattery"]
+		}, -- end of ["CARBAIR_GND_LEAD"]
 		["BOOST_REG"] = 
 		{
 			["hh"] = 0,
@@ -7460,15 +7460,15 @@ mission =
 			["id"] = "ENGINE_JAM",
 			["mm"] = 0,
 		}, -- end of ["ENGINE_JAM"]
-		["Failure_PP_RightAMAD_OilLeak"] = 
+		["ILS_FAILURE_ANT_LOCALIZER"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "Failure_PP_RightAMAD_OilLeak",
+			["id"] = "ILS_FAILURE_ANT_LOCALIZER",
 			["mm"] = 0,
-		}, -- end of ["Failure_PP_RightAMAD_OilLeak"]
+		}, -- end of ["ILS_FAILURE_ANT_LOCALIZER"]
 		["MAGNETO_2"] = 
 		{
 			["hh"] = 0,
@@ -7514,24 +7514,24 @@ mission =
 			["id"] = "BOMBS_SOLENOID_FAULT_RIGHT",
 			["mm"] = 0,
 		}, -- end of ["BOMBS_SOLENOID_FAULT_RIGHT"]
-		["TACH_BREAK_IN_INDICATOR"] = 
+		["LeftEngine_LowOilPressure"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "TACH_BREAK_IN_INDICATOR",
+			["id"] = "LeftEngine_LowOilPressure",
 			["mm"] = 0,
-		}, -- end of ["TACH_BREAK_IN_INDICATOR"]
-		["TURNIND_POINTER_FAILS_DEFECTIVE"] = 
+		}, -- end of ["LeftEngine_LowOilPressure"]
+		["TACAN_FAILURE_RECEIVER"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "TURNIND_POINTER_FAILS_DEFECTIVE",
+			["id"] = "TACAN_FAILURE_RECEIVER",
 			["mm"] = 0,
-		}, -- end of ["TURNIND_POINTER_FAILS_DEFECTIVE"]
+		}, -- end of ["TACAN_FAILURE_RECEIVER"]
 		["CDU_FAILURE_TOTAL"] = 
 		{
 			["hh"] = 0,
@@ -7541,15 +7541,15 @@ mission =
 			["id"] = "CDU_FAILURE_TOTAL",
 			["mm"] = 0,
 		}, -- end of ["CDU_FAILURE_TOTAL"]
-		["STARTER_SOLENOID"] = 
+		["AN_ALR69V_FAILURE_SENSOR_NOSE_RIGHT"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "STARTER_SOLENOID",
+			["id"] = "AN_ALR69V_FAILURE_SENSOR_NOSE_RIGHT",
 			["mm"] = 0,
-		}, -- end of ["STARTER_SOLENOID"]
+		}, -- end of ["AN_ALR69V_FAILURE_SENSOR_NOSE_RIGHT"]
 		["TAIL_GEAR_C_CABLE"] = 
 		{
 			["hh"] = 0,
@@ -7559,15 +7559,15 @@ mission =
 			["id"] = "TAIL_GEAR_C_CABLE",
 			["mm"] = 0,
 		}, -- end of ["TAIL_GEAR_C_CABLE"]
-		["FUSELAGE_TANK_PUMP_FAULT"] = 
+		["Failure_PP_LeftAMAD_OilLeak"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "FUSELAGE_TANK_PUMP_FAULT",
+			["id"] = "Failure_PP_LeftAMAD_OilLeak",
 			["mm"] = 0,
-		}, -- end of ["FUSELAGE_TANK_PUMP_FAULT"]
+		}, -- end of ["Failure_PP_LeftAMAD_OilLeak"]
 		["BOMBS_DAMAGE_LINKAGE_RIGHT"] = 
 		{
 			["hh"] = 0,
@@ -7613,24 +7613,24 @@ mission =
 			["id"] = "HUD_FAILURE",
 			["mm"] = 0,
 		}, -- end of ["HUD_FAILURE"]
-		["Failure_PP_EngR_AB_FFCS"] = 
+		["TURNIND_POINTER_FAILS_DEFECTIVE"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "Failure_PP_EngR_AB_FFCS",
+			["id"] = "TURNIND_POINTER_FAILS_DEFECTIVE",
 			["mm"] = 0,
-		}, -- end of ["Failure_PP_EngR_AB_FFCS"]
-		["RWR_FAILURE_SENSOR_LEFT"] = 
+		}, -- end of ["TURNIND_POINTER_FAILS_DEFECTIVE"]
+		["es_damage_MainGenerator"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "RWR_FAILURE_SENSOR_LEFT",
+			["id"] = "es_damage_MainGenerator",
 			["mm"] = 0,
-		}, -- end of ["RWR_FAILURE_SENSOR_LEFT"]
+		}, -- end of ["es_damage_MainGenerator"]
 		["mfd"] = 
 		{
 			["hh"] = 0,
@@ -7640,33 +7640,33 @@ mission =
 			["id"] = "mfd",
 			["mm"] = 0,
 		}, -- end of ["mfd"]
-		["CARBAIR_GND_LEAD"] = 
+		["Failure_Elec_UtilityBattery"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "CARBAIR_GND_LEAD",
+			["id"] = "Failure_Elec_UtilityBattery",
 			["mm"] = 0,
-		}, -- end of ["CARBAIR_GND_LEAD"]
-		["COOLANT_POOR_CONNTECT"] = 
+		}, -- end of ["Failure_Elec_UtilityBattery"]
+		["CADC_FAILURE_TOTAL"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "COOLANT_POOR_CONNTECT",
+			["id"] = "CADC_FAILURE_TOTAL",
 			["mm"] = 0,
-		}, -- end of ["COOLANT_POOR_CONNTECT"]
-		["IGNITION_TERM_CONNECT"] = 
+		}, -- end of ["CADC_FAILURE_TOTAL"]
+		["RWR_FAILURE_SENSOR_LEFT"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "IGNITION_TERM_CONNECT",
+			["id"] = "RWR_FAILURE_SENSOR_LEFT",
 			["mm"] = 0,
-		}, -- end of ["IGNITION_TERM_CONNECT"]
+		}, -- end of ["RWR_FAILURE_SENSOR_LEFT"]
 		["IFFCC_FAILURE_GUN"] = 
 		{
 			["hh"] = 0,
@@ -7676,42 +7676,42 @@ mission =
 			["id"] = "IFFCC_FAILURE_GUN",
 			["mm"] = 0,
 		}, -- end of ["IFFCC_FAILURE_GUN"]
-		["GUN_LEFT_CENTER_OPEN_CIRCUIT"] = 
+		["TACH_POOR_CONNECTION"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "GUN_LEFT_CENTER_OPEN_CIRCUIT",
+			["id"] = "TACH_POOR_CONNECTION",
 			["mm"] = 0,
-		}, -- end of ["GUN_LEFT_CENTER_OPEN_CIRCUIT"]
-		["autopilot"] = 
+		}, -- end of ["TACH_POOR_CONNECTION"]
+		["Failure_Fuel_ExtTankTransferL"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "autopilot",
+			["id"] = "Failure_Fuel_ExtTankTransferL",
 			["mm"] = 0,
-		}, -- end of ["autopilot"]
-		["GMC_GYRO_FAILURE"] = 
+		}, -- end of ["Failure_Fuel_ExtTankTransferL"]
+		["BOOSTER_COIL"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "GMC_GYRO_FAILURE",
+			["id"] = "BOOSTER_COIL",
 			["mm"] = 0,
-		}, -- end of ["GMC_GYRO_FAILURE"]
-		["SUPERCHARGER_SOLENOID"] = 
+		}, -- end of ["BOOSTER_COIL"]
+		["ILS_FAILURE_ANT_GLIDESLOPE"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "SUPERCHARGER_SOLENOID",
+			["id"] = "ILS_FAILURE_ANT_GLIDESLOPE",
 			["mm"] = 0,
-		}, -- end of ["SUPERCHARGER_SOLENOID"]
+		}, -- end of ["ILS_FAILURE_ANT_GLIDESLOPE"]
 		["es_damage_GeneratorLeft"] = 
 		{
 			["hh"] = 0,
@@ -7739,24 +7739,24 @@ mission =
 			["id"] = "GUN_LEFT_CENTER_AMMUN_FAULT",
 			["mm"] = 0,
 		}, -- end of ["GUN_LEFT_CENTER_AMMUN_FAULT"]
-		["Failure_Ctrl_FCS_Ch2"] = 
+		["Failure_PP_EngR_AB_FFCS"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "Failure_Ctrl_FCS_Ch2",
+			["id"] = "Failure_PP_EngR_AB_FFCS",
 			["mm"] = 0,
-		}, -- end of ["Failure_Ctrl_FCS_Ch2"]
-		["ILS_FAILURE_ANT_GLIDESLOPE"] = 
+		}, -- end of ["Failure_PP_EngR_AB_FFCS"]
+		["SUPERCHARGER_SOLENOID"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "ILS_FAILURE_ANT_GLIDESLOPE",
+			["id"] = "SUPERCHARGER_SOLENOID",
 			["mm"] = 0,
-		}, -- end of ["ILS_FAILURE_ANT_GLIDESLOPE"]
+		}, -- end of ["SUPERCHARGER_SOLENOID"]
 		["Failure_Hyd_HYD2B_Leak"] = 
 		{
 			["hh"] = 0,
@@ -8009,15 +8009,6 @@ mission =
 			["id"] = "Failure_PP_EngL_AB_FFCS",
 			["mm"] = 0,
 		}, -- end of ["Failure_PP_EngL_AB_FFCS"]
-		["MANIFOLD_LINE_LEAK"] = 
-		{
-			["hh"] = 0,
-			["prob"] = 100,
-			["enable"] = false,
-			["mmint"] = 1,
-			["id"] = "MANIFOLD_LINE_LEAK",
-			["mm"] = 0,
-		}, -- end of ["MANIFOLD_LINE_LEAK"]
 		["fs_forward_RH_leakage"] = 
 		{
 			["hh"] = 0,
@@ -8027,15 +8018,24 @@ mission =
 			["id"] = "fs_forward_RH_leakage",
 			["mm"] = 0,
 		}, -- end of ["fs_forward_RH_leakage"]
-		["Failure_PP_EngR_OilLeak"] = 
+		["CADC_FAILURE_BARO_ALT"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "Failure_PP_EngR_OilLeak",
+			["id"] = "CADC_FAILURE_BARO_ALT",
 			["mm"] = 0,
-		}, -- end of ["Failure_PP_EngR_OilLeak"]
+		}, -- end of ["CADC_FAILURE_BARO_ALT"]
+		["RWR_FAILURE_SENSOR_TAIL_R"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "RWR_FAILURE_SENSOR_TAIL_R",
+			["mm"] = 0,
+		}, -- end of ["RWR_FAILURE_SENSOR_TAIL_R"]
 		["TACH_BREAK_CIRCUIT"] = 
 		{
 			["hh"] = 0,
@@ -8045,15 +8045,15 @@ mission =
 			["id"] = "TACH_BREAK_CIRCUIT",
 			["mm"] = 0,
 		}, -- end of ["TACH_BREAK_CIRCUIT"]
-		["fuel_sys_left_transfer_pump"] = 
+		["Failure_PP_EngR_OilLeak"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "fuel_sys_left_transfer_pump",
+			["id"] = "Failure_PP_EngR_OilLeak",
 			["mm"] = 0,
-		}, -- end of ["fuel_sys_left_transfer_pump"]
+		}, -- end of ["Failure_PP_EngR_OilLeak"]
 		["TAIL_GEAR_D_LOCK"] = 
 		{
 			["hh"] = 0,
@@ -8099,15 +8099,15 @@ mission =
 			["id"] = "SAR_1_2_95",
 			["mm"] = 0,
 		}, -- end of ["SAR_1_2_95"]
-		["RWR_FAILURE_SENSOR_TAIL_R"] = 
+		["fuel_sys_left_transfer_pump"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "RWR_FAILURE_SENSOR_TAIL_R",
+			["id"] = "fuel_sys_left_transfer_pump",
 			["mm"] = 0,
-		}, -- end of ["RWR_FAILURE_SENSOR_TAIL_R"]
+		}, -- end of ["fuel_sys_left_transfer_pump"]
 		["AN_ALE_40V_FAILURE_CONTAINER_RIGHT_WING"] = 
 		{
 			["hh"] = 0,
@@ -8225,15 +8225,15 @@ mission =
 			["id"] = "ENG_ALT_1_FAIL",
 			["mm"] = 0,
 		}, -- end of ["ENG_ALT_1_FAIL"]
-		["VHF_AM_RADIO_FAILURE_TOTAL"] = 
+		["Failure_Ctrl_FCS_Ch4"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "VHF_AM_RADIO_FAILURE_TOTAL",
+			["id"] = "Failure_Ctrl_FCS_Ch4",
 			["mm"] = 0,
-		}, -- end of ["VHF_AM_RADIO_FAILURE_TOTAL"]
+		}, -- end of ["Failure_Ctrl_FCS_Ch4"]
 		["VHF_CRYSTAL"] = 
 		{
 			["hh"] = 0,
@@ -8243,15 +8243,15 @@ mission =
 			["id"] = "VHF_CRYSTAL",
 			["mm"] = 0,
 		}, -- end of ["VHF_CRYSTAL"]
-		["CADC_FAILURE_IAS"] = 
+		["VHF_AM_RADIO_FAILURE_TOTAL"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "CADC_FAILURE_IAS",
+			["id"] = "VHF_AM_RADIO_FAILURE_TOTAL",
 			["mm"] = 0,
-		}, -- end of ["CADC_FAILURE_IAS"]
+		}, -- end of ["VHF_AM_RADIO_FAILURE_TOTAL"]
 		["main_reductor_chip"] = 
 		{
 			["hh"] = 0,
@@ -8270,15 +8270,15 @@ mission =
 			["id"] = "VHF_SQUELCH_RELAY",
 			["mm"] = 0,
 		}, -- end of ["VHF_SQUELCH_RELAY"]
-		["Failure_Ctrl_FCS_Ch4"] = 
+		["CADC_FAILURE_IAS"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "Failure_Ctrl_FCS_Ch4",
+			["id"] = "CADC_FAILURE_IAS",
 			["mm"] = 0,
-		}, -- end of ["Failure_Ctrl_FCS_Ch4"]
+		}, -- end of ["CADC_FAILURE_IAS"]
 		["GUN_FAIL_RIGHT_IN_GUN"] = 
 		{
 			["hh"] = 0,
@@ -8396,15 +8396,15 @@ mission =
 			["id"] = "CADC_FAILURE_DYNAMIC",
 			["mm"] = 0,
 		}, -- end of ["CADC_FAILURE_DYNAMIC"]
-		["CADC_FAILURE_BARO_ALT"] = 
+		["MANIFOLD_LINE_LEAK"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "CADC_FAILURE_BARO_ALT",
+			["id"] = "MANIFOLD_LINE_LEAK",
 			["mm"] = 0,
-		}, -- end of ["CADC_FAILURE_BARO_ALT"]
+		}, -- end of ["MANIFOLD_LINE_LEAK"]
 		["GUN_RIGHT_CENTER_OPEN_CIRCUIT"] = 
 		{
 			["hh"] = 0,
@@ -8594,15 +8594,15 @@ mission =
 			["id"] = "AAR_47_FAILURE_SENSOR_TAIL",
 			["mm"] = 0,
 		}, -- end of ["AAR_47_FAILURE_SENSOR_TAIL"]
-		["TACH_POOR_CONNECTION"] = 
+		["IGNITION_TERM_CONNECT"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "TACH_POOR_CONNECTION",
+			["id"] = "IGNITION_TERM_CONNECT",
 			["mm"] = 0,
-		}, -- end of ["TACH_POOR_CONNECTION"]
+		}, -- end of ["IGNITION_TERM_CONNECT"]
 		["TACAN_FAILURE_TRANSMITTER"] = 
 		{
 			["hh"] = 0,
@@ -8612,15 +8612,6 @@ mission =
 			["id"] = "TACAN_FAILURE_TRANSMITTER",
 			["mm"] = 0,
 		}, -- end of ["TACAN_FAILURE_TRANSMITTER"]
-		["CADC_FAILURE_TOTAL"] = 
-		{
-			["hh"] = 0,
-			["prob"] = 100,
-			["enable"] = false,
-			["mmint"] = 1,
-			["id"] = "CADC_FAILURE_TOTAL",
-			["mm"] = 0,
-		}, -- end of ["CADC_FAILURE_TOTAL"]
 		["Failure_PP_EngR_Nozzle_CS"] = 
 		{
 			["hh"] = 0,
@@ -8630,24 +8621,15 @@ mission =
 			["id"] = "Failure_PP_EngR_Nozzle_CS",
 			["mm"] = 0,
 		}, -- end of ["Failure_PP_EngR_Nozzle_CS"]
-		["LeftEngine_LowOilPressure"] = 
+		["TACH_BREAK_IN_INDICATOR"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "LeftEngine_LowOilPressure",
+			["id"] = "TACH_BREAK_IN_INDICATOR",
 			["mm"] = 0,
-		}, -- end of ["LeftEngine_LowOilPressure"]
-		["GUN_LEFT_IN_BARREL_WORN"] = 
-		{
-			["hh"] = 0,
-			["prob"] = 100,
-			["enable"] = false,
-			["mmint"] = 1,
-			["id"] = "GUN_LEFT_IN_BARREL_WORN",
-			["mm"] = 0,
-		}, -- end of ["GUN_LEFT_IN_BARREL_WORN"]
+		}, -- end of ["TACH_BREAK_IN_INDICATOR"]
 		["Failure_Elec_EmergencyBattery"] = 
 		{
 			["hh"] = 0,
@@ -8657,24 +8639,42 @@ mission =
 			["id"] = "Failure_Elec_EmergencyBattery",
 			["mm"] = 0,
 		}, -- end of ["Failure_Elec_EmergencyBattery"]
-		["INT_HYDRO_LEAK"] = 
+		["GUN_LEFT_IN_BARREL_WORN"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "INT_HYDRO_LEAK",
+			["id"] = "GUN_LEFT_IN_BARREL_WORN",
 			["mm"] = 0,
-		}, -- end of ["INT_HYDRO_LEAK"]
-		["DEFECTIVE_MECHANISM"] = 
+		}, -- end of ["GUN_LEFT_IN_BARREL_WORN"]
+		["STARTER_SOLENOID"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "DEFECTIVE_MECHANISM",
+			["id"] = "STARTER_SOLENOID",
 			["mm"] = 0,
-		}, -- end of ["DEFECTIVE_MECHANISM"]
+		}, -- end of ["STARTER_SOLENOID"]
+		["Failure_Ctrl_FCS_Ch2"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "Failure_Ctrl_FCS_Ch2",
+			["mm"] = 0,
+		}, -- end of ["Failure_Ctrl_FCS_Ch2"]
+		["Failure_Hyd_HYD1B_Leak"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "Failure_Hyd_HYD1B_Leak",
+			["mm"] = 0,
+		}, -- end of ["Failure_Hyd_HYD1B_Leak"]
 		["ROCKETS_INTERVALOMETER_SEQ"] = 
 		{
 			["hh"] = 0,
@@ -8684,15 +8684,15 @@ mission =
 			["id"] = "ROCKETS_INTERVALOMETER_SEQ",
 			["mm"] = 0,
 		}, -- end of ["ROCKETS_INTERVALOMETER_SEQ"]
-		["ILS_FAILURE_ANT_LOCALIZER"] = 
+		["Failure_PP_RightAMAD_OilLeak"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "ILS_FAILURE_ANT_LOCALIZER",
+			["id"] = "Failure_PP_RightAMAD_OilLeak",
 			["mm"] = 0,
-		}, -- end of ["ILS_FAILURE_ANT_LOCALIZER"]
+		}, -- end of ["Failure_PP_RightAMAD_OilLeak"]
 		["SAR_2_95"] = 
 		{
 			["hh"] = 0,
@@ -8711,24 +8711,24 @@ mission =
 			["id"] = "SAR_2_101",
 			["mm"] = 0,
 		}, -- end of ["SAR_2_101"]
-		["AN_ALR69V_FAILURE_SENSOR_NOSE_RIGHT"] = 
+		["INT_HYDRO_LEAK"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "AN_ALR69V_FAILURE_SENSOR_NOSE_RIGHT",
+			["id"] = "INT_HYDRO_LEAK",
 			["mm"] = 0,
-		}, -- end of ["AN_ALR69V_FAILURE_SENSOR_NOSE_RIGHT"]
-		["Failure_Hyd_HYD1B_Leak"] = 
+		}, -- end of ["INT_HYDRO_LEAK"]
+		["BOMBS_ARMING_NO_VOLATAGE_LEFT"] = 
 		{
 			["hh"] = 0,
 			["prob"] = 100,
 			["enable"] = false,
 			["mmint"] = 1,
-			["id"] = "Failure_Hyd_HYD1B_Leak",
+			["id"] = "BOMBS_ARMING_NO_VOLATAGE_LEFT",
 			["mm"] = 0,
-		}, -- end of ["Failure_Hyd_HYD1B_Leak"]
+		}, -- end of ["BOMBS_ARMING_NO_VOLATAGE_LEFT"]
 		["FAULTY_ROCKET_RIGHT"] = 
 		{
 			["hh"] = 0,
