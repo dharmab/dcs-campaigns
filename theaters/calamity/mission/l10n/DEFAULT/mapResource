@@ -3,4 +3,5 @@ mapResource =
 	["ResKey_Action_8"] = "A2A.lua",
 	["ResKey_Action_6"] = "dct-mission-init.lua",
 	["ResKey_Action_7"] = "Moose.lua",
+	["ResKey_Action_9"] = "MooseSettings.lua",
 } -- end of mapResource
