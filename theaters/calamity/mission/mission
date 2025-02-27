@@ -247,9 +247,9 @@ mission =
 	}, -- end of ["triggers"]
 	["map"] = 
 	{
-		["centerY"] = 178074.0489827,
-		["zoom"] = 9619.2315987701,
-		["centerX"] = -175085.25185006,
+		["centerY"] = 249364.95757244,
+		["zoom"] = 2159.9372788482,
+		["centerX"] = -306709.25689702,
 	}, -- end of ["map"]
 	["coalitions"] = 
 	{
@@ -397,8 +397,8 @@ mission =
 											["ETA"] = 0,
 											["alt_type"] = "BARO",
 											["formation_template"] = "",
-											["y"] = 177141.66018042,
-											["x"] = -174993.70984157,
+											["y"] = 249046.19366567,
+											["x"] = -306656.02068255,
 											["ETA_locked"] = true,
 											["speed"] = 0,
 											["action"] = "Turning Point",
@@ -499,13 +499,13 @@ mission =
 										}, -- end of [1]
 										[2] = 
 										{
-											["alt"] = 0,
+											["alt"] = -0,
 											["type"] = "Turning Point",
-											["ETA"] = 16281.341130211,
+											["ETA"] = 7584.4072621944,
 											["alt_type"] = "BARO",
 											["formation_template"] = "",
-											["y"] = 402180.17812594,
-											["x"] = -152806.8137061,
+											["y"] = 354262.01652406,
+											["x"] = -301564.93247972,
 											["ETA_locked"] = false,
 											["speed"] = 13.88888,
 											["action"] = "Turning Point",
@@ -521,13 +521,13 @@ mission =
 										}, -- end of [2]
 										[3] = 
 										{
-											["alt"] = 0,
+											["alt"] = -0,
 											["type"] = "Turning Point",
-											["ETA"] = 23763.021564575,
+											["ETA"] = 12867.626080247,
 											["alt_type"] = "BARO",
 											["formation_template"] = "",
-											["y"] = 320088.66242469,
-											["x"] = -89098.726231379,
+											["y"] = 282816.70508225,
+											["x"] = -284834.8036993,
 											["ETA_locked"] = false,
 											["speed"] = 13.88888,
 											["action"] = "Turning Point",
@@ -543,13 +543,13 @@ mission =
 										}, -- end of [3]
 										[4] = 
 										{
-											["alt"] = 0,
+											["alt"] = -0,
 											["type"] = "Turning Point",
-											["ETA"] = 34624.510251797,
+											["ETA"] = 21066.668775637,
 											["alt_type"] = "BARO",
 											["formation_template"] = "",
-											["y"] = 195208.13274788,
-											["x"] = -173725.88720526,
+											["y"] = 191347.19403365,
+											["x"] = -313019.88093608,
 											["ETA_locked"] = false,
 											["speed"] = 13.88888,
 											["action"] = "Turning Point",
@@ -589,15 +589,15 @@ mission =
 										["skill"] = "Excellent",
 										["type"] = "Forrestal",
 										["unitId"] = 26,
-										["y"] = 177141.66018042,
-										["x"] = -174993.70984157,
+										["y"] = 249046.19366567,
+										["x"] = -306656.02068255,
 										["name"] = "Carrier",
-										["heading"] = 1.4725223735389,
+										["heading"] = 1.522446940143,
 										["frequency"] = 129000000,
 									}, -- end of [1]
 								}, -- end of ["units"]
-								["y"] = 177141.66018042,
-								["x"] = -174993.70984157,
+								["y"] = 249046.19366567,
+								["x"] = -306656.02068255,
 								["name"] = "Carrier",
 								["start_time"] = 0,
 							}, -- end of [1]
@@ -886,7 +886,7 @@ mission =
 										["psi"] = 0,
 										["parking_id"] = "01",
 										["x"] = -5581.0903320312,
-										["name"] = "AV-8B N/A",
+										["name"] = "Shore AV-8B Template",
 										["payload"] = 
 										{
 											["pylons"] = 
@@ -938,7 +938,7 @@ mission =
 								}, -- end of ["units"]
 								["y"] = 242480.671875,
 								["x"] = -5581.0903320312,
-								["name"] = "Mercenary AV-8B Template",
+								["name"] = "Shore AV-8B Template",
 								["communication"] = true,
 								["start_time"] = 0,
 								["uncontrollable"] = false,
@@ -1124,7 +1124,7 @@ mission =
 										["psi"] = 0,
 										["parking_id"] = "02",
 										["x"] = -5566.2290039062,
-										["name"] = "Mercenary F-4E Template",
+										["name"] = "F-4E Template",
 										["payload"] = 
 										{
 											["pylons"] = 
@@ -1197,7 +1197,7 @@ mission =
 								}, -- end of ["units"]
 								["y"] = 242494.109375,
 								["x"] = -5566.2290039062,
-								["name"] = "Mercenary F-4E Template",
+								["name"] = "F-4E Template",
 								["communication"] = true,
 								["start_time"] = 0,
 								["uncontrollable"] = false,
@@ -1409,7 +1409,7 @@ mission =
 										["psi"] = 0,
 										["parking_id"] = "03",
 										["x"] = -5551.3579101562,
-										["name"] = "Mercenary F-14A Template",
+										["name"] = "Shore F-14A Template",
 										["payload"] = 
 										{
 											["pylons"] = 
@@ -1470,7 +1470,7 @@ mission =
 								}, -- end of ["units"]
 								["y"] = 242507.421875,
 								["x"] = -5551.3579101562,
-								["name"] = "Mercenary F-14A Template",
+								["name"] = "Shore F-14A Template",
 								["communication"] = true,
 								["start_time"] = 0,
 								["uncontrollable"] = false,
@@ -1682,7 +1682,7 @@ mission =
 										["psi"] = 0,
 										["parking_id"] = "04",
 										["x"] = -5536.3608398447,
-										["name"] = "Mercenary F-14B Template",
+										["name"] = "Shore F-14B Template",
 										["payload"] = 
 										{
 											["pylons"] = 
@@ -1743,7 +1743,7 @@ mission =
 								}, -- end of ["units"]
 								["y"] = 242520.671875,
 								["x"] = -5536.3608398447,
-								["name"] = "Mercenary F-14B Template",
+								["name"] = "Shore F-14B Template",
 								["communication"] = true,
 								["start_time"] = 0,
 								["uncontrollable"] = false,
@@ -1810,7 +1810,7 @@ mission =
 										["speed"] = 200,
 										["AddPropAircraft"] = 
 										{
-											["SoloFlight"] = false,
+											["LaserCodeDigit1"] = 1,
 											["Sta5LaserCode"] = 688,
 											["Sta2LaserCode"] = 688,
 											["IFF_M2_CODE"] = "auto",
@@ -1823,25 +1823,25 @@ mission =
 											["HumanOrchestra"] = false,
 											["TacanBand"] = 0,
 											["KY28Key"] = 1,
-											["InitAlertStatus"] = false,
+											["IffMode2Digit1"] = 0,
 											["IsNvgAllowed"] = true,
-											["LaserCodeDigit2"] = 6,
 											["INSAlignmentStored"] = true,
+											["MountNVG"] = false,
 											["ChaffDoubleDispense"] = false,
 											["Wear"] = 0,
 											["IffMode2Digit4"] = 0,
-											["IffMode2Digit2"] = 0,
-											["UseReferenceAircraft"] = true,
+											["InitAlertStatus"] = false,
+											["Sta8LaserCode"] = 688,
 											["NetCrewControlPriority"] = 0,
 											["needsGCAlign"] = false,
+											["SoloFlight"] = false,
 											["Quality"] = 100,
-											["Sta8LaserCode"] = 688,
 											["VORILSFrequencyDecimalMHZ"] = 0,
-											["MountNVG"] = false,
-											["LaserCodeDigit1"] = 1,
+											["IffMode2Digit2"] = 0,
+											["LaserCodeDigit2"] = 6,
 											["VORILSFrequencyMHZ"] = 108,
 											["TacanChannel"] = 0,
-											["IffMode2Digit1"] = 0,
+											["UseReferenceAircraft"] = true,
 										}, -- end of ["AddPropAircraft"]
 										["type"] = "F-15ESE",
 										["Radio"] = 
@@ -1989,7 +1989,7 @@ mission =
 										["psi"] = 0,
 										["parking_id"] = "06",
 										["x"] = -5506.6323242188,
-										["name"] = "Mercenary F-15E Template",
+										["name"] = "F-15E Template",
 										["payload"] = 
 										{
 											["pylons"] = 
@@ -2062,7 +2062,7 @@ mission =
 								}, -- end of ["units"]
 								["y"] = 242547.34375,
 								["x"] = -5506.6323242188,
-								["name"] = "Mercenary F-15E Template",
+								["name"] = "F-15E Template",
 								["communication"] = true,
 								["start_time"] = 0,
 								["uncontrollable"] = false,
@@ -2257,7 +2257,7 @@ mission =
 										["psi"] = 0,
 										["parking_id"] = "07",
 										["x"] = -5491.6909179688,
-										["name"] = "Mercenary F-16C Template",
+										["name"] = "F-16C Template",
 										["payload"] = 
 										{
 											["pylons"] = 
@@ -2344,7 +2344,7 @@ mission =
 								}, -- end of ["units"]
 								["y"] = 242560.734375,
 								["x"] = -5491.6909179688,
-								["name"] = "Mercenary F-16C Template",
+								["name"] = "F-16C Template",
 								["communication"] = true,
 								["start_time"] = 0,
 								["uncontrollable"] = false,
@@ -2411,10 +2411,10 @@ mission =
 											["TacanBand"] = 0,
 											["LaserCodeDigit4"] = 8,
 											["STN_L16"] = "00212",
-											["INSAlignmentStored"] = true,
+											["VoiceCallsignNumber"] = "11",
 											["VORILSFrequencyMHZ"] = 108,
 											["IffMode2Digit1"] = 0,
-											["Quality"] = 100,
+											["INSAlignmentStored"] = true,
 											["ChaffDoubleDispense"] = false,
 											["HelmetMountedDevice"] = 1,
 											["IffMode2Digit4"] = 0,
@@ -2428,7 +2428,7 @@ mission =
 											["VoiceCallsignLabel"] = "AN",
 											["IffMode2Digit3"] = 0,
 											["Wear"] = 0,
-											["VoiceCallsignNumber"] = "11",
+											["Quality"] = 100,
 											["TacanChannel"] = 0,
 											["OuterBoard"] = 0,
 										}, -- end of ["AddPropAircraft"]
@@ -2555,7 +2555,7 @@ mission =
 										}, -- end of ["dataCartridge"]
 										["parking_id"] = "08",
 										["x"] = -5476.833984375,
-										["name"] = "Mercenary F/A-18C Template",
+										["name"] = "Shore F/A-18C Template",
 										["payload"] = 
 										{
 											["pylons"] = 
@@ -2642,7 +2642,7 @@ mission =
 								}, -- end of ["units"]
 								["y"] = 242574.125,
 								["x"] = -5476.833984375,
-								["name"] = "Mercenary F/A-18C Template",
+								["name"] = "Shore F/A-18C Template",
 								["communication"] = true,
 								["start_time"] = 0,
 								["uncontrollable"] = false,
@@ -2850,10 +2850,10 @@ mission =
 										["speed"] = 138.88888888889,
 										["AddPropAircraft"] = 
 										{
-											["AARProbe"] = false,
-											["LaserCode100"] = 6,
-											["LaserCode10"] = 8,
 											["LaserCode1"] = 8,
+											["LaserCode100"] = 6,
+											["AARProbe"] = false,
+											["LaserCode10"] = 8,
 										}, -- end of ["AddPropAircraft"]
 										["type"] = "JF-17",
 										["Radio"] = 
@@ -2914,7 +2914,7 @@ mission =
 										["onboard_num"] = "010",
 										["parking_id"] = "09",
 										["x"] = -5461.9453125,
-										["name"] = "Mercenary JF-17 Template",
+										["name"] = "JF-17 Template",
 										["payload"] = 
 										{
 											["pylons"] = 
@@ -2958,7 +2958,7 @@ mission =
 								}, -- end of ["units"]
 								["y"] = 242587.453125,
 								["x"] = -5461.9453125,
-								["name"] = "Mercenary JF-17 Template",
+								["name"] = "JF-17 Template",
 								["communication"] = true,
 								["start_time"] = 0,
 								["uncontrollable"] = false,
@@ -3228,7 +3228,7 @@ mission =
 										["onboard_num"] = "011",
 										["parking_id"] = "10",
 										["x"] = -5446.7998046875,
-										["name"] = "Mercenary F1EE Template",
+										["name"] = "Mirage F1EE Template",
 										["payload"] = 
 										{
 											["pylons"] = 
@@ -3272,7 +3272,7 @@ mission =
 								}, -- end of ["units"]
 								["y"] = 242601.125,
 								["x"] = -5446.7998046875,
-								["name"] = "Mercenary F1EE Template",
+								["name"] = "Mirage F1EE Template",
 								["communication"] = true,
 								["start_time"] = 0,
 								["uncontrollable"] = false,
@@ -3490,7 +3490,7 @@ mission =
 										["onboard_num"] = "012",
 										["parking_id"] = "05",
 										["x"] = -5521.3090820312,
-										["name"] = "Mercenary F-15C Template",
+										["name"] = "F-15C Template",
 										["payload"] = 
 										{
 											["pylons"] = 
@@ -3558,7 +3558,7 @@ mission =
 								}, -- end of ["units"]
 								["y"] = 242533.859375,
 								["x"] = -5521.3090820312,
-								["name"] = "Mercenary F-15C Template",
+								["name"] = "F-15C Template",
 								["communication"] = true,
 								["start_time"] = 0,
 								["uncontrollable"] = false,
@@ -3865,7 +3865,7 @@ mission =
 										["onboard_num"] = "013",
 										["parking_id"] = "11",
 										["x"] = -5431.9287109375,
-										["name"] = "Mercenary 2000C Template",
+										["name"] = "Mirage 2000C Template",
 										["payload"] = 
 										{
 											["pylons"] = 
@@ -3914,12 +3914,862 @@ mission =
 								}, -- end of ["units"]
 								["y"] = 242614.484375,
 								["x"] = -5431.9287109375,
-								["name"] = "Mercenary 2000C Template",
+								["name"] = "Mirage 2000C Template",
 								["communication"] = true,
 								["start_time"] = 0,
 								["uncontrollable"] = false,
 								["frequency"] = 265,
 							}, -- end of [11]
+							[12] = 
+							{
+								["dynSpawnTemplate"] = true,
+								["modulation"] = 0,
+								["tasks"] = {},
+								["radioSet"] = false,
+								["task"] = "Intercept",
+								["uncontrolled"] = false,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["action"] = "From Parking Area",
+											["alt_type"] = "BARO",
+											["linkUnit"] = 26,
+											["properties"] = 
+											{
+												["addopt"] = {},
+											}, -- end of ["properties"]
+											["helipadId"] = 26,
+											["speed"] = 138.88888888889,
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["type"] = "TakeOffParking",
+											["ETA"] = 0,
+											["ETA_locked"] = true,
+											["y"] = 249129.18348933,
+											["x"] = -306665.92831672,
+											["speed_locked"] = true,
+											["formation_template"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 36,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["alt"] = 0,
+										["hardpoint_racks"] = true,
+										["alt_type"] = "BARO",
+										["livery_id"] = "default",
+										["skill"] = "Client",
+										["parking"] = "1",
+										["speed"] = 138.88888888889,
+										["AddPropAircraft"] = 
+										{
+											["LaserCodeDigit2"] = 6,
+											["IlsChannel"] = 1,
+											["TacanBand"] = 0,
+											["INSAlignmentStored"] = true,
+											["LaserCodeDigit4"] = 8,
+											["UseLAU138"] = true,
+											["Quality"] = 100,
+											["ChaffDoubleDispense"] = false,
+											["M61BURST"] = 2,
+											["IffMode2Digit1"] = 0,
+											["IffMode2Digit2"] = 0,
+											["VORILSFrequencyMHZ"] = 108,
+											["KY28Key"] = 1,
+											["UseReferenceAircraft"] = true,
+											["LaserCodeDigit3"] = 8,
+											["LaserCodeDigit1"] = 1,
+											["VORILSFrequencyDecimalMHZ"] = 0,
+											["IsNvgAllowed"] = true,
+											["IffMode2Digit3"] = 0,
+											["Wear"] = 0,
+											["IffMode2Digit4"] = 0,
+											["TacanChannel"] = 39,
+											["ALE39Loadout"] = 0,
+										}, -- end of ["AddPropAircraft"]
+										["type"] = "F-14A-135-GR",
+										["Radio"] = 
+										{
+											[1] = 
+											{
+												["channels"] = 
+												{
+													[1] = 265,
+													[2] = 382.5,
+													[4] = 265,
+													[8] = 265,
+													[16] = 265,
+													[17] = 265,
+													[9] = 265,
+													[18] = 265,
+													[5] = 265,
+													[10] = 265,
+													[20] = 265,
+													[11] = 265,
+													[3] = 266,
+													[6] = 265,
+													[12] = 265,
+													[13] = 265,
+													[7] = 265,
+													[14] = 265,
+													[19] = 265,
+													[15] = 265,
+												}, -- end of ["channels"]
+												["modulations"] = 
+												{
+													[1] = 0,
+													[2] = 0,
+													[4] = 0,
+													[8] = 0,
+													[16] = 0,
+													[17] = 0,
+													[9] = 0,
+													[18] = 0,
+													[5] = 0,
+													[10] = 0,
+													[11] = 0,
+													[3] = 0,
+													[6] = 0,
+													[12] = 0,
+													[13] = 0,
+													[7] = 0,
+													[14] = 0,
+													[15] = 0,
+												}, -- end of ["modulations"]
+												["channelsNames"] = {},
+											}, -- end of [1]
+											[2] = 
+											{
+												["channels"] = 
+												{
+													[1] = 136,
+													[2] = 266,
+													[4] = 135,
+													[8] = 136,
+													[16] = 136,
+													[17] = 136,
+													[9] = 136,
+													[18] = 136,
+													[5] = 265,
+													[10] = 136,
+													[20] = 136,
+													[30] = 136,
+													[21] = 136,
+													[11] = 136,
+													[22] = 136,
+													[3] = 382.5,
+													[6] = 129,
+													[12] = 136,
+													[24] = 136,
+													[19] = 136,
+													[25] = 136,
+													[13] = 136,
+													[26] = 136,
+													[7] = 136,
+													[27] = 136,
+													[14] = 136,
+													[28] = 136,
+													[23] = 136,
+													[29] = 136,
+													[15] = 136,
+												}, -- end of ["channels"]
+												["modulations"] = 
+												{
+													[1] = 0,
+													[2] = 0,
+													[4] = 0,
+													[8] = 0,
+													[16] = 0,
+													[17] = 0,
+													[9] = 0,
+													[18] = 0,
+													[5] = 0,
+													[10] = 0,
+													[20] = 0,
+													[30] = 0,
+													[21] = 0,
+													[11] = 0,
+													[22] = 0,
+													[3] = 0,
+													[6] = 0,
+													[12] = 0,
+													[24] = 0,
+													[19] = 0,
+													[25] = 0,
+													[13] = 0,
+													[26] = 0,
+													[7] = 0,
+													[27] = 0,
+													[14] = 0,
+													[28] = 0,
+													[23] = 0,
+													[29] = 0,
+													[15] = 0,
+												}, -- end of ["modulations"]
+												["channelsNames"] = {},
+											}, -- end of [2]
+										}, -- end of ["Radio"]
+										["unitId"] = 27,
+										["psi"] = 0,
+										["onboard_num"] = "014",
+										["parking_id"] = "1",
+										["x"] = -306665.92831672,
+										["name"] = "Carrier F-14A Template",
+										["payload"] = 
+										{
+											["pylons"] = 
+											{
+												[1] = 
+												{
+													["CLSID"] = "{LAU-138 wtip - AIM-9M}",
+												}, -- end of [1]
+												[2] = 
+												{
+													["CLSID"] = "{SHOULDER AIM-7M}",
+												}, -- end of [2]
+												[3] = 
+												{
+													["CLSID"] = "{F14-300gal}",
+												}, -- end of [3]
+												[4] = 
+												{
+													["CLSID"] = "{AIM_54C_Mk47}",
+												}, -- end of [4]
+												[5] = 
+												{
+													["CLSID"] = "{AIM_54C_Mk47}",
+												}, -- end of [5]
+												[7] = 
+												{
+													["CLSID"] = "{AIM_54C_Mk47}",
+												}, -- end of [7]
+												[8] = 
+												{
+													["CLSID"] = "{F14-300gal}",
+												}, -- end of [8]
+												[9] = 
+												{
+													["CLSID"] = "{SHOULDER AIM-7M}",
+												}, -- end of [9]
+												[10] = 
+												{
+													["CLSID"] = "{LAU-138 wtip - AIM-9M}",
+												}, -- end of [10]
+											}, -- end of ["pylons"]
+											["fuel"] = 7348,
+											["flare"] = 30,
+											["ammo_type"] = 1,
+											["chaff"] = 120,
+											["gun"] = 100,
+										}, -- end of ["payload"]
+										["y"] = 249129.18348933,
+										["heading"] = 0.049802139630406,
+										["callsign"] = 
+										{
+											[1] = 6,
+											[2] = 1,
+											["name"] = "Ford11",
+											[3] = 1,
+										}, -- end of ["callsign"]
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 249129.18348933,
+								["x"] = -306665.92831672,
+								["name"] = "Carrier F-14A Template",
+								["communication"] = true,
+								["start_time"] = 0,
+								["uncontrollable"] = false,
+								["frequency"] = 124,
+							}, -- end of [12]
+							[13] = 
+							{
+								["dynSpawnTemplate"] = true,
+								["modulation"] = 0,
+								["tasks"] = {},
+								["radioSet"] = false,
+								["task"] = "Intercept",
+								["uncontrolled"] = false,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["action"] = "From Parking Area",
+											["alt_type"] = "BARO",
+											["linkUnit"] = 26,
+											["properties"] = 
+											{
+												["addopt"] = {},
+											}, -- end of ["properties"]
+											["helipadId"] = 26,
+											["speed"] = 138.88888888889,
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["type"] = "TakeOffParking",
+											["ETA"] = 0,
+											["ETA_locked"] = true,
+											["y"] = 249129.18348933,
+											["x"] = -306665.92831672,
+											["speed_locked"] = true,
+											["formation_template"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 37,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["alt"] = 0,
+										["hardpoint_racks"] = true,
+										["alt_type"] = "BARO",
+										["livery_id"] = "default",
+										["skill"] = "Client",
+										["parking"] = "1",
+										["speed"] = 138.88888888889,
+										["AddPropAircraft"] = 
+										{
+											["LaserCodeDigit2"] = 6,
+											["IlsChannel"] = 1,
+											["TacanBand"] = 0,
+											["INSAlignmentStored"] = true,
+											["LaserCodeDigit4"] = 8,
+											["UseLAU138"] = true,
+											["Quality"] = 100,
+											["ChaffDoubleDispense"] = false,
+											["M61BURST"] = 0,
+											["IffMode2Digit1"] = 0,
+											["IffMode2Digit2"] = 0,
+											["VORILSFrequencyMHZ"] = 108,
+											["KY28Key"] = 1,
+											["UseReferenceAircraft"] = true,
+											["LaserCodeDigit3"] = 8,
+											["LaserCodeDigit1"] = 1,
+											["VORILSFrequencyDecimalMHZ"] = 0,
+											["IsNvgAllowed"] = true,
+											["IffMode2Digit3"] = 0,
+											["Wear"] = 0,
+											["IffMode2Digit4"] = 0,
+											["TacanChannel"] = 39,
+											["ALE39Loadout"] = 0,
+										}, -- end of ["AddPropAircraft"]
+										["type"] = "F-14B",
+										["Radio"] = 
+										{
+											[1] = 
+											{
+												["channels"] = 
+												{
+													[1] = 265,
+													[2] = 382.5,
+													[4] = 265,
+													[8] = 265,
+													[16] = 265,
+													[17] = 265,
+													[9] = 265,
+													[18] = 265,
+													[5] = 265,
+													[10] = 265,
+													[20] = 265,
+													[11] = 265,
+													[3] = 266,
+													[6] = 265,
+													[12] = 265,
+													[13] = 265,
+													[7] = 265,
+													[14] = 265,
+													[19] = 265,
+													[15] = 265,
+												}, -- end of ["channels"]
+												["modulations"] = 
+												{
+													[1] = 0,
+													[2] = 0,
+													[4] = 0,
+													[8] = 0,
+													[16] = 0,
+													[17] = 0,
+													[9] = 0,
+													[18] = 0,
+													[5] = 0,
+													[10] = 0,
+													[11] = 0,
+													[3] = 0,
+													[6] = 0,
+													[12] = 0,
+													[13] = 0,
+													[7] = 0,
+													[14] = 0,
+													[15] = 0,
+												}, -- end of ["modulations"]
+												["channelsNames"] = {},
+											}, -- end of [1]
+											[2] = 
+											{
+												["channels"] = 
+												{
+													[1] = 136,
+													[2] = 266,
+													[4] = 126,
+													[8] = 136,
+													[16] = 136,
+													[17] = 136,
+													[9] = 136,
+													[18] = 136,
+													[5] = 265,
+													[10] = 136,
+													[20] = 136,
+													[30] = 136,
+													[21] = 136,
+													[11] = 136,
+													[22] = 136,
+													[3] = 382.5,
+													[6] = 129,
+													[12] = 136,
+													[24] = 136,
+													[19] = 136,
+													[25] = 136,
+													[13] = 136,
+													[26] = 136,
+													[7] = 136,
+													[27] = 136,
+													[14] = 136,
+													[28] = 136,
+													[23] = 136,
+													[29] = 136,
+													[15] = 136,
+												}, -- end of ["channels"]
+												["modulations"] = 
+												{
+													[1] = 0,
+													[2] = 0,
+													[4] = 0,
+													[8] = 0,
+													[16] = 0,
+													[17] = 0,
+													[9] = 0,
+													[18] = 0,
+													[5] = 0,
+													[10] = 0,
+													[20] = 0,
+													[30] = 0,
+													[21] = 0,
+													[11] = 0,
+													[22] = 0,
+													[3] = 0,
+													[6] = 0,
+													[12] = 0,
+													[24] = 0,
+													[19] = 0,
+													[25] = 0,
+													[13] = 0,
+													[26] = 0,
+													[7] = 0,
+													[27] = 0,
+													[14] = 0,
+													[28] = 0,
+													[23] = 0,
+													[29] = 0,
+													[15] = 0,
+												}, -- end of ["modulations"]
+												["channelsNames"] = {},
+											}, -- end of [2]
+										}, -- end of ["Radio"]
+										["unitId"] = 28,
+										["psi"] = 0,
+										["onboard_num"] = "015",
+										["parking_id"] = "1",
+										["x"] = -306665.92831672,
+										["name"] = "Carrier F-14B Template",
+										["payload"] = 
+										{
+											["pylons"] = 
+											{
+												[1] = 
+												{
+													["CLSID"] = "{LAU-138 wtip - AIM-9M}",
+												}, -- end of [1]
+												[2] = 
+												{
+													["CLSID"] = "{SHOULDER AIM-7M}",
+												}, -- end of [2]
+												[3] = 
+												{
+													["CLSID"] = "{F14-300gal}",
+												}, -- end of [3]
+												[4] = 
+												{
+													["CLSID"] = "{AIM_54C_Mk47}",
+												}, -- end of [4]
+												[5] = 
+												{
+													["CLSID"] = "{AIM_54C_Mk47}",
+												}, -- end of [5]
+												[7] = 
+												{
+													["CLSID"] = "{AIM_54C_Mk47}",
+												}, -- end of [7]
+												[8] = 
+												{
+													["CLSID"] = "{F14-300gal}",
+												}, -- end of [8]
+												[9] = 
+												{
+													["CLSID"] = "{SHOULDER AIM-7M}",
+												}, -- end of [9]
+												[10] = 
+												{
+													["CLSID"] = "{LAU-138 wtip - AIM-9M}",
+												}, -- end of [10]
+											}, -- end of ["pylons"]
+											["fuel"] = 7348,
+											["flare"] = 30,
+											["ammo_type"] = 1,
+											["chaff"] = 120,
+											["gun"] = 100,
+										}, -- end of ["payload"]
+										["y"] = 249129.18348933,
+										["heading"] = 0.049802139630406,
+										["callsign"] = 
+										{
+											[1] = 7,
+											[2] = 1,
+											["name"] = "Chevy11",
+											[3] = 1,
+										}, -- end of ["callsign"]
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 249129.18348933,
+								["x"] = -306665.92831672,
+								["name"] = "Carrier F-14B Template",
+								["communication"] = true,
+								["start_time"] = 0,
+								["uncontrollable"] = false,
+								["frequency"] = 124,
+							}, -- end of [13]
+							[14] = 
+							{
+								["dynSpawnTemplate"] = true,
+								["modulation"] = 0,
+								["tasks"] = {},
+								["radioSet"] = true,
+								["task"] = "CAP",
+								["uncontrolled"] = false,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["action"] = "From Parking Area",
+											["alt_type"] = "BARO",
+											["linkUnit"] = 26,
+											["properties"] = 
+											{
+												["addopt"] = {},
+											}, -- end of ["properties"]
+											["helipadId"] = 26,
+											["speed"] = 138.88888888889,
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = {},
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["type"] = "TakeOffParking",
+											["ETA"] = 0,
+											["ETA_locked"] = true,
+											["y"] = 249129.18348933,
+											["x"] = -306665.92831672,
+											["speed_locked"] = true,
+											["formation_template"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 38,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["alt"] = 0,
+										["hardpoint_racks"] = true,
+										["alt_type"] = "BARO",
+										["livery_id"] = "finland 21",
+										["skill"] = "Client",
+										["parking"] = "1",
+										["speed"] = 138.88888888889,
+										["AddPropAircraft"] = 
+										{
+											["LaserCodeDigit2"] = 6,
+											["IsNvgAllowed"] = true,
+											["TacanBand"] = 0,
+											["LaserCodeDigit4"] = 8,
+											["STN_L16"] = "00235",
+											["INSAlignmentStored"] = true,
+											["VORILSFrequencyMHZ"] = 108,
+											["IffMode2Digit1"] = 0,
+											["Quality"] = 100,
+											["ChaffDoubleDispense"] = false,
+											["HelmetMountedDevice"] = 1,
+											["IffMode2Digit4"] = 0,
+											["IffMode2Digit2"] = 0,
+											["LaserCodeDigit1"] = 1,
+											["InnerBoard"] = 0,
+											["KY28Key"] = 1,
+											["LaserCodeDigit3"] = 8,
+											["UseReferenceAircraft"] = true,
+											["VORILSFrequencyDecimalMHZ"] = 0,
+											["VoiceCallsignLabel"] = "GL",
+											["IffMode2Digit3"] = 0,
+											["Wear"] = 0,
+											["VoiceCallsignNumber"] = "11",
+											["TacanChannel"] = 0,
+											["OuterBoard"] = 0,
+										}, -- end of ["AddPropAircraft"]
+										["type"] = "FA-18C_hornet",
+										["Radio"] = 
+										{
+											[1] = 
+											{
+												["channels"] = 
+												{
+													[1] = 265,
+													[2] = 135,
+													[4] = 136,
+													[8] = 265,
+													[16] = 265,
+													[17] = 265,
+													[9] = 265,
+													[18] = 265,
+													[5] = 266,
+													[10] = 265,
+													[20] = 265,
+													[11] = 265,
+													[3] = 382.5,
+													[6] = 129,
+													[12] = 265,
+													[13] = 265,
+													[7] = 265,
+													[14] = 265,
+													[19] = 265,
+													[15] = 265,
+												}, -- end of ["channels"]
+												["modulations"] = 
+												{
+													[1] = 0,
+													[2] = 0,
+													[4] = 1,
+													[8] = 0,
+													[16] = 0,
+													[17] = 0,
+													[9] = 0,
+													[18] = 0,
+													[5] = 0,
+													[10] = 0,
+													[20] = 0,
+													[11] = 0,
+													[3] = 0,
+													[6] = 0,
+													[12] = 0,
+													[13] = 0,
+													[7] = 0,
+													[14] = 0,
+													[19] = 0,
+													[15] = 0,
+												}, -- end of ["modulations"]
+												["channelsNames"] = {},
+											}, -- end of [1]
+											[2] = 
+											{
+												["channels"] = 
+												{
+													[1] = 136,
+													[2] = 266,
+													[4] = 135,
+													[8] = 136,
+													[16] = 136,
+													[17] = 136,
+													[9] = 136,
+													[18] = 136,
+													[5] = 265,
+													[10] = 136,
+													[20] = 136,
+													[11] = 136,
+													[3] = 382.5,
+													[6] = 129,
+													[12] = 136,
+													[13] = 136,
+													[7] = 136,
+													[14] = 136,
+													[19] = 136,
+													[15] = 136,
+												}, -- end of ["channels"]
+												["modulations"] = 
+												{
+													[1] = 0,
+													[2] = 0,
+													[4] = 0,
+													[8] = 0,
+													[16] = 0,
+													[17] = 0,
+													[9] = 0,
+													[18] = 0,
+													[5] = 0,
+													[10] = 0,
+													[20] = 0,
+													[11] = 0,
+													[3] = 0,
+													[6] = 0,
+													[12] = 0,
+													[13] = 0,
+													[7] = 0,
+													[14] = 0,
+													[19] = 0,
+													[15] = 0,
+												}, -- end of ["modulations"]
+												["channelsNames"] = {},
+											}, -- end of [2]
+										}, -- end of ["Radio"]
+										["unitId"] = 29,
+										["psi"] = 0,
+										["onboard_num"] = "016",
+										["dataCartridge"] = 
+										{
+											["GroupsPoints"] = 
+											{
+												["Initial Point"] = {},
+												["Sequence 2 Red"] = {},
+												["PB"] = {},
+												["Sequence 1 Blue"] = {},
+												["Start Location"] = {},
+												["A/A Waypoint"] = {},
+												["PP"] = {},
+												["Sequence 3 Yellow"] = {},
+											}, -- end of ["GroupsPoints"]
+											["Points"] = {},
+										}, -- end of ["dataCartridge"]
+										["parking_id"] = "1",
+										["x"] = -306665.92831672,
+										["name"] = "Carrier F/A-18C Template",
+										["payload"] = 
+										{
+											["pylons"] = 
+											{
+												[1] = 
+												{
+													["CLSID"] = "{5CE2FF2A-645A-4197-B48D-8720AC69394F}",
+												}, -- end of [1]
+												[2] = 
+												{
+													["CLSID"] = "{LAU-115 - AIM-7M}",
+												}, -- end of [2]
+												[3] = 
+												{
+													["CLSID"] = "{LAU-115 - AIM-7M}",
+												}, -- end of [3]
+												[4] = 
+												{
+													["CLSID"] = "{40EF17B7-F508-45de-8566-6FFECC0C1AB8}",
+												}, -- end of [4]
+												[5] = 
+												{
+													["CLSID"] = "{FPU_8A_FUEL_TANK}",
+												}, -- end of [5]
+												[6] = 
+												{
+													["CLSID"] = "{40EF17B7-F508-45de-8566-6FFECC0C1AB8}",
+												}, -- end of [6]
+												[7] = 
+												{
+													["CLSID"] = "{LAU-115 - AIM-7M}",
+												}, -- end of [7]
+												[8] = 
+												{
+													["CLSID"] = "{LAU-115 - AIM-7M}",
+												}, -- end of [8]
+												[9] = 
+												{
+													["CLSID"] = "{5CE2FF2A-645A-4197-B48D-8720AC69394F}",
+												}, -- end of [9]
+											}, -- end of ["pylons"]
+											["fuel"] = 4900,
+											["flare"] = 30,
+											["ammo_type"] = 1,
+											["chaff"] = 120,
+											["gun"] = 100,
+										}, -- end of ["payload"]
+										["y"] = 249129.18348933,
+										["heading"] = 0.049802139630406,
+										["callsign"] = 
+										{
+											[1] = 8,
+											[2] = 1,
+											["name"] = "Pontiac11",
+											[3] = 1,
+										}, -- end of ["callsign"]
+										["datalinks"] = 
+										{
+											["Link16"] = 
+											{
+												["settings"] = 
+												{
+													["FF1_Channel"] = 2,
+													["FF2_Channel"] = 3,
+													["transmitPower"] = 0,
+													["AIC_Channel"] = 1,
+													["VOCA_Channel"] = 4,
+													["VOCB_Channel"] = 5,
+												}, -- end of ["settings"]
+												["network"] = 
+												{
+													["teamMembers"] = 
+													{
+														[1] = 
+														{
+															["missionUnitId"] = 29,
+														}, -- end of [1]
+													}, -- end of ["teamMembers"]
+													["donors"] = {},
+												}, -- end of ["network"]
+											}, -- end of ["Link16"]
+										}, -- end of ["datalinks"]
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 249129.18348933,
+								["x"] = -306665.92831672,
+								["name"] = "Carrier F/A-18C Template",
+								["communication"] = true,
+								["start_time"] = 0,
+								["uncontrollable"] = false,
+								["frequency"] = 265,
+							}, -- end of [14]
 						}, -- end of ["group"]
 					}, -- end of ["plane"]
 				}, -- end of [1]
@@ -4167,7 +5017,7 @@ mission =
 												}, -- end of ["params"]
 											}, -- end of ["task"]
 											["type"] = "Turning Point",
-											["ETA"] = 597.11550118359,
+											["ETA"] = 597.11550118358,
 											["ETA_locked"] = false,
 											["y"] = 361549.03816184,
 											["x"] = -60833.897408169,
@@ -5732,7 +6582,7 @@ mission =
 			["eventlist"] = "",
 		}, -- end of [4]
 	}, -- end of ["trigrules"]
-	["currentKey"] = 8976,
+	["currentKey"] = 9655,
 	["failures"] = 
 	{
 		["OIL_RADIATOR_SENSOR"] = 
