@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import luadata
-import sys
 import pathlib
 import typing
 
@@ -22,22 +21,20 @@ def sort_lua_file(path: pathlib.Path, var: str) -> None:
 
 
 def main() -> None:
-    if len(sys.argv) < 2:
-        print("Usage: uv run tools/sort-mission.py THEATER")
-        print("Example: uv run tools/sort-mission.py calamity")
-        sys.exit()
+    theaters_dir = pathlib.Path("theaters")
+    theater_dirs = theaters_dir.glob("*")
+    for theater_dir in theater_dirs:
+        if not theater_dir.is_dir():
+            continue
 
-    theater_name = sys.argv[1]
-    theater_dir = pathlib.Path(f"theaters/{theater_name}")
-    mission_dir = theater_dir / "mission"
+        mission_dir = theater_dir / "mission"
+        for filename in ("mission", "options", "warehouses"):
+            path = mission_dir / filename
+            sort_lua_file(path, filename)
 
-    for filename in ("mission", "options", "warehouses"):
-        path = mission_dir / filename
-        sort_lua_file(path, filename)
-
-    templates_dir = theater_dir / "theater"
-    for path in templates_dir.rglob("*.stm"):
-        sort_lua_file(path, "staticTemplate")
+        templates_dir = theater_dir / "theater"
+        for path in templates_dir.rglob("*.stm"):
+            sort_lua_file(path, "staticTemplate")
 
 
 if __name__ == "__main__":
