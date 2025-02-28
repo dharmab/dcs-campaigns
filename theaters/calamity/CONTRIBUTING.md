@@ -19,9 +19,6 @@ uv run tools/unpack.py calamity
 
 # Uninstall mission
 uv run tools/uninstall.py calamity
-
-# Normalize changes
-uv run tools/normalize.py calamity
 ```
 
 ## Changing Player Aircraft
