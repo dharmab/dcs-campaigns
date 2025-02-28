@@ -3,10 +3,20 @@
 import luadata
 import sys
 import pathlib
+import typing
+
+
+def sort_data(d: typing.Any) -> dict:
+    if isinstance(d, dict):
+        return {k: sort_data(v) for k, v in sorted(d.items(), key=lambda x: str(x))}
+    elif isinstance(d, list):
+        return [sort_data(v) for v in d]
+    else:
+        return d
 
 
 def sort_dict(d: dict) -> dict:
-    return {k: sort_dict(v) if isinstance(v, dict) else v for k, v in sorted(d.items())}
+    return sort_data(d)
 
 
 def sort_lua_file(path: pathlib.Path, var: str) -> None:
