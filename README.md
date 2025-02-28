@@ -4,8 +4,10 @@ Project for [DCS](https://www.digitalcombatsimulator.com) campaigns using [DCT](
 
 Concept by @dharmab
 
-Core programming and tooling by: @dharmab
+Core programming and tooling by @dharmab
+
 Additional core programming by @Frosty-nee
+
 Content by @dharmab, @Frosty-nee
 
 ## Project Calamity
