@@ -105,7 +105,10 @@ def main():
     finally:
         mission_file_temp.unlink(missing_ok=True)
 
-    print(f"You may now edit the MIZ file in the DCS Mission Editor (File -> Open -> {mission_file_dest})")
+    print(
+        f"You may now edit the MIZ file in the DCS Mission Editor (File -> Open -> {mission_file_dest})"
+    )
+
 
 if __name__ == "__main__":
     main()
