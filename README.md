@@ -1,8 +1,20 @@
 # DCS Campaigns
 
-Project for my [DCS](https://www.digitalcombatsimulator.com) campaigns using [DCT](https://github.com/jtoppins/dct) and [MOOSE](https://github.com/FlightControl-Master/MOOSE).
+Project for [DCS](https://www.digitalcombatsimulator.com) campaigns using [DCT](https://github.com/jtoppins/dct) and [MOOSE](https://github.com/FlightControl-Master/MOOSE).
 
-## Glossary:
+Concept by @dharmab
+
+Core programming and tooling by: @dharmab
+Additional core programming by @Frosty-nee
+Content by @dharmab, @Frosty-nee
+
+## Project Calamity
+
+Project Calamity is a dynamic DCS campaign set in the World On Fire.
+
+See the [README](theaters/calamity/README.md) for more information.
+
+## Glossary
 
 - MIZ: File for DCS missions. A ZIP file containing all of the data created in the mission editor, plus extra resources like scripts and other assets.
 - STM: File for Static Templates. Similar to a MIZ but only contains data for a few objects instead of an entire mission.
@@ -17,28 +29,56 @@ Project for my [DCS](https://www.digitalcombatsimulator.com) campaigns using [DC
 
 ## Project Layout
 
-- `dev`: Utility scripts used in the development environment.
-- `scripts`: DCS scripts used across multiple theaters.
+- `tools`: Utility scripts used in the development environment.
 - `theaters`: One folder for each DCT theater.
 - `theaters/<theater>/mission`: Unpacked contents of the MIZ file.
-- `theaters/<theater>/scripts`: Theater-specific scripts.
 - `theaters/<theater>/theater`: [DCT theater directory hierarchy](https://jtoppins.github.io/dct/designer.html#theater).
 
 There is currently one theater, `calamity`. We might add more in the future.
 
 ## Development
 
+### Getting Started
+
+You'll need `uv` installed to run the included tool scripts. These tool scripts automate most of the tedious work of copying files around with the correct names in the correct places.
+
+[Instructions on installing `uv` are here](https://docs.astral.sh/uv/getting-started/installation/). Generally on Windows you'll need to open Powershell and type:
+
+```powershell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+Then restart your PC.
+
+To test if the installation worked, open Powershell again and type `uv help`. You should see a bunch of help text appear.
+
+All commands provided in this documentation should be run from the project root folder (i.e. run `cd c:\path\to\wherever\this\README\is` before running other commands).
+
+The tools will only work is your Saved Games folder is at `%userprofile%\Saved Games\DCS`. If it's anywhere else, or is named `DCS.openbeta`, it won't work.
+
+**Back up your DCS Saved Games folder before beginning any development**. The tool scripts will overwrite/delete some files in that folder and if I made a mistake somewhere they could clobber your files.
+
 ### Changing a MIZ File
 
-1. Run `./dev/pack-miz.ps1 <theater>` to create a `mission.miz` file.
-1. Edit the `mission.miz` file in the DCS mission editor, and save changes overwriting the file.
-1. Run `./dev/unpack-miz.ps1 mission.miz <theater>` to update the `theaters/<theater>/mission` directory.
+Certain changes to the mission core will require editing the MIZ file. The MIZ's internals are stored in `theaters\$theaterName\mission`.
 
-### Changing an STM File
+You'll need to desanitize your DCS scripting environment, or else the Mission Editor will freeze when loading the MIZ. You'll need to undo this before loading other missions/playing multiplayer or else malicious MIZ files could access your computer. To desanitize the scripting environment, edit `Scripts/MissionScripting.lua` in the main DCS install folder and comment out the lines that call the sanitize function or null out the `_G` table. (This is intentionally vague so clueless gamers don't blindly follow dangerous instructions.)
 
-1. Run `./dev/edit-stm.ps1 <stm file>` to copy the STM file to the DCS Saved Games folder. (Note: This only works if your Saved Games folder is at `%userprofile%\Saved Games\DCS`, it won't work with the old `DCS.openbeta` folder)
-1. Edit the Static Template in the DCS mission editor, and save changes overwriting the template.
-1. Run `./dev/save-stm.ps1 <stm file>` to update the STM file in the repository.
+1. Run `uv run tools/install.py <theater>` to install DCT and the theater files.
+1. Open the `dct-theaterName.miz` file the the Missions folder in the DCS mission editor, make your edits, and save over the MIZ file.
+1. Run `uv run tools/unpack-miz.py <theater>` to copy the edits back from the MIZ file to Git.
+1. Commit the changes in Git.
+1. Run `uv run tools/uninstall.py <theater>` to uninstall DCT and the theater files.
+
+### Changing an Existing STM File
+
+If you want to change an existing mission template:
+
+1. Run `uv run tools/edit-template.py theaters/theaterName/theater/regionName/templateName.stm` to copy the STM file to the DCS Saved Games folder.
+1. Open a blank new mission in the Mission Editor.
+1. Edit -> Load Static Template, make your edits, and Edit -> Save Static Template. Use the existing template name for the Name and File Name.
+1. Run `uv run tools/save-template.py theaters/theaterName/theater/regionName/templateName.stm` to copy the edited STM file to Git.
+1. Commit the changes in Git.
 
 ### Calamity Development
 

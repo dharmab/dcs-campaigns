@@ -1,26 +1,41 @@
 # Setting Up DCT
 
-# Packing and Unpacking MIZ Files
+# Editing the MIZ file
 
-See [the top-level README](../../README.md#changing-a-miz-file) for instructions on packing and unpacking MIZ files.
+Editing the MIZ file allows changing of certain core systems.
 
-# Changing Player Aircraft
+See [the top-level README](../../README.md#changing-a-miz-file) for instructions on packing and unpacking MIZ files. 
 
-1. Pack the MIZ file and open it in the DCS Mission Editor.
-1. Edit the Dynamic Templates at Krymsk airfield. Make sure the skill level is set to `Client`. Follow existing group and unit naming conventions.
-1. Save changes in the Mission Editor.
-1. Unpack the MIZ file.
-1. Edit both `settings\payloadlimits.cfg` and `settings\ui.cfg` as required.
+Example:
 
-# Changing Hostile Aircraft
+```
+# Install the mission
+uv run tools/install.py calamity
 
-1. Pack the MIZ file and open it in the DCS Mission Editor.
-1. Edit the enemy air units at Tbilisi-Lochini airfield. Make sure these are set to Late Activation. Follow existing group and unit naming conventions.
-1. Save changes in the Mission Editor.
-1. Unpack the MIZ file.
-1. Edit `scripts/A2A.lua`, changing the content of the `airbases` table as required. Follow existing code conventions.
+# Make edits in the Mission Editor
 
-# Adding New Templates
+# Copy changes back to Git
+uv run tools/unpack.py calamity
+
+# Uninstall mission
+uv run tools/uninstall.py calamity
+```
+
+## Changing Player Aircraft
+
+Edit the BLUE Dynamic Templates. Make sure the skill level is set to `Client`. Follow existing group and unit naming conventions.
+
+## Changing Hostile Aircraft
+
+Edit the RED Late Activation aircraft, or add new ones if needed.
+
+Unpack the MIZ back into Git.
+
+Edit `mission/l10n/DEFAULT/A2A.lua`, changing the content of the `factions` table as required to assign the aircraft to airbases. Follow existing code conventions.
+
+# Editing Templates
+
+Editing Templates allows adding new "mini-missions" or editing existing "mini-missions".
 
 ## File Structure
 
@@ -57,11 +72,45 @@ You can have blank lines, too.]]
 - `cost` is the number of enemy tickets depleted when the template is completed. See [Ticket Costs](#ticket-costs) for guidance.
 - `desc` is the template description shown in-game.
 
+Note: TEMPLATETYPE must be one of `CAS`, `STRIKE`, `BAI`, `ANTISHIP`, `SEAD`.
+
 ### STM File
 
 STM files are Static Templates, which are created and edited in the DCS Mission Editor. Note the groups and units in the STM need to follow [name conventions](#naming-conventions) and [death goal specifications](#death-goals).
 
+To create a new STM file from scratch:
+
+1. Open the DCS Mission Editor.
+1. Load a new mission on Caucases.
+1. Place and name groups as required.
+1. Click Edit -> Save Static Template. Use the [naming conventions](#naming-conventions) for both the Name and File Name field.
+1. Run `uv run tools/save-template.py theaters/calamity/theater/RegionName/TemplateFileName.stm`, substituting the correct region and template name.
+
+To edit an existing STM file:
+
+1. Run `uv run tools/edit-template.py theaters/calamity/theater/RegionName/TemplateFileName.stm`, substituting the correct region and template name.
+1. Open the DCS Mission Editor.
+1. Load a new mission on Caucases.
+1. Click Edit -> Load Static Template.
+1. Find the template in the Customized table and click it to highlight it.
+1. Click Load.
+1. Edit the template as desired.
+1. Click Edit -> Save Static Template. Use the same template name for the Name and File Name field.
+1. Run `uv run tools/save-template.py theaters/calamity/theater/RegionName/TemplateFileName.stm`, substituting the correct region and template name.
+
+## Editing Payload Limits
+
+To edit payload settings, edit the file `theaters\calamity\theater\settings\restrictedweapons.cfg`. All aircraft have 12 A/A points and 12 A/G points available.
+
+## Editing Mission Assignments
+
+To edit missions available to an aircraft, edit the file `theaters\calamity\theater\settings\ui.cfg`.
+
 ## General Notes
+
+### Factions
+
+Used the Combined Joint Task Force Blue country for all BLUE units and the Combined Joint Tank Force Red country for all RED units.
 
 ### Naming Conventions
 
@@ -119,7 +168,7 @@ I am a personal stickler for style and grammar and will likely edit your mission
 
 Requirements for acceptable SEAD templates:
 
-SAM sites must have at least three variants, each in a different location, configured with the [`exclusion`](https://jtoppins.github.io/dct/designer.html#exclusion) value set to `RegionName-TemplateID`. This inhibits players from memorizing the exact location of each site.
+SAM sites must have at least three variants, each in a different location, configured with the [`exclusion`](https://jtoppins.github.io/dct/designer.html#exclusion) value set to `(SAM|EWR)-RegionName-TemplateID`. This inhibits players from memorizing the exact location of each site.
 
 Groups must be named and unit names prefixed according to one of the following patterns. This makes the radars work with the Air Interception script, and makes it easy to identify units in TacView when troubleshooting.
   - `SAM-RegionName-TemplateID-VariantID` for SAM sites, e.g. `SAM-Gudauta-2-3` is the third variant of the second SEAD template in Gudauta.
@@ -160,7 +209,7 @@ Remarks: <additional notes>]]
 -|-|-
 1|Ingress Point|In DCS this is usually "N/A"
 2|Heading|If Ingress Point is "N/A", this is also "N/A"
-3|Distance|If 1. is "N/A", this is also "N/A"
+3|Distance|If Ingress Point is "N/A",, this is also "N/A"
 4|Target Elevation|We use "Check mission data", since DCT provides this information using the best format for the player's aircraft.
 5|Target Description|An accurate, concise and specific description of the target. Should include visual cues to help the aircrew locate the target, such as relative location to landmarks and features.
 6|Target Location|We use "Check mission data", since DCT provides this information using the best format for the player's aircraft.

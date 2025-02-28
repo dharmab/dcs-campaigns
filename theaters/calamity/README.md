@@ -174,7 +174,7 @@ The scenario will focus on daytime operations, in part because some player aircr
 
 ## Carrier Operaitons
 
-The initial version of the scenario will use shore bases exclusively. A later version of the scenario will add the Forrestal as a player carrier.
+The Forrestal is present as a player carrier. It is located in the southern area of the Black Sea, and will be a closer spawn to anti-shipping objectives added later in development.
 
 The supercarrier will not be used because it is significantly more buggy than the Forrestal.
 
