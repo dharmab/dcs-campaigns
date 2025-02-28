@@ -1,469 +1,414 @@
-staticTemplate = 
+staticTemplate =
 {
-	["coalition"] = 
-	{
-		["blue"] = 
-		{
-			["name"] = "blue",
-			["country"] = {},
-		}, -- end of ["blue"]
-		["neutrals"] = 
-		{
-			["name"] = "neutrals",
-			["country"] = {},
-		}, -- end of ["neutrals"]
-		["red"] = 
-		{
-			["name"] = "red",
-			["country"] = 
-			{
-				[1] = 
-				{
-					["id"] = 81,
-					["vehicle"] = 
-					{
-						["group"] = 
-						{
-							[1] = 
-							{
-								["visible"] = false,
-								["tasks"] = {},
-								["uncontrollable"] = false,
-								["route"] = 
-								{
-									["spans"] = {},
-									["points"] = 
-									{
-										[1] = 
-										{
-											["alt"] = 221,
-											["type"] = "Turning Point",
-											["ETA"] = 0,
-											["alt_type"] = "BARO",
-											["formation_template"] = "",
-											["y"] = 661429.25794285,
-											["x"] = -256440.00020087,
-											["ETA_locked"] = true,
-											["speed"] = 0,
-											["action"] = "Off Road",
-											["task"] = 
-											{
-												["id"] = "ComboTask",
-												["params"] = 
-												{
-													["tasks"] = {},
-												}, -- end of ["params"]
-											}, -- end of ["task"]
-											["speed_locked"] = true,
-										}, -- end of [1]
-									}, -- end of ["points"]
-								}, -- end of ["route"]
-								["groupId"] = 185,
-								["hidden"] = false,
-								["units"] = 
-								{
-									[1] = 
-									{
-										["skill"] = "High",
-										["coldAtStart"] = false,
-										["type"] = "S-60_Type59_Artillery",
-										["unitId"] = 1133,
-										["y"] = 661429.25794285,
-										["x"] = -256440.00020087,
-										["name"] = "SAM-Senaki-3-3-AAA-1-1",
-										["heading"] = 3.0981417581983,
-										["playerCanDrive"] = true,
-									}, -- end of [1]
-									[2] = 
-									{
-										["skill"] = "High",
-										["coldAtStart"] = false,
-										["type"] = "S-60_Type59_Artillery",
-										["unitId"] = 1134,
-										["y"] = 661455.56679873,
-										["x"] = -256386.13288013,
-										["name"] = "SAM-Senaki-3-3-AAA-1-2",
-										["heading"] = 3.0981417581983,
-										["playerCanDrive"] = true,
-									}, -- end of [2]
-									[3] = 
-									{
-										["skill"] = "High",
-										["coldAtStart"] = false,
-										["type"] = "S-60_Type59_Artillery",
-										["unitId"] = 1135,
-										["y"] = 661399.0647176,
-										["x"] = -256419.40414045,
-										["name"] = "SAM-Senaki-3-3-AAA-1-3",
-										["heading"] = 3.0981417581983,
-										["playerCanDrive"] = true,
-									}, -- end of [3]
-									[4] = 
-									{
-										["skill"] = "High",
-										["coldAtStart"] = false,
-										["type"] = "S-60_Type59_Artillery",
-										["unitId"] = 1136,
-										["y"] = 661455.173056,
-										["x"] = -256418.616655,
-										["name"] = "SAM-Senaki-3-3-AAA-1-4",
-										["heading"] = 3.0981417581983,
-										["playerCanDrive"] = true,
-									}, -- end of [4]
-									[5] = 
-									{
-										["skill"] = "High",
-										["coldAtStart"] = false,
-										["type"] = "S-60_Type59_Artillery",
-										["unitId"] = 1137,
-										["y"] = 661426.23296567,
-										["x"] = -256361.72083115,
-										["name"] = "SAM-Senaki-3-3-AAA-1-5",
-										["heading"] = 3.0981417581983,
-										["playerCanDrive"] = true,
-									}, -- end of [5]
-									[6] = 
-									{
-										["skill"] = "High",
-										["coldAtStart"] = false,
-										["type"] = "S-60_Type59_Artillery",
-										["unitId"] = 1138,
-										["y"] = 661398.08036079,
-										["x"] = -256386.92036559,
-										["name"] = "SAM-Senaki-3-3-AAA-1-6",
-										["heading"] = 3.0981417581983,
-										["playerCanDrive"] = true,
-									}, -- end of [6]
-								}, -- end of ["units"]
-								["y"] = 661429.25794285,
-								["x"] = -256440.00020087,
-								["name"] = "SAM-Senaki-3-3-AAA-1",
-								["start_time"] = 0,
-							}, -- end of [1]
-							[2] = 
-							{
-								["visible"] = false,
-								["tasks"] = {},
-								["uncontrollable"] = false,
-								["route"] = 
-								{
-									["spans"] = {},
-									["points"] = 
-									{
-										[1] = 
-										{
-											["alt"] = 282.16501656906,
-											["type"] = "Turning Point",
-											["ETA"] = 0,
-											["alt_type"] = "BARO",
-											["formation_template"] = "",
-											["y"] = 662439.89894314,
-											["x"] = -255827.37225861,
-											["ETA_locked"] = true,
-											["speed"] = 0,
-											["action"] = "Off Road",
-											["task"] = 
-											{
-												["id"] = "ComboTask",
-												["params"] = 
-												{
-													["tasks"] = {},
-												}, -- end of ["params"]
-											}, -- end of ["task"]
-											["speed_locked"] = true,
-										}, -- end of [1]
-									}, -- end of ["points"]
-								}, -- end of ["route"]
-								["groupId"] = 186,
-								["hidden"] = false,
-								["units"] = 
-								{
-									[1] = 
-									{
-										["skill"] = "High",
-										["coldAtStart"] = false,
-										["type"] = "S-60_Type59_Artillery",
-										["unitId"] = 1139,
-										["y"] = 662439.89894314,
-										["x"] = -255827.37225861,
-										["name"] = "SAM-Senaki-3-3-AAA-2-1",
-										["heading"] = 3.0981417581983,
-										["playerCanDrive"] = true,
-									}, -- end of [1]
-									[2] = 
-									{
-										["skill"] = "High",
-										["coldAtStart"] = false,
-										["type"] = "S-60_Type59_Artillery",
-										["unitId"] = 1140,
-										["y"] = 662466.20779902,
-										["x"] = -255773.50493787,
-										["name"] = "SAM-Senaki-3-3-AAA-2-2",
-										["heading"] = 3.0981417581983,
-										["playerCanDrive"] = true,
-									}, -- end of [2]
-									[3] = 
-									{
-										["skill"] = "High",
-										["coldAtStart"] = false,
-										["type"] = "S-60_Type59_Artillery",
-										["unitId"] = 1141,
-										["y"] = 662409.70571789,
-										["x"] = -255806.77619819,
-										["name"] = "SAM-Senaki-3-3-AAA-2-3",
-										["heading"] = 3.0981417581983,
-										["playerCanDrive"] = true,
-									}, -- end of [3]
-									[4] = 
-									{
-										["skill"] = "High",
-										["coldAtStart"] = false,
-										["type"] = "S-60_Type59_Artillery",
-										["unitId"] = 1142,
-										["y"] = 662465.81405629,
-										["x"] = -255805.98871274,
-										["name"] = "SAM-Senaki-3-3-AAA-2-4",
-										["heading"] = 3.0981417581983,
-										["playerCanDrive"] = true,
-									}, -- end of [4]
-									[5] = 
-									{
-										["skill"] = "High",
-										["coldAtStart"] = false,
-										["type"] = "S-60_Type59_Artillery",
-										["unitId"] = 1143,
-										["y"] = 662436.87396596,
-										["x"] = -255749.09288889,
-										["name"] = "SAM-Senaki-3-3-AAA-2-5",
-										["heading"] = 3.0981417581983,
-										["playerCanDrive"] = true,
-									}, -- end of [5]
-									[6] = 
-									{
-										["skill"] = "High",
-										["coldAtStart"] = false,
-										["type"] = "S-60_Type59_Artillery",
-										["unitId"] = 1144,
-										["y"] = 662408.72136108,
-										["x"] = -255774.29242333,
-										["name"] = "SAM-Senaki-3-3-AAA-2-6",
-										["heading"] = 3.0981417581983,
-										["playerCanDrive"] = true,
-									}, -- end of [6]
-								}, -- end of ["units"]
-								["y"] = 662439.89894314,
-								["x"] = -255827.37225861,
-								["name"] = "SAM-Senaki-3-3-AAA-2",
-								["start_time"] = 0,
-							}, -- end of [2]
-							[3] = 
-							{
-								["visible"] = false,
-								["tasks"] = {},
-								["uncontrollable"] = false,
-								["route"] = 
-								{
-									["spans"] = {},
-									["points"] = 
-									{
-										[1] = 
-										{
-											["alt"] = 293.72227910287,
-											["type"] = "Turning Point",
-											["ETA"] = 0,
-											["alt_type"] = "BARO",
-											["formation_template"] = "",
-											["y"] = 661923.63710158,
-											["x"] = -256227.12443049,
-											["ETA_locked"] = true,
-											["speed"] = 0,
-											["action"] = "Off Road",
-											["task"] = 
-											{
-												["id"] = "ComboTask",
-												["params"] = 
-												{
-													["tasks"] = {},
-												}, -- end of ["params"]
-											}, -- end of ["task"]
-											["speed_locked"] = true,
-										}, -- end of [1]
-									}, -- end of ["points"]
-								}, -- end of ["route"]
-								["groupId"] = 187,
-								["hidden"] = false,
-								["units"] = 
-								{
-									[1] = 
-									{
-										["skill"] = "High",
-										["coldAtStart"] = false,
-										["type"] = "p-19 s-125 sr",
-										["unitId"] = 1145,
-										["y"] = 661923.63710158,
-										["x"] = -256227.12443049,
-										["name"] = "SAM-Senaki-3-1-SA3-1 Primary Destroyed",
-										["heading"] = 0.5235987755983,
-										["playerCanDrive"] = false,
-									}, -- end of [1]
-									[2] = 
-									{
-										["skill"] = "High",
-										["coldAtStart"] = false,
-										["type"] = "5p73 s-125 ln",
-										["unitId"] = 1146,
-										["y"] = 662070.45181262,
-										["x"] = -256243.43133316,
-										["name"] = "SAM-Senaki-3-1-SA3-2",
-										["heading"] = 6.029936403759,
-										["playerCanDrive"] = false,
-									}, -- end of [2]
-									[3] = 
-									{
-										["skill"] = "High",
-										["coldAtStart"] = false,
-										["type"] = "5p73 s-125 ln",
-										["unitId"] = 1147,
-										["y"] = 661979.89739521,
-										["x"] = -256312.5265589,
-										["name"] = "SAM-Senaki-3-1-SA3-3",
-										["heading"] = 6.029936403759,
-										["playerCanDrive"] = false,
-									}, -- end of [3]
-									[4] = 
-									{
-										["skill"] = "High",
-										["coldAtStart"] = false,
-										["type"] = "5p73 s-125 ln",
-										["unitId"] = 1148,
-										["y"] = 661863.62782706,
-										["x"] = -256274.56977581,
-										["name"] = "SAM-Senaki-3-1-SA3-4",
-										["heading"] = 6.029936403759,
-										["playerCanDrive"] = false,
-									}, -- end of [4]
-									[5] = 
-									{
-										["skill"] = "High",
-										["coldAtStart"] = false,
-										["type"] = "S-60_Type59_Artillery",
-										["unitId"] = 1149,
-										["y"] = 661983.63603064,
-										["x"] = -256232.43489158,
-										["name"] = "SAM-Senaki-3-1-SA3-5",
-										["heading"] = 6.029936403759,
-										["playerCanDrive"] = false,
-									}, -- end of [5]
-									[6] = 
-									{
-										["skill"] = "High",
-										["coldAtStart"] = false,
-										["type"] = "S-60_Type59_Artillery",
-										["unitId"] = 1150,
-										["y"] = 661933.93483758,
-										["x"] = -256171.05902959,
-										["name"] = "SAM-Senaki-3-1-SA3-6",
-										["heading"] = 6.029936403759,
-										["playerCanDrive"] = false,
-									}, -- end of [6]
-									[7] = 
-									{
-										["skill"] = "High",
-										["coldAtStart"] = false,
-										["type"] = "Ural-375 ZU-23",
-										["unitId"] = 1151,
-										["y"] = 662023.5016765,
-										["x"] = -256282.8921591,
-										["name"] = "SAM-Senaki-3-1-SA3-7",
-										["heading"] = 0.89011791851712,
-										["playerCanDrive"] = true,
-									}, -- end of [7]
-									[8] = 
-									{
-										["skill"] = "High",
-										["coldAtStart"] = false,
-										["type"] = "Ural-375 ZU-23",
-										["unitId"] = 1152,
-										["y"] = 661890.8178308,
-										["x"] = -256111.72076789,
-										["name"] = "SAM-Senaki-3-1-SA3-8",
-										["heading"] = 4.0491638646268,
-										["playerCanDrive"] = true,
-									}, -- end of [8]
-									[9] = 
-									{
-										["skill"] = "High",
-										["coldAtStart"] = false,
-										["type"] = "5p73 s-125 ln",
-										["unitId"] = 1153,
-										["y"] = 661852.81744422,
-										["x"] = -256150.36696917,
-										["name"] = "SAM-Senaki-3-1-SA3-9",
-										["heading"] = 6.029936403759,
-										["playerCanDrive"] = false,
-									}, -- end of [9]
-									[10] = 
-									{
-										["skill"] = "High",
-										["coldAtStart"] = false,
-										["type"] = "5p73 s-125 ln",
-										["unitId"] = 1154,
-										["y"] = 661944.29750376,
-										["x"] = -256081.36903234,
-										["name"] = "SAM-Senaki-3-1-SA3-10",
-										["heading"] = 6.029936403759,
-										["playerCanDrive"] = false,
-									}, -- end of [10]
-									[11] = 
-									{
-										["skill"] = "High",
-										["coldAtStart"] = false,
-										["type"] = "5p73 s-125 ln",
-										["unitId"] = 1155,
-										["y"] = 662056.35303789,
-										["x"] = -256119.3508364,
-										["name"] = "SAM-Senaki-3-1-SA3-11",
-										["heading"] = 6.029936403759,
-										["playerCanDrive"] = false,
-									}, -- end of [11]
-									[12] = 
-									{
-										["skill"] = "High",
-										["coldAtStart"] = false,
-										["type"] = "snr s-125 tr",
-										["unitId"] = 1156,
-										["y"] = 661995.68321924,
-										["x"] = -256166.78656861,
-										["name"] = "SAM-Senaki-3-1-SA3-12 Primary Destroyed",
-										["heading"] = 6.029936403759,
-										["playerCanDrive"] = false,
-									}, -- end of [12]
-								}, -- end of ["units"]
-								["y"] = 661923.63710158,
-								["x"] = -256227.12443049,
-								["name"] = "SAM-Senaki-3-1-SA3",
-								["start_time"] = 0,
-							}, -- end of [3]
-						}, -- end of ["group"]
-					}, -- end of ["vehicle"]
-					["name"] = "CJTF Red",
-				}, -- end of [1]
-			}, -- end of ["country"]
-		}, -- end of ["red"]
-	}, -- end of ["coalition"]
-	["name"] = "SAM-Senaki-3-1",
-	["requiredModules"] = {},
-	["localization"] = 
-	{
-		["DEFAULT"] = 
-		{
-			["DictKey_descriptionNeutralsTask_4"] = "",
-			["DictKey_sortie_5"] = "",
-			["DictKey_descriptionText_1"] = "",
-			["DictKey_descriptionBlueTask_3"] = "",
-			["DictKey_descriptionRedTask_2"] = "",
-		}, -- end of ["DEFAULT"]
-	}, -- end of ["localization"]
-	["theatre"] = "Caucasus",
-	["desc"] = "",
-} -- end of staticTemplate
+  coalition = {
+    blue = {
+      country = {},
+      name = "blue",
+    },
+    neutrals = {
+      country = {},
+      name = "neutrals",
+    },
+    red = {
+      country = {
+        {
+          id = 81,
+          vehicle = {
+            group = {
+              {
+                visible = false,
+                tasks = {},
+                uncontrollable = false,
+                route = {
+                  spans = {},
+                  points = {
+                    {
+                      alt = 221,
+                      type = "Turning Point",
+                      ETA = 0,
+                      alt_type = "BARO",
+                      formation_template = "",
+                      y = 661429.25794285,
+                      x = -256440.00020087,
+                      ETA_locked = true,
+                      speed = 0,
+                      action = "Off Road",
+                      task = {
+                        id = "ComboTask",
+                        params = {
+                          tasks = {},
+                        },
+                      },
+                      speed_locked = true,
+                    },
+                  },
+                },
+                groupId = 185,
+                hidden = false,
+                units = {
+                  {
+                    skill = "High",
+                    coldAtStart = false,
+                    type = "S-60_Type59_Artillery",
+                    unitId = 1133,
+                    y = 661429.25794285,
+                    x = -256440.00020087,
+                    name = "SAM-Senaki-3-3-AAA-1-1",
+                    heading = 3.0981417581983,
+                    playerCanDrive = true,
+                  },
+                  {
+                    skill = "High",
+                    coldAtStart = false,
+                    type = "S-60_Type59_Artillery",
+                    unitId = 1134,
+                    y = 661455.56679873,
+                    x = -256386.13288013,
+                    name = "SAM-Senaki-3-3-AAA-1-2",
+                    heading = 3.0981417581983,
+                    playerCanDrive = true,
+                  },
+                  {
+                    skill = "High",
+                    coldAtStart = false,
+                    type = "S-60_Type59_Artillery",
+                    unitId = 1135,
+                    y = 661399.0647176,
+                    x = -256419.40414045,
+                    name = "SAM-Senaki-3-3-AAA-1-3",
+                    heading = 3.0981417581983,
+                    playerCanDrive = true,
+                  },
+                  {
+                    skill = "High",
+                    coldAtStart = false,
+                    type = "S-60_Type59_Artillery",
+                    unitId = 1136,
+                    y = 661455.173056,
+                    x = -256418.616655,
+                    name = "SAM-Senaki-3-3-AAA-1-4",
+                    heading = 3.0981417581983,
+                    playerCanDrive = true,
+                  },
+                  {
+                    skill = "High",
+                    coldAtStart = false,
+                    type = "S-60_Type59_Artillery",
+                    unitId = 1137,
+                    y = 661426.23296567,
+                    x = -256361.72083115,
+                    name = "SAM-Senaki-3-3-AAA-1-5",
+                    heading = 3.0981417581983,
+                    playerCanDrive = true,
+                  },
+                  {
+                    skill = "High",
+                    coldAtStart = false,
+                    type = "S-60_Type59_Artillery",
+                    unitId = 1138,
+                    y = 661398.08036079,
+                    x = -256386.92036559,
+                    name = "SAM-Senaki-3-3-AAA-1-6",
+                    heading = 3.0981417581983,
+                    playerCanDrive = true,
+                  },
+                },
+                y = 661429.25794285,
+                x = -256440.00020087,
+                name = "SAM-Senaki-3-3-AAA-1",
+                start_time = 0,
+              },
+              {
+                visible = false,
+                tasks = {},
+                uncontrollable = false,
+                route = {
+                  spans = {},
+                  points = {
+                    {
+                      alt = 282.16501656906,
+                      type = "Turning Point",
+                      ETA = 0,
+                      alt_type = "BARO",
+                      formation_template = "",
+                      y = 662439.89894314,
+                      x = -255827.37225861,
+                      ETA_locked = true,
+                      speed = 0,
+                      action = "Off Road",
+                      task = {
+                        id = "ComboTask",
+                        params = {
+                          tasks = {},
+                        },
+                      },
+                      speed_locked = true,
+                    },
+                  },
+                },
+                groupId = 186,
+                hidden = false,
+                units = {
+                  {
+                    skill = "High",
+                    coldAtStart = false,
+                    type = "S-60_Type59_Artillery",
+                    unitId = 1139,
+                    y = 662439.89894314,
+                    x = -255827.37225861,
+                    name = "SAM-Senaki-3-3-AAA-2-1",
+                    heading = 3.0981417581983,
+                    playerCanDrive = true,
+                  },
+                  {
+                    skill = "High",
+                    coldAtStart = false,
+                    type = "S-60_Type59_Artillery",
+                    unitId = 1140,
+                    y = 662466.20779902,
+                    x = -255773.50493787,
+                    name = "SAM-Senaki-3-3-AAA-2-2",
+                    heading = 3.0981417581983,
+                    playerCanDrive = true,
+                  },
+                  {
+                    skill = "High",
+                    coldAtStart = false,
+                    type = "S-60_Type59_Artillery",
+                    unitId = 1141,
+                    y = 662409.70571789,
+                    x = -255806.77619819,
+                    name = "SAM-Senaki-3-3-AAA-2-3",
+                    heading = 3.0981417581983,
+                    playerCanDrive = true,
+                  },
+                  {
+                    skill = "High",
+                    coldAtStart = false,
+                    type = "S-60_Type59_Artillery",
+                    unitId = 1142,
+                    y = 662465.81405629,
+                    x = -255805.98871274,
+                    name = "SAM-Senaki-3-3-AAA-2-4",
+                    heading = 3.0981417581983,
+                    playerCanDrive = true,
+                  },
+                  {
+                    skill = "High",
+                    coldAtStart = false,
+                    type = "S-60_Type59_Artillery",
+                    unitId = 1143,
+                    y = 662436.87396596,
+                    x = -255749.09288889,
+                    name = "SAM-Senaki-3-3-AAA-2-5",
+                    heading = 3.0981417581983,
+                    playerCanDrive = true,
+                  },
+                  {
+                    skill = "High",
+                    coldAtStart = false,
+                    type = "S-60_Type59_Artillery",
+                    unitId = 1144,
+                    y = 662408.72136108,
+                    x = -255774.29242333,
+                    name = "SAM-Senaki-3-3-AAA-2-6",
+                    heading = 3.0981417581983,
+                    playerCanDrive = true,
+                  },
+                },
+                y = 662439.89894314,
+                x = -255827.37225861,
+                name = "SAM-Senaki-3-3-AAA-2",
+                start_time = 0,
+              },
+              {
+                visible = false,
+                tasks = {},
+                uncontrollable = false,
+                route = {
+                  spans = {},
+                  points = {
+                    {
+                      alt = 293.72227910287,
+                      type = "Turning Point",
+                      ETA = 0,
+                      alt_type = "BARO",
+                      formation_template = "",
+                      y = 661923.63710158,
+                      x = -256227.12443049,
+                      ETA_locked = true,
+                      speed = 0,
+                      action = "Off Road",
+                      task = {
+                        id = "ComboTask",
+                        params = {
+                          tasks = {},
+                        },
+                      },
+                      speed_locked = true,
+                    },
+                  },
+                },
+                groupId = 187,
+                hidden = false,
+                units = {
+                  {
+                    skill = "High",
+                    coldAtStart = false,
+                    type = "p-19 s-125 sr",
+                    unitId = 1145,
+                    y = 661923.63710158,
+                    x = -256227.12443049,
+                    name = "SAM-Senaki-3-1-SA3-1 Primary Destroyed",
+                    heading = 0.5235987755983,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "High",
+                    coldAtStart = false,
+                    type = "5p73 s-125 ln",
+                    unitId = 1146,
+                    y = 662070.45181262,
+                    x = -256243.43133316,
+                    name = "SAM-Senaki-3-1-SA3-2",
+                    heading = 6.029936403759,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "High",
+                    coldAtStart = false,
+                    type = "5p73 s-125 ln",
+                    unitId = 1147,
+                    y = 661979.89739521,
+                    x = -256312.5265589,
+                    name = "SAM-Senaki-3-1-SA3-3",
+                    heading = 6.029936403759,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "High",
+                    coldAtStart = false,
+                    type = "5p73 s-125 ln",
+                    unitId = 1148,
+                    y = 661863.62782706,
+                    x = -256274.56977581,
+                    name = "SAM-Senaki-3-1-SA3-4",
+                    heading = 6.029936403759,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "High",
+                    coldAtStart = false,
+                    type = "S-60_Type59_Artillery",
+                    unitId = 1149,
+                    y = 661983.63603064,
+                    x = -256232.43489158,
+                    name = "SAM-Senaki-3-1-SA3-5",
+                    heading = 6.029936403759,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "High",
+                    coldAtStart = false,
+                    type = "S-60_Type59_Artillery",
+                    unitId = 1150,
+                    y = 661933.93483758,
+                    x = -256171.05902959,
+                    name = "SAM-Senaki-3-1-SA3-6",
+                    heading = 6.029936403759,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "High",
+                    coldAtStart = false,
+                    type = "Ural-375 ZU-23",
+                    unitId = 1151,
+                    y = 662023.5016765,
+                    x = -256282.8921591,
+                    name = "SAM-Senaki-3-1-SA3-7",
+                    heading = 0.89011791851712,
+                    playerCanDrive = true,
+                  },
+                  {
+                    skill = "High",
+                    coldAtStart = false,
+                    type = "Ural-375 ZU-23",
+                    unitId = 1152,
+                    y = 661890.8178308,
+                    x = -256111.72076789,
+                    name = "SAM-Senaki-3-1-SA3-8",
+                    heading = 4.0491638646268,
+                    playerCanDrive = true,
+                  },
+                  {
+                    skill = "High",
+                    coldAtStart = false,
+                    type = "5p73 s-125 ln",
+                    unitId = 1153,
+                    y = 661852.81744422,
+                    x = -256150.36696917,
+                    name = "SAM-Senaki-3-1-SA3-9",
+                    heading = 6.029936403759,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "High",
+                    coldAtStart = false,
+                    type = "5p73 s-125 ln",
+                    unitId = 1154,
+                    y = 661944.29750376,
+                    x = -256081.36903234,
+                    name = "SAM-Senaki-3-1-SA3-10",
+                    heading = 6.029936403759,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "High",
+                    coldAtStart = false,
+                    type = "5p73 s-125 ln",
+                    unitId = 1155,
+                    y = 662056.35303789,
+                    x = -256119.3508364,
+                    name = "SAM-Senaki-3-1-SA3-11",
+                    heading = 6.029936403759,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "High",
+                    coldAtStart = false,
+                    type = "snr s-125 tr",
+                    unitId = 1156,
+                    y = 661995.68321924,
+                    x = -256166.78656861,
+                    name = "SAM-Senaki-3-1-SA3-12 Primary Destroyed",
+                    heading = 6.029936403759,
+                    playerCanDrive = false,
+                  },
+                },
+                y = 661923.63710158,
+                x = -256227.12443049,
+                name = "SAM-Senaki-3-1-SA3",
+                start_time = 0,
+              },
+            },
+          },
+          name = "CJTF Red",
+        },
+      },
+      name = "red",
+    },
+  },
+  desc = "",
+  localization = {
+    DEFAULT = {
+      DictKey_descriptionBlueTask_3 = "",
+      DictKey_descriptionNeutralsTask_4 = "",
+      DictKey_descriptionRedTask_2 = "",
+      DictKey_descriptionText_1 = "",
+      DictKey_sortie_5 = "",
+    },
+  },
+  name = "SAM-Senaki-3-1",
+  requiredModules = {},
+  theatre = "Caucasus",
+}

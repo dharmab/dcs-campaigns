@@ -1,261 +1,230 @@
 staticTemplate =
 {
-	["coalition"] =
-	{
-		["blue"] =
-		{
-			["name"] = "blue",
-			["country"] = {},
-		}, -- end of ["blue"]
-		["neutrals"] =
-		{
-			["name"] = "neutrals",
-			["country"] = {},
-		}, -- end of ["neutrals"]
-		["red"] =
-		{
-			["name"] = "red",
-			["country"] =
-			{
-				[1] =
-				{
-					["id"] = 81,
-					["vehicle"] =
-					{
-						["group"] =
-						{
-							[1] =
-							{
-								["visible"] = false,
-								["tasks"] = {},
-								["uncontrollable"] = false,
-								["route"] =
-								{
-									["spans"] = {},
-									["points"] =
-									{
-										[1] =
-										{
-											["alt"] = 19,
-											["type"] = "Turning Point",
-											["ETA"] = 0,
-											["alt_type"] = "BARO",
-											["formation_template"] = "",
-											["y"] = 637449.44646123,
-											["x"] = -316917.84276659,
-											["ETA_locked"] = true,
-											["speed"] = 0,
-											["action"] = "Off Road",
-											["task"] =
-											{
-												["id"] = "ComboTask",
-												["params"] =
-												{
-													["tasks"] = {},
-												}, -- end of ["params"]
-											}, -- end of ["task"]
-											["speed_locked"] = true,
-										}, -- end of [1]
-									}, -- end of ["points"]
-								}, -- end of ["route"]
-								["groupId"] = 32,
-								["hidden"] = false,
-								["units"] =
-								{
-									[1] =
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "Ural-375",
-										["unitId"] = 171,
-										["y"] = 637449.44646123,
-										["x"] = -316917.84276659,
-										["name"] = "SAM-Kobuleti-1-2-1 primary destroyed",
-										["heading"] = 3.1242163779307,
-										["playerCanDrive"] = true,
-									}, -- end of [1]
-									[2] =
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "Ural-375",
-										["unitId"] = 172,
-										["y"] = 637447.85141852,
-										["x"] = -316976.62389249,
-										["name"] = "SAM-Kobuleti-1-2-2 primary destroyed",
-										["heading"] = 3.1242163779307,
-										["playerCanDrive"] = true,
-									}, -- end of [2]
-									[3] =
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "SNR_75V",
-										["unitId"] = 173,
-										["y"] = 637482.84890084,
-										["x"] = -316928.868465,
-										["name"] = "SAM-Kobuleti-1-2-3",
-										["heading"] = 3.1242163779307,
-										["playerCanDrive"] = false,
-									}, -- end of [3]
-									[4] =
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "p-19 s-125 sr",
-										["unitId"] = 174,
-										["y"] = 637409.21265146,
-										["x"] = -316927.50483075,
-										["name"] = "SAM-Kobuleti-1-2-4",
-										["heading"] = 3.1242163779307,
-										["playerCanDrive"] = false,
-									}, -- end of [4]
-									[5] =
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 175,
-										["y"] = 637447.19078121,
-										["x"] = -316945.79415154,
-										["name"] = "SAM-Kobuleti-1-2-5",
-										["heading"] = 3.1242163779307,
-										["playerCanDrive"] = false,
-									}, -- end of [5]
-									[6] =
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 176,
-										["y"] = 637484.21253509,
-										["x"] = -316878.75490639,
-										["name"] = "SAM-Kobuleti-1-2-6",
-										["heading"] = 3.1242163779307,
-										["playerCanDrive"] = false,
-									}, -- end of [6]
-									[7] =
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 177,
-										["y"] = 637449.43986177,
-										["x"] = -316852.16403856,
-										["name"] = "SAM-Kobuleti-1-2-7",
-										["heading"] = 3.1242163779307,
-										["playerCanDrive"] = false,
-									}, -- end of [7]
-									[8] =
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 178,
-										["y"] = 637408.18992577,
-										["x"] = -316883.86853482,
-										["name"] = "SAM-Kobuleti-1-2-8",
-										["heading"] = 3.1242163779307,
-										["playerCanDrive"] = false,
-									}, -- end of [8]
-									[9] =
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "Ural-375 ZU-23",
-										["unitId"] = 179,
-										["y"] = 637411.96059094,
-										["x"] = -316850.39181943,
-										["name"] = "SAM-Kobuleti-1-2-9",
-										["heading"] = 3.1242163779307,
-										["playerCanDrive"] = true,
-									}, -- end of [9]
-									[10] =
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "Ural-375 ZU-23",
-										["unitId"] = 180,
-										["y"] = 637483.18132248,
-										["x"] = -316974.27576796,
-										["name"] = "SAM-Kobuleti-1-2-10",
-										["heading"] = 3.1242163779307,
-										["playerCanDrive"] = true,
-									}, -- end of [10]
-									[11] =
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "Ural-375 ZU-23",
-										["unitId"] = 181,
-										["y"] = 637484.18443138,
-										["x"] = -316848.88715608,
-										["name"] = "SAM-Kobuleti-1-2-11",
-										["heading"] = 3.1242163779307,
-										["playerCanDrive"] = true,
-									}, -- end of [11]
-									[12] =
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "Ural-375 ZU-23",
-										["unitId"] = 182,
-										["y"] = 637405.94193757,
-										["x"] = -316971.26644128,
-										["name"] = "SAM-Kobuleti-1-2-12",
-										["heading"] = 3.1242163779307,
-										["playerCanDrive"] = true,
-									}, -- end of [12]
-									[13] =
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 183,
-										["y"] = 637366.59908122,
-										["x"] = -316933.3002763,
-										["name"] = "SAM-Kobuleti-1-2-13",
-										["heading"] = 3.1242163779307,
-										["playerCanDrive"] = false,
-									}, -- end of [13]
-									[14] =
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 184,
-										["y"] = 637521.7124769,
-										["x"] = -316927.84573931,
-										["name"] = "SAM-Kobuleti-1-2-14",
-										["heading"] = 3.1242163779307,
-										["playerCanDrive"] = false,
-									}, -- end of [14]
-								}, -- end of ["units"]
-								["y"] = 637449.44646123,
-								["x"] = -316917.84276659,
-								["name"] = "SAM-Kobuleti-1-2",
-								["start_time"] = 0,
-							}, -- end of [1]
-						}, -- end of ["group"]
-					}, -- end of ["vehicle"]
-					["name"] = "CJTF Red",
-				}, -- end of [1]
-			}, -- end of ["country"]
-		}, -- end of ["red"]
-	},    -- end of ["coalition"]
-	["name"] = "SAM-Kobuleti-1-2",
-	["requiredModules"] = {},
-	["localization"] =
-	{
-		["DEFAULT"] =
-		{
-			["DictKey_descriptionNeutralsTask_4"] = "",
-			["DictKey_sortie_5"] = "",
-			["DictKey_descriptionText_1"] = "",
-			["DictKey_descriptionBlueTask_3"] = "",
-			["DictKey_descriptionRedTask_2"] = "",
-		}, -- end of ["DEFAULT"]
-	}, -- end of ["localization"]
-	["theatre"] = "Caucasus",
-	["desc"] = "",
-} -- end of staticTemplate
+  coalition = {
+    blue = {
+      country = {},
+      name = "blue",
+    },
+    neutrals = {
+      country = {},
+      name = "neutrals",
+    },
+    red = {
+      country = {
+        {
+          id = 81,
+          vehicle = {
+            group = {
+              {
+                visible = false,
+                tasks = {},
+                uncontrollable = false,
+                route = {
+                  spans = {},
+                  points = {
+                    {
+                      alt = 19,
+                      type = "Turning Point",
+                      ETA = 0,
+                      alt_type = "BARO",
+                      formation_template = "",
+                      y = 637449.44646123,
+                      x = -316917.84276659,
+                      ETA_locked = true,
+                      speed = 0,
+                      action = "Off Road",
+                      task = {
+                        id = "ComboTask",
+                        params = {
+                          tasks = {},
+                        },
+                      },
+                      speed_locked = true,
+                    },
+                  },
+                },
+                groupId = 32,
+                hidden = false,
+                units = {
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "Ural-375",
+                    unitId = 171,
+                    y = 637449.44646123,
+                    x = -316917.84276659,
+                    name = "SAM-Kobuleti-1-2-1 primary destroyed",
+                    heading = 3.1242163779307,
+                    playerCanDrive = true,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "Ural-375",
+                    unitId = 172,
+                    y = 637447.85141852,
+                    x = -316976.62389249,
+                    name = "SAM-Kobuleti-1-2-2 primary destroyed",
+                    heading = 3.1242163779307,
+                    playerCanDrive = true,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "SNR_75V",
+                    unitId = 173,
+                    y = 637482.84890084,
+                    x = -316928.868465,
+                    name = "SAM-Kobuleti-1-2-3",
+                    heading = 3.1242163779307,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "p-19 s-125 sr",
+                    unitId = 174,
+                    y = 637409.21265146,
+                    x = -316927.50483075,
+                    name = "SAM-Kobuleti-1-2-4",
+                    heading = 3.1242163779307,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 175,
+                    y = 637447.19078121,
+                    x = -316945.79415154,
+                    name = "SAM-Kobuleti-1-2-5",
+                    heading = 3.1242163779307,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 176,
+                    y = 637484.21253509,
+                    x = -316878.75490639,
+                    name = "SAM-Kobuleti-1-2-6",
+                    heading = 3.1242163779307,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 177,
+                    y = 637449.43986177,
+                    x = -316852.16403856,
+                    name = "SAM-Kobuleti-1-2-7",
+                    heading = 3.1242163779307,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 178,
+                    y = 637408.18992577,
+                    x = -316883.86853482,
+                    name = "SAM-Kobuleti-1-2-8",
+                    heading = 3.1242163779307,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "Ural-375 ZU-23",
+                    unitId = 179,
+                    y = 637411.96059094,
+                    x = -316850.39181943,
+                    name = "SAM-Kobuleti-1-2-9",
+                    heading = 3.1242163779307,
+                    playerCanDrive = true,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "Ural-375 ZU-23",
+                    unitId = 180,
+                    y = 637483.18132248,
+                    x = -316974.27576796,
+                    name = "SAM-Kobuleti-1-2-10",
+                    heading = 3.1242163779307,
+                    playerCanDrive = true,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "Ural-375 ZU-23",
+                    unitId = 181,
+                    y = 637484.18443138,
+                    x = -316848.88715608,
+                    name = "SAM-Kobuleti-1-2-11",
+                    heading = 3.1242163779307,
+                    playerCanDrive = true,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "Ural-375 ZU-23",
+                    unitId = 182,
+                    y = 637405.94193757,
+                    x = -316971.26644128,
+                    name = "SAM-Kobuleti-1-2-12",
+                    heading = 3.1242163779307,
+                    playerCanDrive = true,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 183,
+                    y = 637366.59908122,
+                    x = -316933.3002763,
+                    name = "SAM-Kobuleti-1-2-13",
+                    heading = 3.1242163779307,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 184,
+                    y = 637521.7124769,
+                    x = -316927.84573931,
+                    name = "SAM-Kobuleti-1-2-14",
+                    heading = 3.1242163779307,
+                    playerCanDrive = false,
+                  },
+                },
+                y = 637449.44646123,
+                x = -316917.84276659,
+                name = "SAM-Kobuleti-1-2",
+                start_time = 0,
+              },
+            },
+          },
+          name = "CJTF Red",
+        },
+      },
+      name = "red",
+    },
+  },
+  desc = "",
+  localization = {
+    DEFAULT = {
+      DictKey_descriptionBlueTask_3 = "",
+      DictKey_descriptionNeutralsTask_4 = "",
+      DictKey_descriptionRedTask_2 = "",
+      DictKey_descriptionText_1 = "",
+      DictKey_sortie_5 = "",
+    },
+  },
+  name = "SAM-Kobuleti-1-2",
+  requiredModules = {},
+  theatre = "Caucasus",
+}

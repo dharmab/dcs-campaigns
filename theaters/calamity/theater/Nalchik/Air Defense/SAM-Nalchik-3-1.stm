@@ -1,243 +1,211 @@
-staticTemplate = 
+staticTemplate =
 {
-	["coalition"] = 
-	{
-		["neutrals"] = 
-		{
-			["name"] = "neutrals",
-			["country"] = {},
-		}, -- end of ["neutrals"]
-		["blue"] = 
-		{
-			["name"] = "blue",
-			["country"] = {},
-		}, -- end of ["blue"]
-		["red"] = 
-		{
-			["name"] = "red",
-			["country"] = 
-			{
-				[1] = 
-				{
-					["id"] = 81,
-					["vehicle"] = 
-					{
-						["group"] = 
-						{
-							[1] = 
-							{
-								["visible"] = false,
-								["tasks"] = {},
-								["uncontrollable"] = false,
-								["task"] = "Ground Nothing",
-								["taskSelected"] = true,
-								["route"] = 
-								{
-									["spans"] = 
-									{
-										[1] = 
-										{
-											[1] = 
-											{
-												["y"] = 736139.90373601,
-												["x"] = -91117.3451745,
-											}, -- end of [1]
-											[2] = 
-											{
-												["y"] = 736139.90373601,
-												["x"] = -91117.3451745,
-											}, -- end of [2]
-										}, -- end of [1]
-									}, -- end of ["spans"]
-									["points"] = 
-									{
-										[1] = 
-										{
-											["alt"] = 507,
-											["type"] = "Turning Point",
-											["ETA"] = 0,
-											["alt_type"] = "BARO",
-											["formation_template"] = "",
-											["y"] = 736139.90373601,
-											["x"] = -91117.3451745,
-											["name"] = "",
-											["ETA_locked"] = true,
-											["speed"] = 0,
-											["action"] = "Off Road",
-											["task"] = 
-											{
-												["id"] = "ComboTask",
-												["params"] = 
-												{
-													["tasks"] = {},
-												}, -- end of ["params"]
-											}, -- end of ["task"]
-											["speed_locked"] = true,
-										}, -- end of [1]
-									}, -- end of ["points"]
-								}, -- end of ["route"]
-								["groupId"] = 52,
-								["hidden"] = false,
-								["units"] = 
-								{
-									[1] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "SNR_75V",
-										["unitId"] = 164,
-										["y"] = 736139.90373601,
-										["x"] = -91117.3451745,
-										["name"] = "SAM-Nalchik-3-1-1",
-										["heading"] = 0,
-										["playerCanDrive"] = false,
-									}, -- end of [1]
-									[2] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "p-19 s-125 sr",
-										["unitId"] = 165,
-										["y"] = 736167.34340217,
-										["x"] = -91118.05568996,
-										["name"] = "SAM-Nalchik-3-1-2",
-										["heading"] = 0.62412436994823,
-										["playerCanDrive"] = false,
-									}, -- end of [2]
-									[3] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 166,
-										["y"] = 736204.33836248,
-										["x"] = -91090.05079546,
-										["name"] = "SAM-Nalchik-3-1-3",
-										["heading"] = 1.0471975511966,
-										["playerCanDrive"] = false,
-									}, -- end of [3]
-									[4] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 167,
-										["y"] = 736152.98370163,
-										["x"] = -91057.69071986,
-										["name"] = "SAM-Nalchik-3-1-4",
-										["heading"] = 0,
-										["playerCanDrive"] = false,
-									}, -- end of [4]
-									[5] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 168,
-										["y"] = 736203.5736222,
-										["x"] = -91142.81787505,
-										["name"] = "SAM-Nalchik-3-1-5",
-										["heading"] = 2.0943951023932,
-										["playerCanDrive"] = false,
-									}, -- end of [5]
-									[6] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 169,
-										["y"] = 736151.60321123,
-										["x"] = -91176.14443579,
-										["name"] = "SAM-Nalchik-3-1-6",
-										["heading"] = 3.1415926535898,
-										["playerCanDrive"] = false,
-									}, -- end of [6]
-									[7] = 
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 170,
-										["y"] = 736095.64347358,
-										["x"] = -91143.66209494,
-										["name"] = "SAM-Nalchik-3-1-7",
-										["heading"] = 4.1887902047864,
-										["playerCanDrive"] = false,
-									}, -- end of [7]
-									[8] = 
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "Ural-375 ZU-23",
-										["unitId"] = 173,
-										["y"] = 735055.23297442,
-										["x"] = -90744.80113288,
-										["name"] = "SAM-Nalchik-3-1-8",
-										["heading"] = 4.6600291028249,
-										["playerCanDrive"] = false,
-									}, -- end of [8]
-									[9] = 
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "Ural-375 ZU-23",
-										["unitId"] = 174,
-										["y"] = 736806.69031084,
-										["x"] = -91654.204604803,
-										["name"] = "SAM-Nalchik-3-1-9",
-										["heading"] = 3.700098014228,
-										["playerCanDrive"] = false,
-									}, -- end of [9]
-									[10] = 
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "Ural-375 ZU-23",
-										["unitId"] = 172,
-										["y"] = 736821.49973396,
-										["x"] = -89142.792156353,
-										["name"] = "SAM-Nalchik-3-1-10",
-										["heading"] = 6.2482787221397,
-										["playerCanDrive"] = false,
-									}, -- end of [10]
-									[11] = 
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 171,
-										["y"] = 736099.88818621,
-										["x"] = -91089.54200883,
-										["name"] = "SAM-Nalchik-3-1-11",
-										["heading"] = 5.235987755983,
-										["playerCanDrive"] = false,
-									}, -- end of [11]
-								}, -- end of ["units"]
-								["y"] = 736139.90373601,
-								["x"] = -91117.3451745,
-								["name"] = "SAM-Nalchik-3-1",
-								["start_time"] = 0,
-							}, -- end of [1]
-						}, -- end of ["group"]
-					}, -- end of ["vehicle"]
-					["name"] = "CJTF Red",
-				}, -- end of [1]
-			}, -- end of ["country"]
-		}, -- end of ["red"]
-	}, -- end of ["coalition"]
-	["name"] = "SAM-Nalchik-3-1",
-	["requiredModules"] = {},
-	["localization"] = 
-	{
-		["DEFAULT"] = 
-		{
-			["DictKey_descriptionNeutralsTask_4"] = "",
-			["DictKey_sortie_5"] = "",
-			["DictKey_descriptionText_1"] = "",
-			["DictKey_descriptionBlueTask_3"] = "",
-			["DictKey_descriptionRedTask_2"] = "",
-		}, -- end of ["DEFAULT"]
-	}, -- end of ["localization"]
-	["theatre"] = "Caucasus",
-	["desc"] = "",
-} -- end of staticTemplate
+  coalition = {
+    blue = {
+      country = {},
+      name = "blue",
+    },
+    neutrals = {
+      country = {},
+      name = "neutrals",
+    },
+    red = {
+      country = {
+        {
+          id = 81,
+          vehicle = {
+            group = {
+              {
+                visible = false,
+                tasks = {},
+                uncontrollable = false,
+                task = "Ground Nothing",
+                taskSelected = true,
+                route = {
+                  spans = {
+                    {
+                      {
+                        y = 736139.90373601,
+                        x = -91117.3451745,
+                      },
+                      {
+                        y = 736139.90373601,
+                        x = -91117.3451745,
+                      },
+                    },
+                  },
+                  points = {
+                    {
+                      alt = 507,
+                      type = "Turning Point",
+                      ETA = 0,
+                      alt_type = "BARO",
+                      formation_template = "",
+                      y = 736139.90373601,
+                      x = -91117.3451745,
+                      name = "",
+                      ETA_locked = true,
+                      speed = 0,
+                      action = "Off Road",
+                      task = {
+                        id = "ComboTask",
+                        params = {
+                          tasks = {},
+                        },
+                      },
+                      speed_locked = true,
+                    },
+                  },
+                },
+                groupId = 52,
+                hidden = false,
+                units = {
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "SNR_75V",
+                    unitId = 164,
+                    y = 736139.90373601,
+                    x = -91117.3451745,
+                    name = "SAM-Nalchik-3-1-1",
+                    heading = 0,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "p-19 s-125 sr",
+                    unitId = 165,
+                    y = 736167.34340217,
+                    x = -91118.05568996,
+                    name = "SAM-Nalchik-3-1-2",
+                    heading = 0.62412436994823,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 166,
+                    y = 736204.33836248,
+                    x = -91090.05079546,
+                    name = "SAM-Nalchik-3-1-3",
+                    heading = 1.0471975511966,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 167,
+                    y = 736152.98370163,
+                    x = -91057.69071986,
+                    name = "SAM-Nalchik-3-1-4",
+                    heading = 0,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 168,
+                    y = 736203.5736222,
+                    x = -91142.81787505,
+                    name = "SAM-Nalchik-3-1-5",
+                    heading = 2.0943951023932,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 169,
+                    y = 736151.60321123,
+                    x = -91176.14443579,
+                    name = "SAM-Nalchik-3-1-6",
+                    heading = 3.1415926535898,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 170,
+                    y = 736095.64347358,
+                    x = -91143.66209494,
+                    name = "SAM-Nalchik-3-1-7",
+                    heading = 4.1887902047864,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "Ural-375 ZU-23",
+                    unitId = 173,
+                    y = 735055.23297442,
+                    x = -90744.80113288,
+                    name = "SAM-Nalchik-3-1-8",
+                    heading = 4.6600291028249,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "Ural-375 ZU-23",
+                    unitId = 174,
+                    y = 736806.69031084,
+                    x = -91654.204604803,
+                    name = "SAM-Nalchik-3-1-9",
+                    heading = 3.700098014228,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "Ural-375 ZU-23",
+                    unitId = 172,
+                    y = 736821.49973396,
+                    x = -89142.792156353,
+                    name = "SAM-Nalchik-3-1-10",
+                    heading = 6.2482787221397,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 171,
+                    y = 736099.88818621,
+                    x = -91089.54200883,
+                    name = "SAM-Nalchik-3-1-11",
+                    heading = 5.235987755983,
+                    playerCanDrive = false,
+                  },
+                },
+                y = 736139.90373601,
+                x = -91117.3451745,
+                name = "SAM-Nalchik-3-1",
+                start_time = 0,
+              },
+            },
+          },
+          name = "CJTF Red",
+        },
+      },
+      name = "red",
+    },
+  },
+  desc = "",
+  localization = {
+    DEFAULT = {
+      DictKey_descriptionBlueTask_3 = "",
+      DictKey_descriptionNeutralsTask_4 = "",
+      DictKey_descriptionRedTask_2 = "",
+      DictKey_descriptionText_1 = "",
+      DictKey_sortie_5 = "",
+    },
+  },
+  name = "SAM-Nalchik-3-1",
+  requiredModules = {},
+  theatre = "Caucasus",
+}

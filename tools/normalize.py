@@ -22,11 +22,16 @@ def main() -> None:
         sys.exit()
 
     theater_name = sys.argv[1]
-    mission_dir = pathlib.Path(f"theaters/{theater_name}/mission")
+    theater_dir = pathlib.Path(f"theaters/{theater_name}")
+    mission_dir = theater_dir / "mission"
 
     for filename in ("mission", "options", "warehouses"):
         path = mission_dir / filename
         sort_lua_file(path, filename)
+
+    templates_dir = theater_dir / "theater"
+    for path in templates_dir.rglob("*.stm"):
+        sort_lua_file(path, "staticTemplate")
 
 
 if __name__ == "__main__":

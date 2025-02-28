@@ -1,170 +1,144 @@
-staticTemplate = 
+staticTemplate =
 {
-	["coalition"] = 
-	{
-		["neutrals"] = 
-		{
-			["name"] = "neutrals",
-			["country"] = {},
-		}, -- end of ["neutrals"]
-		["blue"] = 
-		{
-			["name"] = "blue",
-			["country"] = {},
-		}, -- end of ["blue"]
-		["red"] = 
-		{
-			["name"] = "red",
-			["country"] = 
-			{
-				[1] = 
-				{
-					["id"] = 81,
-					["vehicle"] = 
-					{
-						["group"] = 
-						{
-							[1] = 
-							{
-								["visible"] = false,
-								["tasks"] = {},
-								["uncontrollable"] = false,
-								["task"] = "Ground Nothing",
-								["taskSelected"] = true,
-								["route"] = 
-								{
-									["spans"] = 
-									{
-										[1] = 
-										{
-											[1] = 
-											{
-												["y"] = 617445.42137822,
-												["x"] = -356791.27387104,
-											}, -- end of [1]
-											[2] = 
-											{
-												["y"] = 617445.42137822,
-												["x"] = -356791.27387104,
-											}, -- end of [2]
-										}, -- end of [1]
-									}, -- end of ["spans"]
-									["points"] = 
-									{
-										[1] = 
-										{
-											["alt"] = 10,
-											["type"] = "Turning Point",
-											["ETA"] = 0,
-											["alt_type"] = "BARO",
-											["formation_template"] = "",
-											["y"] = 617445.42137822,
-											["x"] = -356791.27387104,
-											["ETA_locked"] = true,
-											["speed"] = 0,
-											["action"] = "Off Road",
-											["task"] = 
-											{
-												["id"] = "ComboTask",
-												["params"] = 
-												{
-													["tasks"] = {},
-												}, -- end of ["params"]
-											}, -- end of ["task"]
-											["speed_locked"] = true,
-										}, -- end of [1]
-									}, -- end of ["points"]
-								}, -- end of ["route"]
-								["groupId"] = 57,
-								["hidden"] = false,
-								["units"] = 
-								{
-									[1] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "snr s-125 tr",
-										["unitId"] = 236,
-										["y"] = 617445.42137822,
-										["x"] = -356791.27387104,
-										["name"] = "SAM-Batumi-2-2-1 primary destroyed",
-										["heading"] = 6.2308254296198,
-										["playerCanDrive"] = false,
-									}, -- end of [1]
-									[2] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "5p73 s-125 ln",
-										["unitId"] = 239,
-										["y"] = 617424.21044361,
-										["x"] = -356750.39516251,
-										["name"] = "SAM-Batumi-2-2-2",
-										["heading"] = 5.7421332390613,
-										["playerCanDrive"] = false,
-									}, -- end of [2]
-									[3] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "5p73 s-125 ln",
-										["unitId"] = 238,
-										["y"] = 617419.01854295,
-										["x"] = -356812.95756554,
-										["name"] = "SAM-Batumi-2-2-3",
-										["heading"] = 5.0614548307836,
-										["playerCanDrive"] = false,
-									}, -- end of [3]
-									[4] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "5p73 s-125 ln",
-										["unitId"] = 237,
-										["y"] = 617481.32135095,
-										["x"] = -356821.26460661,
-										["name"] = "SAM-Batumi-2-2-4",
-										["heading"] = 5.7072266540215,
-										["playerCanDrive"] = false,
-									}, -- end of [4]
-									[5] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "5p73 s-125 ln",
-										["unitId"] = 235,
-										["y"] = 617481.32135095,
-										["x"] = -356772.46074034,
-										["name"] = "SAM-Batumi-2-2-5",
-										["heading"] = 0.26179938779915,
-										["playerCanDrive"] = false,
-									}, -- end of [5]
-								}, -- end of ["units"]
-								["y"] = 617445.42137822,
-								["x"] = -356791.27387104,
-								["name"] = "SAM-Batumi-2-2",
-								["start_time"] = 0,
-							}, -- end of [1]
-						}, -- end of ["group"]
-					}, -- end of ["vehicle"]
-					["name"] = "CJTF Red",
-				}, -- end of [1]
-			}, -- end of ["country"]
-		}, -- end of ["red"]
-	}, -- end of ["coalition"]
-	["name"] = "SAM-Batumi-2-2",
-	["requiredModules"] = {},
-	["localization"] = 
-	{
-		["DEFAULT"] = 
-		{
-			["DictKey_descriptionNeutralsTask_4"] = "",
-			["DictKey_sortie_5"] = "",
-			["DictKey_descriptionText_1"] = "",
-			["DictKey_descriptionBlueTask_3"] = "",
-			["DictKey_descriptionRedTask_2"] = "",
-		}, -- end of ["DEFAULT"]
-	}, -- end of ["localization"]
-	["theatre"] = "Caucasus",
-	["desc"] = "",
-} -- end of staticTemplate
+  coalition = {
+    blue = {
+      country = {},
+      name = "blue",
+    },
+    neutrals = {
+      country = {},
+      name = "neutrals",
+    },
+    red = {
+      country = {
+        {
+          id = 81,
+          vehicle = {
+            group = {
+              {
+                visible = false,
+                tasks = {},
+                uncontrollable = false,
+                task = "Ground Nothing",
+                taskSelected = true,
+                route = {
+                  spans = {
+                    {
+                      {
+                        y = 617445.42137822,
+                        x = -356791.27387104,
+                      },
+                      {
+                        y = 617445.42137822,
+                        x = -356791.27387104,
+                      },
+                    },
+                  },
+                  points = {
+                    {
+                      alt = 10,
+                      type = "Turning Point",
+                      ETA = 0,
+                      alt_type = "BARO",
+                      formation_template = "",
+                      y = 617445.42137822,
+                      x = -356791.27387104,
+                      ETA_locked = true,
+                      speed = 0,
+                      action = "Off Road",
+                      task = {
+                        id = "ComboTask",
+                        params = {
+                          tasks = {},
+                        },
+                      },
+                      speed_locked = true,
+                    },
+                  },
+                },
+                groupId = 57,
+                hidden = false,
+                units = {
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "snr s-125 tr",
+                    unitId = 236,
+                    y = 617445.42137822,
+                    x = -356791.27387104,
+                    name = "SAM-Batumi-2-2-1 primary destroyed",
+                    heading = 6.2308254296198,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "5p73 s-125 ln",
+                    unitId = 239,
+                    y = 617424.21044361,
+                    x = -356750.39516251,
+                    name = "SAM-Batumi-2-2-2",
+                    heading = 5.7421332390613,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "5p73 s-125 ln",
+                    unitId = 238,
+                    y = 617419.01854295,
+                    x = -356812.95756554,
+                    name = "SAM-Batumi-2-2-3",
+                    heading = 5.0614548307836,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "5p73 s-125 ln",
+                    unitId = 237,
+                    y = 617481.32135095,
+                    x = -356821.26460661,
+                    name = "SAM-Batumi-2-2-4",
+                    heading = 5.7072266540215,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "5p73 s-125 ln",
+                    unitId = 235,
+                    y = 617481.32135095,
+                    x = -356772.46074034,
+                    name = "SAM-Batumi-2-2-5",
+                    heading = 0.26179938779915,
+                    playerCanDrive = false,
+                  },
+                },
+                y = 617445.42137822,
+                x = -356791.27387104,
+                name = "SAM-Batumi-2-2",
+                start_time = 0,
+              },
+            },
+          },
+          name = "CJTF Red",
+        },
+      },
+      name = "red",
+    },
+  },
+  desc = "",
+  localization = {
+    DEFAULT = {
+      DictKey_descriptionBlueTask_3 = "",
+      DictKey_descriptionNeutralsTask_4 = "",
+      DictKey_descriptionRedTask_2 = "",
+      DictKey_descriptionText_1 = "",
+      DictKey_sortie_5 = "",
+    },
+  },
+  name = "SAM-Batumi-2-2",
+  requiredModules = {},
+  theatre = "Caucasus",
+}

@@ -1,227 +1,199 @@
-staticTemplate = 
+staticTemplate =
 {
-	["coalition"] = 
-	{
-		["blue"] = 
-		{
-			["name"] = "blue",
-			["country"] = {},
-		}, -- end of ["blue"]
-		["neutrals"] = 
-		{
-			["name"] = "neutrals",
-			["country"] = {},
-		}, -- end of ["neutrals"]
-		["red"] = 
-		{
-			["name"] = "red",
-			["country"] = 
-			{
-				[1] = 
-				{
-					["id"] = 81,
-					["vehicle"] = 
-					{
-						["group"] = 
-						{
-							[1] = 
-							{
-								["visible"] = false,
-								["tasks"] = {},
-								["uncontrollable"] = false,
-								["task"] = "Ground Nothing",
-								["manualHeading"] = false,
-								["route"] = 
-								{
-									["spans"] = {},
-									["points"] = 
-									{
-										[1] = 
-										{
-											["alt"] = 129,
-											["type"] = "Turning Point",
-											["ETA"] = 0,
-											["alt_type"] = "BARO",
-											["formation_template"] = "",
-											["y"] = 836211.10268608,
-											["x"] = -91332.30919164,
-											["ETA_locked"] = true,
-											["speed"] = 0,
-											["action"] = "Off Road",
-											["task"] = 
-											{
-												["id"] = "ComboTask",
-												["params"] = 
-												{
-													["tasks"] = {},
-												}, -- end of ["params"]
-											}, -- end of ["task"]
-											["speed_locked"] = true,
-										}, -- end of [1]
-									}, -- end of ["points"]
-								}, -- end of ["route"]
-								["groupId"] = 54,
-								["hidden"] = false,
-								["units"] = 
-								{
-									[1] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "RLS_19J6",
-										["unitId"] = 201,
-										["y"] = 836211.10268608,
-										["x"] = -91332.30919164,
-										["name"] = "SAM-Mozdok-1-1-1 primary destroyed",
-										["heading"] = 0,
-										["playerCanDrive"] = false,
-									}, -- end of [1]
-									[2] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "S-200_Launcher",
-										["unitId"] = 207,
-										["y"] = 836103.3553733,
-										["x"] = -91272.836038171,
-										["name"] = "SAM-Mozdok-1-1-8",
-										["heading"] = 5.235987755983,
-										["playerCanDrive"] = false,
-									}, -- end of [2]
-									[3] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "S-200_Launcher",
-										["unitId"] = 206,
-										["y"] = 836108.10557587,
-										["x"] = -91392.378149641,
-										["name"] = "SAM-Mozdok-1-1-7",
-										["heading"] = 4.1887902047864,
-										["playerCanDrive"] = false,
-									}, -- end of [3]
-									[4] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "S-200_Launcher",
-										["unitId"] = 205,
-										["y"] = 836319.82362691,
-										["x"] = -91395.048742238,
-										["name"] = "SAM-Mozdok-1-1-6",
-										["heading"] = 2.0943951023932,
-										["playerCanDrive"] = false,
-									}, -- end of [4]
-									[5] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "S-200_Launcher",
-										["unitId"] = 204,
-										["y"] = 836317.42729938,
-										["x"] = -91266.445831422,
-										["name"] = "SAM-Mozdok-1-1-5",
-										["heading"] = 1.0471975511966,
-										["playerCanDrive"] = false,
-									}, -- end of [5]
-									[6] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "S-200_Launcher",
-										["unitId"] = 203,
-										["y"] = 836216.38215517,
-										["x"] = -91460.947749332,
-										["name"] = "SAM-Mozdok-1-1-4",
-										["heading"] = 3.1415926535898,
-										["playerCanDrive"] = false,
-									}, -- end of [6]
-									[7] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "S-200_Launcher",
-										["unitId"] = 202,
-										["y"] = 836209.99194842,
-										["x"] = -91209.732746529,
-										["name"] = "SAM-Mozdok-1-1-3",
-										["heading"] = 0,
-										["playerCanDrive"] = false,
-									}, -- end of [7]
-									[8] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "Ural-375 ZU-23",
-										["unitId"] = 211,
-										["y"] = 836906.19361387,
-										["x"] = -91150.778171692,
-										["name"] = "SAM-Mozdok-1-1-11",
-										["heading"] = 3.9095375244673,
-										["playerCanDrive"] = false,
-									}, -- end of [8]
-									[9] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "Ural-375 ZU-23",
-										["unitId"] = 210,
-										["y"] = 836822.93320011,
-										["x"] = -90685.761100761,
-										["name"] = "SAM-Mozdok-1-1-10",
-										["heading"] = 0.24434609527921,
-										["playerCanDrive"] = false,
-									}, -- end of [9]
-									[10] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "Ural-375 ZU-23",
-										["unitId"] = 209,
-										["y"] = 835917.43186858,
-										["x"] = -90793.484196288,
-										["name"] = "SAM-Mozdok-1-1-9",
-										["heading"] = 0.82030474843733,
-										["playerCanDrive"] = false,
-									}, -- end of [10]
-									[11] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "RPC_5N62V",
-										["unitId"] = 187,
-										["y"] = 836244.67854801,
-										["x"] = -91373.912198302,
-										["name"] = "SAM-Mozdok-1-1-2 primary destroyed",
-										["heading"] = 0,
-										["playerCanDrive"] = false,
-									}, -- end of [11]
-								}, -- end of ["units"]
-								["y"] = 836211.10268608,
-								["x"] = -91332.30919164,
-								["name"] = "SAM-Mozdok-1-1",
-								["start_time"] = 0,
-							}, -- end of [1]
-						}, -- end of ["group"]
-					}, -- end of ["vehicle"]
-					["name"] = "CJTF Red",
-				}, -- end of [1]
-			}, -- end of ["country"]
-		}, -- end of ["red"]
-	}, -- end of ["coalition"]
-	["name"] = "SAM-Mozdok-1-1",
-	["requiredModules"] = {},
-	["localization"] = 
-	{
-		["DEFAULT"] = 
-		{
-			["DictKey_descriptionNeutralsTask_4"] = "",
-			["DictKey_sortie_5"] = "",
-			["DictKey_descriptionText_1"] = "",
-			["DictKey_descriptionBlueTask_3"] = "",
-			["DictKey_descriptionRedTask_2"] = "",
-		}, -- end of ["DEFAULT"]
-	}, -- end of ["localization"]
-	["theatre"] = "Caucasus",
-	["desc"] = "",
-} -- end of staticTemplate
+  coalition = {
+    blue = {
+      country = {},
+      name = "blue",
+    },
+    neutrals = {
+      country = {},
+      name = "neutrals",
+    },
+    red = {
+      country = {
+        {
+          id = 81,
+          vehicle = {
+            group = {
+              {
+                visible = false,
+                tasks = {},
+                uncontrollable = false,
+                task = "Ground Nothing",
+                manualHeading = false,
+                route = {
+                  spans = {},
+                  points = {
+                    {
+                      alt = 129,
+                      type = "Turning Point",
+                      ETA = 0,
+                      alt_type = "BARO",
+                      formation_template = "",
+                      y = 836211.10268608,
+                      x = -91332.30919164,
+                      ETA_locked = true,
+                      speed = 0,
+                      action = "Off Road",
+                      task = {
+                        id = "ComboTask",
+                        params = {
+                          tasks = {},
+                        },
+                      },
+                      speed_locked = true,
+                    },
+                  },
+                },
+                groupId = 54,
+                hidden = false,
+                units = {
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "RLS_19J6",
+                    unitId = 201,
+                    y = 836211.10268608,
+                    x = -91332.30919164,
+                    name = "SAM-Mozdok-1-1-1 primary destroyed",
+                    heading = 0,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "S-200_Launcher",
+                    unitId = 207,
+                    y = 836103.3553733,
+                    x = -91272.836038171,
+                    name = "SAM-Mozdok-1-1-8",
+                    heading = 5.235987755983,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "S-200_Launcher",
+                    unitId = 206,
+                    y = 836108.10557587,
+                    x = -91392.378149641,
+                    name = "SAM-Mozdok-1-1-7",
+                    heading = 4.1887902047864,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "S-200_Launcher",
+                    unitId = 205,
+                    y = 836319.82362691,
+                    x = -91395.048742238,
+                    name = "SAM-Mozdok-1-1-6",
+                    heading = 2.0943951023932,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "S-200_Launcher",
+                    unitId = 204,
+                    y = 836317.42729938,
+                    x = -91266.445831422,
+                    name = "SAM-Mozdok-1-1-5",
+                    heading = 1.0471975511966,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "S-200_Launcher",
+                    unitId = 203,
+                    y = 836216.38215517,
+                    x = -91460.947749332,
+                    name = "SAM-Mozdok-1-1-4",
+                    heading = 3.1415926535898,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "S-200_Launcher",
+                    unitId = 202,
+                    y = 836209.99194842,
+                    x = -91209.732746529,
+                    name = "SAM-Mozdok-1-1-3",
+                    heading = 0,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "Ural-375 ZU-23",
+                    unitId = 211,
+                    y = 836906.19361387,
+                    x = -91150.778171692,
+                    name = "SAM-Mozdok-1-1-11",
+                    heading = 3.9095375244673,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "Ural-375 ZU-23",
+                    unitId = 210,
+                    y = 836822.93320011,
+                    x = -90685.761100761,
+                    name = "SAM-Mozdok-1-1-10",
+                    heading = 0.24434609527921,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "Ural-375 ZU-23",
+                    unitId = 209,
+                    y = 835917.43186858,
+                    x = -90793.484196288,
+                    name = "SAM-Mozdok-1-1-9",
+                    heading = 0.82030474843733,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "RPC_5N62V",
+                    unitId = 187,
+                    y = 836244.67854801,
+                    x = -91373.912198302,
+                    name = "SAM-Mozdok-1-1-2 primary destroyed",
+                    heading = 0,
+                    playerCanDrive = false,
+                  },
+                },
+                y = 836211.10268608,
+                x = -91332.30919164,
+                name = "SAM-Mozdok-1-1",
+                start_time = 0,
+              },
+            },
+          },
+          name = "CJTF Red",
+        },
+      },
+      name = "red",
+    },
+  },
+  desc = "",
+  localization = {
+    DEFAULT = {
+      DictKey_descriptionBlueTask_3 = "",
+      DictKey_descriptionNeutralsTask_4 = "",
+      DictKey_descriptionRedTask_2 = "",
+      DictKey_descriptionText_1 = "",
+      DictKey_sortie_5 = "",
+    },
+  },
+  name = "SAM-Mozdok-1-1",
+  requiredModules = {},
+  theatre = "Caucasus",
+}

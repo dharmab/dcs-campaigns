@@ -1,243 +1,211 @@
 staticTemplate =
 {
-	["coalition"] =
-	{
-		["blue"] =
-		{
-			["name"] = "blue",
-			["country"] = {},
-		}, -- end of ["blue"]
-		["neutrals"] =
-		{
-			["name"] = "neutrals",
-			["country"] = {},
-		}, -- end of ["neutrals"]
-		["red"] =
-		{
-			["name"] = "red",
-			["country"] =
-			{
-				[1] =
-				{
-					["id"] = 81,
-					["vehicle"] =
-					{
-						["group"] =
-						{
-							[1] =
-							{
-								["visible"] = false,
-								["tasks"] = {},
-								["uncontrollable"] = false,
-								["task"] = "Ground Nothing",
-								["taskSelected"] = true,
-								["route"] =
-								{
-									["spans"] =
-									{
-										[1] =
-										{
-											[1] =
-											{
-												["y"] = 615045.60758818,
-												["x"] = -358404.10339051,
-											}, -- end of [1]
-											[2] =
-											{
-												["y"] = 615045.60758818,
-												["x"] = -358404.10339051,
-											}, -- end of [2]
-										}, -- end of [1]
-									}, -- end of ["spans"]
-									["points"] =
-									{
-										[1] =
-										{
-											["alt"] = 5,
-											["type"] = "Turning Point",
-											["ETA"] = 0,
-											["alt_type"] = "BARO",
-											["formation_template"] = "",
-											["y"] = 615045.60758818,
-											["x"] = -358404.10339051,
-											["name"] = "",
-											["ETA_locked"] = true,
-											["speed"] = 0,
-											["action"] = "Off Road",
-											["task"] =
-											{
-												["id"] = "ComboTask",
-												["params"] =
-												{
-													["tasks"] = {},
-												}, -- end of ["params"]
-											}, -- end of ["task"]
-											["speed_locked"] = true,
-										}, -- end of [1]
-									}, -- end of ["points"]
-								}, -- end of ["route"]
-								["groupId"] = 56,
-								["hidden"] = false,
-								["units"] =
-								{
-									[1] =
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "SNR_75V",
-										["unitId"] = 225,
-										["y"] = 615045.60758818,
-										["x"] = -358404.10339051,
-										["name"] = "SAM-Batumi-1-3-1 primary destroyed",
-										["heading"] = 0,
-										["playerCanDrive"] = false,
-									}, -- end of [1]
-									[2] =
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "p-19 s-125 sr",
-										["unitId"] = 226,
-										["y"] = 615073.04725434,
-										["x"] = -358404.81390597,
-										["name"] = "SAM-Batumi-1-3-2 primary destroyed",
-										["heading"] = 0.62412436994823,
-										["playerCanDrive"] = false,
-									}, -- end of [2]
-									[3] =
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 232,
-										["y"] = 615110.04221465,
-										["x"] = -358376.80901147,
-										["name"] = "SAM-Batumi-1-3-3",
-										["heading"] = 1.0471975511966,
-										["playerCanDrive"] = false,
-									}, -- end of [3]
-									[4] =
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 227,
-										["y"] = 615058.6875538,
-										["x"] = -358344.44893587,
-										["name"] = "SAM-Batumi-1-3-4",
-										["heading"] = 0,
-										["playerCanDrive"] = false,
-									}, -- end of [4]
-									[5] =
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 230,
-										["y"] = 615109.27747437,
-										["x"] = -358429.57609106,
-										["name"] = "SAM-Batumi-1-3-5",
-										["heading"] = 2.0943951023932,
-										["playerCanDrive"] = false,
-									}, -- end of [5]
-									[6] =
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 233,
-										["y"] = 615057.3070634,
-										["x"] = -358462.9026518,
-										["name"] = "SAM-Batumi-1-3-6",
-										["heading"] = 3.1415926535898,
-										["playerCanDrive"] = false,
-									}, -- end of [6]
-									[7] =
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 224,
-										["y"] = 615001.34732575,
-										["x"] = -358430.42031095,
-										["name"] = "SAM-Batumi-1-3-7",
-										["heading"] = 4.1887902047864,
-										["playerCanDrive"] = false,
-									}, -- end of [7]
-									[8] =
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "Ural-375 ZU-23",
-										["unitId"] = 228,
-										["y"] = 614935.17549447,
-										["x"] = -358245.46869569,
-										["name"] = "SAM-Batumi-1-3-8",
-										["heading"] = 0.59341194567807,
-										["playerCanDrive"] = false,
-									}, -- end of [8]
-									[9] =
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "Ural-375 ZU-23",
-										["unitId"] = 229,
-										["y"] = 615178.39832789,
-										["x"] = -358614.83759677,
-										["name"] = "SAM-Batumi-1-3-9",
-										["heading"] = 1.3962634015955,
-										["playerCanDrive"] = false,
-									}, -- end of [9]
-									[10] =
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "Ural-375 ZU-23",
-										["unitId"] = 231,
-										["y"] = 614780.64247535,
-										["x"] = -358451.61222723,
-										["name"] = "SAM-Batumi-1-3-10",
-										["heading"] = 5.7944931166212,
-										["playerCanDrive"] = false,
-									}, -- end of [10]
-									[11] =
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 234,
-										["y"] = 615005.59203838,
-										["x"] = -358376.30022484,
-										["name"] = "SAM-Batumi-1-3-11",
-										["heading"] = 5.235987755983,
-										["playerCanDrive"] = false,
-									}, -- end of [11]
-								}, -- end of ["units"]
-								["y"] = 615045.60758818,
-								["x"] = -358404.10339051,
-								["name"] = "SAM-Batumi-1-3",
-								["start_time"] = 0,
-							}, -- end of [1]
-						}, -- end of ["group"]
-					}, -- end of ["vehicle"]
-					["name"] = "CJTF Red",
-				}, -- end of [1]
-			}, -- end of ["country"]
-		}, -- end of ["red"]
-	},    -- end of ["coalition"]
-	["name"] = "SAM-Batumi-1-3",
-	["requiredModules"] = {},
-	["localization"] =
-	{
-		["DEFAULT"] =
-		{
-			["DictKey_descriptionNeutralsTask_4"] = "",
-			["DictKey_sortie_5"] = "",
-			["DictKey_descriptionText_1"] = "",
-			["DictKey_descriptionBlueTask_3"] = "",
-			["DictKey_descriptionRedTask_2"] = "",
-		}, -- end of ["DEFAULT"]
-	}, -- end of ["localization"]
-	["theatre"] = "Caucasus",
-	["desc"] = "",
-} -- end of staticTemplate
+  coalition = {
+    blue = {
+      country = {},
+      name = "blue",
+    },
+    neutrals = {
+      country = {},
+      name = "neutrals",
+    },
+    red = {
+      country = {
+        {
+          id = 81,
+          vehicle = {
+            group = {
+              {
+                visible = false,
+                tasks = {},
+                uncontrollable = false,
+                task = "Ground Nothing",
+                taskSelected = true,
+                route = {
+                  spans = {
+                    {
+                      {
+                        y = 615045.60758818,
+                        x = -358404.10339051,
+                      },
+                      {
+                        y = 615045.60758818,
+                        x = -358404.10339051,
+                      },
+                    },
+                  },
+                  points = {
+                    {
+                      alt = 5,
+                      type = "Turning Point",
+                      ETA = 0,
+                      alt_type = "BARO",
+                      formation_template = "",
+                      y = 615045.60758818,
+                      x = -358404.10339051,
+                      name = "",
+                      ETA_locked = true,
+                      speed = 0,
+                      action = "Off Road",
+                      task = {
+                        id = "ComboTask",
+                        params = {
+                          tasks = {},
+                        },
+                      },
+                      speed_locked = true,
+                    },
+                  },
+                },
+                groupId = 56,
+                hidden = false,
+                units = {
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "SNR_75V",
+                    unitId = 225,
+                    y = 615045.60758818,
+                    x = -358404.10339051,
+                    name = "SAM-Batumi-1-3-1 primary destroyed",
+                    heading = 0,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "p-19 s-125 sr",
+                    unitId = 226,
+                    y = 615073.04725434,
+                    x = -358404.81390597,
+                    name = "SAM-Batumi-1-3-2 primary destroyed",
+                    heading = 0.62412436994823,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 232,
+                    y = 615110.04221465,
+                    x = -358376.80901147,
+                    name = "SAM-Batumi-1-3-3",
+                    heading = 1.0471975511966,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 227,
+                    y = 615058.6875538,
+                    x = -358344.44893587,
+                    name = "SAM-Batumi-1-3-4",
+                    heading = 0,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 230,
+                    y = 615109.27747437,
+                    x = -358429.57609106,
+                    name = "SAM-Batumi-1-3-5",
+                    heading = 2.0943951023932,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 233,
+                    y = 615057.3070634,
+                    x = -358462.9026518,
+                    name = "SAM-Batumi-1-3-6",
+                    heading = 3.1415926535898,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 224,
+                    y = 615001.34732575,
+                    x = -358430.42031095,
+                    name = "SAM-Batumi-1-3-7",
+                    heading = 4.1887902047864,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "Ural-375 ZU-23",
+                    unitId = 228,
+                    y = 614935.17549447,
+                    x = -358245.46869569,
+                    name = "SAM-Batumi-1-3-8",
+                    heading = 0.59341194567807,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "Ural-375 ZU-23",
+                    unitId = 229,
+                    y = 615178.39832789,
+                    x = -358614.83759677,
+                    name = "SAM-Batumi-1-3-9",
+                    heading = 1.3962634015955,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "Ural-375 ZU-23",
+                    unitId = 231,
+                    y = 614780.64247535,
+                    x = -358451.61222723,
+                    name = "SAM-Batumi-1-3-10",
+                    heading = 5.7944931166212,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 234,
+                    y = 615005.59203838,
+                    x = -358376.30022484,
+                    name = "SAM-Batumi-1-3-11",
+                    heading = 5.235987755983,
+                    playerCanDrive = false,
+                  },
+                },
+                y = 615045.60758818,
+                x = -358404.10339051,
+                name = "SAM-Batumi-1-3",
+                start_time = 0,
+              },
+            },
+          },
+          name = "CJTF Red",
+        },
+      },
+      name = "red",
+    },
+  },
+  desc = "",
+  localization = {
+    DEFAULT = {
+      DictKey_descriptionBlueTask_3 = "",
+      DictKey_descriptionNeutralsTask_4 = "",
+      DictKey_descriptionRedTask_2 = "",
+      DictKey_descriptionText_1 = "",
+      DictKey_sortie_5 = "",
+    },
+  },
+  name = "SAM-Batumi-1-3",
+  requiredModules = {},
+  theatre = "Caucasus",
+}

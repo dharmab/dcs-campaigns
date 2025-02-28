@@ -1,255 +1,222 @@
 staticTemplate =
 {
-	["coalition"] =
-	{
-		["blue"] =
-		{
-			["name"] = "blue",
-			["country"] = {},
-		}, -- end of ["blue"]
-		["neutrals"] =
-		{
-			["name"] = "neutrals",
-			["country"] = {},
-		}, -- end of ["neutrals"]
-		["red"] =
-		{
-			["name"] = "red",
-			["country"] =
-			{
-				[1] =
-				{
-					["id"] = 81,
-					["vehicle"] =
-					{
-						["group"] =
-						{
-							[1] =
-							{
-								["visible"] = false,
-								["tasks"] = {},
-								["uncontrollable"] = false,
-								["task"] = "Ground Nothing",
-								["taskSelected"] = true,
-								["route"] =
-								{
-									["spans"] =
-									{
-										[1] =
-										{
-											[1] =
-											{
-												["y"] = 825128.82349355,
-												["x"] = -46741.472371904,
-											}, -- end of [1]
-											[2] =
-											{
-												["y"] = 825128.82349355,
-												["x"] = -46741.472371904,
-											}, -- end of [2]
-										}, -- end of [1]
-									}, -- end of ["spans"]
-									["points"] =
-									{
-										[1] =
-										{
-											["alt"] = 164,
-											["type"] = "Turning Point",
-											["ETA"] = 0,
-											["alt_type"] = "BARO",
-											["formation_template"] = "",
-											["y"] = 825128.82349355,
-											["x"] = -46741.472371904,
-											["name"] = "",
-											["ETA_locked"] = true,
-											["speed"] = 0,
-											["action"] = "Off Road",
-											["task"] =
-											{
-												["id"] = "ComboTask",
-												["params"] =
-												{
-													["tasks"] = {},
-												}, -- end of ["params"]
-											}, -- end of ["task"]
-											["speed_locked"] = true,
-										}, -- end of [1]
-									}, -- end of ["points"]
-								}, -- end of ["route"]
-								["groupId"] = 55,
-								["hidden"] = false,
-								["units"] =
-								{
-									[1] =
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "SNR_75V",
-										["unitId"] = 213,
-										["y"] = 825128.82349355,
-										["x"] = -46741.472371904,
-										["name"] = "SAM-Mozdok-2-3-1 primary destroyed",
-										["heading"] = 0,
-										["playerCanDrive"] = false,
-									}, -- end of [1]
-									[2] =
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "p-19 s-125 sr",
-										["unitId"] = 214,
-										["y"] = 825156.26315971,
-										["x"] = -46742.182887364,
-										["name"] = "SAM-Mozdok-2-3-2 primary destroyed",
-										["heading"] = 0.62412436994823,
-										["playerCanDrive"] = false,
-									}, -- end of [2]
-									[3] =
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 220,
-										["y"] = 825193.25812002,
-										["x"] = -46714.177992864,
-										["name"] = "SAM-Mozdok-2-3-3",
-										["heading"] = 1.0471975511966,
-										["playerCanDrive"] = false,
-									}, -- end of [3]
-									[4] =
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 215,
-										["y"] = 825141.90345917,
-										["x"] = -46681.817917264,
-										["name"] = "SAM-Mozdok-2-3-4",
-										["heading"] = 0,
-										["playerCanDrive"] = false,
-									}, -- end of [4]
-									[5] =
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 218,
-										["y"] = 825192.49337974,
-										["x"] = -46766.945072454,
-										["name"] = "SAM-Mozdok-2-3-5",
-										["heading"] = 2.0943951023932,
-										["playerCanDrive"] = false,
-									}, -- end of [5]
-									[6] =
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 221,
-										["y"] = 825140.52296877,
-										["x"] = -46800.271633194,
-										["name"] = "SAM-Mozdok-2-3-6",
-										["heading"] = 3.1415926535898,
-										["playerCanDrive"] = false,
-									}, -- end of [6]
-									[7] =
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 212,
-										["y"] = 825084.56323112,
-										["x"] = -46767.789292344,
-										["name"] = "SAM-Mozdok-2-3-7",
-										["heading"] = 4.1887902047864,
-										["playerCanDrive"] = false,
-									}, -- end of [7]
-									[8] =
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "Ural-375 ZU-23",
-										["unitId"] = 216,
-										["y"] = 827525.13398802,
-										["x"] = -44984.829791818,
-										["name"] = "SAM-Mozdok-2-3-8",
-										["heading"] = 1.7627825445143,
-										["playerCanDrive"] = false,
-									}, -- end of [8]
-									[9] =
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "Ural-375 ZU-23",
-										["unitId"] = 217,
-										["y"] = 823213.97925609,
-										["x"] = -44938.473289324,
-										["name"] = "SAM-Mozdok-2-3-9",
-										["heading"] = 4.9567350756639,
-										["playerCanDrive"] = false,
-									}, -- end of [9]
-									[10] =
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "Ural-375 ZU-23",
-										["unitId"] = 223,
-										["y"] = 823353.04876357,
-										["x"] = -48925.132503804,
-										["name"] = "SAM-Mozdok-2-3-10",
-										["heading"] = 3.2288591161895,
-										["playerCanDrive"] = false,
-									}, -- end of [10]
-									[11] =
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "Ural-375 ZU-23",
-										["unitId"] = 219,
-										["y"] = 827865.08167298,
-										["x"] = -48832.419498816,
-										["name"] = "SAM-Mozdok-2-3-11",
-										["heading"] = 3.2288591161895,
-										["playerCanDrive"] = false,
-									}, -- end of [11]
-									[12] =
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 222,
-										["y"] = 825088.80794375,
-										["x"] = -46713.669206234,
-										["name"] = "SAM-Mozdok-2-3-12",
-										["heading"] = 5.235987755983,
-										["playerCanDrive"] = false,
-									}, -- end of [12]
-								}, -- end of ["units"]
-								["y"] = 825128.82349355,
-								["x"] = -46741.472371904,
-								["name"] = "SAM-Mozdok-2-3",
-								["start_time"] = 0,
-							}, -- end of [1]
-						}, -- end of ["group"]
-					}, -- end of ["vehicle"]
-					["name"] = "CJTF Red",
-				}, -- end of [1]
-			}, -- end of ["country"]
-		}, -- end of ["red"]
-	},    -- end of ["coalition"]
-	["name"] = "SAM-Mozdok-2-3",
-	["requiredModules"] = {},
-	["localization"] =
-	{
-		["DEFAULT"] =
-		{
-			["DictKey_descriptionNeutralsTask_4"] = "",
-			["DictKey_sortie_5"] = "",
-			["DictKey_descriptionText_1"] = "",
-			["DictKey_descriptionBlueTask_3"] = "",
-			["DictKey_descriptionRedTask_2"] = "",
-		}, -- end of ["DEFAULT"]
-	}, -- end of ["localization"]
-	["theatre"] = "Caucasus",
-	["desc"] = "",
-} -- end of staticTemplate
+  coalition = {
+    blue = {
+      country = {},
+      name = "blue",
+    },
+    neutrals = {
+      country = {},
+      name = "neutrals",
+    },
+    red = {
+      country = {
+        {
+          id = 81,
+          vehicle = {
+            group = {
+              {
+                visible = false,
+                tasks = {},
+                uncontrollable = false,
+                task = "Ground Nothing",
+                taskSelected = true,
+                route = {
+                  spans = {
+                    {
+                      {
+                        y = 825128.82349355,
+                        x = -46741.472371904,
+                      },
+                      {
+                        y = 825128.82349355,
+                        x = -46741.472371904,
+                      },
+                    },
+                  },
+                  points = {
+                    {
+                      alt = 164,
+                      type = "Turning Point",
+                      ETA = 0,
+                      alt_type = "BARO",
+                      formation_template = "",
+                      y = 825128.82349355,
+                      x = -46741.472371904,
+                      name = "",
+                      ETA_locked = true,
+                      speed = 0,
+                      action = "Off Road",
+                      task = {
+                        id = "ComboTask",
+                        params = {
+                          tasks = {},
+                        },
+                      },
+                      speed_locked = true,
+                    },
+                  },
+                },
+                groupId = 55,
+                hidden = false,
+                units = {
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "SNR_75V",
+                    unitId = 213,
+                    y = 825128.82349355,
+                    x = -46741.472371904,
+                    name = "SAM-Mozdok-2-3-1 primary destroyed",
+                    heading = 0,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "p-19 s-125 sr",
+                    unitId = 214,
+                    y = 825156.26315971,
+                    x = -46742.182887364,
+                    name = "SAM-Mozdok-2-3-2 primary destroyed",
+                    heading = 0.62412436994823,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 220,
+                    y = 825193.25812002,
+                    x = -46714.177992864,
+                    name = "SAM-Mozdok-2-3-3",
+                    heading = 1.0471975511966,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 215,
+                    y = 825141.90345917,
+                    x = -46681.817917264,
+                    name = "SAM-Mozdok-2-3-4",
+                    heading = 0,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 218,
+                    y = 825192.49337974,
+                    x = -46766.945072454,
+                    name = "SAM-Mozdok-2-3-5",
+                    heading = 2.0943951023932,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 221,
+                    y = 825140.52296877,
+                    x = -46800.271633194,
+                    name = "SAM-Mozdok-2-3-6",
+                    heading = 3.1415926535898,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 212,
+                    y = 825084.56323112,
+                    x = -46767.789292344,
+                    name = "SAM-Mozdok-2-3-7",
+                    heading = 4.1887902047864,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "Ural-375 ZU-23",
+                    unitId = 216,
+                    y = 827525.13398802,
+                    x = -44984.829791818,
+                    name = "SAM-Mozdok-2-3-8",
+                    heading = 1.7627825445143,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "Ural-375 ZU-23",
+                    unitId = 217,
+                    y = 823213.97925609,
+                    x = -44938.473289324,
+                    name = "SAM-Mozdok-2-3-9",
+                    heading = 4.9567350756639,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "Ural-375 ZU-23",
+                    unitId = 223,
+                    y = 823353.04876357,
+                    x = -48925.132503804,
+                    name = "SAM-Mozdok-2-3-10",
+                    heading = 3.2288591161895,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "Ural-375 ZU-23",
+                    unitId = 219,
+                    y = 827865.08167298,
+                    x = -48832.419498816,
+                    name = "SAM-Mozdok-2-3-11",
+                    heading = 3.2288591161895,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 222,
+                    y = 825088.80794375,
+                    x = -46713.669206234,
+                    name = "SAM-Mozdok-2-3-12",
+                    heading = 5.235987755983,
+                    playerCanDrive = false,
+                  },
+                },
+                y = 825128.82349355,
+                x = -46741.472371904,
+                name = "SAM-Mozdok-2-3",
+                start_time = 0,
+              },
+            },
+          },
+          name = "CJTF Red",
+        },
+      },
+      name = "red",
+    },
+  },
+  desc = "",
+  localization = {
+    DEFAULT = {
+      DictKey_descriptionBlueTask_3 = "",
+      DictKey_descriptionNeutralsTask_4 = "",
+      DictKey_descriptionRedTask_2 = "",
+      DictKey_descriptionText_1 = "",
+      DictKey_sortie_5 = "",
+    },
+  },
+  name = "SAM-Mozdok-2-3",
+  requiredModules = {},
+  theatre = "Caucasus",
+}

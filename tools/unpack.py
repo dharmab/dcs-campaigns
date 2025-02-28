@@ -6,6 +6,7 @@
 import sys
 from pathlib import Path
 import zipfile
+import normalize
 
 
 def main():
@@ -32,6 +33,11 @@ def main():
     except Exception as e:
         print(f"An error occurred: {e}")
         sys.exit(1)
+
+    print("Normalizing mission files...")
+    normalize.sort_lua_file(destination_folder / "mission", "mission")
+    normalize.sort_lua_file(destination_folder / "options", "options")
+    normalize.sort_lua_file(destination_folder / "warehouses", "warehouses")
 
     print(f"You may now commit the changes within {destination_folder} to Git.")
 

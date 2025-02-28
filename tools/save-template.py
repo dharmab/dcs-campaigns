@@ -7,6 +7,7 @@
 from pathlib import Path
 import shutil
 import sys
+import normalize
 
 
 def main():
@@ -42,6 +43,8 @@ def main():
     print(
         f"Copied '{file_name}' from the DCS StaticTemplate directory and overwritten at '{target_file}'"
     )
+    normalize.sort_lua_file(target_file, "staticTemplate")
+    print(f"Normalized {file_name}")
 
 
 if __name__ == "__main__":

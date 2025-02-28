@@ -1,243 +1,211 @@
-staticTemplate = 
+staticTemplate =
 {
-	["coalition"] = 
-	{
-		["blue"] = 
-		{
-			["name"] = "blue",
-			["country"] = {},
-		}, -- end of ["blue"]
-		["neutrals"] = 
-		{
-			["name"] = "neutrals",
-			["country"] = {},
-		}, -- end of ["neutrals"]
-		["red"] = 
-		{
-			["name"] = "red",
-			["country"] = 
-			{
-				[1] = 
-				{
-					["id"] = 81,
-					["vehicle"] = 
-					{
-						["group"] = 
-						{
-							[1] = 
-							{
-								["visible"] = false,
-								["tasks"] = {},
-								["uncontrollable"] = false,
-								["task"] = "Ground Nothing",
-								["taskSelected"] = true,
-								["route"] = 
-								{
-									["spans"] = 
-									{
-										[1] = 
-										{
-											[1] = 
-											{
-												["y"] = 703978.19956976,
-												["x"] = -48182.217590312,
-											}, -- end of [1]
-											[2] = 
-											{
-												["y"] = 703978.19956976,
-												["x"] = -48182.217590312,
-											}, -- end of [2]
-										}, -- end of [1]
-									}, -- end of ["spans"]
-									["points"] = 
-									{
-										[1] = 
-										{
-											["alt"] = 323,
-											["type"] = "Turning Point",
-											["ETA"] = 0,
-											["alt_type"] = "BARO",
-											["formation_template"] = "",
-											["y"] = 703978.19956976,
-											["x"] = -48182.217590312,
-											["name"] = "",
-											["ETA_locked"] = true,
-											["speed"] = 0,
-											["action"] = "Off Road",
-											["task"] = 
-											{
-												["id"] = "ComboTask",
-												["params"] = 
-												{
-													["tasks"] = {},
-												}, -- end of ["params"]
-											}, -- end of ["task"]
-											["speed_locked"] = true,
-										}, -- end of [1]
-									}, -- end of ["points"]
-								}, -- end of ["route"]
-								["groupId"] = 53,
-								["hidden"] = false,
-								["units"] = 
-								{
-									[1] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "SNR_75V",
-										["unitId"] = 176,
-										["y"] = 703978.19956976,
-										["x"] = -48182.217590312,
-										["name"] = "SAM-MineralnyeVody-2-3-1",
-										["heading"] = 0,
-										["playerCanDrive"] = false,
-									}, -- end of [1]
-									[2] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "p-19 s-125 sr",
-										["unitId"] = 177,
-										["y"] = 704005.63923592,
-										["x"] = -48182.928105772,
-										["name"] = "SAM-MineralnyeVody-2-3-2",
-										["heading"] = 0.62412436994823,
-										["playerCanDrive"] = false,
-									}, -- end of [2]
-									[3] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 183,
-										["y"] = 704042.63419623,
-										["x"] = -48154.923211272,
-										["name"] = "SAM-MineralnyeVody-2-3-3",
-										["heading"] = 1.0471975511966,
-										["playerCanDrive"] = false,
-									}, -- end of [3]
-									[4] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 178,
-										["y"] = 703991.27953538,
-										["x"] = -48122.563135672,
-										["name"] = "SAM-MineralnyeVody-2-3-4",
-										["heading"] = 0,
-										["playerCanDrive"] = false,
-									}, -- end of [4]
-									[5] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 181,
-										["y"] = 704041.86945595,
-										["x"] = -48207.690290862,
-										["name"] = "SAM-MineralnyeVody-2-3-5",
-										["heading"] = 2.0943951023932,
-										["playerCanDrive"] = false,
-									}, -- end of [5]
-									[6] = 
-									{
-										["skill"] = "Excellent",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 184,
-										["y"] = 703989.89904498,
-										["x"] = -48241.016851602,
-										["name"] = "SAM-MineralnyeVody-2-3-6",
-										["heading"] = 3.1415926535898,
-										["playerCanDrive"] = false,
-									}, -- end of [6]
-									[7] = 
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 175,
-										["y"] = 703933.93930733,
-										["x"] = -48208.534510752,
-										["name"] = "SAM-MineralnyeVody-2-3-7",
-										["heading"] = 4.1887902047864,
-										["playerCanDrive"] = false,
-									}, -- end of [7]
-									[8] = 
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "Ural-375 ZU-23",
-										["unitId"] = 179,
-										["y"] = 704138.17630761,
-										["x"] = -47237.146585521,
-										["name"] = "SAM-MineralnyeVody-2-3-8",
-										["heading"] = 2.9496064358704,
-										["playerCanDrive"] = false,
-									}, -- end of [8]
-									[9] = 
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "Ural-375 ZU-23",
-										["unitId"] = 180,
-										["y"] = 702443.2789566,
-										["x"] = -47347.990335222,
-										["name"] = "SAM-MineralnyeVody-2-3-9",
-										["heading"] = 4.7996554429844,
-										["playerCanDrive"] = false,
-									}, -- end of [9]
-									[10] = 
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "Ural-375 ZU-23",
-										["unitId"] = 182,
-										["y"] = 703907.80602776,
-										["x"] = -49680.437430123,
-										["name"] = "SAM-MineralnyeVody-2-3-10",
-										["heading"] = 4.5553093477052,
-										["playerCanDrive"] = false,
-									}, -- end of [10]
-									[11] = 
-									{
-										["skill"] = "Average",
-										["coldAtStart"] = false,
-										["type"] = "S_75M_Volhov",
-										["unitId"] = 185,
-										["y"] = 703938.18401996,
-										["x"] = -48154.414424642,
-										["name"] = "SAM-MineralnyeVody-2-3-11",
-										["heading"] = 5.235987755983,
-										["playerCanDrive"] = false,
-									}, -- end of [11]
-								}, -- end of ["units"]
-								["y"] = 703978.19956976,
-								["x"] = -48182.217590312,
-								["name"] = "SAM-MineralnyeVody-2-3",
-								["start_time"] = 0,
-							}, -- end of [1]
-						}, -- end of ["group"]
-					}, -- end of ["vehicle"]
-					["name"] = "CJTF Red",
-				}, -- end of [1]
-			}, -- end of ["country"]
-		}, -- end of ["red"]
-	}, -- end of ["coalition"]
-	["name"] = "SAM-MineralnyeVody-2-3",
-	["requiredModules"] = {},
-	["localization"] = 
-	{
-		["DEFAULT"] = 
-		{
-			["DictKey_descriptionNeutralsTask_4"] = "",
-			["DictKey_sortie_5"] = "",
-			["DictKey_descriptionText_1"] = "",
-			["DictKey_descriptionBlueTask_3"] = "",
-			["DictKey_descriptionRedTask_2"] = "",
-		}, -- end of ["DEFAULT"]
-	}, -- end of ["localization"]
-	["theatre"] = "Caucasus",
-	["desc"] = "",
-} -- end of staticTemplate
+  coalition = {
+    blue = {
+      country = {},
+      name = "blue",
+    },
+    neutrals = {
+      country = {},
+      name = "neutrals",
+    },
+    red = {
+      country = {
+        {
+          id = 81,
+          vehicle = {
+            group = {
+              {
+                visible = false,
+                tasks = {},
+                uncontrollable = false,
+                task = "Ground Nothing",
+                taskSelected = true,
+                route = {
+                  spans = {
+                    {
+                      {
+                        y = 703978.19956976,
+                        x = -48182.217590312,
+                      },
+                      {
+                        y = 703978.19956976,
+                        x = -48182.217590312,
+                      },
+                    },
+                  },
+                  points = {
+                    {
+                      alt = 323,
+                      type = "Turning Point",
+                      ETA = 0,
+                      alt_type = "BARO",
+                      formation_template = "",
+                      y = 703978.19956976,
+                      x = -48182.217590312,
+                      name = "",
+                      ETA_locked = true,
+                      speed = 0,
+                      action = "Off Road",
+                      task = {
+                        id = "ComboTask",
+                        params = {
+                          tasks = {},
+                        },
+                      },
+                      speed_locked = true,
+                    },
+                  },
+                },
+                groupId = 53,
+                hidden = false,
+                units = {
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "SNR_75V",
+                    unitId = 176,
+                    y = 703978.19956976,
+                    x = -48182.217590312,
+                    name = "SAM-MineralnyeVody-2-3-1",
+                    heading = 0,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "p-19 s-125 sr",
+                    unitId = 177,
+                    y = 704005.63923592,
+                    x = -48182.928105772,
+                    name = "SAM-MineralnyeVody-2-3-2",
+                    heading = 0.62412436994823,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 183,
+                    y = 704042.63419623,
+                    x = -48154.923211272,
+                    name = "SAM-MineralnyeVody-2-3-3",
+                    heading = 1.0471975511966,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 178,
+                    y = 703991.27953538,
+                    x = -48122.563135672,
+                    name = "SAM-MineralnyeVody-2-3-4",
+                    heading = 0,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 181,
+                    y = 704041.86945595,
+                    x = -48207.690290862,
+                    name = "SAM-MineralnyeVody-2-3-5",
+                    heading = 2.0943951023932,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Excellent",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 184,
+                    y = 703989.89904498,
+                    x = -48241.016851602,
+                    name = "SAM-MineralnyeVody-2-3-6",
+                    heading = 3.1415926535898,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 175,
+                    y = 703933.93930733,
+                    x = -48208.534510752,
+                    name = "SAM-MineralnyeVody-2-3-7",
+                    heading = 4.1887902047864,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "Ural-375 ZU-23",
+                    unitId = 179,
+                    y = 704138.17630761,
+                    x = -47237.146585521,
+                    name = "SAM-MineralnyeVody-2-3-8",
+                    heading = 2.9496064358704,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "Ural-375 ZU-23",
+                    unitId = 180,
+                    y = 702443.2789566,
+                    x = -47347.990335222,
+                    name = "SAM-MineralnyeVody-2-3-9",
+                    heading = 4.7996554429844,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "Ural-375 ZU-23",
+                    unitId = 182,
+                    y = 703907.80602776,
+                    x = -49680.437430123,
+                    name = "SAM-MineralnyeVody-2-3-10",
+                    heading = 4.5553093477052,
+                    playerCanDrive = false,
+                  },
+                  {
+                    skill = "Average",
+                    coldAtStart = false,
+                    type = "S_75M_Volhov",
+                    unitId = 185,
+                    y = 703938.18401996,
+                    x = -48154.414424642,
+                    name = "SAM-MineralnyeVody-2-3-11",
+                    heading = 5.235987755983,
+                    playerCanDrive = false,
+                  },
+                },
+                y = 703978.19956976,
+                x = -48182.217590312,
+                name = "SAM-MineralnyeVody-2-3",
+                start_time = 0,
+              },
+            },
+          },
+          name = "CJTF Red",
+        },
+      },
+      name = "red",
+    },
+  },
+  desc = "",
+  localization = {
+    DEFAULT = {
+      DictKey_descriptionBlueTask_3 = "",
+      DictKey_descriptionNeutralsTask_4 = "",
+      DictKey_descriptionRedTask_2 = "",
+      DictKey_descriptionText_1 = "",
+      DictKey_sortie_5 = "",
+    },
+  },
+  name = "SAM-MineralnyeVody-2-3",
+  requiredModules = {},
+  theatre = "Caucasus",
+}

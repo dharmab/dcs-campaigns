@@ -82,6 +82,10 @@ If you want to change an existing mission template:
 1. Run `uv run tools/save-template.py theaters/theaterName/theater/regionName/templateName.stm` to copy the edited STM file to Git.
 1. Commit the changes in Git.
 
+### Normalization
+
+After making changes, run `uv run tools/normalize.py theaterName` to normalize any changed files. This makes the Git diffs much easier to read.
+
 ### Calamity Development
 
 [See the CONTRIBUTING file for the Calamity theater](theaters/calamity/CONTRIBUTING.md).
