@@ -2,7 +2,9 @@
 
 A campaign set in the world of Project Wingman.
 
-## Concept and Goals.
+(Looking to add/edit mission templates? [Go here](CONTRIBUTING.md)!)
+
+## Concept and Goals
 
 PROJECT CALAMITY values stability, reliability, performance, focus, and longevity.
 
@@ -16,11 +18,11 @@ Decrease the chance of DCS crashing as much as possible. Optimize for stability 
 
 ### Performance
 
-Reduce the number of objects and amount of code running to the minimum amount that supports gameplay. Optimize for performance over worldbuilding.
+Reduce the number of objects and amount of code running to the minimum amount that supports gameplay. Optimize for performance over worldbuilding/immersion.
 
 ### Focus
 
-Target a popular and cohesive set of modules instead of trying to support every module. Optimize for gameplay over inclusion. Specifically, **only 3rd and 4th generation western multirole and air superiority fighters will be playable**, and missions will be designed around their range, offensive and defensive capabilities.
+Target a popular and cohesive set of modules instead of trying to support every module. Optimize for gameplay over inclusion. Specifically, **only a subset of 3rd and 4th generation multirole and air superiority fighters will be playable**, and missions will be designed around their range, offensive and defensive capabilities.
 
 ### Longevity
 
@@ -34,7 +36,7 @@ PROJECT CALAMITY is set in the World On Fire (Project Wingman universe), over fi
 
 - **Mercenary Company (Name TBD)**
 
-The players’ mercenary company. A well-supplied private military company operating third and fourth generation fighters. Their force includes the AV-8B, F-4E, F-14A, F-14B, F-15C, F-15E, F-16C, F/A-18C and Mirage 2000C.
+The players’ mercenary company. A well-supplied private military company operating third and fourth generation fighters. Their force includes the AV-8B, F-4E, Mirage F1, F-14A, F-14B, F-15C, F-15E, F-16C, JF-17, F/A-18C and Mirage 2000C.
 
 - **Free State of Apsilia (FSA)**
 
@@ -56,7 +58,7 @@ A world superpower that controls vast territories in the Asia-Pacific region. Th
 
 ### Structure
 
-The scenario uses DCT for the overall structure and ground missions. DCT is a proven stable framework used by a number of servers including Georgia At War and Flashpoint Levant, with a large amount of example code available for reference.
+The scenario uses DCT for the overall structure and ground missions. DCT is a proven stable framework used by a number of servers such as Flashpoint Levant, with a large amount of example code available for reference.
 
 The scenario uses the Caucasus map. Caucasus is stable; objects do not move in DCS updates. It is also the best performing map in DCS world.
 
@@ -108,7 +110,7 @@ flowchart LR
 
 We want players to use a variety of weapons and use multiple approaches to complete missions. Most of the enemies they will fight have relatively short threat ranges. For this reason, we restrict access to the latest generation of weapons to encourage players to fight from closer distances, rather than release weapons from outside of any danger.
 
-Players may carry up to 2x AIM-120 or 3x AIM-54, restricted by the DCT point buy system.
+Players may carry up to 2x AIM-120/SD-10 or 3x AIM-54, restricted by the DCT point buy system.
 Players will not have access to any GPS guided weapon, restricted by both warehouse limits and the DCT point buy system.
 
 The restriction is not based on a specific time period or era; current generation weapons are permitted as long as they do not use GPS guidance. Historical accuracy is not a goal or constraint.
@@ -144,15 +146,15 @@ Later updates will add new template types. In no particular order:
 
 We will bias towards making a large number of simple templates, and updating the scenario with additional templates over time.
 
-Certain templates, such as SEAD, CAS: Frontline, Interdiction: Artillery, and Interdiction: Rocket and missile launch sites will make use of DCT’s exclusion feature to present one of 3+ randomized variants. This prevents players from memorizing the exact locations of units, especially air defenses and search+destroy targets.
+Certain templates, such as SEAD, CAS: Frontline, Interdiction: Artillery, and Interdiction: Rocket and missile launch sites will make use of DCT’s exclusion feature to present one of 2-3 randomized variants. This prevents players from memorizing the exact locations of units, especially air defenses and search+destroy targets.
 
 Completion thresholds will be set to relatively low values in many cases. The players shouldn’t need to defeat every target; getting a few bombs on the target should be considered a mission success.
 
 ## Air Defense
 
-The scenario will have a large number of SA-2 and SA-3 sites, and a smaller number of SA-6 and EWR sites. The sites will be networked together using an IADS script. We choose these older SAMs because they can be defeated through fun gameplay such as low-level strikes or Wild Weasel tactics. 
+The scenario will have a large number of SA-2 and SA-3 sites, and a smaller number of SA-5, SA-6 and EWR sites. The sites will be networked together using an IADS script. We choose these older SAMs because they can be defeated through fun gameplay such as low-level strikes or Wild Weasel tactics. 
 
-The Air Defense network will be supplemented by SA-8 and SA-9 tactical defense systesm. We choose SA-8 and SA-9 over MANPADS because 1. the older Strela missiles are more fun to evade than the Iglas in DCS and 2. the vehicles carrying the SA-8 and SA-9 are easier to spot than infantry with MANPADS. This supports fun gameplay instead of being instantly killed by something you didn't see. [Fun is not realism!](https://www.youtube.com/watch?v=MGpFEv1-mAo)
+The Air Defense network will be supplemented by SA-8 and SA-9 tactical defense systems. We choose SA-8 and SA-9 over MANPADS because 1. the older Strela missiles are more fun to evade than the Iglas in DCS and 2. the vehicles carrying the SA-8 and SA-9 are easier to spot than infantry with MANPADS. This supports fun gameplay instead of being instantly killed by something you didn't see. [Fun is not realism!](https://www.youtube.com/watch?v=MGpFEv1-mAo)
 
 ## Air Interception
 

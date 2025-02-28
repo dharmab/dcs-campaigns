@@ -1,4 +1,6 @@
-# Setting Up DCT
+# Getting Started
+
+See the [top-level README](../../README.md#development) for instructions on installing `uv` and setting up DCS.
 
 # Editing the MIZ file
 
@@ -29,19 +31,25 @@ Edit the BLUE Dynamic Templates. Make sure the skill level is set to `Client`. F
 
 Edit the RED Late Activation aircraft, or add new ones if needed.
 
-Unpack the MIZ back into Git.
+Unpack the MIZ back into Git using `uv run tools/unpack-miz.py calamity`.
 
 Edit `mission/l10n/DEFAULT/A2A.lua`, changing the content of the `factions` table as required to assign the aircraft to airbases. Follow existing code conventions.
 
 # Editing Templates
 
-Editing Templates allows adding new "mini-missions" or editing existing "mini-missions".
+Templates are the "mini-missions" players can request using the F10 menu.
+
+Templates are stored under `theaters\calamity\theater\RegionName\` as DCT files and STM files.
 
 ## File Structure
 
-A template consists of two files: a DCT file, which contains metadata about the template, and an STM file, which is a DCS Mission Editor Static Template which places units and statics into the game world. The DCT file and STM file have to be placed next to each other within a region folder. They can be at the top level of the region folder or nested inside subfolders, as long as they have the name filename (besides the extension) and are next to each other.
+A template consists of two files: a DCT file, which is a text file that contains some metadata about the template, and an STM file, which is a DCS Mission Editor Static Template which places units and statics into the game world. The DCT file and STM file have to be placed next to each other within a region folder. They can be at the top level of the region folder or nested inside subfolders, as long as they have the name filename (besides the extension) and are next to each other.
+
+To make a new template, you'll create a DCT file using a text editor (such as [Visual Studio Code](https://code.visualstudio.com/)) and an STM file using the DCS Mission Editor.
 
 ### DCT File
+
+A DCT file is a text file that contains metadata about the template.
 
 DCT files are documented [here](https://jtoppins.github.io/dct/designer.html#dct-example) but we only use a subset of the functionality. Here is what you need:
 
@@ -72,17 +80,19 @@ You can have blank lines, too.]]
 - `cost` is the number of enemy tickets depleted when the template is completed. See [Ticket Costs](#ticket-costs) for guidance.
 - `desc` is the template description shown in-game.
 
-Note: TEMPLATETYPE must be one of `CAS`, `STRIKE`, `BAI`, `ANTISHIP`, `SEAD`.
+Note: TEMPLATETYPE must be one of `CAS`, `STRIKE`, `BAI`, `ANTISHIP`, or `SEAD`.
 
 ### STM File
 
-STM files are Static Templates, which are created and edited in the DCS Mission Editor. Note the groups and units in the STM need to follow [name conventions](#naming-conventions) and [death goal specifications](#death-goals).
+STM files are Static Templates, which are created and edited in the DCS Mission Editor. 
+
+Note the groups and units in the STM need to follow [naming conventions](#naming-conventions) and [death goal specifications](#death-goals).
 
 To create a new STM file from scratch:
 
 1. Open the DCS Mission Editor.
 1. Load a new mission on Caucases.
-1. Place and name groups as required.
+1. Place and name objects and groups as required. Follow the [naming conventions](#naming-conventions) for any statics, groups or units you place.
 1. Click Edit -> Save Static Template. Use the [naming conventions](#naming-conventions) for both the Name and File Name field.
 1. Run `uv run tools/save-template.py theaters/calamity/theater/RegionName/TemplateFileName.stm`, substituting the correct region and template name.
 
@@ -94,7 +104,7 @@ To edit an existing STM file:
 1. Click Edit -> Load Static Template.
 1. Find the template in the Customized table and click it to highlight it.
 1. Click Load.
-1. Edit the template as desired.
+1. Edit the template as desired. Follow the [naming conventions](#naming-conventions) for any new groups and units.
 1. Click Edit -> Save Static Template. Use the same template name for the Name and File Name field.
 1. Run `uv run tools/save-template.py theaters/calamity/theater/RegionName/TemplateFileName.stm`, substituting the correct region and template name.
 
@@ -115,9 +125,12 @@ Used the Combined Joint Task Force Blue country for all BLUE units and the Combi
 ### Naming Conventions
 
 Templates should be named and group and unit names prefixed according to the pattern `TEMPLATETYPE-RegionName-TemplateID-VariantID` unless otherwise stated. This makes it easy to identify units in TacView when troubleshooting.
+
   - Example: `CAS-KashuriGori-3-2` is a CAS template and the second variant of the third template in the Kashuri-Gori region. Groups and united within the template should be prefixed with `CAS-KashuriGori-3-2`, e.g. a group might be named `CAS-KashuriGori-3-2 primary damaged`, and a unit might be named `CAS-KashuriGori-3-2-1`.
 
 ### Death Goals
+
+Death goals are used to determine which (and how many) units must be destroyed or damaged for a template to be considered complete. Death goals are specified in the names of statics and groups you place in the Mission Editor.
 
 Understand how [death goal specifications](https://jtoppins.github.io/dct/designer.html#death-goal-specification-goalspec) work and bias towards using death goals less than the default 90% threshold. For most templates, consider the template completed if the player heavily damaged key targets.
 
@@ -166,9 +179,7 @@ I am a personal stickler for style and grammar and will likely edit your mission
 
 ## SEAD (Suppression of Enemy Air Defenses)
 
-Requirements for acceptable SEAD templates:
-
-SAM sites must have at least three variants, each in a different location, configured with the [`exclusion`](https://jtoppins.github.io/dct/designer.html#exclusion) value set to `(SAM|EWR)-RegionName-TemplateID`. This inhibits players from memorizing the exact location of each site.
+SAM sites must have at least three variants, each in a slightly different location, configured with the [`exclusion`](https://jtoppins.github.io/dct/designer.html#exclusion) value set to `SAM-RegionName-TemplateID`. This inhibits players from memorizing the exact location of each site.
 
 Groups must be named and unit names prefixed according to one of the following patterns. This makes the radars work with the Air Interception script, and makes it easy to identify units in TacView when troubleshooting.
   - `SAM-RegionName-TemplateID-VariantID` for SAM sites, e.g. `SAM-Gudauta-2-3` is the third variant of the second SEAD template in Gudauta.
@@ -183,8 +194,6 @@ SAM sites must be defended by SHORAD. Include a minimum of 2-3x AAA batteries al
 ![](../../docs/images/sa2.png)
 
 ## CAS (Close Air Support)
-
-Requirements for acceptable CAS templates:
 
 CAS templates should have at least two variants, each with hostile units placed in slightly different locations.
 
@@ -216,7 +225,7 @@ Remarks: <additional notes>]]
 7|Marks|If the target is marked with a laser, "Code XXXX". If the target is marked visually (smoke, WP, IR strobe, etc.) describe the mark. If the target is not marked, "No marks".
 8|Friendly location|The direction and distance from the target of any friendlies, in meters. If there are no friendlies, "N/A".
 9|Egress|Recommended egress direction. Choose a direction that will keep the aircraft away from known threats and obstacles.
- |Remarks|Any additional remarks - "Troops in Contact", "Danger close", recommended ordnance, talk-on, recommended attack direction, known or possible threats, other notes.
+ |Remarks|Any additional remarks|"Troops in Contact", "Danger close", recommended ordnance, talk-on, recommended attack direction, known or possible threats, other notes.
 
 Example:
 
