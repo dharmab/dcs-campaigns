@@ -19,13 +19,16 @@ def main():
     theater_folder = saved_games_folder / "theater"
     hook_file = saved_games_folder / "Scripts" / "Hooks" / "dct-hook.lua"
     cfg_file = saved_games_folder / "Config" / "dct.cfg"
-    mission_file = saved_games_folder / "Missions" / f"dct-{theater_name}.miz"
+    missions_folder = saved_games_folder / "Missions"
+    mission_file = missions_folder / f"dct-{theater_name}.miz"
+    combined_mission_file = missions_folder / f"dct-{theater_name}-combined.miz"
     state_file = saved_games_folder / "Caucasus_.state"
 
     try:
         print("Removing theater")
         state_file.unlink(missing_ok=True)
         mission_file.unlink(missing_ok=True)
+        combined_mission_file.unlink(missing_ok=True)
         if theater_folder.exists():
             shutil.rmtree(theater_folder)
 

@@ -72,7 +72,9 @@ You'll need to desanitize your DCS scripting environment, or else the Mission Ed
 1. Commit the changes in Git.
 1. Run `uv run tools/uninstall.py <theater>` to uninstall DCT and the theater files.
 
-### Addinga a New STM File
+`install.py` also generates an additional MIZ file named `dct-theaterName-combined.miz`. This file contains the base MIZ data and all templates (including all mutually exclusive variants) merged together. This is handy for visualizing where templates might be overlapping/in conflict, and what areas of the map are free to add more templates.
+
+### Adding a New STM File
 
 If you want to add a new mission template:
 
