@@ -10,9 +10,10 @@ import shutil
 import zipfile
 from pathlib import Path
 import tempfile
+import luadata
 
 
-def main():
+def main() -> None:
     if len(sys.argv) < 2:
         print("Usage: uv run tools/install.py THEATER")
         print("Example: uv run tools/install.py calamity")
@@ -57,8 +58,12 @@ def main():
     if not mission_folder_source.exists():
         print(f"mission folder not found: {mission_folder_source}")
         sys.exit()
+    mission_file_source = mission_folder_source / "mission"
     mission_file_temp = Path(tempfile.gettempdir()) / "mission.zip"
-    mission_file_dest = saved_games_folder / "Missions" / f"dct-{theater_name}.miz"
+    missions_folder = saved_games_folder / "Missions"
+    mission_file_dest = missions_folder / f"dct-{theater_name}.miz"
+    combined_mission_file_temp = Path(tempfile.gettempdir()) / "mission-combined"
+    combined_mission_file_dest = missions_folder / f"dct-{theater_name}-combined.miz"
 
     try:
         print(f"Removing any existing DCT files from {saved_games_folder}")
@@ -99,11 +104,62 @@ def main():
             for file in mission_folder_source.rglob("*"):
                 zipf.write(file, file.relative_to(mission_folder_source))
         shutil.copy(mission_file_temp, mission_file_dest)
+
+        print(f"Creating {combined_mission_file_dest}")
+        mission_data = luadata.read(mission_file_source, encoding="utf-8")
+
+        id_serial = 1024
+        for _, coalitionData in mission_data.get("coalition", {}).items():
+            for country in coalitionData.get("country", []):
+                for groupType in ("plane", "vehicle", "helicopter", "ship"):
+                    if groupType not in country:
+                        country[groupType] = {"group": []}
+                    for group in country.get(groupType, {}).get("group", []):
+                        if group.get("id", 0) > id_serial:
+                            id_serial = group["id"] + 1
+
+        print("Merging STM templates into a combined MIZ")
+        for template_file in theater_folder_source.rglob("*.stm"):
+            template_data = luadata.read(template_file, encoding="utf-8")
+
+            coalitions = template_data.get("coalition", {})
+            for coalition, coalitionData in coalitions.items():
+                for country in coalitionData.get("country", []):
+                    country_id = country["id"]
+                    for groupType in ("plane", "vehicle", "helicopter", "ship"):
+                        if groupType not in country:
+                            continue
+                        for group in country[groupType].get("group", []):
+                            group["id"] = id_serial
+                            id_serial += 1
+                            m_countries = mission_data["coalition"][coalition][
+                                "country"
+                            ]
+                            for m_country in m_countries:
+                                if m_country["id"] == country_id:
+                                    m_country[groupType]["group"].append(group)
+
+        print(f"Writing {combined_mission_file_dest}")
+        luadata.write(
+            combined_mission_file_temp,
+            mission_data,
+            prefix="mission = \n",
+            encoding="utf-8",
+            indent="  ",
+        )
+        with zipfile.ZipFile(combined_mission_file_dest, "w") as zipf:
+            zipf.write(combined_mission_file_temp, mission_file_source.name)
+            for file in mission_folder_source.rglob("*"):
+                if file.name == "mission":
+                    continue
+                zipf.write(file, file.relative_to(mission_folder_source))
+
     except Exception as e:
-        print(f"An error occurred: {e}")
-        sys.exit(1)
+        raise e
     finally:
         mission_file_temp.unlink(missing_ok=True)
+        combined_mission_file_temp.unlink(missing_ok=True)
+        combined_mission_file_temp.unlink(missing_ok=True)
 
     print(
         f"You may now edit the MIZ file in the DCS Mission Editor (File -> Open -> {mission_file_dest})"
