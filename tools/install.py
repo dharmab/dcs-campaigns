@@ -120,24 +120,32 @@ def main() -> None:
 
         print("Merging STM templates into a combined MIZ")
         for template_file in theater_folder_source.rglob("*.stm"):
-            template_data = luadata.read(template_file, encoding="utf-8")
+            try:
+                template_data = luadata.read(template_file, encoding="utf-8")
 
-            coalitions = template_data.get("coalition", {})
-            for coalition, coalitionData in coalitions.items():
-                for country in coalitionData.get("country", []):
-                    country_id = country["id"]
-                    for groupType in ("plane", "vehicle", "helicopter", "ship"):
-                        if groupType not in country:
-                            continue
-                        for group in country[groupType].get("group", []):
-                            group["id"] = id_serial
-                            id_serial += 1
-                            m_countries = mission_data["coalition"][coalition][
-                                "country"
-                            ]
-                            for m_country in m_countries:
-                                if m_country["id"] == country_id:
-                                    m_country[groupType]["group"].append(group)
+                coalitions = template_data.get("coalition", {})
+                for coalition, coalitionData in coalitions.items():
+                    for key in coalitionData.get("country", {}):
+                        if isinstance(key, dict):
+                            country = key
+                        else:
+                            country = coalitionData["country"][key]
+                        country_id = country["id"]
+                        for groupType in ("plane", "vehicle", "helicopter", "ship"):
+                            if groupType not in country:
+                                continue
+                            for group in country[groupType].get("group", []):
+                                group["id"] = id_serial
+                                id_serial += 1
+                                m_countries = mission_data["coalition"][coalition][
+                                    "country"
+                                ]
+                                for m_country in m_countries:
+                                    if m_country["id"] == country_id:
+                                        m_country[groupType]["group"].append(group)
+            except Exception as e:
+                print(f"Error processing {template_file}: {e}")
+                raise e
 
         print(f"Writing {combined_mission_file_dest}")
         luadata.write(
