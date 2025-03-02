@@ -1,0 +1,10 @@
+objtype = "sam"
+coalition = "red"
+intel = 3
+exclusion = "SAM-Kutaisi-3"
+desc = [[A long-range SA-5 site is positioned near the village of Khoni, around 9 miles northwest of Kutaisi Airport..
+
+Primary objective: Destroy the SAM site
+Secondary objective: Destroy SHORAD and AAA batteries
+
+Threats: SA5, SA8, AAA]]
