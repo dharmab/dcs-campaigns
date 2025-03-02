@@ -1,0 +1,122 @@
+staticTemplate =
+{
+  coalition = {
+    blue = {
+      country = {},
+      name = "blue",
+    },
+    neutrals = {
+      country = {},
+      name = "neutrals",
+    },
+    red = {
+      country = {
+        {
+          id = 81,
+          name = "CJTF Red",
+          vehicle = {
+            group = {
+              {
+                groupId = 1,
+                hidden = false,
+                name = "CAS-Gudauta-2-1",
+                route = {
+                  points = {
+                    {
+                      ETA = 0,
+                      ETA_locked = true,
+                      action = "Off Road",
+                      alt = 14,
+                      alt_type = "BARO",
+                      formation_template = "",
+                      speed = 0,
+                      speed_locked = true,
+                      task = {
+                        id = "ComboTask",
+                        params = {
+                          tasks = {},
+                        },
+                      },
+                      type = "Turning Point",
+                      x = -178711.35694554,
+                      y = 489337.66460165,
+                    },
+                  },
+                  spans = {},
+                },
+                start_time = 0,
+                task = "Ground Nothing",
+                taskSelected = true,
+                tasks = {},
+                uncontrollable = false,
+                units = {
+                  {
+                    coldAtStart = false,
+                    heading = 6.0161499316245,
+                    name = "CAS-Gudauta-2-1-1",
+                    playerCanDrive = true,
+                    skill = "Average",
+                    type = "T-72B",
+                    unitId = 4,
+                    x = -178711.35694554,
+                    y = 489337.66460165,
+                  },
+                  {
+                    coldAtStart = false,
+                    heading = 6.0161499316245,
+                    name = "CAS-Gudauta-2-1-2",
+                    playerCanDrive = true,
+                    skill = "Average",
+                    type = "T-72B",
+                    unitId = 3,
+                    x = -178694.01130458,
+                    y = 489354.99471066,
+                  },
+                  {
+                    coldAtStart = false,
+                    heading = 6.0161499316245,
+                    name = "CAS-Gudauta-2-1-3",
+                    playerCanDrive = true,
+                    skill = "Average",
+                    type = "T-72B",
+                    unitId = 2,
+                    x = -178688.74378247,
+                    y = 489379.2158694,
+                  },
+                  {
+                    coldAtStart = false,
+                    heading = 6.0161499316245,
+                    name = "CAS-Gudauta-2-1-4",
+                    playerCanDrive = true,
+                    skill = "Average",
+                    type = "T-72B",
+                    unitId = 1,
+                    x = -178688.01297102,
+                    y = 489404.85402559,
+                  },
+                },
+                visible = false,
+                x = -178711.35694554,
+                y = 489337.66460165,
+              },
+            },
+          },
+        },
+      },
+      name = "red",
+    },
+  },
+  desc = "",
+  localization = {
+    DEFAULT = {
+      DictKey_descriptionBlueTask_3 = "",
+      DictKey_descriptionNeutralsTask_4 = "",
+      DictKey_descriptionRedTask_2 = "",
+      DictKey_descriptionText_1 = "",
+      DictKey_sortie_5 = "",
+    },
+  },
+  name = "CAS-Gudauta-2-1",
+  requiredModules = {},
+  theatre = "Caucasus",
+}

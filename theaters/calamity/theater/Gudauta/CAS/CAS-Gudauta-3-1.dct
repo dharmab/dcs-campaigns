@@ -1,0 +1,19 @@
+exclusion = "CAS-Gudauta-3"
+name = "CAS-Gudauta-3-1"
+coaltion = "red"
+objtype = "ground"
+intel = 4
+priority = 5
+cost = 30
+desc = [[A mechanized squad is present in a vilalge north of Gagra. This is likely a forward recon element.
+
+1. N/A
+2. N/A
+3. N/A
+4. Check mission data
+5. BMP-2 and an infantry squad within the village.
+6. Check mission data
+7. No marks
+8. N/A
+9. Egress north.
+Remarks: Engage from the north due to buildings blocking attacks from the east or west. Use anti-tank missile or guided bomb. Avoid unnecessary damage to the village.]]
