@@ -1,0 +1,19 @@
+exclusion = "CAS-Gudauta-4"
+name = "CAS-Gudauta-4-1"
+coaltion = "red"
+objtype = "ground"
+intel = 4
+priority = 5
+cost = 30
+desc = [[We've received reports of mechanized vehicles in a village north of Gagra.
+
+1. N/A
+2. N/A
+3. N/A
+4. Check mission data
+5. Multiple infantry fighting vehicles within the village.
+6. Check mission data
+7. No marks
+8. N/A
+9. Egress north.
+Remarks: Vehicles may be using tight streets and buildings as shields. Avoid unnecessary damage to the village.]]
