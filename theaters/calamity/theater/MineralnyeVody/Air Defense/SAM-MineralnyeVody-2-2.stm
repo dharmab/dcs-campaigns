@@ -65,7 +65,7 @@ staticTemplate =
                   {
                     coldAtStart = false,
                     heading = 0,
-                    name = "SAM-MineralnyeVody-2-2-1",
+                    name = "SAM-MineralnyeVody-2-2-1 primary destroyed",
                     playerCanDrive = false,
                     skill = "Excellent",
                     type = "SNR_75V",
@@ -76,7 +76,7 @@ staticTemplate =
                   {
                     coldAtStart = false,
                     heading = 0.62412436994823,
-                    name = "SAM-MineralnyeVody-2-2-2",
+                    name = "SAM-MineralnyeVody-2-2-2 primary destroyed",
                     playerCanDrive = false,
                     skill = "Excellent",
                     type = "p-19 s-125 sr",
