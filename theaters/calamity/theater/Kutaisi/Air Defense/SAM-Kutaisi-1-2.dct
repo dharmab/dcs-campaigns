@@ -1,0 +1,10 @@
+objtype = "sam"
+coalition = "red"
+intel = 3
+exclusion = "SAM-Kutaisi-1"
+desc = [[An SA-2 site is located within the town of Khoni, around 9 miles borthwest of Kutaisi Airport. The site regularly rotates between several open fields around the town.
+
+Primary objective: Destroy the SAM site
+Secondary objective: Destroy AAA batteries
+
+Threats: SA2, AAA]]
