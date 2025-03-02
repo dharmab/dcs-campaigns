@@ -1,0 +1,10 @@
+objtype = "sam"
+coalition = "red"
+intel = 3
+exclusion = "SAM-Kutaisi-2"
+desc = [[An SA-2 site is located near the village of Gezati, along the Tskhenistsqali river.
+
+Primary objective: Destroy the SAM site
+Secondary objective: Destroy AAA batteries
+
+Threats: SA2, AAA]]
