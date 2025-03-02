@@ -11,17 +11,26 @@ import zipfile
 from pathlib import Path
 import tempfile
 import luadata
+import argparse
 
 
 def main() -> None:
-    if len(sys.argv) < 2:
-        print("Usage: uv run tools/install.py THEATER")
-        print("Example: uv run tools/install.py calamity")
-        sys.exit()
+    parser = argparse.ArgumentParser(
+        description="Install DCT and the specified theater into the DCS Saved Games folder"
+    )
+    parser.add_argument(
+        "theater",
+        help="The name of the theater to install",
+    )
+    parser.add_argument(
+        "--install-dir",
+        help="The DCS Saved Games directory in which to install files",
+        default=Path.home() / "Saved Games" / "DCS",
+    )
+    args = parser.parse_args()
 
-    theater_name = sys.argv[1]
-
-    saved_games_folder = Path.home() / "Saved Games" / "DCS"
+    theater_name = args.theater
+    saved_games_folder = args.install_dir
     tech_folder = saved_games_folder / "Mods" / "Tech"
 
     entry_file_src = Path("dct/entry.lua")

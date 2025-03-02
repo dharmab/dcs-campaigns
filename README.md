@@ -56,7 +56,7 @@ To test if the installation worked, open Powershell again and type `uv help`. Yo
 
 All commands provided in this documentation should be run from the project root folder (i.e. run `cd c:\path\to\wherever\this\README\is` before running other commands).
 
-The tools will only work if your Saved Games folder is at `%userprofile%\Saved Games\DCS`. If it's anywhere else, or is named `DCS.openbeta`, it won't work.
+The tools will assume your Saved Games folder is at `%userprofile%\Saved Games\DCS` by default. If it's anywhere else, you may need to specify `--install-dir <path>`, e.g. `uv run tools/install.py --install-dir "C:\Users\nagase\Saved Games\DCS.openbeta"`
 
 **Back up your DCS Saved Games folder before beginning any development**. The tool scripts will overwrite/delete some files in that folder and if I made a mistake somewhere they could clobber your files.
 

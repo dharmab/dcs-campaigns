@@ -2,33 +2,35 @@
 
 # This script undoes everything that install.py does.
 
-import sys
 import shutil
+import argparse
 from pathlib import Path
 
 
 def main():
-    if len(sys.argv) < 2:
-        print("Usage: uv run tools/uninstall.py THEATER")
-        print("Example: uv run tools/uninstall.py calamity")
-        sys.exit()
+    parser = argparse.ArgumentParser(
+        description="Uninstall DCT and all theaters DCS Saved Games folder"
+    )
+    parser.add_argument(
+        "--install-dir",
+        help="The DCS Saved Games directory from which to uninstall files",
+        default=Path.home() / "Saved Games" / "DCS",
+    )
+    args = parser.parse_args()
 
-    theater_name = sys.argv[1]
-    saved_games_folder = Path.home() / "Saved Games" / "DCS"
+    saved_games_folder = args.install_dir
     dct_tech_folder = saved_games_folder / "Mods" / "Tech" / "DCT"
     theater_folder = saved_games_folder / "theater"
     hook_file = saved_games_folder / "Scripts" / "Hooks" / "dct-hook.lua"
     cfg_file = saved_games_folder / "Config" / "dct.cfg"
     missions_folder = saved_games_folder / "Missions"
-    mission_file = missions_folder / f"dct-{theater_name}.miz"
-    combined_mission_file = missions_folder / f"dct-{theater_name}-combined.miz"
-    state_file = saved_games_folder / "Caucasus_.state"
 
     try:
-        print("Removing theater")
-        state_file.unlink(missing_ok=True)
-        mission_file.unlink(missing_ok=True)
-        combined_mission_file.unlink(missing_ok=True)
+        print("Removing theaters")
+        for mission_file in missions_folder.glob("dct-*.miz"):
+            mission_file.unlink()
+        for state_file in saved_games_folder.glob("*.state"):
+            state_file.unlink(missing_ok=True)
         if theater_folder.exists():
             shutil.rmtree(theater_folder)
 
