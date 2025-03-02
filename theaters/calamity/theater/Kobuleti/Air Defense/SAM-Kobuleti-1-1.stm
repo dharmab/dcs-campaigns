@@ -51,7 +51,7 @@ staticTemplate =
                   {
                     coldAtStart = false,
                     heading = 3.1242163779307,
-                    name = "SAM-Kobuleti-1-1-1 primary destroyed",
+                    name = "SAM-Kobuleti-1-1-1",
                     playerCanDrive = true,
                     skill = "Average",
                     type = "Ural-375",
@@ -62,7 +62,7 @@ staticTemplate =
                   {
                     coldAtStart = false,
                     heading = 3.1242163779307,
-                    name = "SAM-Kobuleti-1-1-2 primary destroyed",
+                    name = "SAM-Kobuleti-1-1-2",
                     playerCanDrive = true,
                     skill = "Average",
                     type = "Ural-375",
