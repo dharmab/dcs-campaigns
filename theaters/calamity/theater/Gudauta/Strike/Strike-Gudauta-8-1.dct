@@ -1,0 +1,10 @@
+exclusion = "Strike-Gudauta-8"
+name = "Strike-Gudauta-8-1"
+coaltion = "red"
+objtype = "ground"
+intel = 5
+priority = 14
+cost = 30
+desc = [[We've located a mobile communications trailer supporting enemy operations in this area. Destroy the trailer and any supporting personnel.
+
+Threats: Small arms.]]
