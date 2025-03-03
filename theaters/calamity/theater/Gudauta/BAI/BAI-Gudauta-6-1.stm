@@ -1,0 +1,133 @@
+staticTemplate =
+{
+  coalition = {
+    blue = {
+      country = {},
+      name = "blue",
+    },
+    neutrals = {
+      country = {},
+      name = "neutrals",
+    },
+    red = {
+      country = {
+        {
+          id = 81,
+          name = "CJTF Red",
+          vehicle = {
+            group = {
+              {
+                groupId = 21,
+                hidden = false,
+                name = "BAI-Gudauta-6-1",
+                route = {
+                  points = {
+                    {
+                      ETA = 0,
+                      ETA_locked = true,
+                      action = "Off Road",
+                      alt = 166,
+                      alt_type = "BARO",
+                      formation_template = "",
+                      speed = 0,
+                      speed_locked = true,
+                      task = {
+                        id = "ComboTask",
+                        params = {
+                          tasks = {},
+                        },
+                      },
+                      type = "Turning Point",
+                      x = -183491.08609959,
+                      y = 496059.30848246,
+                    },
+                  },
+                  spans = {},
+                },
+                start_time = 0,
+                task = "Ground Nothing",
+                taskSelected = true,
+                tasks = {},
+                uncontrollable = false,
+                units = {
+                  {
+                    coldAtStart = false,
+                    heading = 5.0265482457437,
+                    name = "BAI-Gudauta-6-1-3",
+                    playerCanDrive = false,
+                    skill = "Average",
+                    type = "SAU Msta",
+                    unitId = 74,
+                    x = -183491.08609959,
+                    y = 496059.30848246,
+                  },
+                  {
+                    coldAtStart = false,
+                    heading = 5.0265482457437,
+                    name = "BAI-Gudauta-6-1-2",
+                    playerCanDrive = false,
+                    skill = "Average",
+                    type = "SAU Msta",
+                    unitId = 73,
+                    x = -183466.97946232,
+                    y = 496078.92200018,
+                  },
+                  {
+                    coldAtStart = false,
+                    heading = 5.0265482457437,
+                    name = "BAI-Gudauta-6-1-1",
+                    playerCanDrive = false,
+                    skill = "Average",
+                    type = "SAU Msta",
+                    unitId = 72,
+                    x = -183476.43534439,
+                    y = 496114.51050178,
+                  },
+                  {
+                    coldAtStart = false,
+                    heading = 5.0265482457437,
+                    name = "Strike-Gudauta-6-1-3",
+                    playerCanDrive = false,
+                    skill = "Average",
+                    type = "SAU Msta",
+                    unitId = 71,
+                    x = -183493.45593211,
+                    y = 496089.32347045,
+                  },
+                  {
+                    coldAtStart = false,
+                    heading = 5.0265482457437,
+                    name = "BAI-Gudauta-6-1-5",
+                    playerCanDrive = false,
+                    skill = "Average",
+                    type = "ZSU-23-4 Shilka",
+                    unitId = 76,
+                    x = -183412.31008523,
+                    y = 496104.97189167,
+                  },
+                },
+                visible = false,
+                x = -183491.08609959,
+                y = 496059.30848246,
+              },
+            },
+          },
+        },
+      },
+      name = "red",
+    },
+  },
+  desc = "",
+  localization = {
+    DEFAULT = {
+      DictKey_descriptionBlueTask_3 = "",
+      DictKey_descriptionNeutralsTask_4 = "",
+      DictKey_descriptionRedTask_2 = "",
+      DictKey_descriptionText_1 = "",
+      DictKey_sortie_5 = "",
+    },
+  },
+  name = "BAI-Gudauta-6-1",
+  requiredModules = {},
+  theatre = "Caucasus",
+}

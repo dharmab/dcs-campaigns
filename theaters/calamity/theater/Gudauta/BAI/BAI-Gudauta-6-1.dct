@@ -1,0 +1,10 @@
+exclusion = "BAI-Gudauta-6"
+name = "BAI-Gudauta-6-1"
+coaltion = "red"
+objtype = "ground"
+intel = 1
+priority = 14
+cost = 30
+desc = [[A battery of self-propelled artillery is active somewhere in this area. Search for and destroy the battery and any supporting vehicles or personnel.
+
+Threats: AAA, SHORAD.]]
