@@ -1,0 +1,19 @@
+exclusion = "CAS-Gudauta-12"
+name = "CAS-Gudauta-12-1"
+coaltion = "red"
+objtype = "ground"
+intel = 4
+priority = 13
+cost = 30
+desc = [[Airstrikes are needed to destroy vehicles defending a fuel depot on the eastern side of Otradnoe.
+
+1. N/A
+2. N/A
+3. N/A
+4. Check mission data
+5. 3x BMP-2s on a road northwest of the fuel depot.
+6. Check mission data
+7. No marks
+8. N/A
+9. Egress north.
+Remarks: Use anti-tank missiles or bombs. Collateral damange to the fuel depot is acceptable.]]
