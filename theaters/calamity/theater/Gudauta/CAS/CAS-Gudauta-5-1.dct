@@ -1,0 +1,19 @@
+exclusion = "CAS-Gudauta-5"
+name = "CAS-Gudauta-5-1"
+coaltion = "red"
+objtype = "ground"
+intel = 4
+priority = 12
+cost = 30
+desc = [[A group of mechanized vehicles is in a treeline along the road from Gagra to Otradnoe.
+
+1. N/A
+2. N/A
+3. N/A
+4. Check mission data
+5. Multiple infantry fighting vehicles along a treeline, near a level crossing between a road and a railway.
+6. Check mission data
+7. No marks
+8. N/A
+9. Egress north.
+Remarks: Attack from the north, since the treeline provides cover from the south. Use anti-tank missiles or guided bombs.]]

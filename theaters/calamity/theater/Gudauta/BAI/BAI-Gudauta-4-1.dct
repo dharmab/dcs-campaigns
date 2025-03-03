@@ -1,0 +1,10 @@
+exclusion = "BAI-Gudauta-4"
+name = "BAI-Gudauta-4-1"
+coaltion = "red"
+objtype = "ground"
+intel = 5
+priority = 14
+cost = 30
+desc = [[We've located a truck depot where cargo vehicles are serviced. Destroy all vehicles and supplies at the depot.
+
+Threats: Small arms.]]

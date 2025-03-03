@@ -1,0 +1,150 @@
+staticTemplate =
+{
+  coalition = {
+    blue = {
+      country = {},
+      name = "blue",
+    },
+    neutrals = {
+      country = {},
+      name = "neutrals",
+    },
+    red = {
+      country = {
+        {
+          id = 81,
+          name = "CJTF Red",
+          static = {
+            group = {
+              {
+                dead = false,
+                groupId = 20,
+                heading = 5.6007615696498,
+                name = "Static Road outpost-1",
+                route = {
+                  points = {
+                    {
+                      action = "",
+                      alt = 0,
+                      formation_template = "",
+                      name = "",
+                      speed = 0,
+                      type = "",
+                      x = -181069.83942703,
+                      y = 491100.56412642,
+                    },
+                  },
+                },
+                units = {
+                  {
+                    category = "Fortifications",
+                    heading = 5.6007615696498,
+                    name = "Static Road outpost-1",
+                    rate = 5,
+                    type = "outpost_road",
+                    unitId = 65,
+                    x = -181069.83942703,
+                    y = 491100.56412642,
+                  },
+                },
+                x = -181069.83942703,
+                y = 491100.56412642,
+              },
+            },
+          },
+          vehicle = {
+            group = {
+              {
+                groupId = 19,
+                hidden = false,
+                name = "Strike-Gudauta-3-1",
+                route = {
+                  points = {
+                    {
+                      ETA = 0,
+                      ETA_locked = true,
+                      action = "Off Road",
+                      alt = 6,
+                      alt_type = "BARO",
+                      formation_template = "",
+                      speed = 0,
+                      speed_locked = true,
+                      task = {
+                        id = "ComboTask",
+                        params = {
+                          tasks = {},
+                        },
+                      },
+                      type = "Turning Point",
+                      x = -181067.90056019,
+                      y = 491108.89591028,
+                    },
+                  },
+                  spans = {
+                    {
+                      {
+                        x = -181067.90056019,
+                        y = 491108.89591028,
+                      },
+                      {
+                        x = -181067.90056019,
+                        y = 491108.89591028,
+                      },
+                    },
+                  },
+                },
+                start_time = 0,
+                task = "Ground Nothing",
+                taskSelected = true,
+                tasks = {},
+                uncontrollable = false,
+                units = {
+                  {
+                    coldAtStart = false,
+                    heading = 5.5972709111458,
+                    livery_id = "green summer",
+                    name = "Strike-Gudauta-3-1-1",
+                    playerCanDrive = false,
+                    skill = "Average",
+                    type = "BTR-80",
+                    unitId = 63,
+                    x = -181067.90056019,
+                    y = 491108.89591028,
+                  },
+                  {
+                    coldAtStart = false,
+                    heading = 5.9812433465845,
+                    name = "Strike-Gudauta-3-1-2",
+                    playerCanDrive = true,
+                    skill = "Average",
+                    type = "Cobra",
+                    unitId = 64,
+                    x = -181067.18686856,
+                    y = 491086.80110079,
+                  },
+                },
+                visible = false,
+                x = -181067.90056019,
+                y = 491108.89591028,
+              },
+            },
+          },
+        },
+      },
+      name = "red",
+    },
+  },
+  desc = "",
+  localization = {
+    DEFAULT = {
+      DictKey_descriptionBlueTask_3 = "",
+      DictKey_descriptionNeutralsTask_4 = "",
+      DictKey_descriptionRedTask_2 = "",
+      DictKey_descriptionText_1 = "",
+      DictKey_sortie_5 = "",
+    },
+  },
+  name = "Strike-Gudauta-3-1",
+  requiredModules = {},
+  theatre = "Caucasus",
+}

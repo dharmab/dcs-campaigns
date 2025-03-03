@@ -1,0 +1,19 @@
+exclusion = "CAS-Gudauta-7"
+name = "CAS-Gudauta-7-1"
+coaltion = "red"
+objtype = "ground"
+intel = 4
+priority = 12
+cost = 30
+desc = [[A unit of mechanized vehicles is blocking the road into Otradnoe.
+
+1. N/A
+2. N/A
+3. N/A
+4. Check mission data
+5. 3x BMP-2s in a treeline, along the road running north-south.
+6. Check mission data
+7. No marks
+8. N/A
+9. Egress east.
+Remarks: Egress north. Avoid damage to civilian structures.]]

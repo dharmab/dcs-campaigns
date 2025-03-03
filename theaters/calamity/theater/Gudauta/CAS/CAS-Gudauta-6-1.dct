@@ -1,0 +1,19 @@
+exclusion = "CAS-Gudauta-6"
+name = "CAS-Gudauta-6-1"
+coaltion = "red"
+objtype = "ground"
+intel = 4
+priority = 12
+cost = 30
+desc = [[We've received intelligence about military activity at a house north of Gagra.
+
+1. N/A
+2. N/A
+3. N/A
+4. Check mission data
+5. Multiple trucks parked near a civilian home.
+6. Check mission data
+7. No marks
+8. N/A
+9. Egress east.
+Remarks: You are cleared to engage the vehicles and house, but avoid damage to the surrounding homes.]]
