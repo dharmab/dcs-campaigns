@@ -1,0 +1,10 @@
+exclusion = "Strike-Gudauta-4"
+name = "Strike-Gudauta-4-1"
+coaltion = "red"
+objtype = "ground"
+intel = 5
+priority = 15
+cost = 30
+desc = [[We've located a military checkpoint controlling the flow of traffic along a major road. Destroy the checkpoint and any vehicles or personnel in the area.
+
+Threats: Small arms.]]

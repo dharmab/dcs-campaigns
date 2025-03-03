@@ -1,0 +1,19 @@
+exclusion = "CAS-Gudauta-8"
+name = "CAS-Gudauta-8-1"
+coaltion = "red"
+objtype = "ground"
+intel = 4
+priority = 13
+cost = 30
+desc = [[A platoon of tanks has been spotted near Kolhida.
+
+1. N/A
+2. N/A
+3. N/A
+4. Check mission data
+5. 5x tanks in a vee formation.
+6. Check mission data
+7. No marks
+8. N/A
+9. Egress east.
+Remarks: Use anti-tank missiles or bombs.]]

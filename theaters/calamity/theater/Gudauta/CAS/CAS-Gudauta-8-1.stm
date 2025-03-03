@@ -1,0 +1,144 @@
+staticTemplate =
+{
+  coalition = {
+    blue = {
+      country = {},
+      name = "blue",
+    },
+    neutrals = {
+      country = {},
+      name = "neutrals",
+    },
+    red = {
+      country = {
+        {
+          id = 81,
+          name = "CJTF Red",
+          vehicle = {
+            group = {
+              {
+                groupId = 4,
+                hidden = false,
+                name = "CAS-Gudauta-8-1",
+                route = {
+                  points = {
+                    {
+                      ETA = 0,
+                      ETA_locked = true,
+                      action = "Off Road",
+                      alt = 17,
+                      alt_type = "BARO",
+                      formation_template = "",
+                      speed = 0,
+                      speed_locked = true,
+                      task = {
+                        id = "ComboTask",
+                        params = {
+                          tasks = {},
+                        },
+                      },
+                      type = "Turning Point",
+                      x = -185711.39423176,
+                      y = 492408.78565703,
+                    },
+                  },
+                  spans = {
+                    {
+                      {
+                        x = -185711.39423176,
+                        y = 492408.78565703,
+                      },
+                      {
+                        x = -185711.39423176,
+                        y = 492408.78565703,
+                      },
+                    },
+                  },
+                },
+                start_time = 0,
+                task = "Ground Nothing",
+                taskSelected = true,
+                tasks = {},
+                uncontrollable = false,
+                units = {
+                  {
+                    coldAtStart = false,
+                    heading = 5.9166661642608,
+                    name = "CAS-Gudauta-8-1-5",
+                    playerCanDrive = false,
+                    skill = "Average",
+                    type = "T-72B",
+                    unitId = 38,
+                    x = -185711.39423176,
+                    y = 492408.78565703,
+                  },
+                  {
+                    coldAtStart = false,
+                    heading = 5.3860860716545,
+                    name = "CAS-Gudauta-8-1-4",
+                    playerCanDrive = false,
+                    skill = "Average",
+                    type = "T-72B",
+                    unitId = 37,
+                    x = -185728.56694522,
+                    y = 492400.45444653,
+                  },
+                  {
+                    coldAtStart = false,
+                    heading = 5.6478854594537,
+                    name = "CAS-Gudauta-8-1-2",
+                    playerCanDrive = false,
+                    skill = "Average",
+                    type = "T-72B",
+                    unitId = 36,
+                    x = -185744.57192658,
+                    y = 492390.50680737,
+                  },
+                  {
+                    coldAtStart = false,
+                    heading = 5.6653387519736,
+                    name = "CAS-Gudauta-8-1-1",
+                    playerCanDrive = false,
+                    skill = "Average",
+                    type = "T-72B",
+                    unitId = 35,
+                    x = -185715.50266925,
+                    y = 492429.56146802,
+                  },
+                  {
+                    coldAtStart = false,
+                    heading = 5.7526052145733,
+                    name = "CAS-Gudauta-8-1-3",
+                    playerCanDrive = false,
+                    skill = "Average",
+                    type = "T-72B",
+                    unitId = 29,
+                    x = -185721.64044028,
+                    y = 492450.81624325,
+                  },
+                },
+                visible = false,
+                x = -185711.39423176,
+                y = 492408.78565703,
+              },
+            },
+          },
+        },
+      },
+      name = "red",
+    },
+  },
+  desc = "",
+  localization = {
+    DEFAULT = {
+      DictKey_descriptionBlueTask_3 = "",
+      DictKey_descriptionNeutralsTask_4 = "",
+      DictKey_descriptionRedTask_2 = "",
+      DictKey_descriptionText_1 = "",
+      DictKey_sortie_5 = "",
+    },
+  },
+  name = "CAS-Gudauta-8-1",
+  requiredModules = {},
+  theatre = "Caucasus",
+}
