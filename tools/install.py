@@ -106,9 +106,11 @@ def main() -> None:
         cfg_file_dest.write_text(cfg_content)
 
         print(f"Installing {theater_name} theater")
+        theater_folder_dest.mkdir(parents=True, exist_ok=True)
         shutil.copytree(theater_folder_source, theater_folder_dest)
 
         print(f"Creating {mission_file_dest}")
+        missions_folder.mkdir(parents=True, exist_ok=True)
         with zipfile.ZipFile(mission_file_temp, "w") as zipf:
             for file in mission_folder_source.rglob("*"):
                 zipf.write(file, file.relative_to(mission_folder_source))
