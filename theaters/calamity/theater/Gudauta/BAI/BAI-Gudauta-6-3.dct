@@ -1,7 +1,7 @@
 exclusion = "BAI-Gudauta-6"
 name = "BAI-Gudauta-6-2"
-coaltion = "red"
-objtype = "ground"
+coalition = "red"
+objtype = "logistics"
 intel = 1
 priority = 14
 cost = 30

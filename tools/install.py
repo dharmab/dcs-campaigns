@@ -102,7 +102,9 @@ def main() -> None:
 
         print("Configuring DCT")
         cfg_content = cfg_file_dest.read_text()
-        cfg_content = cfg_content.replace("USERPROFILE_HERE", str(Path.home()))
+        cfg_content = cfg_content.replace(
+            "USERPROFILE_HERE\\Saved Games\\DCS", str(saved_games_folder.absolute())
+        )
         cfg_file_dest.write_text(cfg_content)
 
         print(f"Installing {theater_name} theater")

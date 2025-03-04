@@ -1,7 +1,7 @@
 exclusion = "CAS-Gudauta-2"
 name = "CAS-Gudauta-2-1"
-coaltion = "red"
-objtype = "ground"
+coalition = "red"
+objtype = "jtac"
 intel = 4
 priority = 11
 cost = 30

@@ -1,7 +1,7 @@
 exclusion = "Strike-Gudauta-1"
 name = "Strike-Gudauta-1-1"
-coaltion = "red"
-objtype = "ground"
+coalition = "red"
+objtype = "checkpoint"
 intel = 5
 priority = 14
 cost = 30

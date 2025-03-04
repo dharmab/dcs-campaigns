@@ -56,8 +56,8 @@ DCT files are documented [here](https://jtoppins.github.io/dct/designer.html#dct
 ```lua
 exclusion = "STRIKE-Senaki-1"
 name = "STRIKE-Senaki-1-1"
-coaltion = "red"
-objtype = "ground"
+coalition = "red"
+objtype = "logistics"
 intel = 5
 priority = 50
 cost = 60
