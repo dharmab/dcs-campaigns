@@ -30,7 +30,7 @@ def main() -> None:
     args = parser.parse_args()
 
     theater_name = args.theater
-    saved_games_folder = args.install_dir
+    saved_games_folder = Path(args.install_dir)
     tech_folder = saved_games_folder / "Mods" / "Tech"
 
     entry_file_src = Path("dct/entry.lua")

@@ -18,7 +18,7 @@ def main():
     )
     args = parser.parse_args()
 
-    saved_games_folder = args.install_dir
+    saved_games_folder = Path(args.install_dir)
     dct_tech_folder = saved_games_folder / "Mods" / "Tech" / "DCT"
     theater_folder = saved_games_folder / "theater"
     hook_file = saved_games_folder / "Scripts" / "Hooks" / "dct-hook.lua"
