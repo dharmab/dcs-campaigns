@@ -96,7 +96,7 @@ def main() -> None:
         cfg_folder.mkdir(parents=True, exist_ok=True)
 
         shutil.copy(entry_file_src, entry_file_dest)
-        shutil.copytree(lua_folder_source, lua_folder_dest)
+        shutil.copytree(lua_folder_source, lua_folder_dest, dirs_exist_ok=True)
         shutil.copy(hook_file_source, hook_file_dest)
         shutil.copy(cfg_file_source, cfg_file_dest)
 
@@ -109,7 +109,7 @@ def main() -> None:
 
         print(f"Installing {theater_name} theater")
         theater_folder_dest.mkdir(parents=True, exist_ok=True)
-        shutil.copytree(theater_folder_source, theater_folder_dest)
+        shutil.copytree(theater_folder_source, theater_folder_dest, dirs_exist_ok=True)
 
         print(f"Creating {mission_file_dest}")
         missions_folder.mkdir(parents=True, exist_ok=True)
