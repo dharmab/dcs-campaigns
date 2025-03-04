@@ -331,7 +331,8 @@ warehouses =
           },
           AJS37 = {
             initialAmount = 0,
-            unlimited = false,
+            linkDynTempl = 41,
+            unlimited = true,
             wsType = {
               1,
               1,
@@ -341,7 +342,8 @@ warehouses =
           },
           AV8BNA = {
             initialAmount = 0,
-            unlimited = false,
+            linkDynTempl = 11,
+            unlimited = true,
             wsType = {
               1,
               1,
@@ -511,7 +513,8 @@ warehouses =
           },
           ["F-14A-135-GR"] = {
             initialAmount = 0,
-            unlimited = false,
+            linkDynTempl = 13,
+            unlimited = true,
             wsType = {
               1,
               1,
@@ -521,7 +524,8 @@ warehouses =
           },
           ["F-14B"] = {
             initialAmount = 0,
-            unlimited = false,
+            linkDynTempl = 14,
+            unlimited = true,
             wsType = {
               1,
               1,
@@ -531,7 +535,8 @@ warehouses =
           },
           ["F-15C"] = {
             initialAmount = 0,
-            unlimited = false,
+            linkDynTempl = 32,
+            unlimited = true,
             wsType = {
               1,
               1,
@@ -551,7 +556,8 @@ warehouses =
           },
           ["F-15ESE"] = {
             initialAmount = 0,
-            unlimited = false,
+            linkDynTempl = 17,
+            unlimited = true,
             wsType = {
               1,
               1,
@@ -601,7 +607,8 @@ warehouses =
           },
           ["F-16C_50"] = {
             initialAmount = 0,
-            unlimited = false,
+            linkDynTempl = 18,
+            unlimited = true,
             wsType = {
               1,
               1,
@@ -621,7 +628,8 @@ warehouses =
           },
           ["F-4E-45MC"] = {
             initialAmount = 0,
-            unlimited = false,
+            linkDynTempl = 12,
+            unlimited = true,
             wsType = {
               1,
               1,
@@ -701,7 +709,8 @@ warehouses =
           },
           ["FA-18C_hornet"] = {
             initialAmount = 0,
-            unlimited = false,
+            linkDynTempl = 19,
+            unlimited = true,
             wsType = {
               1,
               1,
@@ -801,7 +810,8 @@ warehouses =
           },
           ["JF-17"] = {
             initialAmount = 0,
-            unlimited = false,
+            linkDynTempl = 28,
+            unlimited = true,
             wsType = {
               1,
               1,
@@ -891,7 +901,8 @@ warehouses =
           },
           ["M-2000C"] = {
             initialAmount = 0,
-            unlimited = false,
+            linkDynTempl = 34,
+            unlimited = true,
             wsType = {
               1,
               1,
@@ -1251,7 +1262,8 @@ warehouses =
           },
           ["Mirage-F1EE"] = {
             initialAmount = 0,
-            unlimited = false,
+            linkDynTempl = 31,
+            unlimited = true,
             wsType = {
               1,
               1,
@@ -1641,7 +1653,7 @@ warehouses =
       size = 100,
       speed = 16.666666,
       suppliers = {},
-      unlimitedAircrafts = true,
+      unlimitedAircrafts = false,
       unlimitedFuel = true,
       unlimitedMunitions = true,
       weapons = {},
