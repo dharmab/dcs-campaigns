@@ -2,7 +2,11 @@ dictionary =
 {
 	["DictKey_descriptionNeutralsTask_4"] = "",
 	["DictKey_sortie_5"] = "PROJECT CALAMITY",
-	["DictKey_descriptionText_1"] = "COMM PLAN\
+	["DictKey_descriptionText_1"] = "HOW TO PLAY\
+---\
+Use the F10 - Other menu to request a mission.\
+\
+COMM PLAN\
 ---\
 STRIKE UHF (Primary) 265.0 AM\
 STRIKE VHF (Alternate) 135.0 AM\
