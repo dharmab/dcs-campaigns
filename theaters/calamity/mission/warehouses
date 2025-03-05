@@ -2,7 +2,7 @@ warehouses =
 {
   airports = {
     [12] = {
-      OperatingLevel_Air = 0,
+      OperatingLevel_Air = 10,
       OperatingLevel_Eqp = 10,
       OperatingLevel_Fuel = 10,
       aircrafts = {},
