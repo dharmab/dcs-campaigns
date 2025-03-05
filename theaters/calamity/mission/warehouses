@@ -330,7 +330,7 @@ warehouses =
             },
           },
           AJS37 = {
-            initialAmount = 0,
+            initialAmount = 100,
             linkDynTempl = 41,
             unlimited = true,
             wsType = {
@@ -341,7 +341,7 @@ warehouses =
             },
           },
           AV8BNA = {
-            initialAmount = 0,
+            initialAmount = 100,
             linkDynTempl = 11,
             unlimited = true,
             wsType = {
@@ -512,7 +512,7 @@ warehouses =
             },
           },
           ["F-14A-135-GR"] = {
-            initialAmount = 0,
+            initialAmount = 100,
             linkDynTempl = 13,
             unlimited = true,
             wsType = {
@@ -523,7 +523,7 @@ warehouses =
             },
           },
           ["F-14B"] = {
-            initialAmount = 0,
+            initialAmount = 100,
             linkDynTempl = 14,
             unlimited = true,
             wsType = {
@@ -534,7 +534,7 @@ warehouses =
             },
           },
           ["F-15C"] = {
-            initialAmount = 0,
+            initialAmount = 100,
             linkDynTempl = 32,
             unlimited = true,
             wsType = {
@@ -606,7 +606,7 @@ warehouses =
             },
           },
           ["F-16C_50"] = {
-            initialAmount = 0,
+            initialAmount = 100,
             linkDynTempl = 18,
             unlimited = true,
             wsType = {
@@ -708,7 +708,7 @@ warehouses =
             },
           },
           ["FA-18C_hornet"] = {
-            initialAmount = 0,
+            initialAmount = 100,
             linkDynTempl = 19,
             unlimited = true,
             wsType = {
@@ -809,7 +809,7 @@ warehouses =
             },
           },
           ["JF-17"] = {
-            initialAmount = 0,
+            initialAmount = 100,
             linkDynTempl = 28,
             unlimited = true,
             wsType = {
@@ -900,7 +900,7 @@ warehouses =
             },
           },
           ["M-2000C"] = {
-            initialAmount = 0,
+            initialAmount = 100,
             linkDynTempl = 34,
             unlimited = true,
             wsType = {
@@ -1261,7 +1261,7 @@ warehouses =
             },
           },
           ["Mirage-F1EE"] = {
-            initialAmount = 0,
+            initialAmount = 100,
             linkDynTempl = 31,
             unlimited = true,
             wsType = {
