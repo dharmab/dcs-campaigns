@@ -6457,7 +6457,7 @@ mission =
       47,
     },
   },
-  currentKey = 12620,
+  currentKey = 12809,
   date = {
     Day = 21,
     Month = 6,
@@ -9624,9 +9624,9 @@ mission =
     },
   },
   map = {
-    centerX = -81551.792828685,
-    centerY = 285000,
-    zoom = 2356573.7051793,
+    centerX = -5743.3537382138,
+    centerY = 243789.87392273,
+    zoom = 8089.5508991426,
   },
   maxDictId = 9,
   pictureFileNameB = {},
