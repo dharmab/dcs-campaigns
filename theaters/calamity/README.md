@@ -110,7 +110,7 @@ flowchart LR
 
 We want players to use a variety of weapons and use multiple approaches to complete missions. Most of the enemies they will fight have relatively short threat ranges. For this reason, we restrict access to the latest generation of weapons to encourage players to fight from closer distances, rather than release weapons from outside of any danger.
 
-Players may carry up to 2x AIM-120/SD-10 or 3x AIM-54, restricted by the DCT point buy system.
+Players may carry up to 2x AIM-120/SD-10 or 4x AIM-54, restricted by the DCT point buy system.
 Players will not have access to any GPS guided weapon, restricted by both warehouse limits and the DCT point buy system.
 
 The restriction is not based on a specific time period or era; current generation weapons are permitted as long as they do not use GPS guidance. Historical accuracy is not a goal or constraint.
