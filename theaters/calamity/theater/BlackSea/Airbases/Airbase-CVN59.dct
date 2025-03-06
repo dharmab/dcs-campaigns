@@ -1,10 +1,10 @@
 objtype = "airbase"
-name = "CV-59 USS Forrestal"
+name = "CV-59 Forrestal"
 coalition = "blue"
 subordinates = {
 	"RYOSHI",
 }
-desc = "CV-59 USS Forrestal"
+desc = "CV-59 Forrestal"
 recovery = "land"
 takeoff = "runway"
 cost = 20
