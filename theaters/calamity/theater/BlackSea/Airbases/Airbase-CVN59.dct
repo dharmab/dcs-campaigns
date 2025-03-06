@@ -1,0 +1,10 @@
+objtype = "airbase"
+name = "CV-59 USS Forrestal"
+coalition = "blue"
+subordinates = {
+	"RYOSHI",
+}
+desc = "CV-59 USS Forrestal"
+recovery = "land"
+takeoff = "runway"
+cost = 20
