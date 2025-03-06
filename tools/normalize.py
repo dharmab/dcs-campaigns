@@ -17,7 +17,9 @@ def sort_data(d: typing.Any) -> dict:
 def sort_lua_file(path: pathlib.Path, var: str) -> None:
     data = luadata.read(path, encoding="utf-8")
     sorted_data = sort_data(data)
-    luadata.write(path, sorted_data, prefix=var + " =\n", encoding="utf-8", indent="  ")
+    luadata.write(path, sorted_data, prefix=var + " =\n", encoding="utf-8", indent="\t")
+    with open(path, "a") as f:
+        f.write("\n")
 
 
 def main() -> None:

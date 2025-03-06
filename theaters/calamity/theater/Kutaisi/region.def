@@ -1,4 +1,9 @@
 name = "Kutaisi"
+-- Kutaisi Airport
+location = {
+	x = -285000,
+	y = 685000,
+}
 priority = 40
 links = {
 	["air"] = {

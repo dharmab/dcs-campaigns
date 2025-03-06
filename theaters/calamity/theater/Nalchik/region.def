@@ -1,4 +1,8 @@
 name = "Nalchik"
+location = {
+	x = -125000,
+	y = 760000,
+}
 priority = 40
 links = {
 	["air"] = {

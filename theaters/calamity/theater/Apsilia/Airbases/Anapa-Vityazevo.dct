@@ -1,8 +1,8 @@
 objtype = "airbase"
 name = "Anapa-Vityazevo"
 coalition = 2
-subordinates ={
-"JAEGER",
+subordinates = {
+    "JAEGER",
 }
 desc = "Anapa-Vityazevo"
 recovery = "land"

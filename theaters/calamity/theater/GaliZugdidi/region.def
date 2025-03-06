@@ -1,4 +1,9 @@
 name = "GaliZugdidi"
+-- Zugdidi
+location = {
+	x = -250000,
+	y = 630000,
+}
 priority = 30
 links = {
 	["air"] = {},

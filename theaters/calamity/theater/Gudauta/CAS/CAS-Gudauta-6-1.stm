@@ -1,133 +1,133 @@
 staticTemplate =
 {
-  coalition = {
-    blue = {
-      country = {},
-      name = "blue",
-    },
-    neutrals = {
-      country = {},
-      name = "neutrals",
-    },
-    red = {
-      country = {
-        {
-          id = 81,
-          name = "CJTF Red",
-          vehicle = {
-            group = {
-              {
-                groupId = 4,
-                hidden = false,
-                name = "CAS-Gudauta-6-1",
-                route = {
-                  points = {
-                    {
-                      ETA = 0,
-                      ETA_locked = true,
-                      action = "Off Road",
-                      alt = 8,
-                      alt_type = "BARO",
-                      formation_template = "",
-                      speed = 0,
-                      speed_locked = true,
-                      task = {
-                        id = "ComboTask",
-                        params = {
-                          tasks = {},
-                        },
-                      },
-                      type = "Turning Point",
-                      x = -180337.26494309,
-                      y = 489934.65609752,
-                    },
-                  },
-                  spans = {
-                    {
-                      {
-                        x = -180337.26494309,
-                        y = 489934.65609752,
-                      },
-                      {
-                        x = -180337.26494309,
-                        y = 489934.65609752,
-                      },
-                    },
-                  },
-                },
-                start_time = 0,
-                task = "Ground Nothing",
-                taskSelected = true,
-                tasks = {},
-                uncontrollable = false,
-                units = {
-                  {
-                    coldAtStart = false,
-                    heading = 4.1887902047864,
-                    name = "CAS-Gudauta-6-1-1",
-                    playerCanDrive = false,
-                    skill = "Average",
-                    type = "KAMAZ Truck",
-                    unitId = 30,
-                    x = -180337.26494309,
-                    y = 489934.65609752,
-                  },
-                  {
-                    coldAtStart = false,
-                    heading = 2.3561944901923,
-                    name = "CAS-Gudauta-6-1-4",
-                    playerCanDrive = false,
-                    skill = "Average",
-                    type = "Cobra",
-                    unitId = 32,
-                    x = -180333.6657121,
-                    y = 489956.82527389,
-                  },
-                  {
-                    coldAtStart = false,
-                    heading = 4.5029494701454,
-                    name = "CAS-Gudauta-6-1-2",
-                    playerCanDrive = false,
-                    skill = "Average",
-                    type = "Cobra",
-                    unitId = 31,
-                    x = -180332.88327058,
-                    y = 489926.67519403,
-                  },
-                  {
-                    coldAtStart = false,
-                    heading = 3.682644721708,
-                    name = "CAS-Gudauta-6-1-3",
-                    playerCanDrive = false,
-                    skill = "Average",
-                    type = "KAMAZ Truck",
-                    unitId = 29,
-                    x = -180338.04738461,
-                    y = 489944.67134896,
-                  },
-                },
-                visible = false,
-                x = -180337.26494309,
-                y = 489934.65609752,
-              },
-            },
-          },
-        },
-      },
-      name = "red",
-    },
-  },
-  desc = "",
-  localization = {
-    DEFAULT = {
-      DictKey_descriptionBlueTask_3 = "",
-      DictKey_descriptionNeutralsTask_4 = "",
-      DictKey_descriptionRedTask_2 = "",
-      DictKey_descriptionText_1 = "",
-      DictKey_sortie_5 = "",
-    },
-  },
-  name = "CAS-Gudauta-6-1",
-  requiredModules = {},
-  theatre = "Caucasus",
+	coalition = {
+		blue = {
+			country = {},
+			name = "blue",
+		},
+		neutrals = {
+			country = {},
+			name = "neutrals",
+		},
+		red = {
+			country = {
+				{
+					id = 81,
+					name = "CJTF Red",
+					vehicle = {
+						group = {
+							{
+								groupId = 4,
+								hidden = false,
+								name = "CAS-Gudauta-6-1",
+								route = {
+									points = {
+										{
+											ETA = 0,
+											ETA_locked = true,
+											action = "Off Road",
+											alt = 8,
+											alt_type = "BARO",
+											formation_template = "",
+											speed = 0,
+											speed_locked = true,
+											task = {
+												id = "ComboTask",
+												params = {
+													tasks = {},
+												},
+											},
+											type = "Turning Point",
+											x = -180337.26494309,
+											y = 489934.65609752,
+										},
+									},
+									spans = {
+										{
+											{
+												x = -180337.26494309,
+												y = 489934.65609752,
+											},
+											{
+												x = -180337.26494309,
+												y = 489934.65609752,
+											},
+										},
+									},
+								},
+								start_time = 0,
+								task = "Ground Nothing",
+								taskSelected = true,
+								tasks = {},
+								uncontrollable = false,
+								units = {
+									{
+										coldAtStart = false,
+										heading = 4.1887902047864,
+										name = "CAS-Gudauta-6-1-1",
+										playerCanDrive = false,
+										skill = "Average",
+										type = "KAMAZ Truck",
+										unitId = 30,
+										x = -180337.26494309,
+										y = 489934.65609752,
+									},
+									{
+										coldAtStart = false,
+										heading = 2.3561944901923,
+										name = "CAS-Gudauta-6-1-4",
+										playerCanDrive = false,
+										skill = "Average",
+										type = "Cobra",
+										unitId = 32,
+										x = -180333.6657121,
+										y = 489956.82527389,
+									},
+									{
+										coldAtStart = false,
+										heading = 4.5029494701454,
+										name = "CAS-Gudauta-6-1-2",
+										playerCanDrive = false,
+										skill = "Average",
+										type = "Cobra",
+										unitId = 31,
+										x = -180332.88327058,
+										y = 489926.67519403,
+									},
+									{
+										coldAtStart = false,
+										heading = 3.682644721708,
+										name = "CAS-Gudauta-6-1-3",
+										playerCanDrive = false,
+										skill = "Average",
+										type = "KAMAZ Truck",
+										unitId = 29,
+										x = -180338.04738461,
+										y = 489944.67134896,
+									},
+								},
+								visible = false,
+								x = -180337.26494309,
+								y = 489934.65609752,
+							},
+						},
+					},
+				},
+			},
+			name = "red",
+		},
+	},
+	desc = "",
+	localization = {
+		DEFAULT = {
+			DictKey_descriptionBlueTask_3 = "",
+			DictKey_descriptionNeutralsTask_4 = "",
+			DictKey_descriptionRedTask_2 = "",
+			DictKey_descriptionText_1 = "",
+			DictKey_sortie_5 = "",
+		},
+	},
+	name = "CAS-Gudauta-6-1",
+	requiredModules = {},
+	theatre = "Caucasus",
 }

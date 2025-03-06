@@ -1,4 +1,8 @@
 name = "MineralnyeVody"
+location = {
+	x = -51500,
+	y = 705000,
+}
 priority = 10
 links = {
 	["air"] = {

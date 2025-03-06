@@ -1,4 +1,9 @@
 name = "Apsilia"
+-- Anapa Airport
+location = {
+	x = -5000,
+	y = 245000,
+}
 priority = 1
 links = {
 	["air"] = {},

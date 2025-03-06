@@ -1,4 +1,9 @@
 name = "Alania"
+-- Tskhinvali
+location = {
+	x = -265000,
+	y = 805000,
+}
 priority = 50
 links = {
 	["air"] = {},

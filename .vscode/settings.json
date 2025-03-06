@@ -1,4 +1,13 @@
 {
+    "files.associations": {
+        "*.stm": "lua",
+        "*.dct": "lua",
+        "region.def": "lua",
+        "codenamedb.cfg": "lua",
+        "payloadlimits.cfg": "lua",
+        "restrictedweapons.cfg": "lua",
+        "ui.cfg": "lua",
+    },
     "logViewer.watch": [
         {
             "title": "DCS.log",
@@ -8,9 +17,12 @@
     "Lua.workspace.library": [
         "theaters\\calamity\\mission\\l10n\\DEFAULT\\Moose.lua"
     ],
-    "Lua.diagnostics.globals": [
-        "net",
-        "lfs",
-        "env"
+    "Lua.diagnostics.disable": [
+        "undefined-global",
+        "lowercase-global"
+    ],
+    "Lua.diagnostics.ignoredFiles": "Disable",
+    "Lua.workspace.ignoreDir": [
+        "Moose.lua"
     ]
 }
