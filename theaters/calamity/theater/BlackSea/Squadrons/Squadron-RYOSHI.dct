@@ -1,5 +1,0 @@
-objtype = "squadronplayer"
-name = "RYOSHI"
-coalition = "blue"
-ato = {"CAP", "STRIKE", "BAI", "CAS", "SEAD"}
-airbase = "CV-59 USS Forrestal"

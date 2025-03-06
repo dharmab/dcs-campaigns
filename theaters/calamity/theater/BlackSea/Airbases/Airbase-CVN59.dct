@@ -2,7 +2,7 @@ objtype = "airbase"
 name = "CV-59 Forrestal"
 coalition = "blue"
 subordinates = {
-	"RYOSHI",
+"RYOSHI",
 }
 desc = "CV-59 Forrestal"
 recovery = "land"
