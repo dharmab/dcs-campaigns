@@ -65,7 +65,7 @@ staticTemplate =
 									{
 										coldAtStart = false,
 										heading = 0,
-										name = "SAM-Beslan-2-2-1 primary destroyed",
+										name = "SAM-Beslan-2-2-1 PRIMARY DESTROYED",
 										playerCanDrive = false,
 										skill = "Excellent",
 										type = "SNR_75V",
@@ -76,7 +76,7 @@ staticTemplate =
 									{
 										coldAtStart = false,
 										heading = 0.62412436994823,
-										name = "SAM-Beslan-2-2-2 primary destroyed",
+										name = "SAM-Beslan-2-2-2 PRIMARY DESTROYED",
 										playerCanDrive = false,
 										skill = "Excellent",
 										type = "p-19 s-125 sr",

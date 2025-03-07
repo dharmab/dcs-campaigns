@@ -19,7 +19,7 @@ staticTemplate =
 							{
 								groupId = 53,
 								hidden = false,
-								name = "EWR-Sukhumi-1-EWR Primary Destroyed",
+								name = "EWR-Sukhumi-1-EWR PRIMARY DESTROYED",
 								route = {
 									points = {
 										{

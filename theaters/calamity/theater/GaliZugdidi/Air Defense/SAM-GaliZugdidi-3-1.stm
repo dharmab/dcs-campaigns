@@ -73,7 +73,7 @@ staticTemplate =
 									{
 										coldAtStart = false,
 										heading = 2.0770188267341,
-										name = "SAM-GaliZugdidi-3-1-SA2-3 Primary Destroyed",
+										name = "SAM-GaliZugdidi-3-1-SA2-3 PRIMARY DESTROYED",
 										playerCanDrive = false,
 										skill = "Average",
 										type = "SNR_75V",
@@ -84,7 +84,7 @@ staticTemplate =
 									{
 										coldAtStart = false,
 										heading = 2.0770188267341,
-										name = "SAM-GaliZugdidi-3-1-SA2-4 Primary Destroyed",
+										name = "SAM-GaliZugdidi-3-1-SA2-4 PRIMARY DESTROYED",
 										playerCanDrive = false,
 										skill = "Average",
 										type = "p-19 s-125 sr",

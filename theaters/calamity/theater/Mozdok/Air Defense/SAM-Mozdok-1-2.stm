@@ -53,7 +53,7 @@ staticTemplate =
 									{
 										coldAtStart = false,
 										heading = 0,
-										name = "SAM-Mozdok-1-2-1 primary destroyed",
+										name = "SAM-Mozdok-1-2-1 PRIMARY DESTROYED",
 										playerCanDrive = false,
 										skill = "Excellent",
 										type = "RLS_19J6",
@@ -163,7 +163,7 @@ staticTemplate =
 									{
 										coldAtStart = false,
 										heading = 0,
-										name = "SAM-Mozdok-1-2-11 primary destroyed",
+										name = "SAM-Mozdok-1-2-11 PRIMARY DESTROYED",
 										playerCanDrive = false,
 										skill = "Excellent",
 										type = "RPC_5N62V",
