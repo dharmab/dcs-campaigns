@@ -17,6 +17,7 @@
     "Lua.workspace.library": [
         "theaters\\calamity\\mission\\l10n\\DEFAULT\\Moose.lua"
     ],
+    "Lua.runtime.version": "Lua 5.1",
     "Lua.diagnostics.disable": [
         "undefined-global",
         "lowercase-global"
