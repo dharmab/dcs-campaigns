@@ -63,7 +63,7 @@ staticTemplate =
 									{
 										coldAtStart = false,
 										heading = 1.7913230362325,
-										name = "SAM-Kutaisi-1-1-1 primary destoyed",
+										name = "SAM-Kutaisi-1-1-1 PRIMARY DESTROYED",
 										playerCanDrive = false,
 										skill = "Excellent",
 										type = "Kub 1S91 str",
@@ -107,7 +107,7 @@ staticTemplate =
 									{
 										coldAtStart = false,
 										heading = 1.7913230362325,
-										name = "SAM-Kutaisi-1-1-1",
+										name = "SAM-Kutaisi-1-1-8",
 										playerCanDrive = false,
 										skill = "Excellent",
 										type = "Kub 2P25 ln",
