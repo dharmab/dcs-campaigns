@@ -122,7 +122,7 @@ options =
 		width = 2560,
 	},
 	miscellaneous = {
-		Coordinate_Display = "Precise Lat Long",
+		Coordinate_Display = "Metric",
 		F2_view_effects = 1,
 		TrackIR_external_views = true,
 		accidental_failures = false,

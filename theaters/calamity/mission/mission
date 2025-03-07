@@ -15261,7 +15261,7 @@ mission =
 			47,
 		},
 	},
-	currentKey = 18340,
+	currentKey = 18694,
 	date = {
 		Day = 21,
 		Month = 6,
@@ -18432,7 +18432,7 @@ mission =
 		centerY = 243038.93121476,
 		zoom = 488.48153790405,
 	},
-	maxDictId = 12,
+	maxDictId = 15,
 	pictureFileNameB = {},
 	pictureFileNameN = {},
 	pictureFileNameR = {},
@@ -18461,19 +18461,13 @@ mission =
 	theatre = "Caucasus",
 	trig = {
 		actions = {
-			"a_do_script_file(getValueResourceByKey(\"ResKey_Action_6\"));",
-			"a_do_script_file(getValueResourceByKey(\"ResKey_Action_7\"));",
-			"a_do_script_file(getValueResourceByKey(\"ResKey_Action_9\"));",
-			"a_do_script_file(getValueResourceByKey(\"ResKey_Action_8\"));",
-			"a_end_mission(\"blue\", getValueDictByKey(\"DictKey_ActionText_10\"), 0); mission.trig.func[5]=nil;",
-			"a_end_mission(\"red\", getValueDictByKey(\"DictKey_ActionText_11\"), 0); mission.trig.func[6]=nil;",
-			"a_end_mission(\"neutrals\", getValueDictByKey(\"DictKey_ActionText_12\"), 0); mission.trig.func[7]=nil;",
+			"a_do_script_file(getValueResourceByKey(\"ResKey_Action_6\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_13\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_14\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_15\")); mission.trig.func[1]=nil;",
+			"a_end_mission(\"blue\", getValueDictByKey(\"DictKey_ActionText_10\"), 0); mission.trig.func[2]=nil;",
+			"a_end_mission(\"red\", getValueDictByKey(\"DictKey_ActionText_11\"), 0); mission.trig.func[3]=nil;",
+			"a_end_mission(\"neutrals\", getValueDictByKey(\"DictKey_ActionText_12\"), 0); mission.trig.func[4]=nil;",
 		},
 		conditions = {
-			"return(true)",
-			"return(true)",
-			"return(true)",
-			"return(true)",
+			"return(c_time_after(10) )",
 			"return(c_flag_is_true(\"10\") )",
 			"return(c_flag_is_true(\"20\") )",
 			"return(c_flag_is_true(\"30\") )",
@@ -18486,21 +18480,14 @@ mission =
 			true,
 			true,
 			true,
-			true,
-			true,
-			true,
 		},
 		func = {
-			[5] = "if mission.trig.conditions[5]() then mission.trig.actions[5]() end",
-			[6] = "if mission.trig.conditions[6]() then mission.trig.actions[6]() end",
-			[7] = "if mission.trig.conditions[7]() then mission.trig.actions[7]() end",
-		},
-		funcStartup = {
 			"if mission.trig.conditions[1]() then mission.trig.actions[1]() end",
 			"if mission.trig.conditions[2]() then mission.trig.actions[2]() end",
 			"if mission.trig.conditions[3]() then mission.trig.actions[3]() end",
 			"if mission.trig.conditions[4]() then mission.trig.actions[4]() end",
 		},
+		funcStartup = {},
 	},
 	triggers = {
 		zones = {},
@@ -18512,47 +18499,31 @@ mission =
 					file = "ResKey_Action_6",
 					predicate = "a_do_script_file",
 				},
-			},
-			comment = "DCT Init",
-			eventlist = "",
-			predicate = "triggerStart",
-			rules = {},
-		},
-		{
-			actions = {
 				{
-					file = "ResKey_Action_7",
+					file = "ResKey_Action_13",
+					predicate = "a_do_script_file",
+				},
+				{
+					file = "ResKey_Action_14",
+					predicate = "a_do_script_file",
+				},
+				{
+					file = "ResKey_Action_15",
 					predicate = "a_do_script_file",
 				},
 			},
-			comment = "MOOSE Init",
+			comment = "INIT",
 			eventlist = "",
-			predicate = "triggerStart",
-			rules = {},
-		},
-		{
-			actions = {
+			predicate = "triggerOnce",
+			rules = {
 				{
-					file = "ResKey_Action_9",
-					predicate = "a_do_script_file",
+					coalitionlist = "red",
+					predicate = "c_time_after",
+					seconds = 10,
+					unitType = "ALL",
+					zone = "",
 				},
 			},
-			comment = "MOOSE Settings",
-			eventlist = "",
-			predicate = "triggerStart",
-			rules = {},
-		},
-		{
-			actions = {
-				{
-					file = "ResKey_Action_8",
-					predicate = "a_do_script_file",
-				},
-			},
-			comment = "A2A",
-			eventlist = "",
-			predicate = "triggerStart",
-			rules = {},
 		},
 		{
 			actions = {
