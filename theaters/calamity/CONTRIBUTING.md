@@ -145,7 +145,7 @@ For completeness the death goal keywords are reproduced here:
 
 Examples:
 
-  - BAI template to destroy an artillery battery defended by AAA guns. Put the artillery guns in a group named "BAI-RegionName-N-N PRIMARY DESTROYED". Put the AAA in a group named "BAI-RegionName-N-N AAA". The template is considered complete if the overall health of the artillery guns is less than 10%, even if the AAA is still alive.
+  - BAI template to destroy an artillery battery defended by AAA guns. Put the artillery guns in a group named "BAI-RegionName-N-N Primary Destroyed". Put the AAA in a group named "BAI-RegionName-N-N AAA". The template is considered complete if the overall health of the artillery guns is less than 10%, even if the AAA is still alive.
   - CAS template to engage mechanized infantry. Put the IFVs in a group named "CAS-RegionName-N-N primary incapacitated". Put the infantry in a group named "CAS-RegionName-N-N infantry". The template is considered complete if the IFVs are heavily damaged, even if the infantry are still alive.
   - Strike template to destroy a checkpoint. Name the largest static objects in the checkpoint "Strike-RegionName-N-N primary damaged N". The template is considered complete if the checkpoint takes partial damage.
 

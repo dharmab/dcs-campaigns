@@ -51,7 +51,7 @@ staticTemplate =
 									{
 										coldAtStart = false,
 										heading = 0.5235987755983,
-										name = "SAM-Sukhumi-3-3-SA3-1 PRIMARY DESTROYED ",
+										name = "SAM-Sukhumi-3-3-SA3-1 Primary Destroyed ",
 										playerCanDrive = false,
 										skill = "High",
 										type = "p-19 s-125 sr",
@@ -172,7 +172,7 @@ staticTemplate =
 									{
 										coldAtStart = false,
 										heading = 6.029936403759,
-										name = "SAM-Sukhumi-3-3-SA3-12 PRIMARY DESTROYED ",
+										name = "SAM-Sukhumi-3-3-SA3-12 Primary Destroyed ",
 										playerCanDrive = false,
 										skill = "High",
 										type = "snr s-125 tr",

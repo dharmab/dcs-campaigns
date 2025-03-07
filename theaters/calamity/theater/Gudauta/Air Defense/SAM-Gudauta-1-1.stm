@@ -51,7 +51,7 @@ staticTemplate =
 									{
 										coldAtStart = false,
 										heading = 5.6025068989018,
-										name = "SAM Gudata 1-1-SA3-1 PRIMARY DESTROYED",
+										name = "SAM Gudata 1-1-SA3-1 Primary Destroyed",
 										playerCanDrive = false,
 										skill = "High",
 										type = "p-19 s-125 sr",
@@ -172,7 +172,7 @@ staticTemplate =
 									{
 										coldAtStart = false,
 										heading = 4.8256592198829,
-										name = "SAM Gudata 1-1-SA3-12 PRIMARY DESTROYED",
+										name = "SAM Gudata 1-1-SA3-12 Primary Destroyed",
 										playerCanDrive = false,
 										skill = "High",
 										type = "snr s-125 tr",

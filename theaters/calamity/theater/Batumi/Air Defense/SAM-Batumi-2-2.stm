@@ -64,7 +64,7 @@ staticTemplate =
 									{
 										coldAtStart = false,
 										heading = 6.2308254296198,
-										name = "SAM-Batumi-2-2-1 PRIMARY DESTROYED",
+										name = "SAM-Batumi-2-2-1 Primary Destroyed",
 										playerCanDrive = false,
 										skill = "Excellent",
 										type = "snr s-125 tr",

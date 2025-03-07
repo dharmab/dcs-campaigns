@@ -51,7 +51,7 @@ staticTemplate =
 									{
 										coldAtStart = false,
 										heading = 0,
-										name = "SAM-Kobuleti-2-3-1 PRIMARY DESTROYED",
+										name = "SAM-Kobuleti-2-3-1 Primary Destroyed",
 										playerCanDrive = false,
 										skill = "High",
 										type = "Kub 1S91 str",
