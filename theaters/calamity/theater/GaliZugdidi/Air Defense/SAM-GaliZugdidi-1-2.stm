@@ -51,7 +51,7 @@ staticTemplate =
 									{
 										coldAtStart = false,
 										heading = 5.7595865315813,
-										name = "SAM-GaliZugdidi-1-2-SA3-1 Primary Destroyed",
+										name = "SAM-GaliZugdidi-1-2-SA3-1 PRIMARY DESTROYED",
 										playerCanDrive = false,
 										skill = "High",
 										type = "p-19 s-125 sr",

@@ -72,7 +72,7 @@ staticTemplate =
 									{
 										coldAtStart = false,
 										heading = 4.5352698789043,
-										name = "EWR-Senaki-1-EWR-2 Primary Destroyed",
+										name = "EWR-Senaki-1-EWR-2 PRIMARY DESTROYED",
 										playerCanDrive = false,
 										skill = "High",
 										type = "FPS-117 Dome",

@@ -73,7 +73,7 @@ staticTemplate =
 									{
 										coldAtStart = false,
 										heading = 5.235987755983,
-										name = "SAM-Gudauta-4-3-SA2-3 Primary Destroyed",
+										name = "SAM-Gudauta-4-3-SA2-3 PRIMARY DESTROYED",
 										playerCanDrive = false,
 										skill = "Average",
 										type = "SNR_75V",
@@ -84,7 +84,7 @@ staticTemplate =
 									{
 										coldAtStart = false,
 										heading = 5.235987755983,
-										name = "SAM-Gudauta-4-3-SA2-4 Primary Destroyed ",
+										name = "SAM-Gudauta-4-3-SA2-4 PRIMARY DESTROYED ",
 										playerCanDrive = false,
 										skill = "Average",
 										type = "p-19 s-125 sr",
