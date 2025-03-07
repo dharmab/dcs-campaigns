@@ -159,7 +159,7 @@ function StaticAsset:getLocation()
 		local vec2, n
 		local json = require("libs.json")
 		for idx, grp in pairs(self._assets) do
-			self._logger:debug("%s : grp(%d).data: %s",
+			self._logger:debug("%s : grp(%s).data: %s",
 				self.name, idx, json:encode_pretty(grp.data))
 			vec2, n = dctutils.centroid2D(grp.data, vec2, n)
 		end
