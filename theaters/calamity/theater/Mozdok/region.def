@@ -1,4 +1,8 @@
 name = "Mozdok"
+location = {
+	x = -84000,
+	y = 835000,
+}
 priority = 90
 links = {
 	["air"] = {

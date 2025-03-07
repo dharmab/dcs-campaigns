@@ -1,4 +1,9 @@
 name = "KashuriGori"
+-- Gori
+location = {
+	x = -290000,
+	y = 820000,
+}
 priority = 50
 links = {
 	["air"] = {},

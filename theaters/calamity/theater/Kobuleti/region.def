@@ -1,4 +1,8 @@
 name = "Kobuleti"
+location = {
+	x = -320000,
+	y = 635000,
+}
 priority = 40
 links = {
 	["air"] = {

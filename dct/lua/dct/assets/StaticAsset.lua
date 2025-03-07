@@ -9,12 +9,12 @@
 --]]
 
 require("math")
-local utils    = require("libs.utils")
-local enum     = require("dct.enum")
-local dctutils = require("dct.utils")
-local vector   = require("dct.libs.vector")
-local Goal     = require("dct.Goal")
-local AssetBase= require("dct.assets.AssetBase")
+local utils       = require("libs.utils")
+local enum        = require("dct.enum")
+local dctutils    = require("dct.utils")
+local vector      = require("dct.libs.vector")
+local Goal        = require("dct.Goal")
+local AssetBase   = require("dct.assets.AssetBase")
 
 local StaticAsset = require("libs.namedclass")("StaticAsset", AssetBase)
 function StaticAsset:__init(template)
@@ -157,7 +157,10 @@ end
 function StaticAsset:getLocation()
 	if self._location == nil then
 		local vec2, n
-		for _, grp in pairs(self._assets) do
+		local json = require("libs.json")
+		for idx, grp in pairs(self._assets) do
+			self._logger:debug("%s : grp(%s).data: %s",
+				self.name, idx, json:encode_pretty(grp.data))
 			vec2, n = dctutils.centroid2D(grp.data, vec2, n)
 		end
 		vec2.z = nil
@@ -173,8 +176,8 @@ end
 function StaticAsset:getObjectNames()
 	local keyset = {}
 	local n      = 0
-	for k,_ in pairs(self._assets) do
-		n = n+1
+	for k, _ in pairs(self._assets) do
+		n = n + 1
 		keyset[n] = k
 	end
 	return keyset

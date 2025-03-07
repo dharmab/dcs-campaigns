@@ -1,4 +1,9 @@
 name = "BlackSea"
+-- center of 37T FG
+location = {
+	x = -320000,
+	y = 555000,
+}
 priority = 10
 links = {
 	["air"] = {},

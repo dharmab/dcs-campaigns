@@ -1,4 +1,8 @@
 name = "Senaki"
+location = {
+	x = -280000,
+	y = 647500,
+}
 priority = 40
 links = {
 	["air"] = {

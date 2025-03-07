@@ -1,0 +1,9 @@
+objtype = "airbase"
+name = "Anapa-Vityazevo"
+coalition = 2
+subordinates = {
+    "JAEGER",
+}
+desc = "Anapa-Vityazevo"
+recovery = "land"
+takeoff = "runway"

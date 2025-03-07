@@ -1,6 +1,8 @@
 objtype = "sam"
 coalition = "red"
 intel = 3
+cost = 0
+priority = 10
 exclusion = "SAM-Kutaisi-3"
 desc = [[A long-range SA-5 site is positioned near the village of Khoni, around 9 miles northwest of Kutaisi Airport..
 
