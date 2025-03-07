@@ -1,6 +1,8 @@
 objtype = "sam"
 coalition = "red"
 intel = 3
+cost = 0
+priority = 10
 exclusion = "SAM-Kutaisi-2"
 desc = [[A long-range SA-5 site is positioned near the village of Gezati, along the Tskhenistsqali river.
 
