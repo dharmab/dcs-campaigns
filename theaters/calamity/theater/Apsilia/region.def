@@ -6,9 +6,13 @@ location = {
 }
 priority = 1
 links = {
-	["air"] = {},
+	["air"] = {
+		"Gudauta",
+		"Sukhumi",
+		"Ambrolauri",
+		"Alania",
+	},
 	["land"] = {
-		"MineralnyeVody",
 		"Gudauta",
 	},
 	["sea"] = {
