@@ -7,7 +7,7 @@ location = {
 priority = 50
 links = {
 	["air"] = {
-		"AmbroLauri",
+		"Ambrolauri",
 		"SenakiKutaisi",
 		"Alania",
 		"Tbilisi",
