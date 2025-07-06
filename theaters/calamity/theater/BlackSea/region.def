@@ -6,13 +6,16 @@ location = {
 }
 priority = 10
 links = {
-	["air"] = {},
+	["air"] = {
+		"Apsilia",
+	},
 	["land"] = {},
 	["sea"] = {
 		"Apsilia",
 		"Gudauta",
+		"GaliZugdidi",
 		"Sukhumi",
-		"Poti",
-		"Batumi",
+		"SenakiKutaisi",
+		"Kobuleti"",
 	},
 }
