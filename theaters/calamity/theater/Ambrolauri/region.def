@@ -1,23 +1,21 @@
 name = "Senaki"
 location = {
-	x = -280000,
-	y = 647500,
+	x = -215000,
+	y = 700000,
 }
 priority = 40
 links = {
 	["air"] = {
-		"Batumi",
-		"Gudauta",
-		"Kobuleti",
-		"Kutaisi",
+		"Apsilia",
 		"Sukhumi",
-		"Tbilisi",
+		"GaliZugdidi",
+		"SenakiKutaisi",
+		"Alania",
+		"KashuriGori",
 	},
 	["land"] = {
+		"SenakiKutaisi",
 		"GaliZugdidi",
-		"Kobuleti",
-		"Kutaisi",
-		"Poti",
 	},
 	["sea"] = {},
 }
