@@ -1,0 +1,12 @@
+objtype = "sam"
+coalition = "red"
+intel = 3
+cost = 0
+priority = 10
+regenerate = true
+exclusion = "SAM-Kutaisi-5"
+desc = [[An SA-5 at Kutaisi Airbase is protecting the region.
+
+Primary Objective: Destroy the SA-5
+
+]]

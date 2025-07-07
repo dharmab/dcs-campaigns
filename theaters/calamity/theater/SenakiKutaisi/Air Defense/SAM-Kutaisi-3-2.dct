@@ -1,0 +1,12 @@
+objtype = "sam"
+coalition = "red"
+intel = 3
+cost = 0
+priority = 10
+regenerate = true
+exclusion = "SAM-Kutaisi-3"
+desc = [[An SA-3 is located southeast of Kutaisi Airbase.
+
+Primary Objective: Destroy the SA-3
+
+]]
