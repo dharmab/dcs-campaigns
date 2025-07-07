@@ -11,7 +11,7 @@ staticTemplate =
 		},
 		red = {
 			country = {
-				[4] = {
+				 {
 					id = 81,
 					name = "CJTF Red",
 					vehicle = {
