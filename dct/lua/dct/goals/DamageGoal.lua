@@ -66,7 +66,7 @@ function DamageGoal:_afterspawn()
 
 	local life = getlife(obj)
 	if life == nil or life < 1 then
-		Logger:error("_afterspawn() - object '%s' initial life value is nil or "..
+		Logger:error("_afterspawn() - object '%s' initial life value is nil or " ..
 			"below 1: %s", tostring(self.name), tostring(life))
 		self._maxlife = 1
 	else
@@ -108,7 +108,7 @@ function DamageGoal:getStatus()
 	Logger:debug("getStatus() - name: '%s'; health: %.2f; maxlife: %.2f",
 		self.name, health, self._maxlife)
 
-	local damagetaken = (1 - (health/self._maxlife)) * 100
+	local damagetaken = (1 - (health / self._maxlife)) * 100
 	if damagetaken > self._tgtdamage then
 		self:_setComplete()
 		return 100

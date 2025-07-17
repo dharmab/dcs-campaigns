@@ -4,9 +4,9 @@
 -- Implements a Observable interface
 --]]
 
-local class = require("libs.class")
-local utils = require("libs.utils")
-local enum  = require("dct.enum")
+local class      = require("libs.class")
+local utils      = require("libs.utils")
+local enum       = require("dct.enum")
 
 local Observable = class()
 function Observable:__init(logger)
@@ -25,8 +25,8 @@ function Observable:addObserver(func, obj, name)
 	name = name or "unknown"
 
 	if self._observers[obj] ~= nil then
-		self._logger:error("'"..name.."' obj("..tostring(obj)..
-			") already set - skipping "..debug.traceback())
+		self._logger:error("'" .. name .. "' obj(" .. tostring(obj) ..
+			") already set - skipping " .. debug.traceback())
 		return
 	end
 	self._logger:debug("adding handler(%s)", name)
@@ -49,12 +49,12 @@ function Observable:_notify(event)
 end
 
 if dct.settings and dct.settings.server and
-   dct.settings.server.profile then
+		dct.settings.server.profile then
 	require("os")
 	function Observable:notify(event)
 		local tstart = os.clock()
 		self:_notify(event)
-		self._logger:warn("notify time: %5.2fms", (os.clock()-tstart)*1000)
+		self._logger:warn("notify time: %5.2fms", (os.clock() - tstart) * 1000)
 	end
 else
 	function Observable:notify(event)

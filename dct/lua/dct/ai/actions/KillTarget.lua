@@ -17,7 +17,7 @@ function KillTarget:__init(tgtasset)
 	self.tgtname = tgtasset.name
 	self._complete = tgtasset:isDead()
 	tgtasset:addObserver(self.onDCTEvent, self,
-		self.__clsname..".onDCTEvent")
+		self.__clsname .. ".onDCTEvent")
 end
 
 function KillTarget:onDCTEvent(event)

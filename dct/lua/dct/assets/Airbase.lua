@@ -71,7 +71,7 @@ local AssetBase     = require("dct.assets.AssetBase")
 local Marshallable  = require("dct.libs.Marshallable")
 local State         = require("dct.libs.State")
 
-local statetypes = {
+local statetypes    = {
 	["OPERATIONAL"] = 1,
 	["REPAIRING"]   = 2,
 	["CAPTURED"]    = 3,
@@ -85,7 +85,7 @@ local CapturedState = class("Captured", State, Marshallable)
 function CapturedState:__init()
 	Marshallable.__init(self)
 	self.type = statetypes.CAPTURED
-	self:_addMarshalNames({"type",})
+	self:_addMarshalNames({ "type", })
 end
 
 function CapturedState:enter(asset)
@@ -105,10 +105,10 @@ local OperationalState = class("Operational", State, Marshallable)
 local RepairingState = class("Repairing", State, Marshallable)
 function RepairingState:__init()
 	Marshallable.__init(self)
-	self.type = statetypes.REPAIRING
-	self.timeout = 12*60*60 -- 12 hour repair time
+	self.type    = statetypes.REPAIRING
+	self.timeout = 12 * 60 * 60 -- 12 hour repair time
 	self.ctime   = timer.getAbsTime()
-	self:_addMarshalNames({"type", "timeout",})
+	self:_addMarshalNames({ "type", "timeout", })
 end
 
 -- TODO: if we want to make the repair timer variable we can do that
@@ -129,7 +129,7 @@ end
 function RepairingState:onDCTEvent(asset, event)
 	local state = nil
 	if event.id == dctenum.event.DCT_EVENT_CAPTURED and
-	   event.target.name == asset.name then
+			event.target.name == asset.name then
 		state = CapturedState()
 	end
 	-- TODO: listen for hit events and extend the repair timer
@@ -149,7 +149,7 @@ end
 function OperationalState:__init()
 	Marshallable.__init(self)
 	self.type = statetypes.OPERATIONAL
-	self:_addMarshalNames({"type", })
+	self:_addMarshalNames({ "type", })
 end
 
 function OperationalState:enter(asset)
@@ -182,7 +182,7 @@ function OperationalState:onDCTEvent(asset, event)
 	--  * S_EVENT_HIT - no need to handle at this time
 	--  * S_EVENT_DEAD - no need to handle at this time
 	--]]
-	asset._logger:debug("operational state: onDCTEvent called event.id"..
+	asset._logger:debug("operational state: onDCTEvent called event.id" ..
 		event.id)
 end
 
@@ -200,7 +200,7 @@ local statemap = {
 local function associate_slots(ab)
 	local filter = function(a)
 		if a.type == dctenum.assetType.PLAYERGROUP and
-		   a.airbase == ab.name and a.owner == ab.owner then
+				a.airbase == ab.name and a.owner == ab.owner then
 			return true
 		end
 		return false
@@ -258,8 +258,8 @@ function AirbaseAsset:_completeinit(template)
 	self._tplnames    = template.subordinates
 	self.takeofftype  = template.takeofftype
 	self.recoverytype = template.recoverytype
-	self._tpldata = self._tpldata or {}
-	self.state = OperationalState()
+	self._tpldata     = self._tpldata or {}
+	self.state        = OperationalState()
 	self.state:enter(self)
 end
 
@@ -372,12 +372,12 @@ function AirbaseAsset:generate(assetmgr, region)
 	for _, tplname in ipairs(self._tplnames or {}) do
 		self._logger:debug("subordinate template: %s", tplname)
 		local tpl = region:getTemplateByName(tplname)
-		assert(tpl, string.format("runtime error: airbase(%s) defines "..
+		assert(tpl, string.format("runtime error: airbase(%s) defines " ..
 			"a subordinate template of name '%s', does not exist",
 			self.name, tplname))
 		assert(allowedtpltypes[tpl.objtype],
-			string.format("runtime error: airbase(%s) defines "..
-				"a subordinate template of name '%s' and type: %d ;"..
+			string.format("runtime error: airbase(%s) defines " ..
+				"a subordinate template of name '%s' and type: %d ;" ..
 				"not supported type", self.name, tplname, tpl.objtype))
 		if tpl.coalition == self.owner then
 			tpl.airbase = self.name

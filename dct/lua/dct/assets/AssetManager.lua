@@ -4,14 +4,14 @@
 -- Provides functions to define and manage Assets.
 --]]
 
-local checklib = require("libs.check")
-local utils    = require("libs.utils")
-local enum     = require("dct.enum")
-local dctutils = require("dct.utils")
-local Command  = require("dct.Command")
-local Observable = require("dct.libs.Observable")
+local checklib     = require("libs.check")
+local utils        = require("libs.utils")
+local enum         = require("dct.enum")
+local dctutils     = require("dct.utils")
+local Command      = require("dct.Command")
+local Observable   = require("dct.libs.Observable")
 
-local assetpaths = {
+local assetpaths   = {
 	"dct.assets.Airbase",
 	"dct.assets.Airspace",
 	"dct.assets.Player",
@@ -56,7 +56,7 @@ function AssetManager:__init(theater)
 		local obj = require(path)
 		for _, assettype in ipairs(obj.assettypes()) do
 			assert(self._factoryclasses[assettype] == nil,
-				"object already registered for type: "..
+				"object already registered for type: " ..
 				utils.getkey(enum.assetType, assettype))
 			self._factoryclasses[assettype] = obj
 		end
@@ -64,12 +64,12 @@ function AssetManager:__init(theater)
 
 	theater:addObserver(self.onDCSEvent, self, "AssetManager.onDCSEvent")
 	theater:queueCommand(self.updaterate,
-		Command(self.__clsname..".update", self.update, self))
+		Command(self.__clsname .. ".update", self.update, self))
 end
 
 function AssetManager:factory(assettype)
 	local asset = self._factoryclasses[assettype]
-	assert(asset, "unsupported asset type: "..
+	assert(asset, "unsupported asset type: " ..
 		utils.getkey(enum.assetType, assettype))
 	return asset
 end
@@ -79,7 +79,7 @@ function AssetManager:remove(asset)
 		return
 	end
 
-	self._logger:debug("Removing asset: "..asset.name)
+	self._logger:debug("Removing asset: " .. asset.name)
 
 	asset:removeObserver(self)
 	self._assetset[asset.name] = nil
@@ -95,15 +95,15 @@ end
 
 function AssetManager:add(asset)
 	assert(asset ~= nil, "value error: asset object must be provided")
-	assert(self._assetset[asset.name] == nil, "asset name ('"..
-		asset.name.."') already exists")
+	assert(self._assetset[asset.name] == nil, "asset name ('" ..
+		asset.name .. "') already exists")
 
 	if asset:isDead() then
 		self._logger:debug("AssetManager:add - not adding dead asset: %s", asset.name)
 		return
 	end
 
-	self._logger:debug("Adding asset: "..asset.name)
+	self._logger:debug("Adding asset: " .. asset.name)
 
 	self._assetset[asset.name] = asset
 	asset:addObserver(self.onDCSEvent, self, "AssetManager.onDCSEvent")
@@ -199,7 +199,7 @@ function AssetManager:getTargets(requestingside, assettypelist)
 
 	for tgtname, tgttype in pairs(self._sideassets[enemy].assets) do
 		if filterlist[tgttype] ~= nil and
-		   not self._assetset[tgtname].ignore then
+				not self._assetset[tgtname].ignore then
 			tgtlist[tgtname] = tgttype
 		end
 	end
@@ -244,8 +244,8 @@ function AssetManager:doOneObject(obj, event)
 
 	local name = tostring(obj:getName())
 	if obj.className_ ~= "Airbase" and
-	   obj:getCategory() == Object.Category.UNIT and
-	   obj:getGroup() ~= nil then
+			obj:getCategory() == Object.Category.UNIT and
+			obj:getGroup() ~= nil then
 		name = obj:getGroup():getName()
 	end
 
@@ -275,9 +275,9 @@ function AssetManager:onDCSEvent(event)
 		--[world.event.S_EVENT_UNIT_LOST]     = true,
 	}
 	local objmap = {
-		[world.event.S_EVENT_HIT]  = "target", -- type: Object
-		[world.event.S_EVENT_KILL] = "target", -- type: Unit
-		[world.event.S_EVENT_LAND] = "place", -- type: Object
+		[world.event.S_EVENT_HIT]     = "target", -- type: Object
+		[world.event.S_EVENT_KILL]    = "target", -- type: Unit
+		[world.event.S_EVENT_LAND]    = "place", -- type: Object
 		[world.event.S_EVENT_TAKEOFF] = "place", -- type: Object
 	}
 

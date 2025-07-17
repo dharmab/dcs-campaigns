@@ -6,9 +6,9 @@
 --]]
 
 require("lfs")
-local enum     = require("dct.enum")
-local dctutils = require("dct.utils")
-local settings = _G.dct.settings
+local enum        = require("dct.enum")
+local dctutils    = require("dct.utils")
+local settings    = _G.dct.settings
 
 local isAAMissile = {
 	[Weapon.MissileCategory.AAM] = true,
@@ -39,15 +39,15 @@ local function totalPayload(grp, limits)
 
 	-- tally weapon costs
 	for _, wpn in ipairs(payload or {}) do
-		local wpnname = dctutils.trimTypeName(wpn.desc.typeName)
-		local wpncnt  = wpn.count
+		local wpnname     = dctutils.trimTypeName(wpn.desc.typeName)
+		local wpncnt      = wpn.count
 		local restriction = restrictedWeapons[wpnname] or {}
-		local category = restriction.category or defaultCategory(wpn)
-		local cost = restriction.cost or 0
+		local category    = restriction.category or defaultCategory(wpn)
+		local cost        = restriction.cost or 0
 
 		if category ~= nil then
 			total[category].current =
-				total[category].current + (wpncnt * cost)
+					total[category].current + (wpncnt * cost)
 
 			table.insert(total[category].payload, {
 				["name"] = wpn.desc.displayName,
@@ -87,8 +87,8 @@ function loadout.addmenu(asset, menu, handler)
 	local name = asset.name
 	return missionCommands.addCommandForGroup(gid,
 		"Check Payload", menu, handler, {
-			["name"]   = name,
-			["type"]   = enum.uiRequestType.CHECKPAYLOAD,
+			["name"] = name,
+			["type"] = enum.uiRequestType.CHECKPAYLOAD,
 		})
 end
 

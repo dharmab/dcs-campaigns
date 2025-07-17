@@ -1,269 +1,234 @@
-staticTemplate = 
+staticTemplate =
 {
-	coalition = 
-	{
-		neutrals = 
-		{
-			name = "neutrals",
+	coalition = {
+		blue = {
 			country = {},
-		}, -- end of neutrals
-		blue = 
-		{
 			name = "blue",
+		},
+		neutrals = {
 			country = {},
-		}, -- end of blue
-		red = 
-		{
-			name = "red",
-			country = 
-			{
-				 
+			name = "neutrals",
+		},
+		red = {
+			country = {
 				{
 					id = 81,
-					vehicle = 
-					{
-						group = 
-						{
-							 
+					name = "CJTF Red",
+					vehicle = {
+						group = {
 							{
-								visible = false,
-								tasks = {},
-								uncontrollable = false,
-								route = 
-								{
-									spans = {},
-									points = 
-									{
-										 
-										{
-											alt = 188,
-											type = "Turning Point",
-											ETA = 0,
-											alt_type = "BARO",
-											formation_template = "",
-											y = 525740.32400073,
-											x = -196029.72493958,
-											ETA_locked = true,
-											speed = 0,
-											action = "Off Road",
-											task = 
-											{
-												id = "ComboTask",
-												params = 
-												{
-													tasks = {},
-												}, -- end of params
-											}, -- end of task
-											speed_locked = true,
-										}, -- end of [1]
-									}, -- end of points
-								}, -- end of route
 								groupId = 103,
 								hidden = false,
-								units = 
-								{
-									 
-									{
-										skill = "Average",
-										coldAtStart = false,
-										type = "p-19 s-125 sr",
-										unitId = 251,
-										y = 525740.32400073,
-										x = -196029.72493958,
-										name = "SAM-Gudauta-4-2-1-1 PRIMARY DESTROYED",
-										heading = 3.1415926535898,
-										playerCanDrive = false,
-									}, -- end of [1]
-									 
-									{
-										skill = "Average",
-										coldAtStart = false,
-										type = "snr s-125 tr",
-										unitId = 252,
-										y = 525740.76515382,
-										x = -195983.42319468,
-										name = "SAM-Gudauta-4-2-1-2 PRIMARY DESTROYED",
-										heading = 6.2482787221397,
-										playerCanDrive = false,
-									}, -- end of [2]
-									 
-									{
-										skill = "Average",
-										coldAtStart = false,
-										type = "5p73 s-125 ln",
-										unitId = 253,
-										y = 525827.73183757,
-										x = -195953.00619885,
-										name = "SAM-Gudauta-4-2-1-3",
-										heading = 1.0995574287564,
-										playerCanDrive = false,
-									}, -- end of [3]
-									 
-									{
-										skill = "Average",
-										coldAtStart = false,
-										type = "5p73 s-125 ln",
-										unitId = 254,
-										y = 525742.68383367,
-										x = -195905.60965501,
-										name = "SAM-Gudauta-4-2-1-4",
-										heading = 0.017453292519943,
-										playerCanDrive = false,
-									}, -- end of [4]
-									 
-									{
-										skill = "Average",
-										coldAtStart = false,
-										type = "5p73 s-125 ln",
-										unitId = 255,
-										y = 525824.63112909,
-										x = -196067.73241244,
-										name = "SAM-Gudauta-4-2-1-5",
-										heading = 2.2165681500328,
-										playerCanDrive = false,
-									}, -- end of [5]
-									 
-									{
-										skill = "Average",
-										coldAtStart = false,
-										type = "5p73 s-125 ln",
-										unitId = 256,
-										y = 525653.64920459,
-										x = -195956.54986568,
-										name = "SAM-Gudauta-4-2-1-6",
-										heading = 5.4793226981497,
-										playerCanDrive = false,
-									}, -- end of [6]
-									 
-									{
-										skill = "Average",
-										coldAtStart = false,
-										type = "5p73 s-125 ln",
-										unitId = 257,
-										y = 525660.32316042,
-										x = -196072.8510926,
-										name = "SAM-Gudauta-4-2-1-7",
-										heading = 3.1066860685499,
-										playerCanDrive = false,
-									}, -- end of [7]
-									 
-									{
-										skill = "Average",
-										coldAtStart = false,
-										type = "5p73 s-125 ln",
-										unitId = 258,
-										y = 525741.35495861,
-										x = -196111.58528945,
-										name = "SAM-Gudauta-4-2-1-8",
-										heading = 3.1066860685499,
-										playerCanDrive = false,
-									}, -- end of [8]
-									 
-									{
-										skill = "Average",
-										coldAtStart = false,
-										type = "Ural-375",
-										unitId = 259,
-										y = 525740.02608355,
-										x = -196005.71824293,
-										name = "SAM-Gudauta-4-2-1-9",
-										heading = 3.9618974020271,
-										playerCanDrive = true,
-									}, -- end of [9]
-								}, -- end of units
-								y = 525740.32400073,
-								x = -196029.72493958,
 								name = "SAM-Gudauta-4-2-1",
-								start_time = 0,
-							}, -- end of [1]
-							 
-							{
-								visible = false,
-								tasks = {},
-								uncontrollable = false,
-								route = 
-								{
-									spans = {},
-									points = 
-									{
-										 
+								route = {
+									points = {
 										{
-											alt = 183,
-											type = "Turning Point",
 											ETA = 0,
+											ETA_locked = true,
+											action = "Off Road",
+											alt = 188,
 											alt_type = "BARO",
 											formation_template = "",
-											y = 525686.3165674,
-											x = -196007.89214738,
-											ETA_locked = true,
-											speed = 5.5555555555556,
-											action = "Off Road",
-											task = 
-											{
-												id = "ComboTask",
-												params = 
-												{
-													tasks = {},
-												}, -- end of params
-											}, -- end of task
+											speed = 0,
 											speed_locked = true,
-										}, -- end of [1]
-									}, -- end of points
-								}, -- end of route
+											task = {
+												id = "ComboTask",
+												params = {
+													tasks = {},
+												},
+											},
+											type = "Turning Point",
+											x = -196029.72493958,
+											y = 525740.32400073,
+										},
+									},
+									spans = {},
+								},
+								start_time = 0,
+								tasks = {},
+								uncontrollable = false,
+								units = {
+									{
+										coldAtStart = false,
+										heading = 3.1415926535898,
+										name = "SAM-Gudauta-4-2-1-1 PRIMARY DESTROYED",
+										playerCanDrive = false,
+										skill = "Average",
+										type = "p-19 s-125 sr",
+										unitId = 251,
+										x = -196029.72493958,
+										y = 525740.32400073,
+									},
+									{
+										coldAtStart = false,
+										heading = 6.2482787221397,
+										name = "SAM-Gudauta-4-2-1-2 PRIMARY DESTROYED",
+										playerCanDrive = false,
+										skill = "Average",
+										type = "snr s-125 tr",
+										unitId = 252,
+										x = -195983.42319468,
+										y = 525740.76515382,
+									},
+									{
+										coldAtStart = false,
+										heading = 1.0995574287564,
+										name = "SAM-Gudauta-4-2-1-3",
+										playerCanDrive = false,
+										skill = "Average",
+										type = "5p73 s-125 ln",
+										unitId = 253,
+										x = -195953.00619885,
+										y = 525827.73183757,
+									},
+									{
+										coldAtStart = false,
+										heading = 0.017453292519943,
+										name = "SAM-Gudauta-4-2-1-4",
+										playerCanDrive = false,
+										skill = "Average",
+										type = "5p73 s-125 ln",
+										unitId = 254,
+										x = -195905.60965501,
+										y = 525742.68383367,
+									},
+									{
+										coldAtStart = false,
+										heading = 2.2165681500328,
+										name = "SAM-Gudauta-4-2-1-5",
+										playerCanDrive = false,
+										skill = "Average",
+										type = "5p73 s-125 ln",
+										unitId = 255,
+										x = -196067.73241244,
+										y = 525824.63112909,
+									},
+									{
+										coldAtStart = false,
+										heading = 5.4793226981497,
+										name = "SAM-Gudauta-4-2-1-6",
+										playerCanDrive = false,
+										skill = "Average",
+										type = "5p73 s-125 ln",
+										unitId = 256,
+										x = -195956.54986568,
+										y = 525653.64920459,
+									},
+									{
+										coldAtStart = false,
+										heading = 3.1066860685499,
+										name = "SAM-Gudauta-4-2-1-7",
+										playerCanDrive = false,
+										skill = "Average",
+										type = "5p73 s-125 ln",
+										unitId = 257,
+										x = -196072.8510926,
+										y = 525660.32316042,
+									},
+									{
+										coldAtStart = false,
+										heading = 3.1066860685499,
+										name = "SAM-Gudauta-4-2-1-8",
+										playerCanDrive = false,
+										skill = "Average",
+										type = "5p73 s-125 ln",
+										unitId = 258,
+										x = -196111.58528945,
+										y = 525741.35495861,
+									},
+									{
+										coldAtStart = false,
+										heading = 3.9618974020271,
+										name = "SAM-Gudauta-4-2-1-9",
+										playerCanDrive = true,
+										skill = "Average",
+										type = "Ural-375",
+										unitId = 259,
+										x = -196005.71824293,
+										y = 525740.02608355,
+									},
+								},
+								visible = false,
+								x = -196029.72493958,
+								y = 525740.32400073,
+							},
+							{
 								groupId = 104,
 								hidden = false,
-								units = 
-								{
-									 
+								name = "SAM-Gudauta-4-2-2",
+								route = {
+									points = {
+										{
+											ETA = 0,
+											ETA_locked = true,
+											action = "Off Road",
+											alt = 183,
+											alt_type = "BARO",
+											formation_template = "",
+											speed = 5.5555555555556,
+											speed_locked = true,
+											task = {
+												id = "ComboTask",
+												params = {
+													tasks = {},
+												},
+											},
+											type = "Turning Point",
+											x = -196007.89214738,
+											y = 525686.3165674,
+										},
+									},
+									spans = {},
+								},
+								start_time = 0,
+								tasks = {},
+								uncontrollable = false,
+								units = {
 									{
-										skill = "Average",
 										coldAtStart = false,
+										heading = 1.1902899496871,
+										name = "SAM-Gudauta-4-2-2-1",
+										playerCanDrive = true,
+										skill = "Average",
 										type = "Ural-375 ZU-23",
 										unitId = 260,
-										y = 525686.3165674,
 										x = -196007.89214738,
-										name = "SAM-Gudauta-4-2-2-1",
-										heading = 1.1902899496871,
-										playerCanDrive = true,
-									}, -- end of [1]
-									 
+										y = 525686.3165674,
+									},
 									{
-										skill = "Average",
 										coldAtStart = false,
+										heading = 1.1902899496871,
+										name = "SAM-Gudauta-4-2-2-2",
+										playerCanDrive = true,
+										skill = "Average",
 										type = "Ural-375 ZU-23",
 										unitId = 261,
-										y = 525797.94207252,
 										x = -196006.56327232,
-										name = "SAM-Gudauta-4-2-2-2",
-										heading = 1.1902899496871,
-										playerCanDrive = true,
-									}, -- end of [2]
-								}, -- end of units
-								y = 525686.3165674,
+										y = 525797.94207252,
+									},
+								},
+								visible = false,
 								x = -196007.89214738,
-								name = "SAM-Gudauta-4-2-2",
-								start_time = 0,
-							}, -- end of [2]
-						}, -- end of group
-					}, -- end of vehicle
-					name = "CJTF Red",
-				}, -- end of [4]
-			}, -- end of country
-		}, -- end of red
-	}, -- end of coalition
+								y = 525686.3165674,
+							},
+						},
+					},
+				},
+			},
+			name = "red",
+		},
+	},
+	desc = "",
+	localization = {
+		DEFAULT = {
+			DictKey_descriptionBlueTask_3 = "",
+			DictKey_descriptionNeutralsTask_4 = "",
+			DictKey_descriptionRedTask_2 = "",
+			DictKey_descriptionText_1 = "",
+			DictKey_sortie_5 = "",
+		},
+	},
 	name = "SAM-Gudauta-4-2",
 	requiredModules = {},
-	localization = 
-	{
-		DEFAULT = 
-		{
-			DictKey_descriptionNeutralsTask_4 = "",
-			DictKey_sortie_5 = "",
-			DictKey_descriptionText_1 = "",
-			DictKey_descriptionBlueTask_3 = "",
-			DictKey_descriptionRedTask_2 = "",
-		}, -- end of DEFAULT
-	}, -- end of localization
 	theatre = "Caucasus",
-	desc = "",
-} -- end of staticTemplate
+}

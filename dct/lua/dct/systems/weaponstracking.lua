@@ -23,12 +23,12 @@ local function isWpnValid(event)
 		[Weapon.MissileCategory.OTHER]  = true,
 	}
 	if wpndesc.category == Weapon.Category.MISSILE and
-	   allowedmsltypes[wpndesc.missileCategory] == nil then
-	   return false
+			allowedmsltypes[wpndesc.missileCategory] == nil then
+		return false
 	end
 
 	if wpndesc.warhead == nil or
-	   wpndesc.warhead.type ~= Weapon.WarheadType.HE then
+			wpndesc.warhead.type ~= Weapon.WarheadType.HE then
 		return false
 	end
 	return true
@@ -75,14 +75,14 @@ function DCTWeapon:update(time, lookahead)
 		self.timeout = true
 	end
 
-	self.pos  = vector.Vector3D(pos.p)
-	self.dir  = vector.Vector3D(pos.x)
-	self.vel  = vector.Vector3D(self.weapon:getVelocity())
+	self.pos      = vector.Vector3D(pos.p)
+	self.dir      = vector.Vector3D(pos.x)
+	self.vel      = vector.Vector3D(self.weapon:getVelocity())
 
 	-- search lookahead seconds into the future
 	self.impactpt = land.getIP(self.pos:raw(),
-	                           self.dir:raw(),
-	                           self.vel:magnitude() * lookahead)
+		self.dir:raw(),
+		self.vel:magnitude() * lookahead)
 end
 
 local LOOKAHEAD = 2
@@ -92,7 +92,7 @@ function WeaponsTracker:__init(theater)
 	self.lookahead = self.updatefreq * LOOKAHEAD
 	self.trackedwpns = {}
 	self._theater = theater
-	theater:addObserver(self.event, self, self.__clsname..".event")
+	theater:addObserver(self.event, self, self.__clsname .. ".event")
 	timer.scheduleFunction(self.update, self,
 		timer.getTime() + self.updatefreq)
 end
@@ -115,13 +115,13 @@ function WeaponsTracker:_update(time)
 	end
 	if settings.profile then
 		Logger:debug("'%s.update' exec time: %5.2fms",
-			self.__clsname, (os.clock()-tstart)*1000)
+			self.__clsname, (os.clock() - tstart) * 1000)
 	end
 end
 
 function WeaponsTracker:update(time)
 	local errhandler = function(err)
-		Logger:error("protected call - "..tostring(err).."\n"..
+		Logger:error("protected call - " .. tostring(err) .. "\n" ..
 			debug.traceback())
 	end
 	local pcallfunc = function()
@@ -134,7 +134,7 @@ end
 
 function WeaponsTracker:event(event)
 	if not (event.id == world.event.S_EVENT_SHOT and
-	   event.weapon and event.initiator) then
+				event.weapon and event.initiator) then
 		return
 	end
 

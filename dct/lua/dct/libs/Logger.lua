@@ -4,13 +4,13 @@
 -- Provides logging facilities.
 --]]
 
-local class  = require("libs.class")
+local class    = require("libs.class")
 
 local settings = _G.dct.settings.server
-local loggers = {}
-local Logger = class()
+local loggers  = {}
+local Logger   = class()
 
-Logger.level = {
+Logger.level   = {
 	["error"] = 0,
 	["warn"]  = 1,
 	["info"]  = 2,
@@ -39,7 +39,7 @@ end
 function Logger:setLevel(lvl)
 	assert(type(lvl) == "number", "invalid log level, not a number")
 	assert(lvl >= Logger.level["error"] and lvl <= Logger.level["debug"],
-			"invalid log level, out of range")
+		"invalid log level, out of range")
 	self.__lvl = lvl
 end
 
@@ -53,7 +53,7 @@ function Logger:error(userfmt, ...)
 		self.errors = self.errors + 1
 		if self.errors > 3 then
 			self:_log(env.error, self.fmtstr,
-				"Supressing further messages from this logger\n"..
+				"Supressing further messages from this logger\n" ..
 				"(check dcs.log for more errors)", true)
 			self.showErrors = false
 		end

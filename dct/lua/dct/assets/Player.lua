@@ -33,21 +33,21 @@
 --]]
 
 require("math")
-local class   = require("libs.namedclass")
-local dctenum = require("dct.enum")
-local dctutils= require("dct.utils")
+local class     = require("libs.namedclass")
+local dctenum   = require("dct.enum")
+local dctutils  = require("dct.utils")
 local AssetBase = require("dct.assets.AssetBase")
-local uimenu  = require("dct.ui.groupmenu")
-local loadout = require("dct.systems.loadouts")
-local State   = require("dct.libs.State")
-local settings = _G.dct.settings
+local uimenu    = require("dct.ui.groupmenu")
+local loadout   = require("dct.systems.loadouts")
+local State     = require("dct.libs.State")
+local settings  = _G.dct.settings
 
 local notifymsg =
-	"Please read the loadout limits in the briefing and "..
-	"use the F10 Menu to validate your loadout before departing."
+		"Please read the loadout limits in the briefing and " ..
+		"use the F10 Menu to validate your loadout before departing."
 
 local function build_kick_flagname(name)
-	return name.."_kick"
+	return name .. "_kick"
 end
 
 local function on_birth(asset, event)
@@ -85,12 +85,12 @@ local function reset_slot(asset)
 
 	if msn then
 		trigger.action.outTextForGroup(asset.groupId,
-			"Welcome. A mission is already assigned to this slot, "..
+			"Welcome. A mission is already assigned to this slot, " ..
 			"use the F10 menu to get the briefing or find another.",
 			20, false)
 	else
 		trigger.action.outTextForGroup(asset.groupId,
-			"Welcome. Use the F10 Menu to get a theater update and "..
+			"Welcome. Use the F10 Menu to get a theater update and " ..
 			"request a mission.",
 			20, false)
 	end
@@ -106,10 +106,10 @@ end
 function EmptyState:enter(asset)
 	asset:kick(self.kickcode)
 	if asset.missionid ~= dctenum.missionInvalidID and
-	   settings.server.emptyslottimeout > 0 then
+			settings.server.emptyslottimeout > 0 then
 		self.timer =
-			require("dct.libs.Timer")(settings.server.emptyslottimeout,
-				timer.getAbsTime)
+				require("dct.libs.Timer")(settings.server.emptyslottimeout,
+					timer.getAbsTime)
 	end
 end
 
@@ -144,12 +144,12 @@ function OccupiedState:__init(inair)
 	self.bleedperiod = 5
 	self.bleedwarn = false
 	self._eventhandlers = {
-		[world.event.S_EVENT_BIRTH]             = self.handleSwitchOccupied,
-		[world.event.S_EVENT_TAKEOFF]           = self.handleTakeoff,
-		[world.event.S_EVENT_EJECTION]          = self.handleEjection,
-		[world.event.S_EVENT_DEAD]              = self.handleLoseTicket,
-		[world.event.S_EVENT_CRASH]             = self.handleLoseTicket,
-		[world.event.S_EVENT_LAND]              = self.handleLand,
+		[world.event.S_EVENT_BIRTH]    = self.handleSwitchOccupied,
+		[world.event.S_EVENT_TAKEOFF]  = self.handleTakeoff,
+		[world.event.S_EVENT_EJECTION] = self.handleEjection,
+		[world.event.S_EVENT_DEAD]     = self.handleLoseTicket,
+		[world.event.S_EVENT_CRASH]    = self.handleLoseTicket,
+		[world.event.S_EVENT_LAND]     = self.handleLand,
 	}
 end
 
@@ -168,7 +168,7 @@ function OccupiedState:_bleed(asset)
 	local theater = dct.Theater.singleton()
 	local tickets = theater:getTickets()
 	if not (tickets:getConfig(asset.owner).bleed and
-		self.inair == true) then
+				self.inair == true) then
 		return nil
 	end
 
@@ -183,10 +183,10 @@ function OccupiedState:_bleed(asset)
 
 	local state = nil
 	if not self.bleedwarn and
-	   self.bleedctr > math.floor(self.bleedperiod / 2) then
+			self.bleedctr > math.floor(self.bleedperiod / 2) then
 		self.bleedwarn = true
 		trigger.action.outTextForGroup(asset.groupId,
-			"WARNING! You do not have a mission assigned, land or obtain "..
+			"WARNING! You do not have a mission assigned, land or obtain " ..
 			"a mission or you will be kicked.",
 			20, true)
 	end
@@ -226,8 +226,8 @@ function OccupiedState:handleTakeoff(asset, _ --[[event]])
 	local ok = loadout.check(asset)
 	if not ok then
 		trigger.action.outTextForGroup(asset.groupId,
-			"You have been removed to spectator for flying with an "..
-			"invalid loadout. "..notifymsg,
+			"You have been removed to spectator for flying with an " ..
+			"invalid loadout. " .. notifymsg,
 			20, true)
 		return EmptyState(dctenum.kickCode.LOADOUT)
 	end
@@ -246,11 +246,11 @@ function OccupiedState:handleLand(asset, event)
 	local airbase = assetmgr:getAsset(event.place:getName())
 
 	if (airbase and airbase.owner == asset.owner) or
-	   event.place:getName() == asset.airbase then
+			event.place:getName() == asset.airbase then
 		self.loseticket = false
 		self.inair = false
 		trigger.action.outTextForGroup(asset.groupId,
-			"Welcome home. You are able to safely disconnect"..
+			"Welcome home. You are able to safely disconnect" ..
 			" without costing your side tickets.",
 			20, true)
 	end
@@ -261,7 +261,7 @@ function OccupiedState:handleEjection()
 	self.ejection = true
 end
 
-function OccupiedState:handleLoseTicket(--[[asset, event]])
+function OccupiedState:handleLoseTicket( --[[asset, event]])
 	self.loseticket = true
 	return EmptyState(dctenum.kickCode.DEAD)
 end
@@ -297,7 +297,7 @@ end
 local function airbaseId(grp)
 	assert(grp, "value error: grp cannot be nil")
 	local id = nil
-	for _, name in ipairs({"airdromeId", "helipadId", "linkUnit"}) do
+	for _, name in ipairs({ "airdromeId", "helipadId", "linkUnit" }) do
 		id = grp.data.route.points[1][name]
 		if id ~= nil then
 			return id
@@ -310,7 +310,7 @@ local function airbaseParkingId(grp)
 	assert(grp, "value error: grp cannot be nil")
 	local wp = grp.data.route.points[1]
 	if wp.type == AI.Task.WaypointType.TAKEOFF_PARKING or
-	   wp.type == AI.Task.WaypointType.TAKEOFF_PARKING_HOT then
+			wp.type == AI.Task.WaypointType.TAKEOFF_PARKING_HOT then
 		return grp.data.units[1].parking
 	end
 	return nil
@@ -319,18 +319,18 @@ end
 function Player:_completeinit(template)
 	AssetBase._completeinit(self, template)
 	-- we assume all slots in a player group are the same
-	self._tpldata   = template:copyData()
-	self.unittype   = self._tpldata.data.units[1].type
-	self.cmdpending = false
-	self.groupId    = self._tpldata.data.groupId
-	self.squadron   = self.name:match("(%w+)(.+)")
-	self.airbase    = dctutils.airbaseId2Name(airbaseId(self._tpldata))
-	self.parking    = airbaseParkingId(self._tpldata)
-	self.ato        = settings.ui.ato[self.unittype] or
-		dctenum.missionType
+	self._tpldata      = template:copyData()
+	self.unittype      = self._tpldata.data.units[1].type
+	self.cmdpending    = false
+	self.groupId       = self._tpldata.data.groupId
+	self.squadron      = self.name:match("(%w+)(.+)")
+	self.airbase       = dctutils.airbaseId2Name(airbaseId(self._tpldata))
+	self.parking       = airbaseParkingId(self._tpldata)
+	self.ato           = settings.ui.ato[self.unittype] or
+			dctenum.missionType
 	self.payloadlimits = settings.payloadlimits
-	self.gridfmt    = settings.ui.gridfmt[self.unittype] or
-		dctutils.posfmt.DMS
+	self.gridfmt       = settings.ui.gridfmt[self.unittype] or
+			dctutils.posfmt.DMS
 	self._logger:debug("airbase: %s", tostring(self.airbase))
 	self._logger:debug("payloadlimits: %s",
 		require("libs.json"):encode_pretty(self.payloadlimits))
@@ -355,7 +355,7 @@ function Player:inAir()
 end
 
 function Player:getObjectNames()
-	return {self.name, }
+	return { self.name, }
 end
 
 function Player:getLocation()

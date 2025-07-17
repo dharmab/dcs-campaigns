@@ -4,7 +4,7 @@
 -- Defines a stats class to manage tracking various metrics.
 --]]
 
-local class   = require("libs.class")
+local class = require("libs.class")
 --local utils   = require("libs.utils")
 --local Logger  = require("dct.Logger").getByName("Stats")
 
@@ -12,7 +12,7 @@ local Stats = class()
 function Stats:__init(stattbl)
 	self.stats = {}
 
-	for _,v in pairs(stattbl or {}) do
+	for _, v in pairs(stattbl or {}) do
 		self:register(unpack(v))
 	end
 
@@ -29,7 +29,7 @@ end
 
 function Stats:set(id, val)
 	if self.stats[id] == nil then
-		self:register(id, val, "generated"..tostring(id))
+		self:register(id, val, "generated" .. tostring(id))
 	else
 		self.stats[id].value = val
 	end
@@ -54,9 +54,9 @@ function Stats:tostring(fmtstr, idfilter)
 	local filter = idfilter or self.stats
 	local str = ""
 
-	for k,v in pairs(self.stats) do
+	for k, v in pairs(self.stats) do
 		if filter[k] ~= nil then
-			str = str..string.format(fmtstr, v.name, v.value)
+			str = str .. string.format(fmtstr, v.name, v.value)
 		end
 	end
 	return str

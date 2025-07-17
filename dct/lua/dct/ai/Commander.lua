@@ -31,8 +31,8 @@ end
 local function genstatids()
 	local tbl = {}
 
-	for k,v in pairs(enum.missionType) do
-		table.insert(tbl, {v, 0, k})
+	for k, v in pairs(enum.missionType) do
+		table.insert(tbl, { v, 0, k })
 	end
 	return tbl
 end
@@ -46,13 +46,13 @@ function Commander:__init(theater, side)
 	self.owner        = side
 	self.missionstats = Stats(genstatids())
 	self.missions     = {}
-	self.aifreq       = 2*60 -- 2 minutes in seconds
+	self.aifreq       = 2 * 60 -- 2 minutes in seconds
 
 	theater:queueCommand(120, Command(
-		"Commander.startIADS:"..tostring(self.owner),
+		"Commander.startIADS:" .. tostring(self.owner),
 		self.startIADS, self))
 	theater:queueCommand(self.aifreq, Command(
-		"Commander.update:"..tostring(self.owner),
+		"Commander.update:" .. tostring(self.owner),
 		self.update, self))
 end
 
@@ -84,16 +84,16 @@ function Commander:getTheaterUpdate()
 
 	theaterUpdate.friendly = {}
 	tks, start = theater:getTickets():get(self.owner)
-	theaterUpdate.friendly.str = math.floor((tks / start)*100)
+	theaterUpdate.friendly.str = math.floor((tks / start) * 100)
 	theaterUpdate.enemy = {}
 	theaterUpdate.enemy.sea = 50
 	theaterUpdate.enemy.air = 50
 	theaterUpdate.enemy.elint = 50
 	theaterUpdate.enemy.sam = 50
 	tks, start = theater:getTickets():get(dctutils.getenemy(self.owner))
-	theaterUpdate.enemy.str = math.floor((tks / start)*100)
+	theaterUpdate.enemy.str = math.floor((tks / start) * 100)
 	theaterUpdate.missions = self.missionstats:getStats()
-	for k,v in pairs(theaterUpdate.missions) do
+	for k, v in pairs(theaterUpdate.missions) do
 		if v == 0 then
 			theaterUpdate.missions[k] = nil
 		end
@@ -101,7 +101,7 @@ function Commander:getTheaterUpdate()
 	return theaterUpdate
 end
 
-local MISSION_ID = math.random(1,63)
+local MISSION_ID = math.random(1, 63)
 local invalidXpdrTbl = {
 	["7700"] = true,
 	["7600"] = true,
@@ -129,8 +129,8 @@ function Commander:genMissionCodes(msntype)
 			break
 		end
 	end
-	local m1 = (8*digit1)+(enum.squawkMissionSubType[msntype] or 0)
-	local m3 = (512*digit1)+(MISSION_ID*8)
+	local m1 = (8 * digit1) + (enum.squawkMissionSubType[msntype] or 0)
+	local m3 = (512 * digit1) + (MISSION_ID * 8)
 	return { ["id"] = id, ["m1"] = m1, ["m3"] = m3, }
 end
 
@@ -192,7 +192,7 @@ function Commander:requestMission(grpname, missiontype)
 	mission:addAssigned(assetmgr:getAsset(grpname))
 	self:addMission(mission)
 
-	Logger:debug("requestMission() - assigned target '%s' to "..
+	Logger:debug("requestMission() - assigned target '%s' to " ..
 		"mission %d (codename: %s)", tgt.name,
 		mission.id, tgt.codename)
 

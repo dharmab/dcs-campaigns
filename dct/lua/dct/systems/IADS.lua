@@ -1,15 +1,15 @@
-local Logger      = require("dct.libs.Logger").getByName("IADS")
-local Command     = require("dct.Command")
-local class       = require("libs.class")
-local utils       = require("libs.utils")
+local Logger        = require("dct.libs.Logger").getByName("IADS")
+local Command       = require("dct.Command")
+local class         = require("libs.class")
+local utils         = require("libs.utils")
 
 -- luacheck: max_cyclomatic_complexity 21, ignore 241
 -- luacheck: ignore 311
 
 -- Ranges at which SAM sites are considered close enough to activate, in meters
-local rangeTbl = {
+local rangeTbl      = {
 	["Kub 1S91 str"] = 52000,
-	["S-300PS 40B6M tr"] =  100000,
+	["S-300PS 40B6M tr"] = 100000,
 	["Osa 9A33 ln"] = 25000,
 	["snr s-125 tr"] = 60000,
 	["SNR_75V"] = 65000,
@@ -24,45 +24,45 @@ local rangeTbl = {
 	["RPC_5N62V"] = 120000,
 }
 -- Point defense units are not turned off when they detect an ARM
-local pointDefense = {
+local pointDefense  = {
 	["Tor 9A331"] = true,
 }
 
 -- IADS settings
 -- 1 = radio detection of ARM launch on, 0 = radio detection of ARM launch off
-local RadioDetect = true
+local RadioDetect   = true
 -- 1 = EWR detection of ARMs on, 0 = EWR detection of ARMs off
-local EwrArmDetect = true
+local EwrArmDetect  = true
 -- 1 = SAM detectionf of ARMs on, 0 = SAM detection of ARMs off
-local SamArmDetect = true
+local SamArmDetect  = true
 --Range of an EWR in which SAMs are controlled
-local EWRAssocRng = 80000
+local EWRAssocRng   = 80000
 --Range within which ARM launches are detected via radio
-local RadioHideRng = 120000
+local RadioHideRng  = 120000
 -- %age chance of radio detection of ARM launch causing SAM shutdown
-local ARMHidePct = 20
+local ARMHidePct    = 20
 -- %age chance EWR detection of ARM causing SAM shutdown
-local EwrOffChance = 25
+local EwrOffChance  = 25
 -- %age chance SAM detection of ARM causings SAM shuttown
-local SamOffChance = 75
+local SamOffChance  = 75
 -- trk persistance time after last detection
-local trkMem = 20
+local trkMem        = 20
 -- Have controlled SAMs stay off if no ammo remaining.
-local contSamAmmo = true
+local contSamAmmo   = true
 -- Have uncontrolled SAMs stay off if no ammo remaining
 local uncontSamAmmo = false
 
 local function getDist(point1, point2)
 	local dX = point1.x - point2.x
 	local dZ = point1.z - point2.z
-	return math.sqrt(dX*dX + dZ*dZ)
+	return math.sqrt(dX * dX + dZ * dZ)
 end
 
 local function getDist3D(point1, point2)
 	local dX = point1.x - point2.x
 	local dY = point1.y - point2.y
 	local dZ = point1.z - point2.z
-	return math.sqrt(dX*dX + dZ*dZ + dY*dY)
+	return math.sqrt(dX * dX + dZ * dZ + dY * dY)
 end
 
 local function isFlying(object)
@@ -71,8 +71,8 @@ end
 
 local function isARM(object)
 	return object ~= nil and
-	       object:getCategory() == Object.Category.WEAPON and
-	       object:getDesc().guidance == Weapon.GuidanceType.RADAR_PASSIVE
+			object:getCategory() == Object.Category.WEAPON and
+			object:getDesc().guidance == Weapon.GuidanceType.RADAR_PASSIVE
 end
 
 local function getDetectedTargets(group)
@@ -93,30 +93,30 @@ function IADS:__init(cmdr)
 	self.trkFiles = {}
 
 	local theater = require("dct.Theater").singleton()
-	local prefix = string.format("iads(%s)",
+	local prefix  = string.format("iads(%s)",
 		utils.getkey(coalition.side, cmdr.owner))
 
 	theater:addObserver(
-		self.sysIADSEventHandler, self, prefix..".eventhandler")
+		self.sysIADSEventHandler, self, prefix .. ".eventhandler")
 
 	-- Initialization
-	theater:queueCommand(10, Command(prefix..".populateLists",
+	theater:queueCommand(10, Command(prefix .. ".populateLists",
 		self.populateLists, self))
-	theater:queueCommand(15, Command(prefix..".disableAllSAMs",
+	theater:queueCommand(15, Command(prefix .. ".disableAllSAMs",
 		self.disableAllSAMs, self))
 
 	-- Periodic
-	theater:queueCommand(10, Command(prefix..".timeoutTracks",
+	theater:queueCommand(10, Command(prefix .. ".timeoutTracks",
 		self.timeoutTracks, self))
-	theater:queueCommand(10, Command(prefix..".EWRtrkFileBuild",
+	theater:queueCommand(10, Command(prefix .. ".EWRtrkFileBuild",
 		self.EWRtrkFileBuild, self))
-	theater:queueCommand(10, Command(prefix..".SAMtrkFileBuild",
+	theater:queueCommand(10, Command(prefix .. ".SAMtrkFileBuild",
 		self.SAMtrkFileBuild, self))
-	theater:queueCommand(10, Command(prefix..".AWACStrkFileBuild",
+	theater:queueCommand(10, Command(prefix .. ".AWACStrkFileBuild",
 		self.AWACStrkFileBuild, self))
-	theater:queueCommand(10, Command(prefix..".SAMCheckHidden",
+	theater:queueCommand(10, Command(prefix .. ".SAMCheckHidden",
 		self.SAMCheckHidden, self))
-	theater:queueCommand(10, Command(prefix..".BlinkSAM",
+	theater:queueCommand(10, Command(prefix .. ".BlinkSAM",
 		self.BlinkSAM, self))
 	theater:queueCommand(10, Command("iads.EWRSAMOnRequest",
 		self.EWRSAMOnRequest, self))
@@ -149,9 +149,9 @@ local function ammoCheck(site)
 
 	for _, unt in pairs(site.group:getUnits()) do
 		local ammo = unt:getAmmo() or {}
-		for j=1, #ammo do
+		for j = 1, #ammo do
 			if wpns[ammo[j].desc.guidance] == true and
-			   ammo[j].count > 0 then
+					ammo[j].count > 0 then
 				return true
 			end
 		end
@@ -191,7 +191,7 @@ function IADS:disableSAM(site)
 	if site.trkFiles ~= nil then
 		for _, trk in pairs(site.trkFiles) do
 			if trk.Position ~= nil and
-			   getDist(site.Location, trk.Position) < (site.EngageRange * 1.15) then
+					getDist(site.Location, trk.Position) < (site.EngageRange * 1.15) then
 				-- A target is in engagement range
 				return false
 			end
@@ -242,9 +242,9 @@ end
 
 function IADS:magnumHide(site)
 	if not pointDefense[site.Type] and not site.Hidden then
-		local randomTime = math.random(15,35)
+		local randomTime = math.random(15, 35)
 		self.toHide[site.Name] = randomTime
-		site.HiddenTime = math.random(65,100)+randomTime
+		site.HiddenTime = math.random(65, 100) + randomTime
 		site.Hidden = true
 	end
 end
@@ -279,7 +279,7 @@ function IADS:addtrkFile(site, target)
 		site.trkFiles[trkName]["Datalink"] = true
 	end
 	self.trkFiles[trkName] =
-		utils.mergetables(self.trkFiles[trkName] or {}, site.trkFiles[trkName])
+			utils.mergetables(self.trkFiles[trkName] or {}, site.trkFiles[trkName])
 end
 
 function IADS:EWRtrkFileBuild()
@@ -288,11 +288,11 @@ function IADS:EWRtrkFileBuild()
 			if isFlying(target.object) then
 				self:addtrkFile(EWR, target)
 				if EwrArmDetect and
-				   isARM(target.object) and
-				   not self:prevDetected(EWR, target.object) then
+						isARM(target.object) and
+						not self:prevDetected(EWR, target.object) then
 					EWR.ARMDetected[target.object:getName()] = target.object
 					for _, SAM in pairs(EWR.SAMsControlled) do
-						if math.random(1,100) < EwrOffChance then
+						if math.random(1, 100) < EwrOffChance then
 							Logger:debug("'%s' detected ARM launch on radar; '%s' hiding",
 								EWR.Name, EWR.Name)
 							self:magnumHide(SAM)
@@ -311,10 +311,10 @@ function IADS:SAMtrkFileBuild()
 			if isFlying(target.object) then
 				self:addtrkFile(SAM, target)
 				if SamArmDetect and
-				   isARM(target.object) and
-				   not self:prevDetected(SAM, target.object) then
+						isARM(target.object) and
+						not self:prevDetected(SAM, target.object) then
 					SAM.ARMDetected[target.object:getName()] = target.object
-					if math.random(1,100) < SamOffChance then
+					if math.random(1, 100) < SamOffChance then
 						Logger:debug("'%s' detected ARM launch on radar", SAM.Name)
 						self:magnumHide(SAM)
 					end
@@ -343,7 +343,7 @@ function IADS:EWRSAMOnRequest()
 			for _, EWR in pairs(SAM.ControlledBy) do
 				for _, target in pairs(EWR.trkFiles) do
 					if target.Position and
-					   getDist(SAM.Location, target.Position) < SAM.EngageRange then
+							getDist(SAM.Location, target.Position) < SAM.EngageRange then
 						viableTarget = true
 						break
 					end
@@ -385,13 +385,13 @@ end
 function IADS:BlinkSAM()
 	for _, SAM in pairs(self.SAMSites) do
 		if next(SAM.ControlledBy) == nil then
-			if SAM.BlinkTimer < 1  and (not SAM.Hidden) then
+			if SAM.BlinkTimer < 1 and (not SAM.Hidden) then
 				if SAM.Enabled then
 					self:disableSAM(SAM)
-					SAM.BlinkTimer = math.random(30,60)
+					SAM.BlinkTimer = math.random(30, 60)
 				else
 					self:enableSAM(SAM)
-					SAM.BlinkTimer = math.random(30,60)
+					SAM.BlinkTimer = math.random(30, 60)
 				end
 			else
 				SAM.BlinkTimer = SAM.BlinkTimer - 5
@@ -462,7 +462,7 @@ function IADS:checkGroupRole(gp)
 		for _, unt in pairs(gp:getUnits()) do
 			if unt:hasAttribute("AWACS") then
 				isAWACS = true
-				numAWACS = numAWACS+1
+				numAWACS = numAWACS + 1
 			end
 			if unt:hasAttribute("Datalink") then
 				hasDL = true
@@ -484,7 +484,7 @@ end
 
 function IADS:onDeath(event)
 	if event.initiator:getCategory() == Object.Category.UNIT and
-	   event.initiator:getGroup() ~= nil then
+			event.initiator:getGroup() ~= nil then
 		local eventUnit = event.initiator
 		local eventGroup = event.initiator:getGroup()
 		for _, SAM in pairs(self.SAMSites) do
@@ -539,8 +539,8 @@ function IADS:onShot(event)
 		if isARM(event.weapon) then
 			local WepPt = event.weapon:getPoint()
 			for _, SAM in pairs(self.SAMSites) do
-				if math.random(1,100) < ARMHidePct and
-					getDist(SAM.Location, WepPt) < RadioHideRng then
+				if math.random(1, 100) < ARMHidePct and
+						getDist(SAM.Location, WepPt) < RadioHideRng then
 					Logger:debug("'%s' detected ARM launch on radio", SAM.Name)
 					self:magnumHide(SAM)
 				end
@@ -607,9 +607,9 @@ end
 
 function IADS:sysIADSEventHandler(event)
 	local relevents = {
-		[world.event.S_EVENT_DEAD]      = self.onDeath,
-		[world.event.S_EVENT_SHOT]      = self.onShot,
-		[world.event.S_EVENT_BIRTH]     = self.onBirth,
+		[world.event.S_EVENT_DEAD]  = self.onDeath,
+		[world.event.S_EVENT_SHOT]  = self.onShot,
+		[world.event.S_EVENT_BIRTH] = self.onBirth,
 	}
 	if relevents[event.id] == nil then
 		return

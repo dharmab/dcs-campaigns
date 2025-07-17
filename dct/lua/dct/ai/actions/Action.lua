@@ -9,7 +9,7 @@
 local State = require("dct.libs.State")
 
 local Action = require("libs.namedclass")("Action", State)
-function Action:__init(--[[tgtasset]])
+function Action:__init( --[[tgtasset]])
 	self._logger = require("dct.libs.Logger").getByName("Action")
 end
 
