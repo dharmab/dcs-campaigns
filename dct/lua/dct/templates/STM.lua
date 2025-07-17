@@ -7,7 +7,7 @@
 
 local utils = require("libs.utils")
 
-local categorymap = {
+local categoryMap = {
 	["HELICOPTER"] = 'HELICOPTER',
 	["SHIP"]       = 'SHIP',
 	["VEHICLE"]    = 'GROUND_UNIT',
@@ -23,8 +23,8 @@ local function convertNames(data, namefunc)
 	end
 
 	if data.route then
-		for _, wypt in ipairs(data.route.points or {}) do
-			wypt.name = namefunc(wypt.name)
+		for _, waypoint in ipairs(data.route.points or {}) do
+			waypoint.name = namefunc(waypoint.name)
 		end
 	end
 end
@@ -33,28 +33,28 @@ local function modifyStatic(grpdata, _, dcscategory)
 	if dcscategory ~= Unit.Category.STRUCTURE then
 		return grpdata
 	end
-	local grpcpy = utils.deepcopy(grpdata.units[1])
-	grpcpy.dead = grpdata.dead
-	return grpcpy
+	local groupCopy = utils.deepcopy(grpdata.units[1])
+	groupCopy.dead = grpdata.dead
+	return groupCopy
 end
 
-local function processCategory(grplist, cattbl, cntryid, dcscategory, ops)
-	if type(cattbl) ~= 'table' or cattbl.group == nil then
+local function processCategory(groupList, categoryTable, countryID, category, ops)
+	if type(categoryTable) ~= 'table' or categoryTable.group == nil then
 		return
 	end
-	for _, grp in ipairs(cattbl.group) do
+	for _, group in ipairs(categoryTable.group) do
 		if ops.grpfilter == nil or
-			ops.grpfilter(grp, cntryid, dcscategory) == true then
+				ops.grpfilter(group, countryID, category) == true then
 			if type(ops.grpmodify) == 'function' then
-				grp = ops.grpmodify(grp, cntryid, dcscategory)
+				group = ops.grpmodify(group, countryID, category)
 			end
-			local grptbl = {
-				["data"]      = utils.deepcopy(grp),
-				["countryid"] = cntryid,
-				["category"]  = dcscategory,
+			local groupTable = {
+				["data"]      = utils.deepcopy(group),
+				["countryid"] = countryID,
+				["category"]  = category,
 			}
-			convertNames(grptbl.data, ops.namefunc)
-			table.insert(grplist, grptbl)
+			convertNames(groupTable.data, ops.namefunc)
+			table.insert(groupList, groupTable)
 		end
 	end
 end
@@ -84,7 +84,7 @@ function STM.processCoalition(tbl, namefunc, grpfilter, grpmodify)
 	}
 
 	for _, cntrytbl in ipairs(tbl.country) do
-		for cat, unitcat in pairs(categorymap) do
+		for cat, unitcat in pairs(categoryMap) do
 			processCategory(grplist,
 				cntrytbl[string.lower(cat)],
 				cntrytbl.id,
@@ -94,7 +94,6 @@ function STM.processCoalition(tbl, namefunc, grpfilter, grpmodify)
 	end
 	return grplist
 end
-
 
 --[[
 -- Convert STM data format
@@ -122,49 +121,49 @@ end
 --    }}}
 --]]
 
-function STM.transform(stmdata, file)
-	local template   = {}
-	local lookupname =  function(name)
+function STM.transform(stmData, file)
+	local template             = {}
+	local lookupname           = function(name)
 		if name == nil then
 			return nil
 		end
 		local newname = name
-		local namelist = stmdata.localization.DEFAULT
+		local namelist = stmData.localization.DEFAULT
 		if namelist[name] ~= nil then
 			newname = namelist[name]
 		end
 		return newname
 	end
-	local trackUniqueCoalition = function(_, cntryid, _)
-		local side = coalition.getCountryCoalition(cntryid)
+	local trackUniqueCoalition = function(_, countryID, _)
+		local side = coalition.getCountryCoalition(countryID)
 		if template.coalition == nil then
 			template.coalition = side
 		end
 		assert(template.coalition == side, string.format(
-			"runtime error: invalid STM; country(%s) does not belong "..
+			"runtime error: invalid STM; country(%s) does not belong " ..
 			"to '%s' coalition, country belongs to '%s' coalition; file: %s",
-			country.name[cntryid],
+			country.name[countryID],
 			tostring(utils.getkey(coalition.side, template.coalition)),
 			tostring(utils.getkey(coalition.side, side)),
 			file))
 		return true
 	end
 
-	template.name    = lookupname(stmdata.name)
-	template.theater = lookupname(stmdata.theatre)
-	template.desc    = lookupname(stmdata.desc)
-	template.tpldata = {}
+	template.name              = lookupname(stmData.name)
+	template.theater           = lookupname(stmData.theatre)
+	template.desc              = lookupname(stmData.desc)
+	template.tpldata           = {}
 
-	for _, coa_data in pairs(stmdata.coalition) do
+	for _, coa_data in pairs(stmData.coalition) do
 		for _, grp in ipairs(STM.processCoalition(coa_data,
-				lookupname,
-				trackUniqueCoalition,
-				modifyStatic)) do
+			lookupname,
+			trackUniqueCoalition,
+			modifyStatic)) do
 			table.insert(template.tpldata, grp)
 		end
 	end
 	return template
 end
 
-STM.categorymap = categorymap
+STM.categorymap = categoryMap
 return STM

@@ -8,7 +8,7 @@ local goaltype = {
 	["MAX"]     = 2,
 }
 
-local objtype = {
+local objtype  = {
 	["INVALID"] = 0,
 	["UNIT"]    = 1,
 	["STATIC"]  = 2,
@@ -24,7 +24,7 @@ local priority = {
 	["MAX"]       = 3,
 }
 
-local enums = {}
+local enums    = {}
 enums.goaltype = goaltype
 enums.objtype  = objtype
 enums.priority = priority

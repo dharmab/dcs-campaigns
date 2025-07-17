@@ -4,8 +4,8 @@
 -- Implements a Marshallable interface
 --]]
 
-local class  = require("libs.class")
-local utils  = require("libs.utils")
+local class = require("libs.class")
+local utils = require("libs.utils")
 
 --[[
 -- Implements a generic [un]marshal construct that can be inherited

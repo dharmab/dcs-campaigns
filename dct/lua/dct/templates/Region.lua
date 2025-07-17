@@ -6,26 +6,26 @@
 
 require("lfs")
 require("math")
-local class      = require("libs.namedclass")
-local utils      = require("libs.utils")
-local dctenums   = require("dct.enum")
-local vector     = require("dct.libs.vector")
+local class        = require("libs.namedclass")
+local utils        = require("libs.utils")
+local dctenums     = require("dct.enum")
+local vector       = require("dct.libs.vector")
 local Marshallable = require("dct.libs.Marshallable")
-local Template   = require("dct.templates.Template")
-local Logger     = dct.Logger.getByName("Region")
+local Template     = require("dct.templates.Template")
+local Logger       = dct.Logger.getByName("Region")
 
-local tplkind = {
+local tplkind      = {
 	["TEMPLATE"]  = 1,
 	["EXCLUSION"] = 2,
 }
 
-local DOMAIN = {
+local DOMAIN       = {
 	["AIR"]  = "air",
 	["LAND"] = "land",
 	["SEA"]  = "sea",
 }
 
-local STATUS = {
+local STATUS       = {
 	["CONTESTED"] = -1,
 	["NEUTRAL"]   = coalition.side.NEUTRAL,
 	["RED"]       = coalition.side.RED,
@@ -39,8 +39,8 @@ local function processlimits(_, tbl)
 	for key, data in pairs(tbl.limits) do
 		local typenum = dctenums.assetType[string.upper(key)]
 		if typenum == nil then
-			Logger:warn("invalid asset type '"..key..
-				"' found in limits definition in file: "..
+			Logger:warn("invalid asset type '" .. key ..
+				"' found in limits definition in file: " ..
 				tbl.defpath or "nil")
 		else
 			limits[typenum] = data
@@ -63,34 +63,34 @@ local function processlinks(keydata, tbl)
 end
 
 local function loadMetadata(self, regiondefpath)
-	Logger:debug("=> regiondefpath: "..regiondefpath)
+	Logger:debug("=> regiondefpath: " .. regiondefpath)
 	local keys = {
 		{
 			["name"] = "name",
 			["type"] = "string",
 		}, {
-			["name"] = "priority",
-			["type"] = "number",
-		}, {
-			["name"] = "location",
-			["type"] = "table",
-			["default"] = {},
-			["check"] = Template.checklocation
-		}, {
-			["name"] = "limits",
-			["type"] = "table",
-			["default"] = {},
-			["check"] = processlimits,
-		}, {
-			["name"] = "altitude_floor",
-			["type"] = "number",
-			["default"] = 914.4, -- meters; 3000ft msl
-		}, {
-			["name"] = "links",
-			["type"] = "table",
-			["check"] = processlinks,
-			["default"] = {},
-		}
+		["name"] = "priority",
+		["type"] = "number",
+	}, {
+		["name"] = "location",
+		["type"] = "table",
+		["default"] = {},
+		["check"] = Template.checklocation
+	}, {
+		["name"] = "limits",
+		["type"] = "table",
+		["default"] = {},
+		["check"] = processlimits,
+	}, {
+		["name"] = "altitude_floor",
+		["type"] = "number",
+		["default"] = 914.4, -- meters; 3000ft msl
+	}, {
+		["name"] = "links",
+		["type"] = "table",
+		["check"] = processlinks,
+		["default"] = {},
+	}
 	}
 
 	local region = utils.readlua(regiondefpath)
@@ -111,15 +111,15 @@ local function getTemplates(self, basepath)
 		["region.def"] = true,
 	}
 
-	Logger:debug("=> basepath: "..basepath)
+	Logger:debug("=> basepath: " .. basepath)
 	for filename in lfs.dir(basepath) do
 		if ignorepaths[filename] == nil then
-			local fpath = basepath..utils.sep..filename
+			local fpath = basepath .. utils.sep .. filename
 			local fattr = lfs.attributes(fpath)
 			if fattr.mode == "directory" then
-				getTemplates(self, basepath..utils.sep..filename)
+				getTemplates(self, basepath .. utils.sep .. filename)
 			elseif string.find(fpath, ".dct", -4, true) ~= nil then
-				Logger:debug("=> process template: "..fpath)
+				Logger:debug("=> process template: " .. fpath)
 				local stmpath = string.gsub(fpath, "[.]dct", ".stm")
 				if lfs.attributes(stmpath) == nil then
 					stmpath = nil
@@ -140,10 +140,10 @@ end
 
 local function registerExclusion(self, tpl)
 	assert(tpl.objtype == self._exclusions[tpl.exclusion].ttype,
-	       "exclusions across objective types not allowed, '"..
-	       tpl.name.."'")
+		"exclusions across objective types not allowed, '" ..
+		tpl.name .. "'")
 	table.insert(self._exclusions[tpl.exclusion].names,
-	             tpl.name)
+		tpl.name)
 end
 
 local function registerType(self, kind, ttype, name)
@@ -230,24 +230,24 @@ function Region:__init(regionpath)
 		"radius",
 	})
 
-	self.path          = regionpath
-	self._templates    = {}
-	self._tpltypes     = {}
-	self._exclusions   = {}
-	self.centroid      = {}
-	self.weight        = {}
+	self.path        = regionpath
+	self._templates  = {}
+	self._tpltypes   = {}
+	self._exclusions = {}
+	self.centroid    = {}
+	self.weight      = {}
 	for _, side in pairs(coalition.side) do
 		self.weight[side] = 0
 	end
-	self.owner         = STATUS.NEUTRAL
-	self.radius        = 25
-	self.DOMAIN        = nil
-	self.STATUS        = nil
+	self.owner  = STATUS.NEUTRAL
+	self.radius = 25
+	self.DOMAIN = nil
+	self.STATUS = nil
 
-	Logger:debug("=> regionpath: "..regionpath)
-	loadMetadata(self, regionpath..utils.sep.."region.def")
+	Logger:debug("=> regionpath: " .. regionpath)
+	loadMetadata(self, regionpath .. utils.sep .. "region.def")
 	getTemplates(self, self.path)
-	Logger:debug("'"..self.name.."' Loaded")
+	Logger:debug("'" .. self.name .. "' Loaded")
 end
 
 Region.DOMAIN = DOMAIN
@@ -255,16 +255,16 @@ Region.STATUS = STATUS
 
 function Region:addTemplate(tpl)
 	assert(self._templates[tpl.name] == nil,
-		"duplicate template '"..tpl.name.."' defined; "..tostring(tpl.path))
+		"duplicate template '" .. tpl.name .. "' defined; " .. tostring(tpl.path))
 	if tpl.theater ~= env.mission.theatre then
 		Logger:warn(string.format(
-			"Region(%s):Template(%s) not for map(%s):template(%s)"..
+			"Region(%s):Template(%s) not for map(%s):template(%s)" ..
 			" - ignoring",
 			self.name, tpl.name, env.mission.theatre, tpl.theater))
 		return
 	end
 
-	Logger:debug("  + add template: "..tpl.name)
+	Logger:debug("  + add template: " .. tpl.name)
 	self._templates[tpl.name] = tpl
 	if tpl.exclusion ~= nil then
 		if self._exclusions[tpl.exclusion] == nil then
@@ -298,7 +298,7 @@ function Region:_generate(assetmgr, objtype, names)
 
 	for i, tpl in ipairs(names) do
 		if tpl.kind ~= tplkind.EXCLUSION and
-			self._templates[tpl.name].spawnalways == true then
+				self._templates[tpl.name].spawnalways == true then
 			addAndSpawnAsset(self, tpl.name, assetmgr)
 			table.remove(names, i)
 			limits.current = 1 + limits.current
@@ -354,27 +354,27 @@ local function get_asset_weight(asset)
 	if weight == 0 then
 		weight = 1
 	end
-	Logger:debug("asset weight("..asset.name.."): "..tostring(weight))
+	Logger:debug("asset weight(" .. asset.name .. "): " .. tostring(weight))
 	return weight
 end
 
 local function handleDead(region, event)
 	local asset = event.initiator
 	region.weight[asset.owner] = region.weight[asset.owner] -
-		get_asset_weight(asset)
+			get_asset_weight(asset)
 	if region.weight[asset.owner] < 0 then
 		region.weight[asset.owner] = 0
 	end
-	Logger:debug("Region("..region.name..").handleDead - "..
-		"new weight: "..tostring(region.weight[asset.owner]))
+	Logger:debug("Region(" .. region.name .. ").handleDead - " ..
+		"new weight: " .. tostring(region.weight[asset.owner]))
 end
 
 local function handleAddAsset(region, event)
 	local asset = event.initiator
 	region.weight[asset.owner] = region.weight[asset.owner] +
-		get_asset_weight(asset)
-	Logger:debug("Region("..region.name..").handleAddAsset - "..
-		"new weight: "..tostring(region.weight[asset.owner]))
+			get_asset_weight(asset)
+	Logger:debug("Region(" .. region.name .. ").handleAddAsset - " ..
+		"new weight: " .. tostring(region.weight[asset.owner]))
 end
 
 local handlers = {
@@ -387,7 +387,7 @@ function Region:onDCTEvent(event)
 	local handler = handlers[event.id]
 
 	if handler == nil or
-	   dctenums.assetClass.STRATEGIC[event.initiator.type] == nil then
+			dctenums.assetClass.STRATEGIC[event.initiator.type] == nil then
 		return
 	end
 
@@ -411,7 +411,7 @@ function Region:onDCTEvent(event)
 
 	if ratioB > c then
 		self.owner = STATUS.BLUE
-	elseif ratioB < 1/c then
+	elseif ratioB < 1 / c then
 		self.owner = STATUS.RED
 	else
 		self.owner = STATUS.CONTESTED

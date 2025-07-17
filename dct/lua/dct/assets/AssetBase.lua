@@ -17,15 +17,15 @@ An AIAgent is an Asset that is movable.
 --]]
 
 require("math")
-local namedclass = require("libs.namedclass")
-local utils    = require("libs.utils")
-local dctenum  = require("dct.enum")
-local dctutils = require("dct.utils")
-local Goal     = require("dct.Goal")
+local namedclass   = require("libs.namedclass")
+local utils        = require("libs.utils")
+local dctenum      = require("dct.enum")
+local dctutils     = require("dct.utils")
+local Goal         = require("dct.Goal")
 local Marshallable = require("dct.libs.Marshallable")
 local Observable   = require("dct.libs.Observable")
-local Logger   = require("dct.libs.Logger")
-local settings = _G.dct.settings
+local Logger       = require("dct.libs.Logger")
+local settings     = _G.dct.settings
 
 local norenametype = {
 	[dctenum.assetType.SQUADRONPLAYER] = true,
@@ -59,7 +59,7 @@ local function genLocationMethod()
 		"Satellite imaging has found",
 		"Ground units operating in the area have informed us of",
 	}
-	local idx = math.random(1,#txt)
+	local idx = math.random(1, #txt)
 	return txt[idx]
 end
 
@@ -70,19 +70,19 @@ function AssetLogger:__init(cls)
 end
 
 function AssetLogger:error(fmt, ...)
-	Logger.error(self, "%s - "..fmt, self.cls.name, ...)
+	Logger.error(self, "%s - " .. fmt, self.cls.name, ...)
 end
 
 function AssetLogger:warn(fmt, ...)
-	Logger.warn(self, "%s - "..fmt, self.cls.name, ...)
+	Logger.warn(self, "%s - " .. fmt, self.cls.name, ...)
 end
 
 function AssetLogger:info(fmt, ...)
-	Logger.info(self, "%s - "..fmt, self.cls.name, ...)
+	Logger.info(self, "%s - " .. fmt, self.cls.name, ...)
 end
 
 function AssetLogger:debug(fmt, ...)
-	Logger.debug(self, "%s - "..fmt, self.cls.name, ...)
+	Logger.debug(self, "%s - " .. fmt, self.cls.name, ...)
 end
 
 --[[
@@ -124,11 +124,11 @@ function AssetBase:__init(template)
 		"ignore",
 		"regenerate",
 	})
-	self._spawned    = false
-	self._dead       = false
-	self._targeted   = {}
-	self._intel      = {}
-	self._priority   = {}
+	self._spawned  = false
+	self._dead     = false
+	self._targeted = {}
+	self._intel    = {}
+	self._priority = {}
 	for _, side in pairs(coalition.side) do
 		self._targeted[side] = false
 		self._intel[side]    = 0
@@ -148,7 +148,7 @@ function AssetBase:__init(template)
 end
 
 function AssetBase:_completeinit(template)
-	self.type     = template.objtype
+	self.type = template.objtype
 	if template.desc then
 		self.briefing = dctutils.interp(template.desc, {
 			["LOCATIONMETHOD"] = genLocationMethod(),
@@ -157,20 +157,20 @@ function AssetBase:_completeinit(template)
 		print(string.format("Template(%s) has nil 'desc' field",
 			template.name))
 	end
-	self._location = template.location
+	self._location  = template.location
 	self.regenerate = template.regenerate
-	self.ignore   = template.ignore
-	self.owner    = template.coalition
-	self.rgnname  = template.regionname
-	self.tplname  = template.name
-	self.cost     = math.abs(template.cost)
+	self.ignore     = template.ignore
+	self.owner      = template.coalition
+	self.rgnname    = template.regionname
+	self.tplname    = template.name
+	self.cost       = math.abs(template.cost)
 	if norenametype[self.type] == true then
 		self.name = self.tplname
 	else
-		self.name = self.rgnname.."_"..self.owner.."_"..template.name
+		self.name = self.rgnname .. "_" .. self.owner .. "_" .. template.name
 		if template.uniquenames == true then
-			self.name = self.name.." #"..
-				dct.Theater.singleton():getcntr()
+			self.name = self.name .. " #" ..
+					dct.Theater.singleton():getcntr()
 		end
 	end
 	self.codename = generateCodename(template)
@@ -202,7 +202,7 @@ end
 -- need to convert back so we can access the data in our lookups.
 --]]
 function AssetBase:_unmarshalpost(data)
-	for _, tbl in ipairs({"_intel", "_priority"}) do
+	for _, tbl in ipairs({ "_intel", "_priority" }) do
 		self[tbl] = {}
 		for k, v in pairs(data[tbl]) do
 			self[tbl][tonumber(k)] = v
@@ -328,7 +328,7 @@ function AssetBase:setDead(val)
 	local prev = self._dead
 	self._dead = val
 	if self._dead and prev ~= self._dead then
-		self._logger:debug("notifying asset death for "..self.name)
+		self._logger:debug("notifying asset death for " .. self.name)
 		self:notify(dctutils.buildevent.dead(self))
 	end
 end
@@ -381,7 +381,7 @@ function AssetBase:despawn()
 end
 
 function AssetBase.defaultgoal(static)
-	local goal = {}
+	local goal    = {}
 	goal.priority = Goal.priority.PRIMARY
 	goal.goaltype = Goal.goaltype.DAMAGE
 	goal.objtype  = Goal.objtype.GROUP

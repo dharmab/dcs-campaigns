@@ -7,19 +7,19 @@
 local class = require("libs.class")
 
 local State = class()
-function State:enter(--[[asset]])
+function State:enter( --[[asset]])
 end
 
-function State:exit(--[[asset]])
+function State:exit( --[[asset]])
 end
 
 -- returns nil or a new state instance
-function State:update(--[[asset]])
+function State:update( --[[asset]])
 	return nil
 end
 
 -- returns nil or a new state instance
-function State:onDCTEvent(--[[asset, event]])
+function State:onDCTEvent( --[[asset, event]])
 	return nil
 end
 

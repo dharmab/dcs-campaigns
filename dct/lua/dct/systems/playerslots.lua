@@ -19,7 +19,7 @@ local function isPlayerGroup(grp, _, _)
 	end
 	if slotcnt > 0 then
 		if slotcnt > 1 then
-			Logger:warn(string.format("DCT requires 1 slot groups. Group "..
+			Logger:warn(string.format("DCT requires 1 slot groups. Group " ..
 				"'%s' of type a/c (%s) has more than one player slot.",
 				grp.name, grp.units[1].type))
 		end
@@ -39,16 +39,16 @@ function PlayerSlots:__init(theater)
 		for _, grp in ipairs(grps) do
 			local side = coalition.getCountryCoalition(grp.countryid)
 			local asset =
-			theater:getAssetMgr():factory(enum.assetType.PLAYERGROUP)(Template({
-				["objtype"]   = "playergroup",
-				["name"]      = grp.data.name,
-				["regionname"]= "theater",
-				["regionprio"]= 1000,
-				["coalition"] = side,
-				["cost"]      = theater:getTickets():getPlayerCost(side),
-				["desc"]      = "Player group",
-				["tpldata"]   = grp,
-			}))
+					theater:getAssetMgr():factory(enum.assetType.PLAYERGROUP)(Template({
+						["objtype"]    = "playergroup",
+						["name"]       = grp.data.name,
+						["regionname"] = "theater",
+						["regionprio"] = 1000,
+						["coalition"]  = side,
+						["cost"]       = theater:getTickets():getPlayerCost(side),
+						["desc"]       = "Player group",
+						["tpldata"]    = grp,
+					}))
 			theater:getAssetMgr():add(asset)
 			cnt = cnt + 1
 		end

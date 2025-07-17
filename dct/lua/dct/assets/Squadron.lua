@@ -14,7 +14,7 @@ local AssetBase = require("dct.assets.AssetBase")
 local function associate_slots(sqdn)
 	local filter = function(a)
 		if a.type == require("dct.enum").assetType.PLAYERGROUP and
-		   a.squadron == sqdn.name and a.owner == sqdn.owner then
+				a.squadron == sqdn.name and a.owner == sqdn.owner then
 			return true
 		end
 		return false

@@ -78,9 +78,8 @@ function Vector2D:raw()
 end
 
 function Vector2D:magnitude()
-	return math.sqrt(self.x^2 + self.y^2)
+	return math.sqrt(self.x ^ 2 + self.y ^ 2)
 end
-
 
 -- 3D Vector Math
 --
@@ -152,7 +151,7 @@ function Vector3D:raw()
 end
 
 function Vector3D:magnitude()
-	return math.sqrt(self.x^2 + self.y^2 + self.z^2)
+	return math.sqrt(self.x ^ 2 + self.y ^ 2 + self.z ^ 2)
 end
 
 -- Vector Math Library table
@@ -171,11 +170,11 @@ end
 
 function vmath.dot(U, V)
 	assert((U:isa(Vector2D) and V:isa(Vector2D)) or
-		   (U:isa(Vector3D) and V:isa(Vector3D)),
-		   "vectors are not of the same order")
+		(U:isa(Vector3D) and V:isa(Vector3D)),
+		"vectors are not of the same order")
 	local sum = 0
 
-	for _, n in ipairs({'x', 'y', 'z'}) do
+	for _, n in ipairs({ 'x', 'y', 'z' }) do
 		if U[n] and V[n] then
 			sum = sum + (U[n] * V[n])
 		end

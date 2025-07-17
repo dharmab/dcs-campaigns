@@ -42,59 +42,59 @@ local function validate_server_config(cfgdata, tbl)
 			["type"] = "boolean",
 			["default"] = cfgdata.default["debug"],
 		}, {
-			["name"] = "profile",
-			["type"] = "boolean",
-			["default"] = cfgdata.default["profile"],
-		}, {
-			["name"] = "statepath",
-			["type"] = "string",
-			["default"] = cfgdata.default["statepath"],
-		}, {
-			["name"] = "theaterpath",
-			["type"] = "string",
-			["default"] = cfgdata.default["theaterpath"],
-		}, {
-			["name"] = "schedfreq",
-			["type"] = "number",
-			["default"] = cfgdata.default["schedfreq"],
-		}, {
-			["name"] = "tgtfps",
-			["type"] = "number",
-			["default"] = cfgdata.default["tgtfps"],
-		}, {
-			["name"] = "percentTimeAllowed",
-			["type"] = "number",
-			["default"] = cfgdata.default["percentTimeAllowed"],
-		}, {
-			["name"] = "period",
-			["type"] = "number",
-			["default"] = cfgdata.default["period"],
-		}, {
-			["name"] = "whitelists",
-			["type"] = "table",
-			["check"] = convert_lists,
-			["default"] = cfgdata.default["whitelists"],
-		}, {
-			["name"] = "statServerHostname",
-			["type"] = "string",
-			["default"] = cfgdata.default["statServerHostname"],
-		}, {
-			["name"] = "statServerPort",
-			["type"] = "number",
-			["default"] = cfgdata.default["statServerPort"],
-		}, {
-			["name"] = "dctid",
-			["type"] = "string",
-			["default"] = cfgdata.default["dctid"],
-		}, {
-			["name"] = "emptyslottimeout",
-			["type"] = "number",
-			["default"] = cfgdata.default["emptyslottimeout"],
-		}, {
-			["name"] = "showErrors",
-			["type"] = "boolean",
-			["default"] = cfgdata.default["showErrors"],
-		}
+		["name"] = "profile",
+		["type"] = "boolean",
+		["default"] = cfgdata.default["profile"],
+	}, {
+		["name"] = "statepath",
+		["type"] = "string",
+		["default"] = cfgdata.default["statepath"],
+	}, {
+		["name"] = "theaterpath",
+		["type"] = "string",
+		["default"] = cfgdata.default["theaterpath"],
+	}, {
+		["name"] = "schedfreq",
+		["type"] = "number",
+		["default"] = cfgdata.default["schedfreq"],
+	}, {
+		["name"] = "tgtfps",
+		["type"] = "number",
+		["default"] = cfgdata.default["tgtfps"],
+	}, {
+		["name"] = "percentTimeAllowed",
+		["type"] = "number",
+		["default"] = cfgdata.default["percentTimeAllowed"],
+	}, {
+		["name"] = "period",
+		["type"] = "number",
+		["default"] = cfgdata.default["period"],
+	}, {
+		["name"] = "whitelists",
+		["type"] = "table",
+		["check"] = convert_lists,
+		["default"] = cfgdata.default["whitelists"],
+	}, {
+		["name"] = "statServerHostname",
+		["type"] = "string",
+		["default"] = cfgdata.default["statServerHostname"],
+	}, {
+		["name"] = "statServerPort",
+		["type"] = "number",
+		["default"] = cfgdata.default["statServerPort"],
+	}, {
+		["name"] = "dctid",
+		["type"] = "string",
+		["default"] = cfgdata.default["dctid"],
+	}, {
+		["name"] = "emptyslottimeout",
+		["type"] = "number",
+		["default"] = cfgdata.default["emptyslottimeout"],
+	}, {
+		["name"] = "showErrors",
+		["type"] = "boolean",
+		["default"] = cfgdata.default["showErrors"],
+	}
 	}
 	tbl.path = cfgdata.file
 	utils.checkkeys(keys, tbl)
@@ -120,31 +120,31 @@ local function servercfgs(config)
 	utils.readconfigs({
 		{
 			["name"] = "server",
-			["file"] = lfs.writedir()..utils.sep.."Config"..
-				utils.sep.."dct.cfg",
+			["file"] = lfs.writedir() .. utils.sep .. "Config" ..
+					utils.sep .. "dct.cfg",
 			["validate"] = validate_server_config,
 			["default"] = {
-				["debug"]       = _G.DCT_TEST or false,
-				["profile"]     = false,
-				["statepath"]   =
-					lfs.writedir()..utils.sep..vars.theater.."_"..
-					vars.sortie..".state",
-				["theaterpath"] = lfs.writedir()..utils.sep.."DCT"..
-					utils.sep.."theaters"..utils.sep..
-					vars.theater.."_"..vars.sortie,
-				["schedfreq"] = 2, -- hertz
-				["tgtfps"] = 75,
+				["debug"]              = _G.DCT_TEST or false,
+				["profile"]            = false,
+				["statepath"]          =
+						lfs.writedir() .. utils.sep .. vars.theater .. "_" ..
+						vars.sortie .. ".state",
+				["theaterpath"]        = lfs.writedir() .. utils.sep .. "DCT" ..
+						utils.sep .. "theaters" .. utils.sep ..
+						vars.theater .. "_" .. vars.sortie,
+				["schedfreq"]          = 2, -- hertz
+				["tgtfps"]             = 75,
 				["percentTimeAllowed"] = .3,
-				["period"] = -1, -- mission restart is disabled by default
-				["logger"] = {},
-				["whitelists"] = {},
+				["period"]             = -1, -- mission restart is disabled by default
+				["logger"]             = {},
+				["whitelists"]         = {},
 				["statServerHostname"] = "localhost",
-				["statServerPort"] = 8095,
-				["dctid"] = "changeme",
-				["emptyslottimeout"] = 0, -- seconds
-				["showErrors"] = false,
+				["statServerPort"]     = 8095,
+				["dctid"]              = "changeme",
+				["emptyslottimeout"]   = 0, -- seconds
+				["showErrors"]         = false,
 			},
-		},}, config)
+		}, }, config)
 	return config
 end
 

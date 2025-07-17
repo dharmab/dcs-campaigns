@@ -47,7 +47,7 @@ end
 local BlastEffects = class("BlastEffects")
 function BlastEffects:__init(theater)
 	self._theater = theater
-	theater:addObserver(self.event, self, self.__clsname..".event")
+	theater:addObserver(self.event, self, self.__clsname .. ".event")
 end
 
 function BlastEffects:event(event)

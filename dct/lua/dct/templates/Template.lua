@@ -5,12 +5,12 @@
 --]]
 
 require("lfs")
-local class = require("libs.class")
-local utils = require("libs.utils")
-local enum  = require("dct.enum")
-local vector= require("dct.libs.vector")
-local Goal  = require("dct.Goal")
-local STM   = require("dct.templates.STM")
+local class  = require("libs.class")
+local utils  = require("libs.utils")
+local enum   = require("dct.enum")
+local vector = require("dct.libs.vector")
+local Goal   = require("dct.Goal")
+local STM    = require("dct.templates.STM")
 
 --[[
 -- represents the amount of damage that can be taken before
@@ -75,10 +75,10 @@ end
 
 local function makeNamesUnique(data)
 	for _, grp in ipairs(data) do
-		grp.data.name = grp.data.name.." #"..
-			dct.Theater.singleton():getcntr()
+		grp.data.name = grp.data.name .. " #" ..
+				dct.Theater.singleton():getcntr()
 		for _, v in ipairs(grp.data.units or {}) do
-			v.name = v.name.." #"..dct.Theater.singleton():getcntr()
+			v.name = v.name .. " #" .. dct.Theater.singleton():getcntr()
 		end
 	end
 end
@@ -92,7 +92,7 @@ local function overrideUnitOptions(unit, key, tpl, basename)
 	if unit.dct_deathgoal ~= nil then
 		tpl.hasDeathGoals = true
 	end
-	unit.name = basename.."-"..key
+	unit.name = basename .. "-" .. key
 end
 
 local function overrideGroupOptions(grp, idx, tpl)
@@ -115,15 +115,15 @@ local function overrideGroupOptions(grp, idx, tpl)
 		goaltype = Goal.objtype.STATIC
 	end
 
-	grp.data.groupId = nil
-	grp.data.unitId  = nil
-	grp.data.start_time = 0
+	grp.data.groupId       = nil
+	grp.data.unitId        = nil
+	grp.data.start_time    = 0
 	grp.data.dct_deathgoal = goalFromName(grp.data.name, goaltype)
 	if grp.data.dct_deathgoal ~= nil then
 		tpl.hasDeathGoals = true
 	end
-	grp.data.name = tpl.regionname.."_"..tpl.name.." "..tpl.coalition.." "..
-		utils.getkey(Unit.Category, grp.category).." "..tostring(idx)
+	grp.data.name = tpl.regionname .. "_" .. tpl.name .. " " .. tpl.coalition .. " " ..
+			utils.getkey(Unit.Category, grp.category) .. " " .. tostring(idx)
 
 	for i, unit in ipairs(grp.data.units or {}) do
 		overrideUnitOptions(unit, i, tpl, grp.data.name)
@@ -144,10 +144,10 @@ local function checkbldgdata(keydata, tpl)
 	end
 
 	for _, bldg in ipairs(tpl[keydata.name]) do
-		local bldgdata = {}
-		bldgdata.countryid = 0
-		bldgdata.category  = enum.UNIT_CAT_SCENERY
-		bldgdata.data = {
+		local bldgdata      = {}
+		bldgdata.countryid  = 0
+		bldgdata.category   = enum.UNIT_CAT_SCENERY
+		bldgdata.data       = {
 			["dct_deathgoal"] = goalFromName(bldg.goal,
 				Goal.objtype.SCENERY),
 			["name"] = tostring(bldg.id),
@@ -165,10 +165,10 @@ end
 
 local function checkobjtype(keydata, tbl)
 	if type(tbl[keydata.name]) == "number" and
-		utils.getkey(enum.assetType, tbl[keydata.name]) ~= nil then
+			utils.getkey(enum.assetType, tbl[keydata.name]) ~= nil then
 		return true
 	elseif type(tbl[keydata.name]) == "string" and
-		enum.assetType[string.upper(tbl[keydata.name])] ~= nil then
+			enum.assetType[string.upper(tbl[keydata.name])] ~= nil then
 		tbl[keydata.name] = enum.assetType[string.upper(tbl[keydata.name])]
 		return true
 	end
@@ -177,10 +177,10 @@ end
 
 local function checkside(keydata, tbl)
 	if type(tbl[keydata.name]) == "number" and
-		utils.getkey(coalition.side, tbl[keydata.name]) ~= nil then
+			utils.getkey(coalition.side, tbl[keydata.name]) ~= nil then
 		return true
 	elseif type(tbl[keydata.name]) == "string" and
-		coalition.side[string.upper(tbl[keydata.name])] ~= nil then
+			coalition.side[string.upper(tbl[keydata.name])] ~= nil then
 		tbl[keydata.name] = coalition.side[string.upper(tbl[keydata.name])]
 		return true
 	end
@@ -226,8 +226,8 @@ local function checkmsntype(keydata, tbl)
 	for _, msntype in pairs(tbl[keydata.name]) do
 		local msnstr = string.upper(msntype)
 		if type(msntype) ~= "string" or
-		   enum.missionType[msnstr] == nil then
-			return false, "invalid mission type: "..tostring(msnstr)
+				enum.missionType[msnstr] == nil then
+			return false, "invalid mission type: " .. tostring(msnstr)
 		end
 		msnlist[msnstr] = enum.missionType[msnstr]
 	end
@@ -241,14 +241,14 @@ local function checklocation(keydata, tbl)
 		tbl[keydata.name] = nil
 		return true
 	end
-	for _, val in pairs({"x", "y"}) do
+	for _, val in pairs({ "x", "y" }) do
 		if loc[val] == nil or type(loc[val]) ~= "number" then
 			return false
 		end
 	end
 	local vec2 = vector.Vector2D(tbl[keydata.name])
 	tbl[keydata.name] =
-		vector.Vector3D(vec2, land.getHeight(vec2:raw())):raw()
+			vector.Vector3D(vec2, land.getHeight(vec2:raw())):raw()
 	return true
 end
 
@@ -278,58 +278,58 @@ local function getkeys(objtype)
 
 	local keys = {
 		{
-			["name"]  = "name",
-			["type"]  = "string",
+			["name"] = "name",
+			["type"] = "string",
 		}, {
-			["name"]  = "regionname",
-			["type"]  = "string",
-		}, {
-			["name"]  = "coalition",
-			["check"] = checkside,
-		}, {
-			["name"]    = "uniquenames",
-			["type"]    = "boolean",
-			["default"] = false,
-		}, {
-			["name"]    = "ignore",
-			["type"]    = "boolean",
-			["default"] = false,
-		}, {
-			["name"]    = "regenerate",
-			["type"]    = "boolean",
-			["default"] = false,
-		}, {
-			["name"]    = "priority",
-			["type"]    = "number",
-			["default"] = enum.assetTypePriority[objtype] or 1000,
-		}, {
-			["name"]    = "regionprio",
-			["type"]    = "number",
-		}, {
-			["name"]    = "intel",
-			["type"]    = "number",
-			["default"] = defaultintel,
-		}, {
-			["name"]    = "spawnalways",
-			["type"]    = "boolean",
-			["default"] = false,
-		}, {
-			["name"]    = "cost",
-			["type"]    = "number",
-			["default"] = 0,
-		}, {
-			["name"]    = "desc",
-			["type"]    = "string",
-			["default"] = "false",
-		}, {
-			["name"]    = "codename",
-			["type"]    = "string",
-			["default"] = "default codename",
-		}, {
-			["name"]    = "theater",
-			["type"]    = "string",
-			["default"] = env.mission.theatre,
-		},
+		["name"] = "regionname",
+		["type"] = "string",
+	}, {
+		["name"]  = "coalition",
+		["check"] = checkside,
+	}, {
+		["name"]    = "uniquenames",
+		["type"]    = "boolean",
+		["default"] = false,
+	}, {
+		["name"]    = "ignore",
+		["type"]    = "boolean",
+		["default"] = false,
+	}, {
+		["name"]    = "regenerate",
+		["type"]    = "boolean",
+		["default"] = false,
+	}, {
+		["name"]    = "priority",
+		["type"]    = "number",
+		["default"] = enum.assetTypePriority[objtype] or 1000,
+	}, {
+		["name"] = "regionprio",
+		["type"] = "number",
+	}, {
+		["name"]    = "intel",
+		["type"]    = "number",
+		["default"] = defaultintel,
+	}, {
+		["name"]    = "spawnalways",
+		["type"]    = "boolean",
+		["default"] = false,
+	}, {
+		["name"]    = "cost",
+		["type"]    = "number",
+		["default"] = 0,
+	}, {
+		["name"]    = "desc",
+		["type"]    = "string",
+		["default"] = "false",
+	}, {
+		["name"]    = "codename",
+		["type"]    = "string",
+		["default"] = "default codename",
+	}, {
+		["name"]    = "theater",
+		["type"]    = "string",
+		["default"] = env.mission.theatre,
+	},
 	}
 
 	if notpldata[objtype] == nil then
@@ -337,48 +337,56 @@ local function getkeys(objtype)
 			["name"]    = "buildings",
 			["type"]    = "table",
 			["default"] = {},
-			["check"] = checkbldgdata,})
+			["check"]   = checkbldgdata,
+		})
 		table.insert(keys, {
 			["name"]  = "tpldata",
 			["type"]  = "table",
-			["check"] = checktpldata,})
+			["check"] = checktpldata,
+		})
 	end
 
 	if objtype == enum.assetType.AIRSPACE then
 		table.insert(keys, {
 			["name"]  = "location",
 			["type"]  = "table",
-			["check"] = checklocation,})
+			["check"] = checklocation,
+		})
 		table.insert(keys, {
-			["name"]  = "radius",
-			["type"]  = "number",
-			["default"] = 55560,})
+			["name"]    = "radius",
+			["type"]    = "number",
+			["default"] = 55560,
+		})
 	else
 		table.insert(keys, {
-			["name"]    = "location",
-			["check"]   = checklocation,})
+			["name"]  = "location",
+			["check"] = checklocation,
+		})
 	end
 
 	if objtype == enum.assetType.AIRBASE then
 		table.insert(keys, {
-			["name"]  = "subordinates",
-			["type"]  = "table", })
+			["name"] = "subordinates",
+			["type"] = "table",
+		})
 		table.insert(keys, {
 			["name"]    = "takeofftype",
 			["type"]    = "string",
 			["default"] = "inair",
-			["check"]   = checktakeoff,})
+			["check"]   = checktakeoff,
+		})
 		table.insert(keys, {
 			["name"]    = "recoverytype",
 			["type"]    = "string",
 			["default"] = "terminal",
-			["check"]   = checkrecovery,})
+			["check"]   = checkrecovery,
+		})
 	end
 
 	if objtype == enum.assetType.SQUADRONPLAYER then
 		table.insert(keys, {
-			["name"]    = "ato",
-			["check"]   = checkmsntype
+			["name"]  = "ato",
+			["check"] = checkmsntype
 		})
 
 		table.insert(keys, {
@@ -390,13 +398,13 @@ local function getkeys(objtype)
 	end
 
 	if objtype == enum.assetType.SQUADRONPLAYER or
-	   objtype == enum.assetType.AIRBASE then
+			objtype == enum.assetType.AIRBASE then
 		table.insert(keys, {
-			["name"]  = "players",
-			["type"]  = "table",
+			["name"]    = "players",
+			["type"]    = "table",
 			["default"] = {},
 		})
-   end
+	end
 	return keys
 end
 
@@ -450,11 +458,13 @@ end
 Template.checklocation = checklocation
 
 function Template:validate()
-	utils.checkkeys({ [1] = {
-		["name"]  = "objtype",
-		["type"]  = "string",
-		["check"] = checkobjtype,
-	},}, self)
+	utils.checkkeys({
+		[1] = {
+			["name"]  = "objtype",
+			["type"]  = "string",
+			["check"] = checkobjtype,
+		},
+	}, self)
 
 	utils.checkkeys(getkeys(self.objtype), self)
 end

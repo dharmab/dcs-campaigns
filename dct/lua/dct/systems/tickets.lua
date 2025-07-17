@@ -5,10 +5,10 @@
 --]]
 
 require("math")
-local class    = require("libs.class")
-local utils    = require("libs.utils")
+local class        = require("libs.class")
+local utils        = require("libs.utils")
 local Marshallable = require("dct.libs.Marshallable")
-local Command  = require("dct.Command")
+local Command      = require("dct.Command")
 
 local function checkvalue(keydata, tbl)
 	if tbl[keydata.name] >= 0 then
@@ -56,34 +56,34 @@ end
 local function checkside(keydata, tbl)
 	local keys = {
 		{
-			["name"]    = "tickets",
-			["type"]    = "number",
-			["check"]   = checkvalue,
+			["name"]  = "tickets",
+			["type"]  = "number",
+			["check"] = checkvalue,
 		}, {
-			["name"]    = "player_cost",
-			["type"]    = "number",
-			["check"]   = checkvalue,
-			["default"] = 1,
-		}, {
-			["name"]    = "modifier_reward",
-			["type"]    = "number",
-			["check"]   = checkvalue,
-			["default"] = 1,
-		}, {
-			["name"]    = "modifier_loss",
-			["type"]    = "number",
-			["check"]   = checkvalue,
-			["default"] = 1,
-		}, {
-			["name"]    = "flag",
-			["type"]    = "number",
-			["check"]   = checkvalue,
-		}, {
-			["name"]    = "difficulty",
-			["type"]    = "string",
-			["check"]   = checkdifficulty,
-			["default"] = "custom",
-		}
+		["name"]    = "player_cost",
+		["type"]    = "number",
+		["check"]   = checkvalue,
+		["default"] = 1,
+	}, {
+		["name"]    = "modifier_reward",
+		["type"]    = "number",
+		["check"]   = checkvalue,
+		["default"] = 1,
+	}, {
+		["name"]    = "modifier_loss",
+		["type"]    = "number",
+		["check"]   = checkvalue,
+		["default"] = 1,
+	}, {
+		["name"]  = "flag",
+		["type"]  = "number",
+		["check"] = checkvalue,
+	}, {
+		["name"]    = "difficulty",
+		["type"]    = "string",
+		["check"]   = checkdifficulty,
+		["default"] = "custom",
+	}
 	}
 
 	tbl[keydata.name].path = tbl.path
@@ -96,8 +96,8 @@ end
 local Tickets = class(Marshallable)
 function Tickets:__init(theater)
 	Marshallable.__init(self)
-	self.cfgfile = dct.settings.server.theaterpath..utils.sep..
-		"theater.goals"
+	self.cfgfile = dct.settings.server.theaterpath .. utils.sep ..
+			"theater.goals"
 	self.tickets = {}
 	self.timeout = {
 		["enabled"] = false,
@@ -109,7 +109,7 @@ function Tickets:__init(theater)
 	self:_addMarshalNames({
 		"tickets",
 		"timeout",
-		"complete"})
+		"complete" })
 	if self.timeout.enabled then
 		theater:queueCommand(self.timeout.period, Command(
 			"Tickets.timer", self.timer, self))
@@ -117,7 +117,7 @@ function Tickets:__init(theater)
 end
 
 function Tickets:_unmarshalpost(data)
-	for _, tbl in ipairs({"tickets"}) do
+	for _, tbl in ipairs({ "tickets" }) do
 		self[tbl] = {}
 		for k, v in pairs(data[tbl]) do
 			self[tbl][tonumber(k)] = v
@@ -134,18 +134,18 @@ function Tickets:readconfig()
 			["check"]   = checkvalue,
 			["default"] = -1
 		}, {
-			["name"]    = "red",
-			["type"]    = "table",
-			["check"]   = checkside,
-		}, {
-			["name"]    = "blue",
-			["type"]    = "table",
-			["check"]   = checkside,
-		}, {
-			["name"]    = "neutral",
-			["type"]    = "table",
-			["check"]   = checkside,
-		}
+		["name"]  = "red",
+		["type"]  = "table",
+		["check"] = checkside,
+	}, {
+		["name"]  = "blue",
+		["type"]  = "table",
+		["check"] = checkside,
+	}, {
+		["name"]  = "neutral",
+		["type"]  = "table",
+		["check"] = checkside,
+	}
 	}
 
 	goals.path = self.cfgfile
@@ -156,7 +156,7 @@ function Tickets:readconfig()
 		self.timeout.timeleft = goals.time
 		self.timeout.enabled = true
 	end
-	for _, val in ipairs({"red", "blue", "neutral"}) do
+	for _, val in ipairs({ "red", "blue", "neutral" }) do
 		local s = coalition.side[string.upper(val)]
 		self.tickets[s] = goals[val]
 	end
@@ -165,7 +165,7 @@ function Tickets:readconfig()
 		self.tickets[coalition.side.BLUE].start > 0 and
 		self.tickets[coalition.side.RED] ~= nil and
 		self.tickets[coalition.side.RED].start > 0,
-		string.format("Theater Goals: Red and Blue coalitions must be "..
+		string.format("Theater Goals: Red and Blue coalitions must be " ..
 			"defined and have tickets > 0; %s", self.cfgfile))
 end
 
@@ -181,7 +181,7 @@ end
 
 function Tickets:_add(side, cost, mod)
 	local t = self.tickets[side]
-	assert(t, string.format("value error: side(%d) not valid, resulted in"..
+	assert(t, string.format("value error: side(%d) not valid, resulted in" ..
 		" nil ticket table", side))
 	local v = cost
 	if mod ~= nil then
@@ -251,7 +251,7 @@ function Tickets:timer()
 	-- campaign timeout reached, determine the winner
 	local red  = self.tickets[coalition.side.RED]
 	local blue = self.tickets[coalition.side.BLUE]
-	local civ = self.tickets[coalition.side.NEUTRAL]
+	local civ  = self.tickets[coalition.side.NEUTRAL]
 	local flag = civ.flag
 
 	if red.tickets < blue.tickets then

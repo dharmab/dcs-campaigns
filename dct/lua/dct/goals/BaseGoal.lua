@@ -4,15 +4,15 @@
 -- Provides functions to define and manage goals.
 --]]
 
-local class  = require("libs.class")
-local enums  = require("dct.goals.enum")
+local class    = require("libs.class")
+local enums    = require("dct.goals.enum")
 
 local BaseGoal = class()
 function BaseGoal:__init(data)
-	self.priority   = data.priority or enums.priority.PRIMARY
-	self.objtype    = data.objtype
-	self.name       = data.name
-	self.groupname  = self.name
+	self.priority  = data.priority or enums.priority.PRIMARY
+	self.objtype   = data.objtype
+	self.name      = data.name
+	self.groupname = self.name
 	self._complete = false
 end
 

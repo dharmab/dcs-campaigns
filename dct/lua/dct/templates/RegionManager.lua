@@ -18,7 +18,7 @@ function RegionManager:__init(theater)
 
 	self:loadRegions()
 	theater:getAssetMgr():addObserver(self.onDCTEvent, self,
-		self.__clsname..".onDCTEvent")
+		self.__clsname .. ".onDCTEvent")
 end
 
 function RegionManager:getRegion(name)
@@ -28,8 +28,8 @@ end
 function RegionManager:loadRegions()
 	for filename in lfs.dir(settings.theaterpath) do
 		if filename ~= "." and filename ~= ".." and
-			filename ~= ".git" and filename ~= "settings" then
-			local fpath = settings.theaterpath..utils.sep..filename
+				filename ~= ".git" and filename ~= "settings" then
+			local fpath = settings.theaterpath .. utils.sep .. filename
 			local fattr = lfs.attributes(fpath)
 			if fattr.mode == "directory" then
 				local r = Region(fpath)
@@ -57,7 +57,7 @@ function RegionManager:validateEdges()
 			for _, rgnname in pairs(lnks) do
 				if rgnname ~= thisrgn.name then
 					links[domain][rgnname] =
-						cost(thisrgn, self.regions[rgnname])
+							cost(thisrgn, self.regions[rgnname])
 				end
 			end
 		end

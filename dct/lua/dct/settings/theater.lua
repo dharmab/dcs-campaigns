@@ -4,9 +4,9 @@
 -- Provides config facilities.
 --]]
 
-local utils      = require("libs.utils")
-local enum       = require("dct.enum")
-local dctutils   = require("dct.utils")
+local utils    = require("libs.utils")
+local enum     = require("dct.enum")
+local dctutils = require("dct.utils")
 
 local function validate_weapon_restrictions(cfgdata, tbl)
 	local path = cfgdata.file
@@ -18,14 +18,14 @@ local function validate_weapon_restrictions(cfgdata, tbl)
 		[2] = {
 			["name"] = "category",
 			["type"] = "string",
-			["check"] = function (keydata, t)
-		if enum.weaponCategory[string.upper(t[keydata.name])] ~= nil then
-			t[keydata.name] =
-				enum.weaponCategory[string.upper(t[keydata.name])]
-			return true
-		end
-		return false
-	end,
+			["check"] = function(keydata, t)
+				if enum.weaponCategory[string.upper(t[keydata.name])] ~= nil then
+					t[keydata.name] =
+							enum.weaponCategory[string.upper(t[keydata.name])]
+					return true
+				end
+				return false
+			end,
 		},
 	}
 	for _, wpndata in pairs(tbl) do
@@ -54,7 +54,7 @@ local function validate_codenamedb(cfgdata, tbl)
 		local newkey
 		assert(type(key) == "string",
 			string.format("invalid codename category '%s'; file: %s",
-			key, cfgdata.file))
+				key, cfgdata.file))
 
 		local k = enum.assetType[string.upper(key)]
 		if k ~= nil then
@@ -64,10 +64,10 @@ local function validate_codenamedb(cfgdata, tbl)
 		else
 			assert(nil,
 				string.format("invalid codename category '%s'; file: %s",
-				key, cfgdata.file))
+					key, cfgdata.file))
 		end
 		assert(type(list) == "table",
-			string.format("invalid codename value for category "..
+			string.format("invalid codename value for category " ..
 				"'%s', must be a table; file: %s", key, cfgdata.file))
 		newtbl[newkey] = list
 	end
@@ -81,7 +81,7 @@ local function gridfmt_transform(tbl)
 			ntbl[k] = v
 		else
 			ntbl[k] = dctutils.posfmt[string.upper(v)]
-			assert(ntbl[k] ~= nil, "invalid grid format for "..k)
+			assert(ntbl[k] ~= nil, "invalid grid format for " .. k)
 		end
 	end
 	return ntbl
@@ -134,15 +134,15 @@ end
 --]]
 local function theatercfgs(config)
 	local defaultpayload = {}
-	for _,v in pairs(enum.weaponCategory) do
+	for _, v in pairs(enum.weaponCategory) do
 		defaultpayload[v] = enum.WPNINFCOST - 1
 	end
 
 	local cfgs = {
 		{
 			["name"] = "restrictedweapons",
-			["file"] = config.server.theaterpath..utils.sep.."settings"..
-				utils.sep.."restrictedweapons.cfg",
+			["file"] = config.server.theaterpath .. utils.sep .. "settings" ..
+					utils.sep .. "restrictedweapons.cfg",
 			["cfgtblname"] = "restrictedweapons",
 			["validate"] = validate_weapon_restrictions,
 			["default"] = {
@@ -159,47 +159,47 @@ local function theatercfgs(config)
 				["INFCOST"] = enum.WPNINFCOST,
 			},
 		}, {
-			["name"] = "payloadlimits",
-			["file"] = config.server.theaterpath..utils.sep.."settings"..
-				utils.sep.."payloadlimits.cfg",
-			["validate"] = validate_payload_limits,
-			["default"] = defaultpayload,
-		}, {
-			["name"] = "codenamedb",
-			["file"] = config.server.theaterpath..utils.sep.."settings"..
-				utils.sep.."codenamedb.cfg",
-			["validate"] = validate_codenamedb,
-			["default"] = require("dct.data.codenamedb"),
-		}, {
-			["name"] = "ui",
-			["file"] = config.server.theaterpath..utils.sep.."settings"..
-				utils.sep.."ui.cfg",
-			["validate"] = validate_ui,
-			["default"] = {
-				["gridfmt"] = {
-					-- default is DMS, no need to list
-					["Ka-50"]         = dctutils.posfmt.DDM,
-					["Mi-8MT"]        = dctutils.posfmt.DDM,
-					["SA342M"]        = dctutils.posfmt.DDM,
-					["SA342L"]        = dctutils.posfmt.DDM,
-					["UH-1H"]         = dctutils.posfmt.DDM,
-					["A-10A"]         = dctutils.posfmt.MGRS,
-					["A-10C"]         = dctutils.posfmt.MGRS,
-					["A-10C_2"]       = dctutils.posfmt.MGRS,
-					["F-5E-3"]        = dctutils.posfmt.DDM,
-					["F-16C_50"]      = dctutils.posfmt.DDM,
-					["FA-18C_hornet"] = dctutils.posfmt.DDM,
-					["M-2000C"]       = dctutils.posfmt.DDM,
-				},
-				["ato"] = {},
+		["name"] = "payloadlimits",
+		["file"] = config.server.theaterpath .. utils.sep .. "settings" ..
+				utils.sep .. "payloadlimits.cfg",
+		["validate"] = validate_payload_limits,
+		["default"] = defaultpayload,
+	}, {
+		["name"] = "codenamedb",
+		["file"] = config.server.theaterpath .. utils.sep .. "settings" ..
+				utils.sep .. "codenamedb.cfg",
+		["validate"] = validate_codenamedb,
+		["default"] = require("dct.data.codenamedb"),
+	}, {
+		["name"] = "ui",
+		["file"] = config.server.theaterpath .. utils.sep .. "settings" ..
+				utils.sep .. "ui.cfg",
+		["validate"] = validate_ui,
+		["default"] = {
+			["gridfmt"] = {
+				-- default is DMS, no need to list
+				["Ka-50"]         = dctutils.posfmt.DDM,
+				["Mi-8MT"]        = dctutils.posfmt.DDM,
+				["SA342M"]        = dctutils.posfmt.DDM,
+				["SA342L"]        = dctutils.posfmt.DDM,
+				["UH-1H"]         = dctutils.posfmt.DDM,
+				["A-10A"]         = dctutils.posfmt.MGRS,
+				["A-10C"]         = dctutils.posfmt.MGRS,
+				["A-10C_2"]       = dctutils.posfmt.MGRS,
+				["F-5E-3"]        = dctutils.posfmt.DDM,
+				["F-16C_50"]      = dctutils.posfmt.DDM,
+				["FA-18C_hornet"] = dctutils.posfmt.DDM,
+				["M-2000C"]       = dctutils.posfmt.DDM,
 			},
-		}, {
-			["name"] = "blasteffects",
-			["file"] = config.server.theaterpath..utils.sep.."settings"..
-				utils.sep.."blasteffects.cfg",
-			["validate"] = validate_blast_effects,
-			["default"] = require("dct.data.blasteffects"),
+			["ato"] = {},
 		},
+	}, {
+		["name"] = "blasteffects",
+		["file"] = config.server.theaterpath .. utils.sep .. "settings" ..
+				utils.sep .. "blasteffects.cfg",
+		["validate"] = validate_blast_effects,
+		["default"] = require("dct.data.blasteffects"),
+	},
 	}
 
 	utils.readconfigs(cfgs, config)

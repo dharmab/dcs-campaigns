@@ -4,9 +4,9 @@
 -- Implements a basic building persisntence system.
 --]]
 
-local class  = require("libs.namedclass")
-local Marshallable = require("dct.libs.Marshallable")
-local Logger = require("dct.libs.Logger").getByName("System")
+local class          = require("libs.namedclass")
+local Marshallable   = require("dct.libs.Marshallable")
+local Logger         = require("dct.libs.Logger").getByName("System")
 
 local SceneryTracker = class("SceneryTracker", Marshallable)
 function SceneryTracker:__init()
@@ -19,12 +19,12 @@ end
 
 function SceneryTracker:postinit(theater)
 	theater:addObserver(self.onDCSEvent, self,
-		self.__clsname..".onDCSEvent")
+		self.__clsname .. ".onDCSEvent")
 end
 
 function SceneryTracker:_unmarshalpost()
 	for bldg, _ in pairs(self.destroyed) do
-		local pt = Object.getPoint({id_ = tonumber(bldg)})
+		local pt = Object.getPoint({ id_ = tonumber(bldg) })
 		trigger.action.explosion(pt, 250)
 	end
 end

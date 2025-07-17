@@ -65,7 +65,7 @@ function Subordinates:spawn_despawn(action)
 				asset[action](asset)
 			end
 		else
-			Logger:info("%s(%s):spawn_despawn - asset(%s) doesn't exist, "..
+			Logger:info("%s(%s):spawn_despawn - asset(%s) doesn't exist, " ..
 				"removing subordinate", self.__clsname, self.name, name)
 			self:removeSubordinate(name)
 		end

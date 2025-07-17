@@ -12,17 +12,17 @@
 
 require("os")
 require("math")
-local utils    = require("libs.utils")
-local class    = require("libs.namedclass")
-local enum     = require("dct.enum")
-local dctutils = require("dct.utils")
-local uicmds   = require("dct.ui.cmds")
-local State    = require("dct.libs.State")
-local Timer    = require("dct.libs.Timer")
-local Logger   = require("dct.libs.Logger").getByName("Mission")
+local utils         = require("libs.utils")
+local class         = require("libs.namedclass")
+local enum          = require("dct.enum")
+local dctutils      = require("dct.utils")
+local uicmds        = require("dct.ui.cmds")
+local State         = require("dct.libs.State")
+local Timer         = require("dct.libs.Timer")
+local Logger        = require("dct.libs.Logger").getByName("Mission")
 
-local MISSION_LIMIT = 60*60*3  -- 3 hours in seconds
-local PREP_LIMIT    = 60*90    -- 90 minutes in seconds
+local MISSION_LIMIT = 60 * 60 * 3 -- 3 hours in seconds
+local PREP_LIMIT    = 60 * 90 -- 90 minutes in seconds
 
 
 ---------------- STATES ----------------
@@ -32,7 +32,7 @@ function BaseMissionState:timeremain()
 	return 0, 0
 end
 
-function BaseMissionState:timeextend(--[[addtime]])
+function BaseMissionState:timeextend( --[[addtime]])
 end
 
 local TimeoutState = class("Timeout", BaseMissionState)
@@ -58,7 +58,7 @@ end
 --    * on plan completion, mission success
 --    * on timer expired, mission timed out
 --]]
-local ActiveState  = class("Active",  BaseMissionState)
+local ActiveState = class("Active", BaseMissionState)
 function ActiveState:__init()
 	Logger:debug("%s:_init()", self.__clsname)
 	self.timer = Timer(MISSION_LIMIT)
@@ -135,9 +135,9 @@ function PrepState:update(msn)
 
 	for _, v in pairs(msn:getAssigned()) do
 		local asset =
-			dct.Theater.singleton():getAssetMgr():getAsset(v)
+				dct.Theater.singleton():getAssetMgr():getAsset(v)
 		if asset.type == enum.assetType.PLAYERGROUP and
-		   asset:inAir() then
+				asset:inAir() then
 			Logger:debug("%s:enter() - to active state", self.__clsname)
 			return ActiveState()
 		end
@@ -174,26 +174,26 @@ end
 
 local Mission = class("Mission")
 function Mission:__init(cmdr, missiontype, tgt, plan)
-	self.cmdr      = cmdr
-	self.type      = missiontype
-	self.target    = tgt.name
-	self.reward    = tgt.cost
-	self.plan      = createPlanQ(plan)
-	self.iffcodes  = cmdr:genMissionCodes(missiontype)
-	self.id        = self.iffcodes.id
-	self.assigned  = {}
+	self.cmdr     = cmdr
+	self.type     = missiontype
+	self.target   = tgt.name
+	self.reward   = tgt.cost
+	self.plan     = createPlanQ(plan)
+	self.iffcodes = cmdr:genMissionCodes(missiontype)
+	self.id       = self.iffcodes.id
+	self.assigned = {}
 	self:_setComplete(false)
 	self.state = PrepState()
 	self.state:enter(self)
-	self._assignedIds = {}
+	self._assignedIds    = {}
 	self._lastAssignedId = 0
 
 	-- compose the briefing at mission creation to represent
 	-- known intel the pilots were given before departing
-	self.briefing  = composeBriefing(self, tgt, timer.getAbsTime())
+	self.briefing        = composeBriefing(self, tgt, timer.getAbsTime())
 	tgt:setTargeted(self.cmdr.owner, true)
 
-	self.tgtinfo = {}
+	self.tgtinfo          = {}
 	self.tgtinfo.location = tgt:getLocation()
 	self.tgtinfo.callsign = tgt.codename
 	self.tgtinfo.status   = tgt:getStatus()
@@ -274,9 +274,9 @@ function Mission:queueabort(reason)
 	local theater = dct.Theater.singleton()
 	for _, name in ipairs(self.assigned) do
 		local request = {
-			["type"]   = enum.uiRequestType.MISSIONABORT,
-			["name"]   = name,
-			["value"]  = reason,
+			["type"]  = enum.uiRequestType.MISSIONABORT,
+			["name"]  = name,
+			["value"] = reason,
 		}
 		-- We have to use theater:queueCommand() to bypass the
 		-- limiting of players sending too many commands
@@ -285,10 +285,10 @@ function Mission:queueabort(reason)
 end
 
 function Mission:update()
-	Logger:debug("update() called for state: "..self.state.__clsname)
+	Logger:debug("update() called for state: " .. self.state.__clsname)
 	local newstate = self.state:update(self)
 	if newstate ~= nil then
-		Logger:debug("update() new state: "..newstate.__clsname)
+		Logger:debug("update() new state: " .. newstate.__clsname)
 		self.state:exit(self)
 		self.state = newstate
 		self.state:enter(self)
