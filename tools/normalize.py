@@ -5,7 +5,7 @@ import pathlib
 import typing
 
 
-def sort_data(d: typing.Any) -> dict:
+def sort_data(d: typing.Any) -> typing.Any:
     if isinstance(d, dict):
         return {k: sort_data(v) for k, v in sorted(d.items(), key=lambda x: str(x))}
     elif isinstance(d, list):
